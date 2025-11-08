@@ -1,24 +1,24 @@
 {
-    "presentation_title": "Verdant Roots: Cultivating Tomorrow's Green Spaces",
+    "presentation_title": "Sultan's Brew: The Modern Turkish Coffee Experience",
     "title_slide": {
-        "title": "Verdant Roots: Your Greenhouse Sapling Store",
+        "title": "Sultan's Brew: The Modern Turkish Coffee Experience",
         "style": {
-            "background_color": "#E8F5E9",
+            "background_color": "#FDF7EC",
             "title_font": "Montserrat Bold",
-            "title_color": "#2E7D32",
-            "subtitle_font": "Open Sans Italic",
-            "subtitle_color": "#558B2F"
+            "title_color": "#2C1A0D",
+            "subtitle_font": "Source Sans Pro",
+            "subtitle_color": "#7A492B"
         },
         "layout": "TITLE"
     },
     "design_language": {
-        "name": "Verdant Growth",
+        "name": "Anatolian Brew Aesthetics",
         "palette": {
-            "primary": "#388E3C",
-            "secondary": "#7CB342",
-            "accent": "#9CCC65",
-            "background": "#F1F8E9",
-            "text_on_light": "#212121",
+            "primary": "#7A492B",
+            "secondary": "#B58A5F",
+            "accent": "#D4AF37",
+            "background": "#FDF7EC",
+            "text_on_light": "#2C1A0D",
             "text_on_dark": "#FFFFFF"
         },
         "typography": {
@@ -29,45 +29,197 @@
             "type": "GRADIENT",
             "angle": 15,
             "colors": [
-                "#F1F8E9",
-                "#E0F2F1"
+                "#FDF7EC",
+                "#F8EFE4"
             ]
         },
         "accent_shapes": [
             {
                 "shape_type": "ROUNDED_RECTANGLE",
                 "position": {
-                    "x": 30,
-                    "y": 400
+                    "x": 40,
+                    "y": 420
                 },
                 "size": {
-                    "width": 880,
-                    "height": 10
+                    "width": 820,
+                    "height": 14
                 },
-                "fill_color": "#9CCC65",
-                "opacity": 0.15
+                "fill_color": "#B58A5F",
+                "opacity": 0.3
             }
         ],
         "text_alignment": "LEFT",
-        "body_line_spacing": 130
+        "body_line_spacing": 135
     },
     "slides": [
         {
-            "title": "Cultivating Tomorrow: Our Vision",
-            "body": "• We are a premium greenhouse store specializing in diverse saplings\n• Our mission: empower individuals to grow greener, healthier spaces\n• Providing expert advice and sustainable, high-quality plants",
+            "title": "The Essence of Sultan's Brew",
+            "body": "• Offering authentic Turkish coffee culture\n• Modern ambiance meets rich tradition\n• A premium, immersive coffee experience",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 5,
+                    "angle": 25,
                     "colors": [
-                        "#F1F8E9",
-                        "#E0F2F1"
+                        "#FDF7EC",
+                        "#F8EFE4"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#212121",
+                "title_color": "#2C1A0D",
                 "body_font": "Source Sans Pro",
-                "body_color": "#212121",
+                "body_color": "#2C1A0D",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 40,
+                            "y": 140
+                        },
+                        "size": {
+                            "width": 120,
+                            "height": 8
+                        },
+                        "fill_color": "#D4AF37",
+                        "opacity": 0.6
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Market Opportunity: Brewing Growth",
+            "body": "• Specialty coffee market grows 8% annually\n• Demand for unique global flavors is surging\n• Gen Z and Millennials seek authentic experiences",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 190,
+                    "colors": [
+                        "#FDF7EC",
+                        "#F2E8DB"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#2C1A0D",
+                "body_font": "Source Sans Pro",
+                "body_color": "#2C1A0D",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 135,
+                "accent_shapes": [
+                    {
+                        "shape_type": "TRIANGLE",
+                        "position": {
+                            "x": 380,
+                            "y": 100
+                        },
+                        "size": {
+                            "width": 100,
+                            "height": 100
+                        },
+                        "fill_color": "#B58A5F",
+                        "opacity": 0.2
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Vibrant coffee beans and exotic spices arranged artfully on a traditional Turkish tray, golden light, high resolution, soft focus background",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Our Unique Value: The Sultan's Secret",
+            "body": "• Authentic preparation with traditional Cezve\n• Curated selection of Turkish delicacies\n• Inviting, culturally rich atmosphere for all",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 300,
+                    "colors": [
+                        "#FDF7EC",
+                        "#EADECB"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#2C1A0D",
+                "body_font": "Source Sans Pro",
+                "body_color": "#2C1A0D",
+                "title_alignment": "RIGHT",
+                "body_alignment": "RIGHT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "PARALLELOGRAM",
+                        "position": {
+                            "x": 500,
+                            "y": 140
+                        },
+                        "size": {
+                            "width": 300,
+                            "height": 10
+                        },
+                        "fill_color": "#D4AF37",
+                        "opacity": 0.5
+                    }
+                ]
+            },
+            "layout": "SECTION_TITLE_AND_DESCRIPTION",
+            "image_prompt": "A skilled barista pouring rich Turkish coffee from a gleaming copper cezve into a delicate cup, steam rising, warm ambient lighting, close-up shot",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Menu & Experience: A Taste of Anatolia",
+            "body": "• Wide array of Turkish coffee varieties\n• Artisanal baklava, lokum, and savory pastries\n• Authentic herbal teas and refreshing sherbets",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 45,
+                    "colors": [
+                        "#FDF7EC",
+                        "#F4EDE1"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#2C1A0D",
+                "body_font": "Source Sans Pro",
+                "body_color": "#2C1A0D",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 135,
+                "accent_shapes": [
+                    {
+                        "shape_type": "STRIPE",
+                        "position": {
+                            "x": 40,
+                            "y": 250
+                        },
+                        "size": {
+                            "width": 300,
+                            "height": 12
+                        },
+                        "fill_color": "#7A492B",
+                        "opacity": 0.1
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Assortment of colorful Turkish delights, golden baklava, and a small, elegantly decorated cup of Turkish coffee on an ornate bronze tray, soft natural light",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Business Model: Crafted for Profit",
+            "body": "• Diversified revenue from in-store sales\n• High-margin catering for events and businesses\n• Online store for beans and brewing kits",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 120,
+                    "colors": [
+                        "#FDF7EC",
+                        "#F8EFE4"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#2C1A0D",
+                "body_font": "Source Sans Pro",
+                "body_color": "#2C1A0D",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
                 "accent_shapes": [
@@ -78,357 +230,217 @@
                             "y": 150
                         },
                         "size": {
-                            "width": 160,
-                            "height": 18
+                            "width": 10,
+                            "height": 100
                         },
-                        "fill_color": "#7CB342",
-                        "opacity": 0.25
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Blooming Demand: A Growing Market",
-            "body": "• Global greening initiatives drive strong demand for saplings\n• Residential gardening market projected at $100B by 2027\n• Consumers increasingly prioritize native and sustainable planting",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 185,
-                    "colors": [
-                        "#F1F8E9",
-                        "#E8F5E9"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#212121",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 130,
-                "accent_shapes": [
-                    {
-                        "shape_type": "RECTANGLE",
-                        "position": {
-                            "x": 420,
-                            "y": 120
-                        },
-                        "size": {
-                            "width": 180,
-                            "height": 220
-                        },
-                        "fill_color": "#388E3C",
-                        "opacity": 0.1
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Global map with rising green areas, symbolizing reforestation efforts and demand for saplings, data visualization, infographic style, professional and clean",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Rooted in Difference: Our Unique Value",
-            "body": "• Curated selection of native, fruit, and ornamental saplings\n• On-site horticulturists offer personalized planting consultations\n• Sustainable practices including recycled pots and organic soil",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 350,
-                    "colors": [
-                        "#F1F8E9",
-                        "#EDF7EF"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#212121",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121",
-                "title_alignment": "RIGHT",
-                "body_alignment": "RIGHT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "ROUNDED_RECTANGLE",
-                        "position": {
-                            "x": 750,
-                            "y": 180
-                        },
-                        "size": {
-                            "width": 120,
-                            "height": 15
-                        },
-                        "fill_color": "#9CCC65",
-                        "opacity": 0.3
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A hand gently holding a vibrant green sapling, roots visible, against a bokeh background of a lush, clean greenhouse, soft natural light",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Our Living Inventory: Premium Saplings",
-            "body": "• Wide array: fruit, shade, ornamental, and native species\n• All saplings grown organically, ensuring robust health\n• Expert care from seed to sales, guaranteeing quality",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 60,
-                    "colors": [
-                        "#E8F5E9",
-                        "#F1F8E9"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#212121",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 130
-            },
-            "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "A diverse collection of healthy, young saplings in small biodegradable pots, arranged neatly on wooden shelves in a bright, modern greenhouse, abundant natural light",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Planting Profits: Our Business Model",
-            "body": "• Direct-to-consumer sales via our inviting greenhouse store\n• E-commerce platform for local delivery and wider reach\n• Workshops and educational events generate additional revenue",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 210,
-                    "colors": [
-                        "#F1F8E9",
-                        "#EDF7EF"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#212121",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "BAR",
-                        "position": {
-                            "x": 40,
-                            "y": 280
-                        },
-                        "size": {
-                            "width": 300,
-                            "height": 8
-                        },
-                        "fill_color": "#7CB342",
-                        "opacity": 0.2
+                        "fill_color": "#B58A5F",
+                        "opacity": 0.7
                     }
                 ]
             },
             "layout": "ONE_COLUMN_TEXT"
         },
         {
-            "title": "Your Green Oasis: The Store Experience",
-            "body": "• Immerse yourself in a serene, nature-filled environment.\n• Discover the perfect sapling for your home and garden.",
+            "title": "Traction & Projections: Sustained Growth",
+            "body": "• Projected Year 1 revenue: $750,000+\n• Target 20% annual customer base growth\n• Plan for 3 expansion locations within 5 years",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 10,
+                    "angle": 270,
                     "colors": [
-                        "#F1F8E9",
-                        "#E0F2F1"
+                        "#FDF7EC",
+                        "#F2E8DB"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#212121",
+                "title_color": "#2C1A0D",
                 "body_font": "Source Sans Pro",
-                "body_color": "#212121",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 130
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Bright, spacious modern greenhouse interior with diverse saplings and mature plants, natural light flooding in, customers browsing with a friendly staff member, serene and inviting atmosphere, high-end photography",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Cultivating Our Community & Growth",
-            "body": "• 1,500+ happy customers in our first year, 92% retention\n• Strong local partnerships with landscapers and community gardens\n• Active social media presence driving 15% month-over-month growth",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 290,
-                    "colors": [
-                        "#EDF7EF",
-                        "#F1F8E9"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#212121",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121",
+                "body_color": "#2C1A0D",
                 "title_alignment": "RIGHT",
                 "body_alignment": "RIGHT",
-                "body_line_spacing": 130
+                "body_line_spacing": 135,
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 450,
+                            "y": 120
+                        },
+                        "size": {
+                            "width": 10,
+                            "height": 200
+                        },
+                        "fill_color": "#7A492B",
+                        "opacity": 0.15
+                    }
+                ]
             },
             "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "Infographic showing a network of community engagement and marketing channels: social media icons, local event photos, customer testimonials, all interconnected with growth arrows on a light green background, clean design",
+            "image_prompt": "Elegant growth chart visualizing increasing revenue and customer count, subtle coffee bean motifs, professional data visualization style",
             "image_position": "LEFT"
         },
         {
-            "title": "Navigating the Nursery Ecosystem",
-            "body": "• Big box stores like Home Depot offer limited, generic plants\n• Their average customer rating is 3.5/5 for plant quality\n• Verdant Roots offers 5x more unique species, 4.9/5 satisfaction",
+            "title": "Competitive Landscape: Our Distinct Advantage",
+            "body": "• Starbucks: Mass appeal, lacks cultural depth\n• Local cafes: Limited specialty focus\n• Sultan's Brew: Niche expertise, 40% higher customer loyalty with unique experience",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 45,
+                    "angle": 60,
                     "colors": [
-                        "#F1F8E9",
-                        "#E8F5E9"
+                        "#FDF7EC",
+                        "#EADECB"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#212121",
+                "title_color": "#2C1A0D",
                 "body_font": "Source Sans Pro",
-                "body_color": "#212121",
+                "body_color": "#2C1A0D",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
-                "body_line_spacing": 130
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Comparative infographic: one side showing a crowded, impersonal aisle of generic plants at a large retail store; the other side a specialized, clean, and well-organized greenhouse with unique, healthy saplings, illustrating stark contrast in quality and experience",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Our Roots: The Dedicated Team",
-            "body": "• Jane Doe, Founder & CEO: 10+ years in sustainable agriculture\n• John Smith, Lead Horticulturist: Master's in Botany, 15 years experience\n• Passionate team committed to greening communities, one plant at a time",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 135,
-                    "colors": [
-                        "#F1F8E9",
-                        "#E0F2F1"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#212121",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
+                "body_line_spacing": 135,
                 "accent_shapes": [
                     {
-                        "shape_type": "ROUNDED_RECTANGLE",
+                        "shape_type": "CHEVRON",
                         "position": {
                             "x": 40,
                             "y": 300
                         },
                         "size": {
-                            "width": 500,
-                            "height": 90
+                            "width": 200,
+                            "height": 20
                         },
-                        "fill_color": "#388E3C",
-                        "opacity": 0.12
+                        "fill_color": "#D4AF37",
+                        "opacity": 0.4
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Three distinct coffee cups representing competitors (generic chain, local cafe) and our unique Turkish coffee, highlighting differentiation through artistic contrast and superior branding",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "The Team Behind the Brew",
+            "body": "• Founder: 10+ years F&B and hospitality leadership\n• Master Barista: Authentic Turkish coffee expertise\n• Marketing Specialist: Proven brand building record",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 150,
+                    "colors": [
+                        "#FDF7EC",
+                        "#F8EFE4"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#2C1A0D",
+                "body_font": "Source Sans Pro",
+                "body_color": "#2C1A0D",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 40,
+                            "y": 140
+                        },
+                        "size": {
+                            "width": 8,
+                            "height": 100
+                        },
+                        "fill_color": "#7A492B",
+                        "opacity": 0.7
                     }
                 ]
             },
             "layout": "TITLE_AND_BODY"
         },
         {
-            "title": "Fueling Our Growth: The Investment Opportunity",
-            "body": "• Seeking $250,000 for greenhouse expansion and increased inventory\n• Funds will boost marketing by 30% and expand e-commerce capabilities\n• Projected 3x revenue growth in Year 2 with this investment",
+            "title": "Financial Ask: Fueling Our Expansion",
+            "body": "• Seeking $500,000 seed investment\n• Funds cover flagship build-out and initial marketing\n• Detailed financial projections are available upon request",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 270,
+                    "angle": 210,
                     "colors": [
-                        "#F1F8E9",
-                        "#EDF7EF"
+                        "#FDF7EC",
+                        "#F2E8DB"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#212121",
+                "title_color": "#2C1A0D",
                 "body_font": "Source Sans Pro",
-                "body_color": "#212121",
-                "title_alignment": "RIGHT",
-                "body_alignment": "RIGHT",
-                "body_line_spacing": 130
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A financial bar chart illustrating investment allocation across 'Greenhouse Expansion', 'Inventory', and 'Marketing', alongside a line graph showing projected rapid revenue growth over the next three years, professional and clear financial visualization",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Branching Out: Future Growth",
-            "body": "• Expand to two new locations within 5 years, targeting high-demand areas\n• Introduce complementary product lines: sustainable gardening tools, organic fertilizers\n• Develop B2B partnerships for large-scale reforestation and urban greening projects",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 320,
-                    "colors": [
-                        "#F1F8E9",
-                        "#E0F2F1"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#212121",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
+                "body_color": "#2C1A0D",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER",
+                "body_line_spacing": 135,
                 "accent_shapes": [
                     {
-                        "shape_type": "STRIPE",
+                        "shape_type": "ROUNDED_RECTANGLE",
                         "position": {
-                            "x": 40,
-                            "y": 420
+                            "x": 200,
+                            "y": 300
                         },
                         "size": {
-                            "width": 820,
-                            "height": 14
+                            "width": 500,
+                            "height": 100
                         },
-                        "fill_color": "#7CB342",
-                        "opacity": 0.18
+                        "fill_color": "#D4AF37",
+                        "opacity": 0.2
                     }
                 ]
             },
             "layout": "MAIN_POINT"
         },
         {
-            "title": "Let's Grow Together",
-            "body": "Join Verdant Roots in planting a greener, more sustainable future.\nContact us to learn more about this exciting opportunity.",
+            "title": "Future Vision & Next Steps",
+            "body": "• Launch flagship store in Q4 2024\n• Expand catering and online retail presence\n• Become the leading authentic Turkish coffee brand",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 10,
+                    "angle": 330,
                     "colors": [
-                        "#E8F5E9",
-                        "#F1F8E9"
+                        "#FDF7EC",
+                        "#EADECB"
                     ]
                 },
-                "title_font": "Montserrat Bold",
-                "title_color": "#2E7D32",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#2C1A0D",
                 "body_font": "Source Sans Pro",
-                "body_color": "#388E3C",
-                "title_alignment": "CENTER",
-                "body_alignment": "CENTER",
-                "body_line_spacing": 140,
+                "body_color": "#2C1A0D",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
                 "accent_shapes": [
                     {
                         "shape_type": "RECTANGLE",
                         "position": {
-                            "x": 0,
-                            "y": 0
+                            "x": 40,
+                            "y": 380
                         },
                         "size": {
-                            "width": 960,
-                            "height": 540
+                            "width": 500,
+                            "height": 90
                         },
-                        "fill_color": "#9CCC65",
-                        "opacity": 0.05
+                        "fill_color": "#B58A5F",
+                        "opacity": 0.12
                     }
                 ]
             },
-            "layout": "TITLE_AND_BODY"
+            "layout": "SECTION_HEADER"
+        },
+        {
+            "title": "Thank You",
+            "body": "Join us in bringing the rich tradition of Turkish coffee to new audiences.\nContact us for a detailed investor deck.",
+            "style": {
+                "background_color": "#7A492B",
+                "title_font": "Montserrat Bold",
+                "title_color": "#FFFFFF",
+                "body_font": "Source Sans Pro",
+                "body_color": "#FDF7EC",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER",
+                "body_line_spacing": 135
+            },
+            "layout": "CAPTION_ONLY"
         }
     ]
 }

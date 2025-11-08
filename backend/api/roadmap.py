@@ -5,7 +5,7 @@ from google import genai
 
 load_dotenv()
 
-api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
+api_key = os.getenv("VITE_GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
 if not api_key:
     raise RuntimeError("Missing GOOGLE_API_KEY or GEMINI_API_KEY environment variable.")
 

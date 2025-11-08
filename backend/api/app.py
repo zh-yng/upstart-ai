@@ -2,7 +2,7 @@
 
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
-from slide_create import main as create_slides
+from run_deck import run_deck
 from flask_cors import CORS
 
 load_dotenv()
@@ -19,14 +19,28 @@ def hello_world():
 
 @app.route('/create_slides', methods=['POST'])
 def create_slides_route():
-    data = request.json
-    text = data.get('text')
+    data = request.get_json(silent=True) or {}
+    prompt_text = (data.get('text') or '').strip()
+    author_name = data.get('author')
+    include_images_value = data.get('includeImages', True)
 
-    if not text:
+    if not prompt_text:
         return jsonify({'error': 'Text is required'}), 400
 
-    slides = create_slides(text)
-    return jsonify({'slides': slides})
+    if isinstance(include_images_value, str):
+        include_images_flag = include_images_value.strip().lower() not in {'0', 'false', 'off', 'no'}
+    else:
+        include_images_flag = bool(include_images_value)
+
+    try:
+        run_deck(prompt_text, author=author_name, include_images=include_images_flag)
+    except ValueError as exc:
+        return jsonify({'error': str(exc)}), 400
+    except Exception as exc:
+        app.logger.exception("Slide generation failed", exc_info=exc)
+        return jsonify({'error': 'Slide generation failed'}), 500
+
+    return jsonify({'slides': []})
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

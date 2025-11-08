@@ -11,7 +11,7 @@ load_dotenv()
 
 
 def runGenerator(inputPrompt, author=""):
-    api_key = os.getenv("GOOGLE_API_KEY")
+    api_key = os.getenv("VITE_GOOGLE_API_KEY")
     if not api_key:
         raise RuntimeError(
             "GEMINI_API_KEY is not set. Add it to your environment or .env file."
