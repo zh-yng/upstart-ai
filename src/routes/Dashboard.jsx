@@ -10,11 +10,11 @@ const Dashboard = () => {
     const location = useLocation();
     const presentationUrl = location.state && location.state.presentationUrl;
     const text = location.state?.text || '';
-    
+
     const [roadmapLoading, setRoadmapLoading] = useState(false);
     const [roadmapReady, setRoadmapReady] = useState(false);
     const [showRoadmapDialog, setShowRoadmapDialog] = useState(false);
-    
+
     const [videoLoading, setVideoLoading] = useState(false);
     const [videoReady, setVideoReady] = useState(false);
     const [showVideoDialog, setShowVideoDialog] = useState(false);
@@ -25,9 +25,9 @@ const Dashboard = () => {
     const [chatInput, setChatInput] = useState('');
 
     const features = [
-        { name: 'Slides', icon: 'pi pi-id-card', route: '/api/create_slides', content: (presentationUrl != null) ? presentationUrl : '', color: 'rgba(248, 191, 8,1)' },
+        { name: 'Slides', icon: 'pi pi-id-card', route: '/api/create_slides', content: (presentationUrl != null) ? presentationUrl : '', color: 'rgba(248, 191, 8,1)', handler: 'slides' },
         { name: 'Video', icon: 'pi pi-video', route: '/api/create_video', content: '', color: 'rgba(8, 191, 248, 1)', loadingColor: 'rgba(191, 8, 248,1)', handler: 'video' },
-        { name: 'Network', icon: 'pi pi-sitemap', route: '/api/network', content: '', color: 'rgba(191, 8, 248,1)' },
+        { name: 'Network', icon: 'pi pi-sitemap', route: '/api/network', content: '', color: 'rgba(191, 8, 248,1)', handler: 'network' },
         { name: 'Roadmap', icon: 'pi pi-map', route: '/api/create_roadmap', content: '', color: 'rgba(248, 191, 8,1)', loadingColor: 'rgba(191, 8, 248,1)', handler: 'roadmap' },
     ]
 
@@ -201,10 +201,10 @@ const Dashboard = () => {
         // Add user message
         const userMessage = { role: 'user', text: chatInput };
         setChatMessages(prev => [...prev, userMessage]);
-        
+
         // Store input before clearing
         const currentInput = chatInput;
-        
+
         // Clear input
         setChatInput('');
 
@@ -214,7 +214,7 @@ const Dashboard = () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ 
+                body: JSON.stringify({
                     message: currentInput,
                     businessIdea: text.trim(),
                     chatHistory: chatMessages
@@ -222,23 +222,23 @@ const Dashboard = () => {
             });
 
             const data = await response.json();
-            
+
             if (!response.ok) {
                 throw new Error(data.error || 'Failed to process chat message');
             }
 
             // Add bot response
-            const botResponse = { 
-                role: 'assistant', 
-                text: data.response || 'Sorry, I couldn\'t process that request.' 
+            const botResponse = {
+                role: 'assistant',
+                text: data.response || 'Sorry, I couldn\'t process that request.'
             };
             setChatMessages(prev => [...prev, botResponse]);
-            
+
         } catch (err) {
             console.error('Chat error:', err);
-            const errorResponse = { 
-                role: 'assistant', 
-                text: 'Sorry, something went wrong. Please try again.' 
+            const errorResponse = {
+                role: 'assistant',
+                text: 'Sorry, something went wrong. Please try again.'
             };
             setChatMessages(prev => [...prev, errorResponse]);
         }
@@ -323,77 +323,34 @@ const Dashboard = () => {
                             {features.map((feature) => {
                                 const isRoadmap = feature.handler === 'roadmap';
                                 const isVideo = feature.handler === 'video';
+                                const isNetwork = feature.handler === 'network';
+                                const isSlides = feature.handler === 'slides';
                                 const isLoading = (isRoadmap && roadmapLoading) || (isVideo && videoLoading);
                                 const isReady = (isRoadmap && roadmapReady) || (isVideo && videoReady);
                                 const buttonColor = isLoading ? (feature.loadingColor || feature.color) : (isReady ? feature.color : 'rgba(255, 255, 255,1)');
                                 const cardBgColor = (feature.content !== '' || isReady) ? feature.color : 'transparent';
 
                                 return (
-                                <Card title={feature.name} key={feature.name} className="blur flex flex-column justify-content-center align-items-center" style={{ backgroundColor: cardBgColor }}>
-                                    {(feature.content === "" && !isReady) ?
+                                    <Card title={feature.name} key={feature.name} className="blur flex flex-column justify-content-center align-items-center" style={{ backgroundColor: cardBgColor }}>
+                                        {(feature.content === "" && !isReady) ?
 
-                                        <Button
-                                            key={feature.name}
-                                            className="blur justify-content-start"
-                                            style={{ border: '1px dashed black', color: 'black', backgroundColor: buttonColor, minHeight: '50px' }}
-                                            icon={isLoading ? 'pi pi-spin pi-spinner' : feature.icon}
-                                            label={isLoading ? "Generating..." : "Generate"}
-                                            severity="secondary"
-                                            disabled={isLoading}
-                                            onClick={() => {
-                                                if (feature.handler === 'roadmap') {
-                                                    handleCreateRoadmap();
-                                                } else if (feature.handler === 'video') {
-                                                    handleCreateVideo();
-                                                } else {
-                                                    window.open(feature.content, '_blank');
-                                                }
-                                            }}
-                                        >
-                                            <Ripple
-                                                pt={{
-                                                    root: { style: { background: feature.color } }
-                                                }}
-                                            />
-                                            </Button>
-
-                                        :
-
-                                        <span className="flex gap-2 w-full justify-content-center align-items-center">
                                             <Button
                                                 key={feature.name}
                                                 className="blur justify-content-start"
-                                                style={{ border: '1px dashed black', color: 'black', backgroundColor: feature.color, minHeight: '50px' }}
-                                                icon={'pi pi-refresh'}
-                                                label={"Redo?"}
+                                                style={{ border: '1px dashed black', color: 'black', backgroundColor: buttonColor, minHeight: '50px' }}
+                                                icon={isLoading ? 'pi pi-spin pi-spinner' : feature.icon}
+                                                label={isLoading ? "Generating..." : "Generate"}
                                                 severity="secondary"
+                                                disabled={isLoading}
                                                 onClick={() => {
-                                                    if (isRoadmap) {
+                                                    if (feature.handler === 'roadmap') {
                                                         handleCreateRoadmap();
-                                                    } else if (isVideo) {
+                                                    } else if (feature.handler === 'video') {
                                                         handleCreateVideo();
-                                                    } else {
+                                                    } else if (feature.handler === 'network') {
+                                                        handleCreateNetwork();
+                                                    } else if (feature.handler === 'slides') {
                                                         handleCreateSlides();
-                                                    }
-                                                }}
-                                            >
-                                                <Ripple
-                                                    pt={{
-                                                        root: { style: { background: feature.color } }
-                                                    }}
-                                                />
-                                            </Button>
-                                            <Button
-                                                key={feature.name}
-                                                className="blur justify-content-start"
-                                                style={{ border: '1px solid black', backgroundColor: 'rgba(255, 255, 255,1)', color: 'black', minHeight: '50px' }}
-                                                icon={(isRoadmap || isVideo) ? 'pi pi-file' : 'pi pi-external-link'}
-                                                severity="primary"
-                                                onClick={() => {
-                                                    if (isRoadmap) {
-                                                        setShowRoadmapDialog(true);
-                                                    } else if (isVideo) {
-                                                        setShowVideoDialog(true);
                                                     } else {
                                                         window.open(feature.content, '_blank');
                                                     }
@@ -405,17 +362,72 @@ const Dashboard = () => {
                                                     }}
                                                 />
                                             </Button>
-                                        </span>
-                                    }
 
-                                </Card>
+                                            :
+
+                                            <span className="flex gap-2 w-full justify-content-center align-items-center">
+                                                <Button
+                                                    key={feature.name}
+                                                    className="blur justify-content-start"
+                                                    style={{ border: '1px dashed black', color: 'black', backgroundColor: feature.color, minHeight: '50px' }}
+                                                    icon={'pi pi-refresh'}
+                                                    label={"Redo?"}
+                                                    severity="secondary"
+                                                    onClick={() => {
+                                                        if (isRoadmap) {
+                                                            handleCreateRoadmap();
+                                                        } else if (isVideo) {
+                                                            handleCreateVideo();
+                                                        } else if (isNetwork) {
+                                                            handleCreateNetwork();
+                                                        } else if (isSlides) {
+                                                            handleCreateSlides();
+                                                        } else {
+                                                            window.open(feature.content, '_blank');
+                                                        }
+                                                    }}
+                                                >
+                                                    <Ripple
+                                                        pt={{
+                                                            root: { style: { background: feature.color } }
+                                                        }}
+                                                    />
+                                                </Button>
+                                                <Button
+                                                    key={feature.name}
+                                                    className="blur justify-content-start"
+                                                    style={{ border: '1px solid black', backgroundColor: 'rgba(255, 255, 255,1)', color: 'black', minHeight: '50px' }}
+                                                    icon={(isRoadmap || isVideo) ? 'pi pi-file' : 'pi pi-external-link'}
+                                                    severity="primary"
+                                                    onClick={() => {
+                                                        if (isRoadmap) {
+                                                            setShowRoadmapDialog(true);
+                                                        } else if (isVideo) {
+                                                            setShowVideoDialog(true);
+                                                        } else if (isNetwork) {
+                                                            handleCreateNetwork();
+                                                        } else {
+                                                            window.open(feature.content, '_blank');
+                                                        }
+                                                    }}
+                                                >
+                                                    <Ripple
+                                                        pt={{
+                                                            root: { style: { background: feature.color } }
+                                                        }}
+                                                    />
+                                                </Button>
+                                            </span>
+                                        }
+
+                                    </Card>
                                 );
                             })}
                         </div>
                         <div style={{ width: '50vw', height: '70vh', borderRadius: '12px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }} className="blur border">
                             {/* Chat Header */}
-                            <div style={{ 
-                                padding: '1rem 1.5rem', 
+                            <div style={{
+                                padding: '1rem 1.5rem',
                                 borderBottom: '1px solid rgba(255,255,255,0.2)',
                                 background: 'rgba(191, 8, 248, 0.1)',
                                 flexShrink: 0
@@ -433,20 +445,20 @@ const Dashboard = () => {
                             <div style={{ flex: 1, overflowY: 'auto', padding: '1rem', minHeight: 0 }}>
                                 <div className="flex flex-column gap-3">
                                     {chatMessages.map((msg, index) => (
-                                        <div 
-                                            key={index} 
+                                        <div
+                                            key={index}
                                             className={`flex ${msg.role === 'user' ? 'justify-content-end' : 'justify-content-start'}`}
                                         >
-                                            <div 
+                                            <div
                                                 style={{
                                                     maxWidth: '75%',
                                                     padding: '0.75rem 1rem',
                                                     borderRadius: '12px',
-                                                    background: msg.role === 'user' 
-                                                        ? 'rgba(8, 191, 248, 0.2)' 
+                                                    background: msg.role === 'user'
+                                                        ? 'rgba(8, 191, 248, 0.2)'
                                                         : 'rgba(191, 8, 248, 0.2)',
-                                                    border: `1px solid ${msg.role === 'user' 
-                                                        ? 'rgba(8, 191, 248, 0.4)' 
+                                                    border: `1px solid ${msg.role === 'user'
+                                                        ? 'rgba(8, 191, 248, 0.4)'
                                                         : 'rgba(191, 8, 248, 0.4)'}`,
                                                 }}
                                             >
@@ -466,8 +478,8 @@ const Dashboard = () => {
                             </div>
 
                             {/* Chat Input */}
-                            <div style={{ 
-                                padding: '1rem', 
+                            <div style={{
+                                padding: '1rem',
                                 borderTop: '1px solid rgba(255,255,255,0.2)',
                                 background: 'rgba(0, 0, 0, 0.1)',
                                 flexShrink: 0
@@ -505,10 +517,10 @@ const Dashboard = () => {
                     </div>
                 </div >
             </div >
-            
-            <Dialog 
-                header="Roadmap Ready" 
-                visible={showRoadmapDialog} 
+
+            <Dialog
+                header="Roadmap Ready"
+                visible={showRoadmapDialog}
                 onHide={() => setShowRoadmapDialog(false)}
                 style={{ width: '450px' }}
                 modal
@@ -516,15 +528,15 @@ const Dashboard = () => {
                 <div className="flex flex-column gap-3 align-items-center">
                     <p className="m-0">Your startup roadmap is ready! How would you like to access it?</p>
                     <div className="flex gap-2 w-full">
-                        <Button 
-                            label="View in Browser" 
-                            icon="pi pi-eye" 
+                        <Button
+                            label="View in Browser"
+                            icon="pi pi-eye"
                             className="flex-1"
                             onClick={handleViewRoadmap}
                         />
-                        <Button 
-                            label="Download PDF" 
-                            icon="pi pi-download" 
+                        <Button
+                            label="Download PDF"
+                            icon="pi pi-download"
                             className="flex-1"
                             severity="success"
                             onClick={handleDownloadRoadmap}
@@ -533,9 +545,9 @@ const Dashboard = () => {
                 </div>
             </Dialog>
 
-            <Dialog 
-                header="Video Ready" 
-                visible={showVideoDialog} 
+            <Dialog
+                header="Video Ready"
+                visible={showVideoDialog}
                 onHide={() => setShowVideoDialog(false)}
                 style={{ width: '450px' }}
                 modal
@@ -543,15 +555,15 @@ const Dashboard = () => {
                 <div className="flex flex-column gap-3 align-items-center">
                     <p className="m-0">Your startup advertisement video is ready! How would you like to access it?</p>
                     <div className="flex gap-2 w-full">
-                        <Button 
-                            label="View in Browser" 
-                            icon="pi pi-eye" 
+                        <Button
+                            label="View in Browser"
+                            icon="pi pi-eye"
                             className="flex-1"
                             onClick={handleViewVideo}
                         />
-                        <Button 
-                            label="Download MP4" 
-                            icon="pi pi-download" 
+                        <Button
+                            label="Download MP4"
+                            icon="pi pi-download"
                             className="flex-1"
                             severity="success"
                             onClick={handleDownloadVideo}
