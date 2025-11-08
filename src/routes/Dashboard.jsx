@@ -1,7 +1,12 @@
 import { Button } from "primereact/button";
 import { Ripple } from 'primereact/ripple';
+import { useLocation } from "react-router";
+import Download from "./Download";
 
 const Dashboard = () => {
+    const location = useLocation();
+    const presentationUrl = location.state && location.state.presentationUrl;
+
     const features = [
         { name: 'Slides', icon: 'pi pi-id-card', route: '/api/slides' },
         { name: 'Video', icon: 'pi pi-video', route: '/api/video' },
@@ -49,6 +54,7 @@ const Dashboard = () => {
                             <h3>Chat with Everest</h3>
                         </div>
                     </div>
+                    <Download presentationUrl={presentationUrl} />
                 </div >
             </div >
         </>

@@ -11,10 +11,8 @@ const extractPresentationId = (url) => {
     return match ? match[1] : null;
 };
 
-const Download = () => {
-    const location = useLocation();
+const Download = ({ presentationUrl }) => {
     const navigate = useNavigate();
-    const presentationUrl = location.state && location.state.presentationUrl;
 
     useEffect(() => {
         if (!presentationUrl) {
@@ -42,7 +40,7 @@ const Download = () => {
     };
 
     return (
-        <div className="flex flex-column gap-4 align-items-center text-center" style={{ width: '60%' }}>
+        <div className="flex flex-column gap-4 align-items-center text-center" style={{ width: '100%' }}>
             <h2 className="m-0">Your presentation is ready!</h2>
             <Panel header="Download Options" style={{ width: '100%' }}>
                 <p style={{ marginBottom: '1.5rem' }}>

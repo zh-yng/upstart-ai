@@ -1,160 +1,75 @@
 {
-<<<<<<< HEAD
-    "presentation_title": "Apex Predator Cuisine",
+    "presentation_title": "cupcaKke bakkery: Sweet Innovation Redefined",
     "title_slide": {
-        "title": "Apex Predator Cuisine - An Unrivaled Culinary Journey",
+        "title": "cupcaKke bakkery: Sweet Innovation Redefined",
         "style": {
-            "background_color": "#0A244A",
-            "title_font": "Montserrat Bold",
-            "title_color": "#FFFFFF",
-            "subtitle_font": "Source Sans Pro Italic",
-            "subtitle_color": "#C0C0C0"
-=======
-    "presentation_title": "Elevate AI: Your Productivity Co-Pilot",
-    "title_slide": {
-        "title": "Elevate AI: Transform Your Workflow",
-        "style": {
-            "background_color": "#F8F9FA",
-            "title_font": "Montserrat Bold",
-            "title_color": "#212529",
-            "subtitle_font": "Source Sans Pro Regular",
-            "subtitle_color": "#495057"
->>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
+            "background_color": "#FFDAB9",
+            "title_font": "Playfair Display",
+            "title_color": "#362A2A",
+            "subtitle_font": "Open Sans",
+            "subtitle_color": "#5D4C4C"
         },
         "layout": "TITLE"
     },
     "design_language": {
-<<<<<<< HEAD
-        "name": "Deep Ocean Elegance",
+        "name": "Artisan Digital Delights",
         "palette": {
-            "primary": "#0A244A",
-            "secondary": "#2D5A7D",
-            "accent": "#E63946",
-            "background": "#F0F8FF",
-            "text_on_light": "#1A202C",
+            "primary": "#FFDAB9",
+            "secondary": "#B0E0E6",
+            "accent": "#FF69B4",
+            "background": "#FDF5E6",
+            "text_on_light": "#362A2A",
             "text_on_dark": "#FFFFFF"
         },
         "typography": {
-            "title_font": "Montserrat SemiBold",
-            "body_font": "Source Sans Pro"
-        },
-        "background_style": {
-            "type": "GRADIENT",
-            "angle": 180,
-            "colors": [
-                "#F0F8FF",
-                "#E1EBF5"
-=======
-        "name": "Digital Canvas",
-        "palette": {
-            "primary": "#2F80ED",
-            "secondary": "#BBDEFB",
-            "accent": "#EB5757",
-            "background": "#F8F9FA",
-            "text_on_light": "#212529",
-            "text_on_dark": "#FFFFFF"
-        },
-        "typography": {
-            "title_font": "Montserrat Bold",
-            "body_font": "Source Sans Pro Regular"
+            "title_font": "Playfair Display SemiBold",
+            "body_font": "Open Sans"
         },
         "background_style": {
             "type": "GRADIENT",
             "angle": 15,
             "colors": [
-                "#F8F9FA",
-                "#E9ECEF"
->>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
+                "#FDF5E6",
+                "#FFF8F0"
             ]
         },
         "accent_shapes": [
             {
-<<<<<<< HEAD
                 "shape_type": "ROUNDED_RECTANGLE",
                 "position": {
-                    "x": 0,
-                    "y": 480
+                    "x": 50,
+                    "y": 100
                 },
                 "size": {
-                    "width": 960,
-                    "height": 80
+                    "width": 120,
+                    "height": 15
                 },
-                "fill_color": "#2D5A7D",
-                "opacity": 0.1
-            },
-            {
-                "shape_type": "TRIANGLE",
-                "position": {
-                    "x": 880,
-                    "y": 0
-                },
-                "size": {
-                    "width": 80,
-                    "height": 80
-                },
-                "fill_color": "#E63946",
-                "opacity": 0.08
-=======
-                "shape_type": "STRIPE",
-                "position": {
-                    "x": 0,
-                    "y": 520
-                },
-                "size": {
-                    "width": 960,
-                    "height": 8
-                },
-                "fill_color": "#BBDEFB",
-                "opacity": 0.35
->>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
+                "fill_color": "#B0E0E6",
+                "opacity": 0.2
             }
         ],
         "text_alignment": "LEFT",
-        "body_line_spacing": 125
+        "body_line_spacing": 135
     },
     "slides": [
         {
-<<<<<<< HEAD
-            "title": "Vision: Redefining Exotic Gastronomy",
-            "body": "• Create an unparalleled, high-end dining destination\n• Offer a curated menu of rare and responsibly sourced marine delicacies\n• Deliver an immersive culinary experience that captivates every sense",
+            "title": "Overview - The Evolution of Indulgence",
+            "body": "•  Traditional charm meets modern culinary innovation\n•  Personalized, high-quality sweet experiences\n•  Reimagining the beloved cupcake for today's market",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 210,
+                    "angle": 10,
                     "colors": [
-                        "#F0F8FF",
-                        "#E1EBF5"
+                        "#FDF5E6",
+                        "#FFF8F0"
                     ]
                 },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#0A244A",
-                "body_font": "Source Sans Pro",
-                "body_color": "#1A202C",
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
-                "body_line_spacing": 135
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "The Culinary Artistry",
-            "body": "• Our menu showcases exotic marine ingredients with masterful preparation\n• Shark is a signature offering, ethically sourced for unparalleled taste\n• Each dish is a fusion of innovation, tradition, and global flavors",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 30,
-                    "colors": [
-                        "#E1EBF5",
-                        "#FFFFFF"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#0A244A",
-                "body_font": "Source Sans Pro",
-                "body_color": "#1A202C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 135,
                 "accent_shapes": [
                     {
                         "shape_type": "ROUNDED_RECTANGLE",
@@ -163,766 +78,339 @@
                             "y": 140
                         },
                         "size": {
-                            "width": 160,
+                            "width": 150,
                             "height": 18
                         },
-                        "fill_color": "#E63946",
-                        "opacity": 0.2
-=======
-            "title": "The Productivity Paradox",
-            "body": "•  Teams juggle too many tools and tasks.\n•  Information overload saps focus and efficiency.\n•  Lost time costs businesses billions annually.",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 330,
-                    "colors": [
-                        "#F8F9FA",
-                        "#F1F3F5"
-                    ]
-                },
-                "title_font": "Montserrat Bold",
-                "title_color": "#212529",
-                "body_font": "Source Sans Pro Regular",
-                "body_color": "#212529",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "RECTANGLE",
-                        "position": {
-                            "x": 70,
-                            "y": 120
-                        },
-                        "size": {
-                            "width": 12,
-                            "height": 80
-                        },
-                        "fill_color": "#EB5757",
-                        "opacity": 0.7
->>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
+                        "fill_color": "#FFDAB9",
+                        "opacity": 0.5
                     }
                 ]
             },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-<<<<<<< HEAD
-            "image_prompt": "A perfectly plated, gourmet shark dish with microgreens and delicate sauces in a high-end restaurant setting, dramatic lighting.",
-            "image_position": "RIGHT"
+            "layout": "TITLE_AND_BODY"
         },
         {
-            "title": "Market Opportunity: High-Net-Worth Diners",
-            "body": "• Global luxury dining market: $180B+, growing 7% annually\n• Target demographic: discerning individuals seeking unique culinary adventures\n• Our niche appeals to food enthusiasts and affluent travelers",
-=======
-            "image_prompt": "Abstract representation of digital clutter, overlapping windows, and a stressed person in a modern office, cool tones, dynamic composition.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Elevate AI: Your Smart Solution",
-            "body": "•  AI unifies communication and tasks.\n•  Intelligent automation streamlines workflows.\n•  Personalized insights boost focus and output.",
->>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 90,
-                    "colors": [
-<<<<<<< HEAD
-                        "#F0F8FF",
-                        "#D7E5F0"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#0A244A",
-                "body_font": "Source Sans Pro",
-                "body_color": "#1A202C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 135,
-                "accent_shapes": [
-                    {
-                        "shape_type": "PARALLELOGRAM",
-                        "position": {
-                            "x": 700,
-                            "y": 40
-                        },
-                        "size": {
-                            "width": 180,
-                            "height": 220
-                        },
-                        "fill_color": "#2D5A7D",
-                        "opacity": 0.15
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "An elegant, diverse group of high-net-worth individuals dining in a sophisticated, dimly lit restaurant, enjoying gourmet food and wine.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Our Unique Value Proposition",
-            "body": "• Exclusive access to rare marine delicacies, including premium shark varieties\n• Immersive ambiance with bespoke decor and exceptional service\n• Renowned culinary team delivering innovative, memorable dishes",
+            "title": "Market Opportunity - A Growing Appetite",
+            "body": "•  Specialty food market growing 8% annually\n•  Custom dessert demand up 15% year-over-year\n•  Consumers seek unique, convenient indulgence options",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
                     "angle": 180,
                     "colors": [
-                        "#FFFFFF",
-                        "#E1EBF5"
+                        "#FDF5E6",
+                        "#FFF0E6"
                     ]
                 },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#0A244A",
-                "body_font": "Source Sans Pro",
-                "body_color": "#1A202C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 135
-=======
-                        "#E9ECEF",
-                        "#FFFFFF"
-                    ]
-                },
-                "title_font": "Montserrat Bold",
-                "title_color": "#212529",
-                "body_font": "Source Sans Pro Regular",
-                "body_color": "#212529",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "ROUNDED_RECTANGLE",
-                        "position": {
-                            "x": 520,
-                            "y": 150
-                        },
-                        "size": {
-                            "width": 200,
-                            "height": 20
-                        },
-                        "fill_color": "#BBDEFB",
-                        "opacity": 0.4
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Sleek, minimalistic UI of an AI productivity assistant on a tablet, showing organized tasks and smart notifications, warm ambient light.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Market Opportunity - $70B & Growing",
-            "body": "•  Global productivity software market: $70B in 2023.\n•  Projected 13% CAGR to $150B by 2030.\n•  Elevate AI targets SMBs and enterprises, 60M+ users.",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 270,
-                    "colors": [
-                        "#F1F3F5",
-                        "#F8F9FA"
-                    ]
-                },
-                "title_font": "Montserrat Bold",
-                "title_color": "#212529",
-                "body_font": "Source Sans Pro Regular",
-                "body_color": "#212529",
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
                 "body_line_spacing": 130
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Dynamic infographic showing market growth curves and revenue projections for productivity software, glowing data points.",
+            "image_prompt": "Vibrant infographic displaying growth in specialty food and custom dessert markets, with upward trending graphs, happy consumers enjoying gourmet cupcakes, clean modern style.",
             "image_position": "RIGHT"
         },
         {
-            "title": "Our Product - Key Features",
-            "body": "•  Smart Task Management: AI-prioritized to-dos.\n•  Unified Inbox: Consolidates emails, chats, documents.\n•  Automated Reports: Generates progress summaries weekly.",
+            "title": "The 'Kke' Difference - Our Unique Recipe",
+            "body": "•  Bespoke flavor profiles and custom artistic designs\n•  Seamless online ordering with subscription options\n•  Eco-conscious sourcing and sustainable practices",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 120,
+                    "angle": 45,
                     "colors": [
-                        "#F8F9FA",
-                        "#F2F4F6"
+                        "#FDF5E6",
+                        "#E6F5F7"
                     ]
                 },
-                "title_font": "Montserrat Bold",
-                "title_color": "#212529",
-                "body_font": "Source Sans Pro Regular",
-                "body_color": "#212529",
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT"
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Clean mobile and desktop app screens of Elevate AI, showcasing task lists, consolidated notifications, and a sleek calendar view.",
+            "image_prompt": "A close-up of beautifully decorated, custom cupcakes on a minimalist counter, a tablet displaying an elegant online ordering interface in the background, warm natural light, high-end photography.",
             "image_position": "LEFT"
         },
         {
-            "title": "Core Technology - Unlocking Potential",
-            "body": "•  Proprietary LLM for contextual understanding.\n•  Adaptive algorithms personalize user experience.\n•  Secure, scalable cloud infrastructure ensures reliability.",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 60,
-                    "colors": [
-                        "#E9ECEF",
-                        "#BBDEFB"
-                    ]
-                },
-                "title_font": "Montserrat Bold",
-                "title_color": "#212529",
-                "body_font": "Source Sans Pro Regular",
-                "body_color": "#212529",
-                "title_alignment": "CENTER",
-                "body_alignment": "CENTER",
-                "accent_shapes": [
-                    {
-                        "shape_type": "RECTANGLE",
-                        "position": {
-                            "x": 30,
-                            "y": 30
-                        },
-                        "size": {
-                            "width": 900,
-                            "height": 500
-                        },
-                        "fill_color": "#2F80ED",
-                        "opacity": 0.08
-                    }
-                ]
-            },
-            "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "Abstract visual of interconnected neural pathways and glowing data points, symbolizing advanced AI and machine learning algorithms in action, deep blues and purples.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Unique Value Proposition - Our Edge",
-            "body": "•  Seamless AI integration across all tools.\n•  Predictive insights drive proactive task management.\n•  Customizable workflows for diverse team needs.",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 180,
-                    "colors": [
-                        "#F8F9FA",
-                        "#F1F3F5"
-                    ]
-                },
-                "title_font": "Montserrat Bold",
-                "title_color": "#212529",
-                "body_font": "Source Sans Pro Regular",
-                "body_color": "#212529",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "PARALLELOGRAM",
-                        "position": {
-                            "x": 580,
-                            "y": 100
-                        },
-                        "size": {
-                            "width": 300,
-                            "height": 180
-                        },
-                        "fill_color": "#BBDEFB",
-                        "opacity": 0.2
-                    }
-                ]
-            },
-            "layout": "ONE_COLUMN_TEXT"
-        },
-        {
-            "title": "Competitive Landscape - Outperforming Asana",
-            "body": "•  Asana: $600M+ revenue, strong in project management.\n•  Elevate AI: 25% higher user engagement, 3X faster setup.\n•  Holistic AI integration vs. feature-based tools.",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 210,
-                    "colors": [
-                        "#E9ECEF",
-                        "#FFFFFF"
-                    ]
-                },
-                "title_font": "Montserrat Bold",
-                "title_color": "#212529",
-                "body_font": "Source Sans Pro Regular",
-                "body_color": "#212529",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "STRIPE",
-                        "position": {
-                            "x": 40,
-                            "y": 280
-                        },
-                        "size": {
-                            "width": 300,
-                            "height": 10
-                        },
-                        "fill_color": "#2F80ED",
-                        "opacity": 0.25
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Infographic comparing Elevate AI's features and performance metrics against a competitor like Asana, highlighting key advantages.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Business Model - Scalable Revenue",
-            "body": "•  Freemium model: Basic features for individual users.\n•  Subscription Tiers: Pro ($15/month), Business ($29/month).\n•  Enterprise Solutions: Custom pricing for large organizations.",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 90,
-                    "colors": [
-                        "#F8F9FA",
-                        "#F1F3F5"
-                    ]
-                },
-                "title_font": "Montserrat Bold",
-                "title_color": "#212529",
-                "body_font": "Source Sans Pro Regular",
-                "body_color": "#212529",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 140
->>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
-            },
-            "layout": "ONE_COLUMN_TEXT"
-        },
-        {
-<<<<<<< HEAD
-            "title": "Signature Dish Spotlight: 'Azure Fin Roulade'",
-            "body": "• Delicate shark fin (sustainably sourced) prepared as a savory roulade\n• Paired with saffron-infused risotto and seafoam emulsion\n• An exquisite balance of texture, flavor, and visual artistry",
+            "title": "Product Showcase - Artisan Delights",
+            "body": "•  Exquisite flavors, premium natural ingredients\n•  Artistic presentation, truly Instagram-ready treats\n•  Experience the elevated difference in every bite",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
                     "angle": 270,
                     "colors": [
-                        "#D7E5F0",
-                        "#F0F8FF"
+                        "#FDF5E6",
+                        "#F2F7FF"
                     ]
                 },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#0A244A",
-                "body_font": "Source Sans Pro",
-                "body_color": "#1A202C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 135,
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER",
                 "accent_shapes": [
                     {
-                        "shape_type": "RECTANGLE",
-                        "position": {
-                            "x": 0,
-                            "y": 0
-                        },
-                        "size": {
-                            "width": 20,
-                            "height": 540
-                        },
-                        "fill_color": "#E63946",
-=======
-            "title": "Traction & Milestones - Early Success",
-            "body": "•  50,000+ users acquired in 6 months.\n•  15% month-over-month active user growth.\n•  $1.2M ARR projected by end of Q4.",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 30,
-                    "colors": [
-                        "#E9ECEF",
-                        "#F2F4F6"
-                    ]
-                },
-                "title_font": "Montserrat Bold",
-                "title_color": "#212529",
-                "body_font": "Source Sans Pro Regular",
-                "body_color": "#212529",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "ROUNDED_RECTANGLE",
-                        "position": {
-                            "x": 480,
-                            "y": 80
-                        },
-                        "size": {
-                            "width": 400,
-                            "height": 300
-                        },
-                        "fill_color": "#2F80ED",
->>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
-                        "opacity": 0.1
-                    }
-                ]
-            },
-<<<<<<< HEAD
-            "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "A close-up, highly detailed photograph of a gourmet dish featuring a delicate, beautifully crafted roulade of ethically sourced shark, surrounded by vibrant, artfully arranged ingredients on a minimalist plate.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Responsible Sourcing & Conservation",
-            "body": "• Partnering only with certified, sustainable fisheries for all marine ingredients\n• Our shark is sourced via strict by-catch or aquaculture regulations\n• Dedicated commitment to ocean conservation initiatives and awareness",
-=======
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Clean data visualizations: growth charts showing user acquisition, revenue trajectory, and key performance indicators on a digital dashboard.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Customer Success - Voices of Impact",
-            "body": "•  'Elevate AI saved our team 10 hours weekly.' - Sarah M., Marketing Director.\n•  'Our project delivery speed increased by 20%.' - David C., Product Lead.\n•  Over 90% customer satisfaction score (CSAT).",
->>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 0,
-                    "colors": [
-<<<<<<< HEAD
-                        "#FFFFFF",
-                        "#F0F8FF"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#0A244A",
-                "body_font": "Source Sans Pro",
-                "body_color": "#1A202C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 135,
-                "accent_shapes": [
-                    {
-                        "shape_type": "STRIPE",
-                        "position": {
-                            "x": 40,
-                            "y": 480
-=======
-                        "#F8F9FA",
-                        "#E9ECEF"
-                    ]
-                },
-                "title_font": "Montserrat Bold",
-                "title_color": "#212529",
-                "body_font": "Source Sans Pro Regular",
-                "body_color": "#212529",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "RECTANGLE",
-                        "position": {
-                            "x": 50,
-                            "y": 400
->>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
-                        },
-                        "size": {
-                            "width": 400,
-                            "height": 10
-                        },
-<<<<<<< HEAD
-                        "fill_color": "#2D5A7D",
-                        "opacity": 0.2
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A serene underwater scene with diverse marine life and a subtle, high-tech monitoring system symbolizing sustainable fishing and ocean conservation efforts.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Business Model & Revenue Streams",
-            "body": "• Primary Revenue: Fine dining experiences with average check of $300-$500 per person\n• Secondary: Exclusive private events and culinary tasting menus\n• Future: Branded gourmet product line and chef masterclasses",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 180,
-                    "colors": [
-                        "#E1EBF5",
-                        "#D7E5F0"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#0A244A",
-                "body_font": "Source Sans Pro",
-                "body_color": "#1A202C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 135
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Our Esteemed Culinary & Management Team",
-            "body": "• Chef Antoine Dubois - Michelin-starred executive chef, 20+ years experience\n• Maria Chen - Operations Director, led 3 successful luxury hospitality launches\n• David Lee - Head of Sourcing, expert in sustainable marine procurement",
-=======
-                        "fill_color": "#EB5757",
-                        "opacity": 0.4
-                    }
-                ]
-            },
-            "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "Collage of diverse professional headshots with speech bubbles containing short positive testimonials about using Elevate AI, modern and approachable style.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Our Visionary Team",
-            "body": "•  Jane Doe, CEO: 15+ years in AI product leadership.\n•  John Smith, CTO: Expert in scalable cloud architectures.\n•  Team combines AI, SaaS, and UX expertise.",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 135,
-                    "colors": [
-                        "#F1F3F5",
-                        "#F8F9FA"
-                    ]
-                },
-                "title_font": "Montserrat Bold",
-                "title_color": "#212529",
-                "body_font": "Source Sans Pro Regular",
-                "body_color": "#212529",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "ROUNDED_RECTANGLE",
-                        "position": {
-                            "x": 40,
-                            "y": 150
-                        },
-                        "size": {
-                            "width": 10,
-                            "height": 80
-                        },
-                        "fill_color": "#2F80ED",
-                        "opacity": 0.6
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Financial Ask - $5M Seed Round",
-            "body": "•  Funding: $5M for 15% equity.\n•  Use of Funds: 50% R&D, 30% Marketing, 20% Operations.\n•  Goal: Achieve $5M ARR and expand market share.",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 240,
-                    "colors": [
-                        "#E9ECEF",
-                        "#BBDEFB"
-                    ]
-                },
-                "title_font": "Montserrat Bold",
-                "title_color": "#212529",
-                "body_font": "Source Sans Pro Regular",
-                "body_color": "#212529",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 130
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Financial bar charts and growth projections overlaid with a stylized dollar sign, representing investment opportunity and future growth.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Join Us: Elevate Tomorrow's Productivity",
-            "body": "•  Investment in Elevate AI drives future efficiency.\n•  Shape the next generation of smart workspaces.\n•  Contact us to schedule a deeper dive and demo.",
->>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 300,
-                    "colors": [
-<<<<<<< HEAD
-                        "#F0F8FF",
-                        "#FFFFFF"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#0A244A",
-                "body_font": "Source Sans Pro",
-                "body_color": "#1A202C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 135
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Professional headshots of a diverse, elegant culinary and management team, presented in a cohesive, modern collage.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Traction & Growth Projections",
-            "body": "• Soft launch achieved 95% reservation rate and 4.9/5 satisfaction score\n• Projected Year 1 Revenue: $3.5M; Year 3 Revenue: $8.2M with 2nd location\n• Media features in 'Gourmet World' and 'Luxury Lifestyle Magazine'",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 135,
-                    "colors": [
-                        "#E1EBF5",
-                        "#F0F8FF"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#0A244A",
-                "body_font": "Source Sans Pro",
-                "body_color": "#1A202C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 135,
-                "accent_shapes": [
-                    {
-                        "shape_type": "RECTANGLE",
+                        "shape_type": "PARALLELOGRAM",
                         "position": {
                             "x": 50,
                             "y": 380
                         },
                         "size": {
-                            "width": 300,
-                            "height": 60
+                            "width": 820,
+                            "height": 100
                         },
-                        "fill_color": "#E63946",
-                        "opacity": 0.1
+                        "fill_color": "#FFDAB9",
+                        "opacity": 0.3
                     }
                 ]
             },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A modern infographic showing upward trend lines for revenue and customer satisfaction, with growth icons and subtle oceanic elements.",
-            "image_position": "LEFT"
+            "layout": "SECTION_TITLE_AND_DESCRIPTION",
+            "image_prompt": "A high-resolution, artistic photo of a diverse array of gourmet cupcakes, each uniquely decorated with edible flowers, intricate frosting, and modern minimalist props, soft studio lighting.",
+            "image_position": "RIGHT"
         },
         {
-            "title": "Competitive Landscape",
-            "body": "• 'Ocean's Bounty' (NYC) - $5M annual revenue, traditional high-end seafood.\n• Our advantage: Unique exotic menu, immersive theme, strong ethical sourcing.\n• Differentiated by our commitment to rare delicacies and unparalleled ambiance.",
+            "title": "Business Model - Sweet Streams of Revenue",
+            "body": "•  Direct-to-consumer sales via our elegant online platform\n•  Curated monthly subscription boxes for loyal customers\n•  Catering services for bespoke events and corporate orders",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 225,
+                    "angle": 90,
                     "colors": [
-                        "#F0F8FF",
-                        "#E1EBF5"
+                        "#FDF5E6",
+                        "#FFF0F8"
                     ]
                 },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#0A244A",
-                "body_font": "Source Sans Pro",
-                "body_color": "#1A202C",
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
                 "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 135
+                "body_alignment": "LEFT"
             },
-            "layout": "TITLE_AND_BODY"
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A clean graphic collage of revenue streams: a laptop showing an e-commerce site, a neatly packaged subscription box with brand logo, and an elegant table set with cupcakes for an event.",
+            "image_position": "RIGHT"
         },
         {
-            "title": "Financial Ask: $2.5 Million Seed Round",
-            "body": "• 40% - Initial restaurant build-out and sophisticated kitchen equipment\n• 30% - Premium ingredient sourcing and inventory for six months\n• 20% - Aggressive marketing, PR, and grand opening events\n• 10% - Working capital and operational overhead",
+            "title": "Customer Love - Our Community Speaks",
+            "body": "•  \"Best cupcakes I've ever tasted!\" - Sarah M.\n•  \"Always fresh, always stunningly beautiful.\" - David P.\n•  Achieved a 95% customer satisfaction rate consistently",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
                     "angle": 315,
                     "colors": [
-                        "#D7E5F0",
-                        "#F0F8FF"
+                        "#FDF5E6",
+                        "#F0FFF8"
                     ]
                 },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#0A244A",
-                "body_font": "Source Sans Pro",
-                "body_color": "#1A202C",
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A stylized collage of diverse happy customers enjoying cupcakes, with short, elegant testimonial quotes integrated into the visual design, bright and authentic imagery.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Competitive Landscape - Standing Out",
+            "body": "•  'Sprinkles Cupcakes': $50M revenue, 20% online, limited customization.\n•  'Local Artisan Bakery': $500K revenue, 5% online, manual ordering.\n•  cupcaKke bakkery: Projected $2M Y1 revenue, 80% online, superior customization.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 60,
+                    "colors": [
+                        "#FDF5E6",
+                        "#FFEFE0"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A sleek infographic comparing three columns: 'Traditional Bakeries', 'Large Chains', and 'cupcaKke bakkery', highlighting features like 'Customization', 'Online Ordering', and 'Quality' with clear metrics and checkmarks, modern design.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Traction & Growth - The Sweet Success So Far",
+            "body": "•  Served 2,500+ unique customers in first 6 months\n•  Achieved 25% month-over-month revenue growth\n•  Maintained 5-star average rating across all platforms",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 210,
+                    "colors": [
+                        "#FDF5E6",
+                        "#E6F7FF"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
-                "body_line_spacing": 135,
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 40,
+                            "y": 180
+                        },
+                        "size": {
+                            "width": 380,
+                            "height": 10
+                        },
+                        "fill_color": "#FFDAB9",
+                        "opacity": 0.6
+                    },
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 40,
+                            "y": 240
+                        },
+                        "size": {
+                            "width": 380,
+                            "height": 10
+                        },
+                        "fill_color": "#B0E0E6",
+                        "opacity": 0.4
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Our Vision - Scaling Sweetness",
+            "body": "•  Expand delivery network to new urban regions\n•  Introduce seasonal baking kits and new product lines\n•  Develop AI-driven flavor recommendations and smart ordering",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 135,
+                    "colors": [
+                        "#FDF5E6",
+                        "#FFF2F5"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Futuristic baking lab with sleek robotic arms precisely decorating cupcakes, glowing screens displaying advanced flavor algorithms, modern minimalist design, soft-focus background.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Financial Ask - Fueling Our Growth",
+            "body": "•  Seeking $500,000 seed investment capital\n•  Allocate 60% for aggressive marketing and market expansion\n•  40% for advanced tech development and key team scaling",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 300,
+                    "colors": [
+                        "#FDF5E6",
+                        "#E6FFFE"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
                 "accent_shapes": [
                     {
                         "shape_type": "ROUNDED_RECTANGLE",
                         "position": {
                             "x": 50,
-                            "y": 120
+                            "y": 200
                         },
                         "size": {
-                            "width": 120,
-                            "height": 16
+                            "width": 400,
+                            "height": 60
                         },
-                        "fill_color": "#2D5A7D",
+                        "fill_color": "#FF69B4",
                         "opacity": 0.15
+                    },
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
+                            "x": 50,
+                            "y": 280
+                        },
+                        "size": {
+                            "width": 400,
+                            "height": 60
+                        },
+                        "fill_color": "#B0E0E6",
+                        "opacity": 0.1
                     }
                 ]
             },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A polished pie chart or bar graph visually breaking down the allocation of a $2.5 million investment, with currency symbols and subtle oceanic background.",
-            "image_position": "RIGHT"
+            "layout": "ONE_COLUMN_TEXT"
         },
         {
-            "title": "Join Us On This Extraordinary Journey",
-            "body": "• Invest in a unique, high-growth luxury dining concept\n• Partner with a visionary team passionate about culinary innovation\n• Be part of creating the next icon in exotic gastronomy",
+            "title": "Summary & Next Steps - Taste the Future",
+            "body": "•  Disrupting the traditional dessert market with innovation\n•  Strong market fit, proven customer traction, clear growth path\n•  Join us in baking the future of delightful, personalized treats!",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
                     "angle": 0,
                     "colors": [
-                        "#0A244A",
-                        "#2D5A7D"
+                        "#FFDAB9",
+                        "#B0E0E6"
                     ]
                 },
-                "title_font": "Montserrat Bold",
-                "title_color": "#FFFFFF",
-                "body_font": "Source Sans Pro",
-                "body_color": "#C0C0C0",
-                "title_alignment": "CENTER",
-                "body_alignment": "CENTER",
-                "body_line_spacing": 135,
-                "accent_shapes": [
-                    {
-                        "shape_type": "STRIPE",
-                        "position": {
-                            "x": 0,
-                            "y": 0
-                        },
-                        "size": {
-                            "width": 960,
-                            "height": 10
-                        },
-                        "fill_color": "#E63946",
-                        "opacity": 0.6
-                    },
-                    {
-                        "shape_type": "STRIPE",
-                        "position": {
-                            "x": 0,
-                            "y": 530
-                        },
-                        "size": {
-                            "width": 960,
-                            "height": 10
-                        },
-                        "fill_color": "#E63946",
-                        "opacity": 0.6
-=======
-                        "#F8F9FA",
-                        "#F1F3F5"
-                    ]
-                },
-                "title_font": "Montserrat Bold",
-                "title_color": "#212529",
-                "body_font": "Source Sans Pro Regular",
-                "body_color": "#212529",
+                "title_font": "Playfair Display Bold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans SemiBold",
+                "body_color": "#362A2A",
                 "title_alignment": "CENTER",
                 "body_alignment": "CENTER",
                 "accent_shapes": [
                     {
                         "shape_type": "ROUNDED_RECTANGLE",
                         "position": {
-                            "x": 200,
-                            "y": 400
+                            "x": 70,
+                            "y": 180
                         },
                         "size": {
-                            "width": 560,
-                            "height": 90
+                            "width": 780,
+                            "height": 220
                         },
-                        "fill_color": "#2F80ED",
-                        "opacity": 0.15
->>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
+                        "fill_color": "#FFFFFF",
+                        "opacity": 0.8
+                    },
+                    {
+                        "shape_type": "STAR_5_POINT",
+                        "position": {
+                            "x": 400,
+                            "y": 420
+                        },
+                        "size": {
+                            "width": 80,
+                            "height": 80
+                        },
+                        "fill_color": "#FF69B4",
+                        "opacity": 0.6
                     }
                 ]
             },
-            "layout": "MAIN_POINT"
+            "layout": "SECTION_HEADER"
         }
     ]
 }
