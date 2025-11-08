@@ -1,227 +1,209 @@
 {
-    "presentation_title": "Aura Harvest: Precision Carrot Farming",
+    "presentation_title": "McTycoon: The Golden Arches Game Pitch Deck",
     "title_slide": {
-        "title": "Aura Harvest: Reinventing Agriculture with Precision-Grown Carrots",
+        "title": "McTycoon: Build and Manage Your Golden Arches Empire",
         "style": {
             "background_style": {
                 "type": "GRADIENT",
-                "angle": 135,
+                "angle": 45,
                 "colors": [
-                    "#FFF0E0",
-                    "#FFE4C4"
+                    "#FFC72C",
+                    "#DA291C"
                 ]
             },
-            "title_font": "Montserrat Bold",
-            "title_color": "#D95D0F",
-            "subtitle_font": "Source Sans Pro",
-            "subtitle_color": "#4A3F35"
+            "title_font": "Poppins Bold",
+            "title_color": "#FFFFFF",
+            "subtitle_font": "Poppins",
+            "subtitle_color": "#FFFFFF"
         },
         "layout": "TITLE"
     },
     "design_language": {
-        "name": "Organic Tech",
+        "name": "Golden Arches Pop",
         "palette": {
-            "primary": "#F58428",
-            "secondary": "#4A3F35",
-            "accent": "#78B446",
-            "background": "#FCFBF8",
-            "text_on_light": "#212121",
+            "primary": "#DA291C",
+            "secondary": "#FFC72C",
+            "accent": "#27251F",
+            "background": "#FFFFFF",
+            "text_on_light": "#27251F",
             "text_on_dark": "#FFFFFF"
         },
         "typography": {
-            "title_font": "Montserrat SemiBold",
-            "body_font": "Source Sans Pro"
+            "title_font": "Poppins Bold",
+            "body_font": "Lato"
         },
         "background_style": {
-            "type": "GRADIENT",
-            "angle": 180,
+            "type": "SOLID",
             "colors": [
-                "#FFFFFF",
-                "#FAF8F5"
+                "#FFFFFF"
             ]
         },
         "text_alignment": "LEFT",
-        "body_line_spacing": 135
+        "body_line_spacing": 140
     },
     "slides": [
         {
-            "title": "Farming's Big Challenges",
-            "body": "• Traditional farming consumes 70% of global freshwater.\n• Climate change threatens crop yield and consistency.\n• Long supply chains lead to 30% food waste.",
+            "title": "The Global Opportunity",
+            "body": "• The simulation genre is a $10B+ global market\n• 93% of the world recognizes the Golden Arches brand\n• Nostalgia for classic tycoon games is at an all-time high",
             "style": {
-                "background_color": "#FCFBF8",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
+                "background_color": "#F9F9F9",
+                "title_font": "Poppins Bold",
+                "title_color": "#27251F",
+                "body_font": "Lato",
+                "body_color": "#27251F"
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A cracked, dry farm field under a harsh sun, symbolizing drought and agricultural challenges, cinematic and dramatic.",
+            "image_prompt": "A stylized 3D globe with glowing golden arches popping up in major cities like New York, Tokyo, and London. Professional, clean design.",
             "image_position": "RIGHT"
         },
         {
-            "title": "A Smarter Solution",
-            "body": "• We grow perfect carrots indoors, using precision agriculture.\n• Our method provides year-round supply, immune to weather.\n• We deliver superior taste, nutrition, and freshness.",
+            "title": "Introducing McTycoon",
+            "body": "The ultimate restaurant tycoon game, officially licensed by McDonald's. Design your restaurant, manage staff, craft the perfect menu, and delight customers to build a fast-food empire.",
             "style": {
-                "background_color": "#F9F9F7",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
+                "background_color": "#FFFFFF",
+                "title_font": "Poppins Bold",
+                "title_color": "#DA291C",
+                "body_font": "Lato",
+                "body_color": "#27251F"
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A pristine, futuristic indoor vertical farm with rows of vibrant green carrot tops under glowing full-spectrum LED lights, minimalist aesthetic.",
+            "image_prompt": "Vibrant, isometric 3D concept art of a bustling, customized McDonald's restaurant filled with happy customers. Shows a PlayPlace and a modern interior.",
             "image_position": "LEFT"
         },
         {
-            "title": "Our Growing Process",
-            "body": "• AI-Optimized Nutrients\n• 95% Less Water Used\n• Zero Pesticides, Ever",
+            "title": "Core Gameplay Loop",
+            "body": "• Design & Build - Customize every detail from floor tiles to kitchen layout\n• Manage & Train - Hire staff, set schedules, and unlock new skills\n• Serve & Grow - Fulfill orders, master the menu, and expand your franchise",
             "style": {
-                "background_color": "#FCFBF8",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
+                "background_color": "#FFC72C",
+                "title_font": "Poppins Bold",
+                "title_color": "#27251F",
+                "body_font": "Lato",
+                "body_color": "#27251F"
             },
-            "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "A detailed, beautiful infographic showing a cross-section of a high-tech vertical farming pod, highlighting water recycling systems, sensor nodes, and nutrient delivery tubes with glowing liquid.",
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Unleash Your Creativity",
+            "body": "Build the restaurant of your dreams. From retro 80s themes to futuristic automated kitchens, the only limit is your imagination.",
+            "style": {
+                "background_color": "#F9F9F9",
+                "title_font": "Poppins Bold",
+                "title_color": "#27251F",
+                "body_font": "Lato",
+                "body_color": "#27251F"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A split-screen in-game screenshot. One side shows a vintage McDonald's with red and white tiles. The other shows a hyper-modern McCafe with sleek, minimalist design.",
             "image_position": "RIGHT"
-        },
-        {
-            "title": "A Growing Market",
-            "body": "• Total Addressable Market: $500B Global Fresh Produce\n• Serviceable Market: $20B North American Organic Vegetables\n• Obtainable Market: $150M Year 3 Target Revenue",
-            "style": {
-                "background_color": "#F9F9F7",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A bright, modern, upscale grocery store's produce section, with a focus on perfectly stacked organic carrots, filled with happy, discerning customers.",
-            "image_position": "LEFT"
         },
         {
             "title": "Our Unique Value",
-            "body": "• Yield - 300% more produce per square foot than traditional farms.\n• Efficiency - 95% less water and a 50% shorter supply chain.\n• Quality - Consistent size, sweetness, and nutritional value in every batch.",
+            "body": "• The only official McDonald's management simulation game\n• Deep customization engine for endless replayability\n• Fun, chaotic 'McMischief' events featuring iconic characters",
             "style": {
-                "background_color": "#F58428",
-                "title_font": "Montserrat Bold",
+                "background_color": "#FFFFFF",
+                "title_font": "Poppins Bold",
+                "title_color": "#DA291C",
+                "body_font": "Lato",
+                "body_color": "#27251F"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A humorous in-game scene where the character Grimace has accidentally spilled a giant purple shake, creating a fun challenge for the player's staff to clean up.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Market Landscape",
+            "body": "• RollerCoaster Tycoon (Atari) - Classic IP but struggles on mobile | Our advantage: Mobile-first design and a far larger, global brand.\n• Cooking Fever (Nordcurrent) - 400M+ downloads but simple mechanics | Our advantage: Deep simulation and strategic management gameplay.\n• Planet Coaster (Frontier) - Critically acclaimed but PC-only | Our advantage: Accessible to a massive casual mobile audience.",
+            "style": {
+                "background_color": "#F9F9F9",
+                "title_font": "Poppins Bold",
+                "title_color": "#27251F",
+                "body_font": "Lato",
+                "body_color": "#27251F",
+                "body_line_spacing": 150
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Business Model",
+            "body": "A free-to-play model with a focus on ethical monetization.\n• Starter Packs - Bundles for new players\n• Cosmetic IAPs - Special restaurant themes and staff outfits\n• Expansion Packs - McCafé, PlayPlace, and international menu add-ons",
+            "style": {
+                "background_color": "#FFFFFF",
+                "title_font": "Poppins Bold",
+                "title_color": "#DA291C",
+                "body_font": "Lato",
+                "body_color": "#27251F"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A clean, friendly UI of the in-game store, showcasing cosmetic items like a 'Retro 90s Theme Pack' and a 'Future Forward Uniform Set'.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Meet The Team",
+            "body": "• Anya Sharma, CEO - Former Senior Producer on The Sims Mobile at EA\n• Ben Carter, CPO - Lead Game Designer at King, managed Candy Crush Saga\n• Chloe Davis, CTO - Ex-Zynga lead engineer, built scalable backend for FarmVille 3\n• Marcus Adebayo, Art Director - Concept artist for Disney and DreamWorks animation",
+            "style": {
+                "background_color": "#F9F9F9",
+                "title_font": "Poppins Bold",
+                "title_color": "#27251F",
+                "body_font": "Lato",
+                "body_color": "#27251F"
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Our Player Personas",
+            "body": "• The Strategist - Loves optimizing layouts for maximum efficiency\n• The Decorator - Spends hours creating the perfect restaurant aesthetic\n• The Nostalgist - Wants to recreate the McDonald's of their childhood",
+            "style": {
+                "background_color": "#FFFFFF",
+                "title_font": "Poppins Bold",
+                "title_color": "#DA291C",
+                "body_font": "Lato",
+                "body_color": "#27251F"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A collage of three distinct, stylish portraits representing different player types: a focused young man, a creative woman, and a smiling older person.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Launch Projections (Year 1)",
+            "body": "5M\nDownloads\n\n$8M\nRevenue\n\n$3.50\nAverage LTV",
+            "style": {
+                "background_color": "#DA291C",
+                "title_font": "Poppins Bold",
                 "title_color": "#FFFFFF",
-                "body_font": "Source Sans Pro",
+                "body_font": "Poppins Bold",
+                "body_color": "#FFFFFF",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER"
+            },
+            "layout": "BIG_NUMBER"
+        },
+        {
+            "title": "The Ask",
+            "body": "We are raising a $2.5M seed round to achieve launch.\n• 40% - Team & Development\n• 35% - IP Licensing & Marketing\n• 25% - Operations & Platform Fees",
+            "style": {
+                "background_color": "#F9F9F9",
+                "title_font": "Poppins Bold",
+                "title_color": "#27251F",
+                "body_font": "Lato",
+                "body_color": "#27251F"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A clean, modern pie chart visualizing the 'Use of Funds' breakdown with corresponding icons for development, marketing, and operations. Use the brand palette.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Our Future Vision",
+            "body": "To become the global leader in branded simulation games, expanding with new iconic partners and creating a platform for beloved brands to engage with fans in a fun, interactive way.",
+            "style": {
+                "background_color": "#27251F",
+                "title_font": "Poppins Bold",
+                "title_color": "#FFC72C",
+                "body_font": "Lato",
                 "body_color": "#FFFFFF",
                 "title_alignment": "CENTER",
                 "body_alignment": "CENTER"
             },
             "layout": "MAIN_POINT"
-        },
-        {
-            "title": "Our Business Model",
-            "body": "• B2B Contracts: Supplying major grocery chains with private label products.\n• Food Service: Partnering with restaurant distributors and meal-kit companies.\n• Direct to Consumer: Future plans for a premium subscription box.",
-            "style": {
-                "background_color": "#FCFBF8",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A professional chef in a high-end restaurant meticulously plating a dish, using a bright, perfect orange carrot as the centerpiece.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Early Market Success",
-            "body": "• Successful pilot programs with Whole Foods and Erewhon Market.\n• Secured $500,000 in pre-orders from culinary partners.\n• Waitlist of 20+ regional restaurant groups.",
-            "style": {
-                "background_color": "#F9F9F7",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A clean, minimalist slide featuring the logos of Whole Foods Market, Erewhon Market, and Blue Apron, arranged elegantly.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Competitive Edge",
-            "body": "• Grimmway Farms (Market Leader) - Water intensive, seasonal limits | Our advantage: 95% less water, 365 days of production.\n• Plenty ($941M funding) - Focus on leafy greens, high energy costs | Our advantage: Specialized root vegetable tech, 20% lower energy use.",
-            "style": {
-                "background_color": "#FCFBF8",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121",
-                "body_line_spacing": 140
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Meet Our Team",
-            "body": "• Dr. Alisha Khan, CEO - PhD in Agricultural Science from Cornell.\n• Ben Carter, COO - Former Head of Operations at Driscoll's.\n• Mei Lin, CTO - Ex-Amazon Robotics Engineer, IoT specialist.\n• Javier Morales, Head of Sales - Led B2B partnerships at Impossible Foods.",
-            "style": {
-                "background_color": "#F9F9F7",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Financial Roadmap",
-            "body": "• We project $15M in annual recurring revenue by Year 3.\n• Targeting a 35% EBITDA margin through automation.\n• Path to profitability within 30 months post-funding.",
-            "style": {
-                "background_color": "#FCFBF8",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "An elegant, clean line graph showing steep upward revenue growth projections against time, with key milestones highlighted in orange.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Our Funding Ask",
-            "body": "We are seeking a $5M seed investment for:\n• Facility Build-Out: Construct our first 50,000 sq ft facility.\n• Team Expansion: Hire key engineering and sales talent.\n• Securing Contracts: Fulfill initial large-scale purchase orders.",
-            "style": {
-                "background_color": "#78B446",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#FFFFFF",
-                "body_font": "Source Sans Pro",
-                "body_color": "#FFFFFF",
-                "title_alignment": "CENTER",
-                "body_alignment": "LEFT"
-            },
-            "layout": "ONE_COLUMN_TEXT"
-        },
-        {
-            "title": "The Future of Food",
-            "body": "• Expand product line to include beets, radishes, and potatoes.\n• License our proprietary growing technology to partners globally.\n• Enter the European market by 2028.",
-            "style": {
-                "background_color": "#F9F9F7",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A world map with glowing nodes over major cities in North America and Europe, representing a global food-tech supply chain network.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Join Our Mission",
-            "body": "Aura Harvest\ninfo@auraharvest.com\nauraharvest.com",
-            "style": {
-                "background_color": "#4A3F35",
-                "title_font": "Montserrat Bold",
-                "title_color": "#FFFFFF",
-                "body_font": "Source Sans Pro",
-                "body_color": "#FCFBF8",
-                "title_alignment": "CENTER",
-                "body_alignment": "CENTER"
-            },
-            "layout": "SECTION_HEADER"
         }
     ]
 }

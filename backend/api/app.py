@@ -1,8 +1,14 @@
 # pip install -r requirements.txt
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 from dotenv import load_dotenv
 from run_deck import run_deck
+import os
+from google import genai
+from reportlab.lib.pagesizes import letter
+from reportlab.lib.units import inch
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 #from ad_gen import ad_gen_bp, init_ad_gen_services
 from flask_cors import CORS
 
@@ -50,6 +56,113 @@ def create_slides_route():
         return jsonify({'error': 'Slide generation failed'}), 500
 
     return jsonify({'presentationUrl': presentation_url})
+
+@app.route('/create_roadmap', methods=['POST'])
+def create_roadmap_route():
+    data = request.get_json(silent=True) or {}
+    prompt_text = (data.get('text') or '').strip()
+    download = data.get('download', False)
+
+    if not prompt_text:
+        return jsonify({'error': 'Text is required'}), 400
+
+    try:
+        # Get API key
+        api_key = os.getenv("VITE_GOOGLE_API_KEY")
+        if not api_key:
+            raise RuntimeError("Missing GOOGLE_API_KEY environment variable.")
+
+        # Generate roadmap content
+        client = genai.Client(api_key=api_key)
+        
+        prompt = f"""Create a comprehensive, actionable roadmap for the following startup idea: {prompt_text}
+
+Structure the roadmap as a step-by-step guide with the following format:
+
+# Startup Roadmap: [Startup Name]
+
+## Phase 1: [Phase Name] (Timeline)
+Brief description of this phase's objectives.
+
+### Major Step 1: [Step Title]
+- Sub-step 1: Detailed action item
+- Sub-step 2: Detailed action item
+- Sub-step 3: Detailed action item
+
+### Major Step 2: [Step Title]
+- Sub-step 1: Detailed action item
+- Sub-step 2: Detailed action item
+- Sub-step 3: Detailed action item
+
+## Phase 2: [Phase Name] (Timeline)
+Brief description of this phase's objectives.
+
+[Continue pattern...]
+
+Requirements:
+- Create 4-6 major phases (e.g., Foundation, Product Development, Market Launch, Growth, Scale)
+- Each phase should have 3-5 major steps
+- Each major step should have 3-6 detailed sub-steps with specific, actionable tasks
+- Include realistic timelines for each phase
+- Be specific and practical - avoid generic advice
+- Focus on concrete actions, not just concepts
+- Do NOT use ** for bold formatting, use plain text only
+- Number the phases and major steps clearly
+
+Make it comprehensive but practical for a startup founder to follow."""
+
+        response = client.models.generate_content(
+            model="gemini-2.0-flash-exp",
+            contents=prompt,
+        )
+
+        roadmap_text = response.text or "No roadmap content generated."
+
+        # Generate PDF
+        file_name = "roadmap.pdf"
+        file_path = os.path.join(os.getcwd(), file_name)
+
+        doc = SimpleDocTemplate(
+            file_path,
+            pagesize=letter,
+            rightMargin=0.75*inch,
+            leftMargin=0.75*inch,
+            topMargin=0.75*inch,
+            bottomMargin=0.75*inch
+        )
+
+        styles = getSampleStyleSheet()
+        style_normal = styles['Normal']
+        style_heading = styles['Heading1']
+
+        story = []
+
+        for line in roadmap_text.splitlines():
+            if line.strip():
+                if line.startswith('#'):
+                    clean_line = line.lstrip('#').strip()
+                    clean_line = clean_line.replace('**', '')
+                    para = Paragraph(clean_line, style_heading)
+                else:
+                    clean_line = line.replace('**', '')
+                    clean_line = clean_line.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+                    para = Paragraph(clean_line, style_normal)
+                story.append(para)
+                story.append(Spacer(1, 0.1*inch))
+
+        doc.build(story)
+
+        # Return file based on download parameter
+        if download:
+            return send_file(file_path, as_attachment=True, download_name='startup_roadmap.pdf', mimetype='application/pdf')
+        else:
+            return send_file(file_path, as_attachment=False, mimetype='application/pdf')
+
+    except ValueError as exc:
+        return jsonify({'error': str(exc)}), 400
+    except Exception as exc:
+        app.logger.exception("Roadmap generation failed", exc_info=exc)
+        return jsonify({'error': 'Roadmap generation failed'}), 500
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
