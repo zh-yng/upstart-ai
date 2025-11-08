@@ -1,4 +1,18 @@
 flask
+flask-cors
 python-dotenv
+google
 google-api-python-client
-google-api-python-client google-auth google-auth-oauthlib google-auth-httpli
+google-genai
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+Pillow
+flask-cors
+firebase-admin
+requests
+gunicorn
+moviepy
+reportlab
+
+duckduckgo-search
