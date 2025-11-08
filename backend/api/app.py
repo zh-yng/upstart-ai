@@ -1,8 +1,6 @@
-# Before running, run "pip install -r requirements.txt" in venv
-
-from flask import Flask, jsonify, request
+from flask import Flask, request, jsonify
 from dotenv import load_dotenv
-from python_files.slide_create import main as create_slides
+from backend.api.slide_create import main as create_slides
 
 load_dotenv()
 
@@ -17,10 +15,10 @@ def hello_world():
 def create_slides_route():
     data = request.json
     text = data.get('text')
-    
+
     if not text:
         return jsonify({'error': 'Text is required'}), 400
-    
+
     slides = create_slides(text)
     return jsonify({'slides': slides})
 
