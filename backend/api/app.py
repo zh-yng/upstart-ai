@@ -1,10 +1,16 @@
+# pip install -r requirements.txt
+
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 from slide_create import main as create_slides
+from flask_cors import CORS
 
 load_dotenv()
 
 app = Flask(__name__)
+
+# Allow CORS from the Vite dev server (adjust origin as needed for production)
+CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
 
 # Testing route
 @app.route('/')

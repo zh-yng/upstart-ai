@@ -1,4 +1,5 @@
 flask
+flask-cors
 python-dotenv
 google
 google-api-python-client
@@ -13,3 +14,5 @@ requests
 gunicorn
 moviepy
 reportlab
+
+duckduckgo-search
