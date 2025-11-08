@@ -25,3 +25,27 @@ dist-ssr
 
 # Environment variables
 .env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# Google API credentials
+backend/api/token.json
+backend/api/credentials.json
+
+# Large binary files (ffmpeg, etc.)
+backend/api/bin/
+*.exe
+
+# Generated files
+backend/api/slides.json
+python_files/pitch_deck_images/
+*.mp4
