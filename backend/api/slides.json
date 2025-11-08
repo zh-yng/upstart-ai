@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "presentation_title": "AURA Air: Redefining Private Aviation for the Modern Traveler",
     "title_slide": {
         "title": "AURA Air: Redefining Private Aviation for the Modern Traveler",
@@ -15,10 +16,22 @@
             "title_color": "#FFFFFF",
             "subtitle_font": "Source Sans Pro",
             "subtitle_color": "#FFC971"
+=======
+    "presentation_title": "cupcaKke bakkery: Sweet Innovation Redefined",
+    "title_slide": {
+        "title": "cupcaKke bakkery: Sweet Innovation Redefined",
+        "style": {
+            "background_color": "#FFDAB9",
+            "title_font": "Playfair Display",
+            "title_color": "#362A2A",
+            "subtitle_font": "Open Sans",
+            "subtitle_color": "#5D4C4C"
+>>>>>>> 83c883bb231a09bae25abcc375684fb951f2c48d
         },
         "layout": "TITLE"
     },
     "design_language": {
+<<<<<<< HEAD
         "name": "Ascend Aero",
         "palette": {
             "primary": "#0A2463",
@@ -26,22 +39,39 @@
             "accent": "#FFC971",
             "background": "#F8F9FA",
             "text_on_light": "#212529",
+=======
+        "name": "Artisan Digital Delights",
+        "palette": {
+            "primary": "#FFDAB9",
+            "secondary": "#B0E0E6",
+            "accent": "#FF69B4",
+            "background": "#FDF5E6",
+            "text_on_light": "#362A2A",
+>>>>>>> 83c883bb231a09bae25abcc375684fb951f2c48d
             "text_on_dark": "#FFFFFF"
         },
         "typography": {
             "title_font": "Montserrat SemiBold",
-            "body_font": "Source Sans Pro"
+            "body_font": "Open Sans"
         },
         "background_style": {
             "type": "GRADIENT",
+<<<<<<< HEAD
             "angle": 25,
             "colors": [
                 "#F8F9FA",
                 "#EDF2F7"
+=======
+            "angle": 15,
+            "colors": [
+                "#FDF5E6",
+                "#FFF8F0"
+>>>>>>> 83c883bb231a09bae25abcc375684fb951f2c48d
             ]
         },
         "accent_shapes": [
             {
+<<<<<<< HEAD
                 "shape_type": "STRIPE",
                 "position": {
                     "x": 0,
@@ -53,6 +83,32 @@
                 },
                 "fill_color": "#3E92CC",
                 "opacity": 0.4
+=======
+                "shape_type": "RECTANGLE",
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "size": {
+                    "width": 960,
+                    "height": 10
+                },
+                "fill_color": "#0A2E5B",
+                "opacity": 0.05
+            },
+            {
+                "shape_type": "ISOSCELES_TRIANGLE",
+                "position": {
+                    "x": 50,
+                    "y": 100
+                },
+                "size": {
+                    "width": 120,
+                    "height": 15
+                },
+                "fill_color": "#B0E0E6",
+                "opacity": 0.2
+>>>>>>> 83c883bb231a09bae25abcc375684fb951f2c48d
             }
         ],
         "text_alignment": "LEFT",
@@ -60,6 +116,7 @@
     },
     "slides": [
         {
+<<<<<<< HEAD
             "title": "Air Travel Is Broken",
             "body": "• Commercial flights suffer from chronic delays and cancellations.\n• Impersonal service and crowded spaces define the experience.\n• Inefficient routes waste valuable executive time and money.",
             "style": {
@@ -167,10 +224,45 @@
                 "body_font": "Source Sans Pro",
                 "body_color": "#212529",
                 "body_line_spacing": 140
+=======
+            "title": "Overview - The Evolution of Indulgence",
+            "body": "•  Traditional charm meets modern culinary innovation\n•  Personalized, high-quality sweet experiences\n•  Reimagining the beloved cupcake for today's market",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 10,
+                    "colors": [
+                        "#FDF5E6",
+                        "#FFF8F0"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "STRIPE",
+                        "position": {
+                            "x": 40,
+                            "y": 140
+                        },
+                        "size": {
+                            "width": 150,
+                            "height": 18
+                        },
+                        "fill_color": "#FFDAB9",
+                        "opacity": 0.5
+                    }
+                ]
+>>>>>>> 83c883bb231a09bae25abcc375684fb951f2c48d
             },
             "layout": "TITLE_AND_BODY"
         },
         {
+<<<<<<< HEAD
             "title": "The Founding Team",
             "body": "• Alex Jensen, Founder & Chief Pilot - 15+ years as an Airline Transport Pilot, former USAF.\n• Maria Flores, COO - Led operations at XOJET, scaled fleet by 40%.\n• Ben Carter, CTO - Ex-Uber Elevate engineer, expert in logistics platforms.\n• Chloe Davis, Head of Experience - Former Director of Hospitality at Four Seasons.",
             "style": {
@@ -227,10 +319,376 @@
                 "title_color": "#0A2463",
                 "body_font": "Source Sans Pro",
                 "body_color": "#212529",
+=======
+            "title": "Market Opportunity - A Growing Appetite",
+            "body": "•  Specialty food market growing 8% annually\n•  Custom dessert demand up 15% year-over-year\n•  Consumers seek unique, convenient indulgence options",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 180,
+                    "colors": [
+                        "#FDF5E6",
+                        "#FFF0E6"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "PARALLELOGRAM",
+                        "position": {
+                            "x": 40,
+                            "y": 500
+                        },
+                        "size": {
+                            "width": 300,
+                            "height": 60
+                        },
+                        "fill_color": "#00C8FF",
+                        "opacity": 0.1
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Vibrant infographic displaying growth in specialty food and custom dessert markets, with upward trending graphs, happy consumers enjoying gourmet cupcakes, clean modern style.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "The 'Kke' Difference - Our Unique Recipe",
+            "body": "•  Bespoke flavor profiles and custom artistic designs\n•  Seamless online ordering with subscription options\n•  Eco-conscious sourcing and sustainable practices",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 45,
+                    "colors": [
+                        "#FDF5E6",
+                        "#E6F5F7"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A close-up of beautifully decorated, custom cupcakes on a minimalist counter, a tablet displaying an elegant online ordering interface in the background, warm natural light, high-end photography.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Product Showcase - Artisan Delights",
+            "body": "•  Exquisite flavors, premium natural ingredients\n•  Artistic presentation, truly Instagram-ready treats\n•  Experience the elevated difference in every bite",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 270,
+                    "colors": [
+                        "#FDF5E6",
+                        "#F2F7FF"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+>>>>>>> 83c883bb231a09bae25abcc375684fb951f2c48d
                 "title_alignment": "CENTER",
-                "body_alignment": "CENTER"
+                "body_alignment": "CENTER",
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "size": {
+                            "width": 960,
+                            "height": 10
+                        },
+                        "fill_color": "#6E88A1",
+                        "opacity": 0.1
+                    },
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
+                            "x": 50,
+                            "y": 380
+                        },
+                        "size": {
+                            "width": 820,
+                            "height": 100
+                        },
+                        "fill_color": "#FFDAB9",
+                        "opacity": 0.3
+                    }
+                ]
+            },
+<<<<<<< HEAD
+            "layout": "TITLE_AND_BODY"
+=======
+            "layout": "SECTION_TITLE_AND_DESCRIPTION",
+            "image_prompt": "A high-resolution, artistic photo of a diverse array of gourmet cupcakes, each uniquely decorated with edible flowers, intricate frosting, and modern minimalist props, soft studio lighting.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Business Model - Sweet Streams of Revenue",
+            "body": "•  Direct-to-consumer sales via our elegant online platform\n•  Curated monthly subscription boxes for loyal customers\n•  Catering services for bespoke events and corporate orders",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 90,
+                    "colors": [
+                        "#FDF5E6",
+                        "#FFF0F8"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A clean graphic collage of revenue streams: a laptop showing an e-commerce site, a neatly packaged subscription box with brand logo, and an elegant table set with cupcakes for an event.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Customer Love - Our Community Speaks",
+            "body": "•  \"Best cupcakes I've ever tasted!\" - Sarah M.\n•  \"Always fresh, always stunningly beautiful.\" - David P.\n•  Achieved a 95% customer satisfaction rate consistently",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 315,
+                    "colors": [
+                        "#FDF5E6",
+                        "#F0FFF8"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A stylized collage of diverse happy customers enjoying cupcakes, with short, elegant testimonial quotes integrated into the visual design, bright and authentic imagery.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Competitive Landscape - Standing Out",
+            "body": "•  'Sprinkles Cupcakes': $50M revenue, 20% online, limited customization.\n•  'Local Artisan Bakery': $500K revenue, 5% online, manual ordering.\n•  cupcaKke bakkery: Projected $2M Y1 revenue, 80% online, superior customization.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 60,
+                    "colors": [
+                        "#FDF5E6",
+                        "#FFEFE0"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "CHEVRON_ARROW_RIGHT",
+                        "position": {
+                            "x": 40,
+                            "y": 280
+                        },
+                        "size": {
+                            "width": 80,
+                            "height": 40
+                        },
+                        "fill_color": "#00C8FF",
+                        "opacity": 0.15
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A sleek infographic comparing three columns: 'Traditional Bakeries', 'Large Chains', and 'cupcaKke bakkery', highlighting features like 'Customization', 'Online Ordering', and 'Quality' with clear metrics and checkmarks, modern design.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Traction & Growth - The Sweet Success So Far",
+            "body": "•  Served 2,500+ unique customers in first 6 months\n•  Achieved 25% month-over-month revenue growth\n•  Maintained 5-star average rating across all platforms",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 210,
+                    "colors": [
+                        "#FDF5E6",
+                        "#E6F7FF"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 40,
+                            "y": 180
+                        },
+                        "size": {
+                            "width": 380,
+                            "height": 10
+                        },
+                        "fill_color": "#FFDAB9",
+                        "opacity": 0.6
+                    },
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 40,
+                            "y": 240
+                        },
+                        "size": {
+                            "width": 380,
+                            "height": 10
+                        },
+                        "fill_color": "#B0E0E6",
+                        "opacity": 0.4
+                    }
+                ]
             },
             "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Our Vision - Scaling Sweetness",
+            "body": "•  Expand delivery network to new urban regions\n•  Introduce seasonal baking kits and new product lines\n•  Develop AI-driven flavor recommendations and smart ordering",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 0,
+                    "colors": [
+                        "#FDF5E6",
+                        "#FFF2F5"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Futuristic baking lab with sleek robotic arms precisely decorating cupcakes, glowing screens displaying advanced flavor algorithms, modern minimalist design, soft-focus background.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Financial Ask - Fueling Our Growth",
+            "body": "•  Seeking $500,000 seed investment capital\n•  Allocate 60% for aggressive marketing and market expansion\n•  40% for advanced tech development and key team scaling",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 300,
+                    "colors": [
+                        "#FDF5E6",
+                        "#E6FFFE"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "STRIPE",
+                        "position": {
+                            "x": 50,
+                            "y": 200
+                        },
+                        "size": {
+                            "width": 400,
+                            "height": 60
+                        },
+                        "fill_color": "#FF69B4",
+                        "opacity": 0.15
+                    },
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
+                            "x": 50,
+                            "y": 280
+                        },
+                        "size": {
+                            "width": 400,
+                            "height": 60
+                        },
+                        "fill_color": "#B0E0E6",
+                        "opacity": 0.1
+                    }
+                ]
+            },
+            "layout": "BIG_NUMBER"
+        },
+        {
+            "title": "Summary & Next Steps - Taste the Future",
+            "body": "•  Disrupting the traditional dessert market with innovation\n•  Strong market fit, proven customer traction, clear growth path\n•  Join us in baking the future of delightful, personalized treats!",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 0,
+                    "colors": [
+                        "#FFDAB9",
+                        "#B0E0E6"
+                    ]
+                },
+                "title_font": "Playfair Display Bold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans SemiBold",
+                "body_color": "#362A2A",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER",
+                "accent_shapes": [
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
+                            "x": 70,
+                            "y": 180
+                        },
+                        "size": {
+                            "width": 780,
+                            "height": 220
+                        },
+                        "fill_color": "#FFFFFF",
+                        "opacity": 0.8
+                    },
+                    {
+                        "shape_type": "STAR_5_POINT",
+                        "position": {
+                            "x": 400,
+                            "y": 420
+                        },
+                        "size": {
+                            "width": 80,
+                            "height": 80
+                        },
+                        "fill_color": "#FF69B4",
+                        "opacity": 0.6
+                    }
+                ]
+            },
+            "layout": "TITLE_ONLY"
+>>>>>>> 83c883bb231a09bae25abcc375684fb951f2c48d
         }
     ]
 }

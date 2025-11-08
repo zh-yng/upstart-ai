@@ -3,6 +3,7 @@
 from flask import Flask, request, jsonify, send_file
 from dotenv import load_dotenv
 from run_deck import run_deck
+<<<<<<< HEAD
 from ad_gen import generate_video
 import os
 from google import genai
@@ -10,6 +11,10 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+=======
+from user_networking import init_networking_services, find_investors
+#from ad_gen import ad_gen_bp, init_ad_gen_services
+>>>>>>> 83c883bb231a09bae25abcc375684fb951f2c48d
 from flask_cors import CORS
 
 load_dotenv()
@@ -57,6 +62,7 @@ def create_slides_route():
 
     return jsonify({'presentationUrl': presentation_url})
 
+<<<<<<< HEAD
 @app.route('/create_roadmap', methods=['POST'])
 def create_roadmap_route():
     data = request.get_json(silent=True) or {}
@@ -194,6 +200,20 @@ def create_video_route():
     except Exception as exc:
         app.logger.exception("Video generation failed", exc_info=exc)
         return jsonify({'error': 'Video generation failed'}), 500
+=======
+@app.route('/create_network', methods=['POST'])
+def create_network_route():
+    data = request.get_json(silent=True) or {}
+    try:
+        idea = (data.get('idea') or '').strip()
+        if not idea:
+            return jsonify({'error': 'Idea is required'}), 400
+        output = find_investors(idea)
+        return jsonify({'idea': output})
+    except Exception as exc:
+        app.logger.exception("Network generation failed", exc_info=exc)
+        return jsonify({'error': 'Network generation failed'}), 500
+>>>>>>> 83c883bb231a09bae25abcc375684fb951f2c48d
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

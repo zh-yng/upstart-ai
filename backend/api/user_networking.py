@@ -15,7 +15,7 @@ def init_networking_services(app):
     app.logger.info("Initializing Networking Services (Google GenAI + Search)...")
     try:
         
-        GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
+        GOOGLE_API_KEY = os.getenv('VITE_GOOGLE_API_KEY')
         if not GOOGLE_API_KEY:
             raise ValueError("GOOGLE_API_KEY not set in .env file")
         
