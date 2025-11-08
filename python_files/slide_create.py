@@ -11,6 +11,9 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 import gemini_generate
 import image_generate
+
+
+
 # Google API scopes
 SCOPES = [
     "https://www.googleapis.com/auth/presentations",
@@ -97,63 +100,6 @@ def hex_to_rgb_color(hex_value):
     except ValueError:
         return None
     return {"red": red, "green": green, "blue": blue}
-
-
-def hex_to_rgb_tuple(hex_value):
-    rgb = hex_to_rgb_color(hex_value)
-    if not rgb:
-        return None
-    return rgb["red"], rgb["green"], rgb["blue"]
-
-
-def rgb_tuple_to_hex(rgb_tuple):
-    if not rgb_tuple:
-        return None
-    return "#" + "".join(f"{max(0, min(255, round(component * 255))):02X}" for component in rgb_tuple)
-
-
-def relative_luminance(rgb_tuple):
-    if not rgb_tuple:
-        return None
-
-    def channel_to_linear(channel):
-        return channel / 12.92 if channel <= 0.03928 else ((channel + 0.055) / 1.055) ** 2.4
-
-    r, g, b = rgb_tuple
-    return 0.2126 * channel_to_linear(r) + 0.7152 * channel_to_linear(g) + 0.0722 * channel_to_linear(b)
-
-
-def contrast_ratio(foreground_rgb, background_rgb):
-    if not foreground_rgb or not background_rgb:
-        return None
-    lum_fg = relative_luminance(foreground_rgb)
-    lum_bg = relative_luminance(background_rgb)
-    if lum_fg is None or lum_bg is None:
-        return None
-    lighter = max(lum_fg, lum_bg)
-    darker = min(lum_fg, lum_bg)
-    return (lighter + 0.05) / (darker + 0.05)
-
-
-def ensure_contrast(foreground_hex, background_hex, default_light="#111111", default_dark="#FFFFFF", min_ratio=4.5):
-    background_rgb = hex_to_rgb_tuple(background_hex)
-    if not background_rgb:
-        return foreground_hex or default_light
-
-    foreground_rgb = hex_to_rgb_tuple(foreground_hex) if foreground_hex else None
-    ratio = contrast_ratio(foreground_rgb, background_rgb) if foreground_rgb else None
-    if ratio and ratio >= min_ratio:
-        return foreground_hex
-
-    background_luminance = relative_luminance(background_rgb) or 0.5
-    fallback = default_light if background_luminance > 0.5 else default_dark
-    fallback_rgb = hex_to_rgb_tuple(fallback)
-    fallback_ratio = contrast_ratio(fallback_rgb, background_rgb)
-    if fallback_ratio and fallback_ratio >= min_ratio:
-        return fallback
-
-    alternative = default_dark if fallback == default_light else default_light
-    return alternative
 
 
 def solid_fill(hex_value, opacity=None):
@@ -540,8 +486,6 @@ def fill_slide(service, presentation_id, slide_id, title_text, body_text, slide_
     style_requests = []
     bullet_requests = []
 
-    applied_background_hex = None
-
     if slide_style:
         background_style = slide_style.get("background_style") if isinstance(slide_style.get("background_style"), dict) else None
         if background_style and background_style.get("type", "").upper() == "GRADIENT":
@@ -550,7 +494,6 @@ def fill_slide(service, presentation_id, slide_id, title_text, body_text, slide_
             for candidate in colors:
                 solid_color = solid_fill(candidate, background_style.get("opacity"))
                 if solid_color:
-                    applied_background_hex = candidate
                     break
             if solid_color:
                 style_requests.append({
@@ -568,7 +511,6 @@ def fill_slide(service, presentation_id, slide_id, title_text, body_text, slide_
             background_color = slide_style.get("background_color")
             rgb_background = hex_to_rgb_color(background_color)
             if rgb_background:
-                applied_background_hex = background_color
                 style_requests.append({
                     "updatePageProperties": {
                         "objectId": slide_id,
@@ -592,10 +534,6 @@ def fill_slide(service, presentation_id, slide_id, title_text, body_text, slide_
         title_alignment = slide_style.get("title_alignment") or slide_style.get("text_alignment")
         body_alignment = slide_style.get("body_alignment") or slide_style.get("text_alignment")
         body_line_spacing = to_float(slide_style.get("body_line_spacing"))
-
-        applied_background_hex = applied_background_hex or slide_style.get("background_color") or (deck_theme or {}).get("palette", {}).get("background") or "#FFFFFF"
-        title_color = ensure_contrast(title_color, applied_background_hex)
-        body_color = ensure_contrast(body_color, applied_background_hex)
 
         if title_id and title_text_to_apply:
             title_style = {}
@@ -710,39 +648,6 @@ def fill_slide(service, presentation_id, slide_id, title_text, body_text, slide_
                     }
                 }
             })
-
-    if title_placeholder and body_placeholders:
-        title_transform = (title_placeholder.get("transform") or {})
-        title_size = (title_placeholder.get("size") or {})
-        title_height = (title_size.get("height") or {}).get("magnitude", 0)
-        title_y = title_transform.get("translateY", 0) or 0
-        title_bottom = title_y + (title_height or 0)
-        minimum_gap = 18.0
-
-        for placeholder in body_placeholders:
-            transform = placeholder.get("transform") or {}
-            current_y = transform.get("translateY", 0) or 0
-            unit = transform.get("unit", "PT")
-            desired_top = title_bottom + minimum_gap
-            if current_y < desired_top:
-                delta = desired_top - current_y
-                transform["translateY"] = current_y + delta
-                placeholder["transform"] = transform
-                text_requests.append({
-                    "updatePageElementTransform": {
-                        "objectId": placeholder["objectId"],
-                        "applyMode": "RELATIVE",
-                        "transform": {
-                            "scaleX": 1,
-                            "shearX": 0,
-                            "translateX": 0,
-                            "shearY": 0,
-                            "scaleY": 1,
-                            "translateY": delta,
-                            "unit": unit,
-                        }
-                    }
-                })
 
     accent_requests = apply_accent_elements(slide_id, slide_style, page_size, deck_theme=deck_theme)
 
@@ -898,17 +803,10 @@ def add_slide(service, presentation_id, slide_data, fallback_index, deck_theme=N
             print(f"Warning: layout for slide '{slide_title}' does not expose an image placeholder; skipping image to keep text clear.")
 
 
-def main():
+def main(inputPrompt):
+    gemini_generate(inputPrompt)
     # Main function to create presentation from JSON file.
     json_path = Path(__file__).with_name("slides.json")
-
-    if json_path.exists():
-        regenerate = input("Generate a new deck with Gemini? (y/N): ").strip().lower()
-        if regenerate in ("y", "yes"):
-            gemini_generate.generate_and_save_via_prompt(output_path=json_path)
-    else:
-        gemini_generate.generate_and_save_via_prompt(output_path=json_path)
-
     slides_data = load_slides_data(json_path)
 
     deck_theme = (
