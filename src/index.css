@@ -44,3 +44,9 @@ body {
   backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(1.5px);
 }
+
+.p-card-title {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
