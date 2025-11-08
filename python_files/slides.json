@@ -1,65 +1,51 @@
 {
-    "presentation_title": "Stellaris: The Ultimate Cosmic Theme Park",
+    "presentation_title": "Verdant Roots: Cultivating Tomorrow's Green Spaces",
     "title_slide": {
-        "title": "Stellaris: The Ultimate Cosmic Theme Park",
-        "author": "Buzz Lightyear",
+        "title": "Verdant Roots: Your Greenhouse Sapling Store",
         "style": {
-            "background_color": "#0D1117",
-            "title_font": "Orbitron",
-            "title_color": "#00BCD4",
-            "subtitle_font": "Montserrat",
-            "subtitle_color": "#E0E0E0"
+            "background_color": "#E8F5E9",
+            "title_font": "Montserrat Bold",
+            "title_color": "#2E7D32",
+            "subtitle_font": "Open Sans Italic",
+            "subtitle_color": "#558B2F"
         },
         "layout": "TITLE"
     },
     "design_language": {
-        "name": "Cosmic Horizon",
+        "name": "Verdant Growth",
         "palette": {
-            "primary": "#1A237E",
-            "secondary": "#673AB7",
-            "accent": "#00BCD4",
-            "background": "#0D1117",
-            "text_on_light": "#0D1117",
-            "text_on_dark": "#E0E0E0"
+            "primary": "#388E3C",
+            "secondary": "#7CB342",
+            "accent": "#9CCC65",
+            "background": "#F1F8E9",
+            "text_on_light": "#212121",
+            "text_on_dark": "#FFFFFF"
         },
         "typography": {
-            "title_font": "Orbitron",
-            "body_font": "Montserrat"
+            "title_font": "Montserrat SemiBold",
+            "body_font": "Source Sans Pro"
         },
         "background_style": {
             "type": "GRADIENT",
-            "angle": 45,
+            "angle": 15,
             "colors": [
-                "#0D1117",
-                "#1A237E"
+                "#F1F8E9",
+                "#E0F2F1"
             ]
         },
         "accent_shapes": [
             {
-                "shape_type": "PARALLELOGRAM",
+                "shape_type": "ROUNDED_RECTANGLE",
                 "position": {
-                    "x": 60,
-                    "y": 480
+                    "x": 30,
+                    "y": 400
                 },
                 "size": {
-                    "width": 780,
-                    "height": 18
+                    "width": 880,
+                    "height": 10
                 },
-                "fill_color": "#673AB7",
+                "fill_color": "#9CCC65",
                 "opacity": 0.15
-            },
-            {
-                "shape_type": "STRIPE",
-                "position": {
-                    "x": 50,
-                    "y": 50
-                },
-                "size": {
-                    "width": 10,
-                    "height": 60
-                },
-                "fill_color": "#00BCD4",
-                "opacity": 0.6
             }
         ],
         "text_alignment": "LEFT",
@@ -67,212 +53,57 @@
     },
     "slides": [
         {
-            "title": "Journey to the Stars: Our Vision",
-            "body": "• Ignite wonder with an unparalleled immersive space adventure\n• Blend cutting-edge tech, thrilling rides, and educational experiences\n• Become the premier destination for intergalactic family fun",
+            "title": "Cultivating Tomorrow: Our Vision",
+            "body": "• We are a premium greenhouse store specializing in diverse saplings\n• Our mission: empower individuals to grow greener, healthier spaces\n• Providing expert advice and sustainable, high-quality plants",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 25,
+                    "angle": 5,
                     "colors": [
-                        "#0D1117",
-                        "#1A237E"
+                        "#F1F8E9",
+                        "#E0F2F1"
                     ]
                 },
-                "title_font": "Orbitron",
-                "title_color": "#E0E0E0",
-                "body_font": "Montserrat",
-                "body_color": "#B0B0B0",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212121",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212121",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
-                "body_line_spacing": 140,
                 "accent_shapes": [
                     {
-                        "shape_type": "RECTANGLE",
+                        "shape_type": "ROUNDED_RECTANGLE",
                         "position": {
                             "x": 40,
-                            "y": 140
+                            "y": 150
                         },
                         "size": {
-                            "width": 10,
-                            "height": 80
+                            "width": 160,
+                            "height": 18
                         },
-                        "fill_color": "#00BCD4",
-                        "opacity": 0.7
+                        "fill_color": "#7CB342",
+                        "opacity": 0.25
                     }
                 ]
             },
             "layout": "TITLE_AND_BODY"
         },
         {
-            "title": "Uncharted Market Territory",
-            "body": "• Global Theme Park Market: $62B with 8% annual growth\n• Demand for immersive, tech-driven experiences unmet by rivals\n• Target 1.5M annual visitors within first three years",
+            "title": "Blooming Demand: A Growing Market",
+            "body": "• Global greening initiatives drive strong demand for saplings\n• Residential gardening market projected at $100B by 2027\n• Consumers increasingly prioritize native and sustainable planting",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 120,
+                    "angle": 185,
                     "colors": [
-                        "#1A237E",
-                        "#0D1117"
+                        "#F1F8E9",
+                        "#E8F5E9"
                     ]
                 },
-                "title_font": "Orbitron",
-                "title_color": "#00BCD4",
-                "body_font": "Montserrat",
-                "body_color": "#E0E0E0",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 135,
-                "accent_shapes": [
-                    {
-                        "shape_type": "ROUNDED_RECTANGLE",
-                        "position": {
-                            "x": 50,
-                            "y": 420
-                        },
-                        "size": {
-                            "width": 300,
-                            "height": 18
-                        },
-                        "fill_color": "#673AB7",
-                        "opacity": 0.2
-                    }
-                ]
-            },
-            "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "Stylized galactic map with glowing data points highlighting market growth potential and target demographics, futuristic and sophisticated.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Mission Control: Our Expert Crew",
-            "body": "• Lead Designer: 20+ years in Disney Imagineering, IP creation\n• Engineering Director: SpaceX alum, advanced simulation systems\n• Operations Chief: Managed Universal Studios attractions for 15 years",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 210,
-                    "colors": [
-                        "#0D1117",
-                        "#1A237E"
-                    ]
-                },
-                "title_font": "Orbitron",
-                "title_color": "#E0E0E0",
-                "body_font": "Montserrat",
-                "body_color": "#B0B0B0",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 140,
-                "accent_shapes": [
-                    {
-                        "shape_type": "STRIPE",
-                        "position": {
-                            "x": 450,
-                            "y": 120
-                        },
-                        "size": {
-                            "width": 10,
-                            "height": 280
-                        },
-                        "fill_color": "#00BCD4",
-                        "opacity": 0.5
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Professional and diverse team of four individuals, depicted as modern astronauts in a sleek, futuristic control room with holographic displays.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Immersive Planetary Adventures",
-            "body": "• Zero-G Flight Simulators: Realistic space travel, G-force effects\n• Alien Safari Rides: Explore bioluminescent alien worlds\n• Starport City: Interactive hub with dining, shopping, live shows",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 300,
-                    "colors": [
-                        "#1A237E",
-                        "#0D1117"
-                    ]
-                },
-                "title_font": "Orbitron",
-                "title_color": "#00BCD4",
-                "body_font": "Montserrat",
-                "body_color": "#E0E0E0",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 135,
-                "accent_shapes": [
-                    {
-                        "shape_type": "PARALLELOGRAM",
-                        "position": {
-                            "x": 50,
-                            "y": 420
-                        },
-                        "size": {
-                            "width": 320,
-                            "height": 18
-                        },
-                        "fill_color": "#673AB7",
-                        "opacity": 0.25
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Concept art of a thrilling indoor roller coaster through a vibrant, glowing nebular landscape with futuristic trains and excited riders.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Beyond Earth: Our Unique Orbit",
-            "body": "• Full 360° space immersion, not just themed areas\n• Proprietary AR/VR integration for personalized storylines\n• Eco-friendly design with sustainable energy solutions",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 15,
-                    "colors": [
-                        "#0D1117",
-                        "#673AB7"
-                    ]
-                },
-                "title_font": "Orbitron",
-                "title_color": "#E0E0E0",
-                "body_font": "Montserrat",
-                "body_color": "#E0E0E0",
-                "title_alignment": "CENTER",
-                "body_alignment": "CENTER",
-                "body_line_spacing": 145,
-                "accent_shapes": [
-                    {
-                        "shape_type": "STRIPE",
-                        "position": {
-                            "x": 200,
-                            "y": 300
-                        },
-                        "size": {
-                            "width": 600,
-                            "height": 10
-                        },
-                        "fill_color": "#00BCD4",
-                        "opacity": 0.4
-                    }
-                ]
-            },
-            "layout": "MAIN_POINT"
-        },
-        {
-            "title": "Experience Zero-G: Next-Gen Simulators",
-            "body": "• Simulate genuine spaceflight\n• Unforgettable, immersive adventure\n• Patented motion platform technology",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 90,
-                    "colors": [
-                        "#1A237E",
-                        "#0D1117"
-                    ]
-                },
-                "title_font": "Orbitron",
-                "title_color": "#00BCD4",
-                "body_font": "Montserrat",
-                "body_color": "#E0E0E0",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212121",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212121",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
                 "body_line_spacing": 130,
@@ -280,245 +111,320 @@
                     {
                         "shape_type": "RECTANGLE",
                         "position": {
-                            "x": 40,
-                            "y": 140
+                            "x": 420,
+                            "y": 120
                         },
                         "size": {
-                            "width": 10,
-                            "height": 80
+                            "width": 180,
+                            "height": 220
                         },
-                        "fill_color": "#673AB7",
-                        "opacity": 0.7
+                        "fill_color": "#388E3C",
+                        "opacity": 0.1
                     }
                 ]
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Hyper-realistic rendering of diverse guests in advanced flight suits, suspended in a zero-gravity simulator, expressions of pure awe and excitement, detailed futuristic controls.",
+            "image_prompt": "Global map with rising green areas, symbolizing reforestation efforts and demand for saplings, data visualization, infographic style, professional and clean",
             "image_position": "RIGHT"
         },
         {
-            "title": "Fueling Our Galactic Growth",
-            "body": "• Tiered ticket pricing (standard, premium, annual passes)\n• High-margin F&B and exclusive merchandise sales\n• Corporate events, educational programs, and sponsorship deals",
+            "title": "Rooted in Difference: Our Unique Value",
+            "body": "• Curated selection of native, fruit, and ornamental saplings\n• On-site horticulturists offer personalized planting consultations\n• Sustainable practices including recycled pots and organic soil",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 270,
+                    "angle": 350,
                     "colors": [
-                        "#0D1117",
-                        "#1A237E"
+                        "#F1F8E9",
+                        "#EDF7EF"
                     ]
                 },
-                "title_font": "Orbitron",
-                "title_color": "#E0E0E0",
-                "body_font": "Montserrat",
-                "body_color": "#B0B0B0",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 140,
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212121",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212121",
+                "title_alignment": "RIGHT",
+                "body_alignment": "RIGHT",
                 "accent_shapes": [
                     {
                         "shape_type": "ROUNDED_RECTANGLE",
                         "position": {
-                            "x": 40,
-                            "y": 140
+                            "x": 750,
+                            "y": 180
                         },
                         "size": {
-                            "width": 10,
-                            "height": 80
+                            "width": 120,
+                            "height": 15
                         },
-                        "fill_color": "#00BCD4",
-                        "opacity": 0.7
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Launch Sequence: Key Milestones",
-            "body": "• Q4 2024: Secure land acquisition and zoning permits\n• Q2 2025: Complete architectural designs and secure construction bids\n• Q1 2026: Announce anchor partnerships and begin pre-sales",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 330,
-                    "colors": [
-                        "#1A237E",
-                        "#0D1117"
-                    ]
-                },
-                "title_font": "Orbitron",
-                "title_color": "#00BCD4",
-                "body_font": "Montserrat",
-                "body_color": "#E0E0E0",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 135,
-                "accent_shapes": [
-                    {
-                        "shape_type": "PARALLELOGRAM",
-                        "position": {
-                            "x": 450,
-                            "y": 420
-                        },
-                        "size": {
-                            "width": 380,
-                            "height": 18
-                        },
-                        "fill_color": "#673AB7",
-                        "opacity": 0.2
+                        "fill_color": "#9CCC65",
+                        "opacity": 0.3
                     }
                 ]
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A visually striking timeline graphic with interconnected glowing points representing project milestones against a deep space background with subtle nebulae.",
+            "image_prompt": "A hand gently holding a vibrant green sapling, roots visible, against a bokeh background of a lush, clean greenhouse, soft natural light",
             "image_position": "LEFT"
         },
         {
-            "title": "Navigating the Theme Park Galaxy",
-            "body": "• Disney World (Magic Kingdom): $7.5B revenue, high IP recognition, but limited space immersion.\n• Our Park: Focus on total immersion, cutting-edge tech, targeting underserved space enthusiasts.\n• Projected 25% higher visitor satisfaction due to unique theme.",
+            "title": "Our Living Inventory: Premium Saplings",
+            "body": "• Wide array: fruit, shade, ornamental, and native species\n• All saplings grown organically, ensuring robust health\n• Expert care from seed to sales, guaranteeing quality",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 45,
+                    "angle": 60,
                     "colors": [
-                        "#0D1117",
-                        "#673AB7"
+                        "#E8F5E9",
+                        "#F1F8E9"
                     ]
                 },
-                "title_font": "Orbitron",
-                "title_color": "#E0E0E0",
-                "body_font": "Montserrat",
-                "body_color": "#B0B0B0",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212121",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212121",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
-                "body_line_spacing": 140,
-                "accent_shapes": [
-                    {
-                        "shape_type": "RECTANGLE",
-                        "position": {
-                            "x": 40,
-                            "y": 140
-                        },
-                        "size": {
-                            "width": 10,
-                            "height": 80
-                        },
-                        "fill_color": "#00BCD4",
-                        "opacity": 0.7
-                    }
-                ]
+                "body_line_spacing": 130
             },
             "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "Futuristic infographic comparing a traditional theme park (represented by a castle silhouette) with a sleek, advanced space station park design, highlighting key differentiation points with glowing lines.",
+            "image_prompt": "A diverse collection of healthy, young saplings in small biodegradable pots, arranged neatly on wooden shelves in a bright, modern greenhouse, abundant natural light",
             "image_position": "RIGHT"
         },
         {
-            "title": "Voices from the Void: Anticipated Thrills",
-            "body": "• \"Imagine living my astronaut dreams!\" - Future Guest Survey (92% enthusiasm)\n• \"A truly out-of-this-world family destination.\" - Parent focus group\n• Projected 4.8/5 satisfaction rating based on concept testing",
+            "title": "Planting Profits: Our Business Model",
+            "body": "• Direct-to-consumer sales via our inviting greenhouse store\n• E-commerce platform for local delivery and wider reach\n• Workshops and educational events generate additional revenue",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 180,
+                    "angle": 210,
                     "colors": [
-                        "#1A237E",
-                        "#0D1117"
+                        "#F1F8E9",
+                        "#EDF7EF"
                     ]
                 },
-                "title_font": "Orbitron",
-                "title_color": "#00BCD4",
-                "body_font": "Montserrat",
-                "body_color": "#E0E0E0",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212121",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212121",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
-                "body_line_spacing": 135,
                 "accent_shapes": [
                     {
-                        "shape_type": "PARALLELOGRAM",
-                        "position": {
-                            "x": 450,
-                            "y": 100
-                        },
-                        "size": {
-                            "width": 10,
-                            "height": 300
-                        },
-                        "fill_color": "#673AB7",
-                        "opacity": 0.4
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Diverse group of excited individuals with awe-struck expressions looking up at a simulated holographic projection of a bustling space theme park, reflecting joy and wonder.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Securing Our Cosmic Ascent",
-            "body": "• Seeking $250M seed funding to finalize land and initial build\n• 40% Construction, 30% Ride Systems & Tech, 15% IP & Marketing, 15% Operations\n• Projected EBITDA positive by Year 3",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 225,
-                    "colors": [
-                        "#0D1117",
-                        "#673AB7"
-                    ]
-                },
-                "title_font": "Orbitron",
-                "title_color": "#E0E0E0",
-                "body_font": "Montserrat",
-                "body_color": "#B0B0B0",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 140,
-                "accent_shapes": [
-                    {
-                        "shape_type": "ROUNDED_RECTANGLE",
+                        "shape_type": "BAR",
                         "position": {
                             "x": 40,
-                            "y": 140
+                            "y": 280
                         },
                         "size": {
-                            "width": 10,
-                            "height": 80
+                            "width": 300,
+                            "height": 8
                         },
-                        "fill_color": "#00BCD4",
-                        "opacity": 0.7
+                        "fill_color": "#7CB342",
+                        "opacity": 0.2
                     }
                 ]
             },
             "layout": "ONE_COLUMN_TEXT"
         },
         {
-            "title": "Join Us on This Expedition",
-            "body": "• Establish a leading global brand in experiential entertainment\n• Future expansion into virtual reality parks and IP franchises\n• Partner with us to build the ultimate cosmic adventure",
+            "title": "Your Green Oasis: The Store Experience",
+            "body": "• Immerse yourself in a serene, nature-filled environment.\n• Discover the perfect sapling for your home and garden.",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 315,
+                    "angle": 10,
                     "colors": [
-                        "#1A237E",
-                        "#0D1117"
+                        "#F1F8E9",
+                        "#E0F2F1"
                     ]
                 },
-                "title_font": "Orbitron",
-                "title_color": "#00BCD4",
-                "body_font": "Montserrat",
-                "body_color": "#E0E0E0",
-                "title_alignment": "CENTER",
-                "body_alignment": "CENTER",
-                "body_line_spacing": 145,
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212121",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212121",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 130
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Bright, spacious modern greenhouse interior with diverse saplings and mature plants, natural light flooding in, customers browsing with a friendly staff member, serene and inviting atmosphere, high-end photography",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Cultivating Our Community & Growth",
+            "body": "• 1,500+ happy customers in our first year, 92% retention\n• Strong local partnerships with landscapers and community gardens\n• Active social media presence driving 15% month-over-month growth",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 290,
+                    "colors": [
+                        "#EDF7EF",
+                        "#F1F8E9"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212121",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212121",
+                "title_alignment": "RIGHT",
+                "body_alignment": "RIGHT",
+                "body_line_spacing": 130
+            },
+            "layout": "SECTION_TITLE_AND_DESCRIPTION",
+            "image_prompt": "Infographic showing a network of community engagement and marketing channels: social media icons, local event photos, customer testimonials, all interconnected with growth arrows on a light green background, clean design",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Navigating the Nursery Ecosystem",
+            "body": "• Big box stores like Home Depot offer limited, generic plants\n• Their average customer rating is 3.5/5 for plant quality\n• Verdant Roots offers 5x more unique species, 4.9/5 satisfaction",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 45,
+                    "colors": [
+                        "#F1F8E9",
+                        "#E8F5E9"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212121",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212121",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 130
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Comparative infographic: one side showing a crowded, impersonal aisle of generic plants at a large retail store; the other side a specialized, clean, and well-organized greenhouse with unique, healthy saplings, illustrating stark contrast in quality and experience",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Our Roots: The Dedicated Team",
+            "body": "• Jane Doe, Founder & CEO: 10+ years in sustainable agriculture\n• John Smith, Lead Horticulturist: Master's in Botany, 15 years experience\n• Passionate team committed to greening communities, one plant at a time",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 135,
+                    "colors": [
+                        "#F1F8E9",
+                        "#E0F2F1"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212121",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212121",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
                 "accent_shapes": [
                     {
-                        "shape_type": "STAR",
+                        "shape_type": "ROUNDED_RECTANGLE",
                         "position": {
-                            "x": 450,
-                            "y": 450
+                            "x": 40,
+                            "y": 300
                         },
                         "size": {
-                            "width": 60,
-                            "height": 60
+                            "width": 500,
+                            "height": 90
                         },
-                        "fill_color": "#673AB7",
-                        "opacity": 0.3
+                        "fill_color": "#388E3C",
+                        "opacity": 0.12
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Fueling Our Growth: The Investment Opportunity",
+            "body": "• Seeking $250,000 for greenhouse expansion and increased inventory\n• Funds will boost marketing by 30% and expand e-commerce capabilities\n• Projected 3x revenue growth in Year 2 with this investment",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 270,
+                    "colors": [
+                        "#F1F8E9",
+                        "#EDF7EF"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212121",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212121",
+                "title_alignment": "RIGHT",
+                "body_alignment": "RIGHT",
+                "body_line_spacing": 130
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A financial bar chart illustrating investment allocation across 'Greenhouse Expansion', 'Inventory', and 'Marketing', alongside a line graph showing projected rapid revenue growth over the next three years, professional and clear financial visualization",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Branching Out: Future Growth",
+            "body": "• Expand to two new locations within 5 years, targeting high-demand areas\n• Introduce complementary product lines: sustainable gardening tools, organic fertilizers\n• Develop B2B partnerships for large-scale reforestation and urban greening projects",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 320,
+                    "colors": [
+                        "#F1F8E9",
+                        "#E0F2F1"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212121",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212121",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "STRIPE",
+                        "position": {
+                            "x": 40,
+                            "y": 420
+                        },
+                        "size": {
+                            "width": 820,
+                            "height": 14
+                        },
+                        "fill_color": "#7CB342",
+                        "opacity": 0.18
+                    }
+                ]
+            },
+            "layout": "MAIN_POINT"
+        },
+        {
+            "title": "Let's Grow Together",
+            "body": "Join Verdant Roots in planting a greener, more sustainable future.\nContact us to learn more about this exciting opportunity.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 10,
+                    "colors": [
+                        "#E8F5E9",
+                        "#F1F8E9"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#2E7D32",
+                "body_font": "Source Sans Pro",
+                "body_color": "#388E3C",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER",
+                "body_line_spacing": 140,
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "size": {
+                            "width": 960,
+                            "height": 540
+                        },
+                        "fill_color": "#9CCC65",
+                        "opacity": 0.05
                     }
                 ]
             },

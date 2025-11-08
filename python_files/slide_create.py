@@ -1,3 +1,4 @@
+import copy
 import os
 import json
 import re
@@ -12,6 +13,26 @@ from googleapiclient.errors import HttpError
 import gemini_generate
 import image_generate
 
+DEFAULT_INCLUDE_IMAGES = os.getenv("SLIDE_IMAGES", "1").strip().lower() not in {"0", "false", "off", "no"}
+
+FALLBACK_THEME = {
+    "palette": {
+        "background": "#F9FAFB",
+        "surface": "#F3F4F6",
+        "accent": "#1D4ED8",
+        "text_on_light": "#0F172A",
+        "text_on_dark": "#F9FAFB",
+    },
+    "defaults": {
+        "background_color": "#F9FAFB",
+        "title_color": "#0F172A",
+        "body_color": "#1F2937",
+        "accent_color": "#2563EB",
+        "title_font": "Montserrat SemiBold",
+        "body_font": "Inter",
+        "subtitle_font": "Inter",
+    },
+}
 
 
 # Google API scopes
@@ -77,6 +98,15 @@ def normalize_text(text: str) -> str:
     return cleaned
 
 
+def truncate_words(text: str, max_words: int = 4) -> str:
+    if not isinstance(text, str):
+        return text
+    words = text.split()
+    if len(words) <= max_words:
+        return text
+    return " ".join(words[:max_words])
+
+
 def load_slides_data(json_path):
     """Load presentation data from a JSON file."""
     json_path = Path(json_path)
@@ -100,6 +130,117 @@ def hex_to_rgb_color(hex_value):
     except ValueError:
         return None
     return {"red": red, "green": green, "blue": blue}
+
+
+def hex_to_rgb_tuple(hex_value):
+    rgb = hex_to_rgb_color(hex_value)
+    if not rgb:
+        return None
+    return rgb["red"], rgb["green"], rgb["blue"]
+
+
+def normalize_hex(hex_value):
+    if not isinstance(hex_value, str):
+        return None
+    stripped = hex_value.strip().lstrip("#")
+    if len(stripped) == 3:
+        stripped = "".join(ch * 2 for ch in stripped)
+    if len(stripped) != 6:
+        return None
+    try:
+        int(stripped, 16)
+    except ValueError:
+        return None
+    return stripped.upper()
+
+
+def relative_luminance(rgb_tuple):
+    if not rgb_tuple:
+        return None
+
+    def channel_to_linear(value):
+        return value / 12.92 if value <= 0.03928 else ((value + 0.055) / 1.055) ** 2.4
+
+    red, green, blue = rgb_tuple
+    return (
+        0.2126 * channel_to_linear(red)
+        + 0.7152 * channel_to_linear(green)
+        + 0.0722 * channel_to_linear(blue)
+    )
+
+
+def contrast_ratio(foreground_rgb, background_rgb):
+    if not foreground_rgb or not background_rgb:
+        return None
+    lum_fg = relative_luminance(foreground_rgb)
+    lum_bg = relative_luminance(background_rgb)
+    if lum_fg is None or lum_bg is None:
+        return None
+    lighter = max(lum_fg, lum_bg)
+    darker = min(lum_fg, lum_bg)
+    return (lighter + 0.05) / (darker + 0.05)
+
+
+def ensure_contrast(foreground_hex, background_hex, min_ratio=4.5):
+    background_rgb = hex_to_rgb_tuple(background_hex)
+    normalized_background = normalize_hex(background_hex)
+    background_lum = relative_luminance(background_rgb) if background_rgb else None
+
+    def candidate_ok(hex_value):
+        normalized_candidate = normalize_hex(hex_value)
+        if not normalized_candidate:
+            return None
+        if normalized_background and normalized_candidate == normalized_background:
+            return None
+        candidate_rgb = hex_to_rgb_tuple(hex_value)
+        if background_rgb:
+            if not candidate_rgb:
+                return None
+            ratio = contrast_ratio(candidate_rgb, background_rgb)
+            if ratio is None or ratio < min_ratio:
+                return None
+        return f"#{normalized_candidate}"
+
+    candidates = []
+    if foreground_hex:
+        candidates.append(foreground_hex)
+
+    fallback_light = "#F8FAFC"
+    fallback_dark = "#111827"
+    if background_lum is not None:
+        preferred = fallback_dark if background_lum > 0.5 else fallback_light
+    else:
+        preferred = fallback_dark
+    alternate = fallback_light if preferred == fallback_dark else fallback_dark
+    candidates.extend([preferred, alternate, "#000000", "#FFFFFF"])
+
+    for candidate in candidates:
+        chosen = candidate_ok(candidate)
+        if chosen:
+            return chosen
+
+    if background_rgb:
+        best_choice = None
+        best_ratio = -1
+        for candidate in ["#000000", "#111827", "#FFFFFF", "#F8FAFC"]:
+            normalized_candidate = normalize_hex(candidate)
+            if normalized_background and normalized_candidate == normalized_background:
+                continue
+            candidate_rgb = hex_to_rgb_tuple(candidate)
+            if not candidate_rgb:
+                continue
+            ratio = contrast_ratio(candidate_rgb, background_rgb)
+            if ratio is None:
+                continue
+            if ratio > best_ratio:
+                best_ratio = ratio
+                best_choice = candidate
+        if best_choice:
+            return best_choice
+
+    if normalized_background and normalized_background != "000000":
+        return "#000000"
+    return "#FFFFFF"
 
 
 def solid_fill(hex_value, opacity=None):
@@ -193,7 +334,15 @@ def prepare_body_text_segment(text_value):
 
     if lines and all(bullet_pattern.match(line.strip()) for line in lines):
         cleaned_lines = [bullet_pattern.sub("", line.strip()) for line in stripped.splitlines()]
-        processed = "\n".join(cleaned_lines)
+        max_words = 16
+        shortened_lines = []
+        for entry in cleaned_lines:
+            words = entry.split()
+            if len(words) > max_words:
+                shortened_lines.append(" ".join(words[:max_words]) + " ...")
+            else:
+                shortened_lines.append(entry)
+        processed = "\n".join(shortened_lines)
         return processed, True
 
     return text_value, False
@@ -210,6 +359,16 @@ def apply_accent_elements(slide_id, slide_style, page_size, deck_theme=None):
         return []
 
     color_value = accent_source.get("color")
+    background_hex = None
+    if isinstance(slide_style, dict):
+        if isinstance(slide_style.get("background_style"), dict):
+            bg_colors = slide_style["background_style"].get("colors") or []
+            if bg_colors:
+                background_hex = bg_colors[0]
+        background_hex = background_hex or slide_style.get("background_color")
+    if not background_hex and isinstance(deck_theme, dict):
+        palette = deck_theme.get("palette") or {}
+        background_hex = palette.get("background") or palette.get("surface")
     if not color_value:
         fallback_color = None
         if isinstance(slide_style, dict):
@@ -217,6 +376,9 @@ def apply_accent_elements(slide_id, slide_style, page_size, deck_theme=None):
         if not fallback_color and isinstance(deck_theme, dict):
             fallback_color = deck_theme.get("accent_color") or deck_theme.get("palette", {}).get("accent") if isinstance(deck_theme.get("palette"), dict) else None
         color_value = fallback_color
+
+    if color_value and background_hex:
+        color_value = ensure_contrast(color_value, background_hex, min_ratio=2.5)
 
     solid_color = solid_fill(color_value) if color_value else None
     if not solid_color:
@@ -299,6 +461,13 @@ def apply_accent_elements(slide_id, slide_style, page_size, deck_theme=None):
     }
 
     return [create_shape_request, update_fill_request]
+
+
+def apply_theme_defaults(style):
+    base = {}
+    if style:
+        base.update(style)
+    return base
 
 
 def fill_slide(service, presentation_id, slide_id, title_text, body_text, slide_style=None, is_title_slide=False, image_info=None, deck_theme=None, page_size=None):
@@ -485,11 +654,14 @@ def fill_slide(service, presentation_id, slide_id, title_text, body_text, slide_
 
     style_requests = []
     bullet_requests = []
+    applied_background_hex = None
 
     if slide_style:
         background_style = slide_style.get("background_style") if isinstance(slide_style.get("background_style"), dict) else None
         if background_style and background_style.get("type", "").upper() == "GRADIENT":
             colors = background_style.get("colors") or []
+            if colors:
+                applied_background_hex = colors[0]
             solid_color = None
             for candidate in colors:
                 solid_color = solid_fill(candidate, background_style.get("opacity"))
@@ -511,6 +683,7 @@ def fill_slide(service, presentation_id, slide_id, title_text, body_text, slide_
             background_color = slide_style.get("background_color")
             rgb_background = hex_to_rgb_color(background_color)
             if rgb_background:
+                applied_background_hex = background_color
                 style_requests.append({
                     "updatePageProperties": {
                         "objectId": slide_id,
@@ -534,6 +707,21 @@ def fill_slide(service, presentation_id, slide_id, title_text, body_text, slide_
         title_alignment = slide_style.get("title_alignment") or slide_style.get("text_alignment")
         body_alignment = slide_style.get("body_alignment") or slide_style.get("text_alignment")
         body_line_spacing = to_float(slide_style.get("body_line_spacing"))
+
+        if not applied_background_hex:
+            palette = (deck_theme or {}).get("palette") or {}
+            applied_background_hex = (
+                slide_style.get("background_color")
+                or palette.get("background")
+                or palette.get("surface")
+                or "#1F2937"
+            )
+        title_color = ensure_contrast(title_color, applied_background_hex)
+        body_color = ensure_contrast(body_color, applied_background_hex)
+        slide_style["title_color"] = title_color
+        slide_style[body_color_key] = body_color
+        if slide_style.get("accent_color"):
+            slide_style["accent_color"] = ensure_contrast(slide_style["accent_color"], applied_background_hex, min_ratio=3.0)
 
         if title_id and title_text_to_apply:
             title_style = {}
@@ -753,7 +941,7 @@ def insert_image_on_slide(service, presentation_id, slide_id, placeholder_info, 
         return False
 
 
-def add_slide(service, presentation_id, slide_data, fallback_index, deck_theme=None, page_size=None):
+def add_slide(service, presentation_id, slide_data, fallback_index, deck_theme=None, page_size=None, include_images=True):
     #Add a new slide and insert title/body text.
     layout = resolve_layout(slide_data.get("layout"))
 
@@ -768,12 +956,13 @@ def add_slide(service, presentation_id, slide_data, fallback_index, deck_theme=N
 
     slide_id = create_response["replies"][0]["createSlide"]["objectId"]
 
-    slide_title = slide_data.get("title", f"Slide {fallback_index}")
+    slide_title = truncate_words(slide_data.get("title", f"Slide {fallback_index}"))
+
     slide_body = slide_data.get("body", "")
-    slide_style = slide_data.get("style")
+    slide_style = apply_theme_defaults(dict(slide_data.get("style") or {}))
     image_prompt = slide_data.get("image_prompt")
     image_position = slide_data.get("image_position") or "RIGHT"
-    image_spec = {"prompt": image_prompt, "position": image_position} if image_prompt else None
+    image_spec = {"prompt": image_prompt, "position": image_position} if image_prompt and include_images else None
 
     image_placeholder = fill_slide(
         service,
@@ -803,10 +992,28 @@ def add_slide(service, presentation_id, slide_data, fallback_index, deck_theme=N
             print(f"Warning: layout for slide '{slide_title}' does not expose an image placeholder; skipping image to keep text clear.")
 
 
-def main(inputPrompt):
-    gemini_generate(inputPrompt)
-    # Main function to create presentation from JSON file.
+def main(user_prompt, author=None, include_images=DEFAULT_INCLUDE_IMAGES, reuse_existing=False):
+    """Build a Google Slides deck using the supplied prompt."""
+
     json_path = Path(__file__).with_name("slides.json")
+    prompt_value = (user_prompt or "").strip()
+    if not prompt_value:
+        raise ValueError("A non-empty prompt is required to generate slides.")
+
+    if json_path.exists():
+        try:
+            json_path.unlink()
+        except OSError:
+            pass
+
+    if isinstance(author, str):
+        cleaned_author = author.strip()
+        author_value = cleaned_author or None
+    else:
+        author_value = author
+
+    gemini_generate.runGenerator(prompt_value, author_value)
+
     slides_data = load_slides_data(json_path)
 
     deck_theme = (
@@ -814,6 +1021,11 @@ def main(inputPrompt):
         or slides_data.get("design_theme")
         or slides_data.get("style_guide")
     )
+
+    if deck_theme:
+        deck_theme = copy.deepcopy(deck_theme)
+    else:
+        deck_theme = copy.deepcopy(FALLBACK_THEME)
 
     creds = get_credentials()
     service = build("slides", "v1", credentials=creds)
@@ -823,8 +1035,9 @@ def main(inputPrompt):
 
     # --- Handle the title slide ---
     title_slide_data = slides_data.get("title_slide", {})
-    title_text = title_slide_data.get("title", "Title Slide")
+    title_text = truncate_words(title_slide_data.get("title", "Title Slide"))
     author_text = title_slide_data.get("author", "")
+    title_style = apply_theme_defaults(dict(title_slide_data.get("style") or {}))
     # Google Slides first slide is already created by default
     presentation = service.presentations().get(presentationId=presentation_id).execute()
     page_size = presentation.get("pageSize")
@@ -837,7 +1050,7 @@ def main(inputPrompt):
         first_slide_id,
         title_text,
         author_text,
-        slide_style=title_slide_data.get("style"),
+        slide_style=title_style,
         is_title_slide=True,
         deck_theme=deck_theme,
         page_size=page_size,
@@ -845,15 +1058,39 @@ def main(inputPrompt):
 
     # --- Add the rest of the content slides ---
     for i, slide in enumerate(slides_data.get("slides", []), start=1):
-        add_slide(service, presentation_id, slide, i, deck_theme=deck_theme, page_size=page_size)
+        add_slide(
+            service,
+            presentation_id,
+            slide,
+            i,
+            deck_theme=deck_theme,
+            page_size=page_size,
+            include_images=include_images,
+        )
 
     # Open presentation in browser
     presentation_url = f"https://docs.google.com/presentation/d/{presentation_id}/edit"
     webbrowser.open(presentation_url)
 
 
-if __name__ == "__main__":
+def run_cli():
     try:
-        main()
+        prompt_text = input("Enter your startup idea: ").strip()
+        if not prompt_text:
+            raise ValueError("You must enter a prompt to generate slides.")
+        author_text = input("Enter the author/presenter name (optional): ").strip()
+        include_images_choice = input("Include images? (Y/n): ").strip().lower()
+        include_images_flag = include_images_choice not in {"n", "no", "0", "false", "off"}
+        main(
+            prompt_text or None,
+            author=author_text or None,
+            include_images=include_images_flag,
+        )
     except HttpError as err:
         print(f"API error: {err}")
+    except (ValueError, FileNotFoundError) as err:
+        print(err)
+
+
+if __name__ == "__main__":
+    run_cli()
