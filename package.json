@@ -11,10 +11,12 @@
     "api": "python app.py"
   },
   "dependencies": {
+    "primeflex": "^4.0.0",
     "primeicons": "^7.0.0",
     "primereact": "^10.9.7",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-router": "^7.9.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
