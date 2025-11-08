@@ -10,7 +10,7 @@ const Landing = () => {
     const [text, setText] = useState('');
     const [slides, setSlides] = useState([]);
 
-    async function createSlides(text) {
+    const createSlides = async (text) => {
         const response = await fetch(`/api/create_slides`, {
             method: 'POST',
             headers: {
