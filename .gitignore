@@ -40,6 +40,7 @@ venv/
 # Google API credentials
 backend/api/token.json
 backend/api/credentials.json
+backend/api/__pycache__/*
 
 # Large binary files (ffmpeg, etc.)
 backend/api/bin/
