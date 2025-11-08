@@ -1,236 +1,270 @@
 {
-    "presentation_title": "AquaDream: Your Personal Underwater World",
+    "presentation_title": "Elevate AI: Your Productivity Co-Pilot",
     "title_slide": {
-        "title": "AquaDream: Your Personal Underwater World",
+        "title": "Elevate AI: Transform Your Workflow",
         "style": {
-            "background_color": "#E0F7FA",
+            "background_color": "#F8F9FA",
             "title_font": "Montserrat Bold",
-            "title_color": "#004D40",
-            "subtitle_font": "Open Sans SemiBold",
-            "subtitle_color": "#26A69A"
+            "title_color": "#212529",
+            "subtitle_font": "Source Sans Pro Regular",
+            "subtitle_color": "#495057"
         },
         "layout": "TITLE"
     },
     "design_language": {
-        "name": "AquaSerenity",
+        "name": "Digital Canvas",
         "palette": {
-            "primary": "#00838F",
-            "secondary": "#26A69A",
-            "accent": "#80DEEA",
-            "background": "#E0F7FA",
-            "text_on_light": "#004D40",
+            "primary": "#2F80ED",
+            "secondary": "#BBDEFB",
+            "accent": "#EB5757",
+            "background": "#F8F9FA",
+            "text_on_light": "#212529",
             "text_on_dark": "#FFFFFF"
         },
         "typography": {
-            "title_font": "Montserrat SemiBold",
-            "body_font": "Open Sans"
+            "title_font": "Montserrat Bold",
+            "body_font": "Source Sans Pro Regular"
         },
         "background_style": {
             "type": "GRADIENT",
-            "angle": 135,
+            "angle": 15,
             "colors": [
-                "#E0F7FA",
-                "#B2EBF2"
+                "#F8F9FA",
+                "#E9ECEF"
             ]
         },
         "accent_shapes": [
             {
-                "shape_type": "ROUNDED_RECTANGLE",
-                "position": {
-                    "x": 50,
-                    "y": 450
-                },
-                "size": {
-                    "width": 120,
-                    "height": 8
-                },
-                "fill_color": "#26A69A",
-                "opacity": 0.25
-            },
-            {
                 "shape_type": "STRIPE",
                 "position": {
-                    "x": 700,
-                    "y": 100
+                    "x": 0,
+                    "y": 520
                 },
                 "size": {
-                    "width": 10,
-                    "height": 300
+                    "width": 960,
+                    "height": 8
                 },
-                "fill_color": "#00838F",
-                "opacity": 0.15
+                "fill_color": "#BBDEFB",
+                "opacity": 0.35
             }
         ],
         "text_alignment": "LEFT",
-        "body_line_spacing": 135
+        "body_line_spacing": 125
     },
     "slides": [
         {
-            "title": "Your Underwater Oasis Awaits",
-            "body": "• Experience tranquility and vibrant life at home\n• Enhance well-being with a living art piece\n• Discover the joy of aquatic companionship",
+            "title": "The Productivity Paradox",
+            "body": "•  Teams juggle too many tools and tasks.\n•  Information overload saps focus and efficiency.\n•  Lost time costs businesses billions annually.",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 90,
+                    "angle": 330,
                     "colors": [
-                        "#E0F7FA",
-                        "#E0F2F7"
+                        "#F8F9FA",
+                        "#F1F3F5"
                     ]
                 },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "ELLIPSE",
-                        "position": {
-                            "x": 40,
-                            "y": 140
-                        },
-                        "size": {
-                            "width": 20,
-                            "height": 20
-                        },
-                        "fill_color": "#80DEEA",
-                        "opacity": 0.5
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Simplifying Your Aquatic Journey",
-            "body": "• Curated starter kits for effortless setup\n• Expert guidance for thriving aquatic ecosystems\n• Smart tech for easy maintenance and monitoring",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 270,
-                    "colors": [
-                        "#E0F7FA",
-                        "#B2EBF2"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
                 "accent_shapes": [
                     {
                         "shape_type": "RECTANGLE",
                         "position": {
-                            "x": 40,
-                            "y": 130
+                            "x": 70,
+                            "y": 120
                         },
                         "size": {
-                            "width": 150,
-                            "height": 8
+                            "width": 12,
+                            "height": 80
                         },
-                        "fill_color": "#26A69A",
-                        "opacity": 0.3
+                        "fill_color": "#EB5757",
+                        "opacity": 0.7
                     }
                 ]
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A sleek, modern aquarium with lush aquatic plants and colorful fish, a tablet displaying smart home integration, clean minimalist aesthetic, soft natural lighting.",
+            "image_prompt": "Abstract representation of digital clutter, overlapping windows, and a stressed person in a modern office, cool tones, dynamic composition.",
             "image_position": "RIGHT"
         },
         {
-            "title": "A Growing Passion: The Aquarium Market",
-            "body": "• Global aquarium market projected to reach $10B by 2028\n• Smart aquarium segment shows 25% CAGR\n• Untapped demand for simplified, premium solutions",
+            "title": "Elevate AI: Your Smart Solution",
+            "body": "•  AI unifies communication and tasks.\n•  Intelligent automation streamlines workflows.\n•  Personalized insights boost focus and output.",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
                     "angle": 45,
                     "colors": [
-                        "#E0F7FA",
-                        "#80DEEA"
+                        "#E9ECEF",
+                        "#FFFFFF"
                     ]
                 },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "CHEVRON",
-                        "position": {
-                            "x": 600,
-                            "y": 180
-                        },
-                        "size": {
-                            "width": 100,
-                            "height": 80
-                        },
-                        "fill_color": "#00838F",
-                        "opacity": 0.1
-                    }
-                ]
-            },
-            "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "An infographic showing upward trending graphs related to the global aquarium market size, with stylized fish and water elements, vibrant colors, clean design.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "AquaDream: Beyond Just a Tank",
-            "body": "• All-inclusive packages: tank, equipment, decor, livestock\n• Proprietary app for feeding, lighting, water quality control\n• Dedicated 'AquaCoach' support for new hobbyists",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 180,
-                    "colors": [
-                        "#E0F7FA",
-                        "#CFD8DC"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
                 "accent_shapes": [
                     {
                         "shape_type": "ROUNDED_RECTANGLE",
                         "position": {
-                            "x": 40,
-                            "y": 130
+                            "x": 520,
+                            "y": 150
                         },
                         "size": {
-                            "width": 180,
-                            "height": 10
+                            "width": 200,
+                            "height": 20
                         },
-                        "fill_color": "#00838F",
-                        "opacity": 0.2
+                        "fill_color": "#BBDEFB",
+                        "opacity": 0.4
                     }
                 ]
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A split image showing a complex traditional aquarium setup on one side with multiple wires and bottles, and on the other, a simplified, elegant AquaDream smart aquarium with an app interface on a tablet, highlighting ease of use.",
-            "image_position": "RIGHT"
+            "image_prompt": "Sleek, minimalistic UI of an AI productivity assistant on a tablet, showing organized tasks and smart notifications, warm ambient light.",
+            "image_position": "LEFT"
         },
         {
-            "title": "Introducing the AquaKit Ecosystem",
-            "body": "• Seamless integration of hardware and software\n• Designed for beauty, optimized for health\n• Future-proof modular components",
+            "title": "Market Opportunity - $70B & Growing",
+            "body": "•  Global productivity software market: $70B in 2023.\n•  Projected 13% CAGR to $150B by 2030.\n•  Elevate AI targets SMBs and enterprises, 60M+ users.",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 0,
+                    "angle": 270,
                     "colors": [
-                        "#E0F7FA",
-                        "#B2EBF2"
+                        "#F1F3F5",
+                        "#F8F9FA"
                     ]
                 },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 130
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Dynamic infographic showing market growth curves and revenue projections for productivity software, glowing data points.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Our Product - Key Features",
+            "body": "•  Smart Task Management: AI-prioritized to-dos.\n•  Unified Inbox: Consolidates emails, chats, documents.\n•  Automated Reports: Generates progress summaries weekly.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 120,
+                    "colors": [
+                        "#F8F9FA",
+                        "#F2F4F6"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Clean mobile and desktop app screens of Elevate AI, showcasing task lists, consolidated notifications, and a sleek calendar view.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Core Technology - Unlocking Potential",
+            "body": "•  Proprietary LLM for contextual understanding.\n•  Adaptive algorithms personalize user experience.\n•  Secure, scalable cloud infrastructure ensures reliability.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 60,
+                    "colors": [
+                        "#E9ECEF",
+                        "#BBDEFB"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER",
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 30,
+                            "y": 30
+                        },
+                        "size": {
+                            "width": 900,
+                            "height": 500
+                        },
+                        "fill_color": "#2F80ED",
+                        "opacity": 0.08
+                    }
+                ]
+            },
+            "layout": "SECTION_TITLE_AND_DESCRIPTION",
+            "image_prompt": "Abstract visual of interconnected neural pathways and glowing data points, symbolizing advanced AI and machine learning algorithms in action, deep blues and purples.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Unique Value Proposition - Our Edge",
+            "body": "•  Seamless AI integration across all tools.\n•  Predictive insights drive proactive task management.\n•  Customizable workflows for diverse team needs.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 180,
+                    "colors": [
+                        "#F8F9FA",
+                        "#F1F3F5"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "PARALLELOGRAM",
+                        "position": {
+                            "x": 580,
+                            "y": 100
+                        },
+                        "size": {
+                            "width": 300,
+                            "height": 180
+                        },
+                        "fill_color": "#BBDEFB",
+                        "opacity": 0.2
+                    }
+                ]
+            },
+            "layout": "ONE_COLUMN_TEXT"
+        },
+        {
+            "title": "Competitive Landscape - Outperforming Asana",
+            "body": "•  Asana: $600M+ revenue, strong in project management.\n•  Elevate AI: 25% higher user engagement, 3X faster setup.\n•  Holistic AI integration vs. feature-based tools.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 210,
+                    "colors": [
+                        "#E9ECEF",
+                        "#FFFFFF"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
                 "accent_shapes": [
@@ -242,270 +276,206 @@
                         },
                         "size": {
                             "width": 300,
-                            "height": 5
+                            "height": 10
                         },
-                        "fill_color": "#80DEEA",
-                        "opacity": 0.4
+                        "fill_color": "#2F80ED",
+                        "opacity": 0.25
                     }
                 ]
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Detailed, high-resolution rendering of an AquaDream starter kit, showcasing a modern, minimalist aquarium, an integrated filter system, energy-efficient LED lighting, and a smartphone displaying the intuitive AquaDream app dashboard with water parameters.",
-            "image_position": "LEFT"
+            "image_prompt": "Infographic comparing Elevate AI's features and performance metrics against a competitor like Asana, highlighting key advantages.",
+            "image_position": "RIGHT"
         },
         {
-            "title": "Our Clear Business Model",
-            "body": "• Starter Kits: Premium hardware and initial setup bundles\n• Subscription Services: AquaCare plans, automated supply refills\n• Marketplace: High-quality livestock, plants, and accessories",
+            "title": "Business Model - Scalable Revenue",
+            "body": "•  Freemium model: Basic features for individual users.\n•  Subscription Tiers: Pro ($15/month), Business ($29/month).\n•  Enterprise Solutions: Custom pricing for large organizations.",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 225,
+                    "angle": 90,
                     "colors": [
-                        "#E0F7FA",
-                        "#CFD8DC"
+                        "#F8F9FA",
+                        "#F1F3F5"
                     ]
                 },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "TRIANGLE",
-                        "position": {
-                            "x": 750,
-                            "y": 80
-                        },
-                        "size": {
-                            "width": 100,
-                            "height": 100
-                        },
-                        "fill_color": "#26A69A",
-                        "opacity": 0.1
-                    }
-                ]
+                "body_line_spacing": 140
             },
             "layout": "ONE_COLUMN_TEXT"
         },
         {
-            "title": "Strategic Go-to-Market Plan",
-            "body": "• Digital: Targeted social media, influencer partnerships\n• Retail: Specialty pet stores, home decor showrooms\n• Community: Online forums, local aquarium clubs",
+            "title": "Traction & Milestones - Early Success",
+            "body": "•  50,000+ users acquired in 6 months.\n•  15% month-over-month active user growth.\n•  $1.2M ARR projected by end of Q4.",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 315,
+                    "angle": 30,
                     "colors": [
-                        "#E0F7FA",
-                        "#B2EBF2"
+                        "#E9ECEF",
+                        "#F2F4F6"
                     ]
                 },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
                 "accent_shapes": [
                     {
-                        "shape_type": "STRIPE",
+                        "shape_type": "ROUNDED_RECTANGLE",
                         "position": {
-                            "x": 40,
-                            "y": 420
+                            "x": 480,
+                            "y": 80
                         },
                         "size": {
-                            "width": 800,
-                            "height": 12
+                            "width": 400,
+                            "height": 300
                         },
-                        "fill_color": "#00838F",
-                        "opacity": 0.18
+                        "fill_color": "#2F80ED",
+                        "opacity": 0.1
                     }
                 ]
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A modern collage of diverse marketing channels: a smartphone with a vibrant social media feed, an elegant storefront display featuring an aquarium, and people interacting at a lively community event, all subtly incorporating aquatic motifs.",
-            "image_position": "RIGHT"
+            "image_prompt": "Clean data visualizations: growth charts showing user acquisition, revenue trajectory, and key performance indicators on a digital dashboard.",
+            "image_position": "LEFT"
         },
         {
-            "title": "Building Momentum: Our Early Traction",
-            "body": "• Achieved 1,500 beta sign-ups in 3 months\n• Secured partnerships with 10 premium aquatic suppliers\n• 92% positive feedback from initial user trials",
+            "title": "Customer Success - Voices of Impact",
+            "body": "•  'Elevate AI saved our team 10 hours weekly.' - Sarah M., Marketing Director.\n•  'Our project delivery speed increased by 20%.' - David C., Product Lead.\n•  Over 90% customer satisfaction score (CSAT).",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 60,
+                    "angle": 0,
                     "colors": [
-                        "#E0F7FA",
-                        "#FFFFFF"
+                        "#F8F9FA",
+                        "#E9ECEF"
                     ]
                 },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
                 "accent_shapes": [
                     {
                         "shape_type": "RECTANGLE",
                         "position": {
+                            "x": 50,
+                            "y": 400
+                        },
+                        "size": {
+                            "width": 400,
+                            "height": 10
+                        },
+                        "fill_color": "#EB5757",
+                        "opacity": 0.4
+                    }
+                ]
+            },
+            "layout": "SECTION_TITLE_AND_DESCRIPTION",
+            "image_prompt": "Collage of diverse professional headshots with speech bubbles containing short positive testimonials about using Elevate AI, modern and approachable style.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Our Visionary Team",
+            "body": "•  Jane Doe, CEO: 15+ years in AI product leadership.\n•  John Smith, CTO: Expert in scalable cloud architectures.\n•  Team combines AI, SaaS, and UX expertise.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 135,
+                    "colors": [
+                        "#F1F3F5",
+                        "#F8F9FA"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
                             "x": 40,
                             "y": 150
                         },
                         "size": {
-                            "width": 350,
-                            "height": 60
+                            "width": 10,
+                            "height": 80
                         },
-                        "fill_color": "#80DEEA",
-                        "opacity": 0.2
+                        "fill_color": "#2F80ED",
+                        "opacity": 0.6
                     }
                 ]
             },
             "layout": "TITLE_AND_BODY"
         },
         {
-            "title": "Navigating the Competitive Waters",
-            "body": "• **Generic Aquarium Brands:** Focus on basic tanks; lack smart tech\n• **High-End Custom Builds:** Very costly, complex setup for hobbyists\n• **AquaDream:** Integrated smart tech, simplified experience, accessible premium design",
+            "title": "Financial Ask - $5M Seed Round",
+            "body": "•  Funding: $5M for 15% equity.\n•  Use of Funds: 50% R&D, 30% Marketing, 20% Operations.\n•  Goal: Achieve $5M ARR and expand market share.",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 120,
+                    "angle": 240,
                     "colors": [
-                        "#E0F7FA",
-                        "#CFD8DC"
+                        "#E9ECEF",
+                        "#BBDEFB"
                     ]
                 },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "ROUNDED_RECTANGLE",
-                        "position": {
-                            "x": 400,
-                            "y": 100
-                        },
-                        "size": {
-                            "width": 10,
-                            "height": 350
-                        },
-                        "fill_color": "#00838F",
-                        "opacity": 0.1
-                    }
-                ]
+                "body_line_spacing": 130
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A stylized comparison chart or a Venn diagram, subtly showing AquaDream's unique blend of smart technology, ease of use, and premium design, distinguishing it from traditional brands and custom setups, using aquatic-themed icons.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Our Passionate & Expert Team",
-            "body": "• **Dr. Aquatics (CEO):** Marine Biologist, 15+ years aquaculture expertise\n• **Tech Visionary (CTO):** Smart Home innovator, led 2 successful exits\n• **Design Lead:** Award-winning industrial designer, focused on user experience",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 270,
-                    "colors": [
-                        "#E0F7FA",
-                        "#B2EBF2"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "RECTANGLE",
-                        "position": {
-                            "x": 700,
-                            "y": 200
-                        },
-                        "size": {
-                            "width": 150,
-                            "height": 100
-                        },
-                        "fill_color": "#26A69A",
-                        "opacity": 0.15
-                    }
-                ]
-            },
-            "layout": "SECTION_HEADER"
-        },
-        {
-            "title": "Our Investment Ask: Fueling Growth",
-            "body": "• Seeking $1.5M seed funding for 18-month runway\n• Allocation: 40% R&D, 30% Marketing, 20% Operations, 10% Team\n• Projected ROI: 5x within 3 years, 10x exit potential",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 135,
-                    "colors": [
-                        "#E0F7FA",
-                        "#CFD8DC"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "ROUNDED_RECTANGLE",
-                        "position": {
-                            "x": 40,
-                            "y": 380
-                        },
-                        "size": {
-                            "width": 500,
-                            "height": 90
-                        },
-                        "fill_color": "#00838F",
-                        "opacity": 0.12
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A modern financial infographic displaying a growth trajectory, with a prominent bar chart showing investment allocation percentages for R&D, Marketing, Operations, and Team. Stylized upward arrows indicate projected ROI.",
+            "image_prompt": "Financial bar charts and growth projections overlaid with a stylized dollar sign, representing investment opportunity and future growth.",
             "image_position": "RIGHT"
         },
         {
-            "title": "Join the AquaDream Journey",
-            "body": "• Schedule a demo of the AquaKit and app\n• Explore detailed financial projections and market research\n• Let's bring tranquil aquatic beauty to every home",
+            "title": "Join Us: Elevate Tomorrow's Productivity",
+            "body": "•  Investment in Elevate AI drives future efficiency.\n•  Shape the next generation of smart workspaces.\n•  Contact us to schedule a deeper dive and demo.",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 45,
+                    "angle": 300,
                     "colors": [
-                        "#E0F7FA",
-                        "#80DEEA"
+                        "#F8F9FA",
+                        "#F1F3F5"
                     ]
                 },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
                 "title_alignment": "CENTER",
                 "body_alignment": "CENTER",
                 "accent_shapes": [
                     {
-                        "shape_type": "WAVE",
+                        "shape_type": "ROUNDED_RECTANGLE",
                         "position": {
-                            "x": 0,
-                            "y": 480
+                            "x": 200,
+                            "y": 400
                         },
                         "size": {
-                            "width": 960,
-                            "height": 60
+                            "width": 560,
+                            "height": 90
                         },
-                        "fill_color": "#26A69A",
-                        "opacity": 0.3
+                        "fill_color": "#2F80ED",
+                        "opacity": 0.15
                     }
                 ]
             },
