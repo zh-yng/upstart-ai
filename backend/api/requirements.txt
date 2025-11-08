@@ -1,0 +1,9 @@
+flask
+python-dotenv
+google
+google-api-python-client
+google-genai
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+Pillow

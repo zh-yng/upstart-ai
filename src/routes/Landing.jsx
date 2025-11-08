@@ -8,6 +8,7 @@ import { useState } from 'react';
 
 const Landing = () => {
     const [text, setText] = useState('');
+    const [slides, setSlides] = useState([]);
 
     async function createSlides(text) {
         const response = await fetch('/create_slides', {
@@ -32,7 +33,16 @@ const Landing = () => {
                 <Panel header="Upload your plan docs" style={{ width: '100%' }}>
                     <FileUpload name="demo[]" url={'/api/upload'} multiple accept="application/pdf" maxFileSize={1000000} emptyTemplate={<p className="m-0">Drag and drop PDFs to upload.</p>} />
                 </Panel>
-            </div >
+            </div>
+            {slides.length > 0 && (
+                <Panel header="Generated Slides" style={{ width: '50%', marginTop: '2rem' }}>
+                    {slides.map((slide, index) => (
+                        <Card key={index} title={slide.title} style={{ marginBottom: '1rem' }}>
+                            <p>{slide.content}</p>
+                        </Card>
+                    ))}
+                </Panel>
+            )}
         </>
     );
 }
