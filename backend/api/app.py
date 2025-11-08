@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
-from backend.api.slide_create import main as create_slides
+from slide_create import main as create_slides
 
 load_dotenv()
 
