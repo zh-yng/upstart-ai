@@ -4,6 +4,8 @@ import { useLocation } from "react-router";
 import { Card } from "primereact/card";
 import { useState } from "react";
 import { Dialog } from "primereact/dialog";
+import { InputTextarea } from "primereact/inputtextarea";
+import { ScrollPanel } from "primereact/scrollpanel";
 
 const Dashboard = () => {
     const location = useLocation();
@@ -13,10 +15,19 @@ const Dashboard = () => {
     const [roadmapLoading, setRoadmapLoading] = useState(false);
     const [roadmapReady, setRoadmapReady] = useState(false);
     const [showRoadmapDialog, setShowRoadmapDialog] = useState(false);
+    
+    const [videoLoading, setVideoLoading] = useState(false);
+    const [videoReady, setVideoReady] = useState(false);
+    const [showVideoDialog, setShowVideoDialog] = useState(false);
+
+    const [chatMessages, setChatMessages] = useState([
+        { role: 'assistant', text: 'Hello! I\'m Everest, your AI startup assistant. How can I help you today?' }
+    ]);
+    const [chatInput, setChatInput] = useState('');
 
     const features = [
         { name: 'Slides', icon: 'pi pi-id-card', route: '/api/create_slides', content: (presentationUrl != null) ? presentationUrl : '', color: 'rgba(248, 191, 8,1)' },
-        { name: 'Video', icon: 'pi pi-video', route: '/api/video', content: '', color: 'rgba(8, 191, 248, 1)' },
+        { name: 'Video', icon: 'pi pi-video', route: '/api/create_video', content: '', color: 'rgba(8, 191, 248, 1)', loadingColor: 'rgba(191, 8, 248,1)', handler: 'video' },
         { name: 'Network', icon: 'pi pi-sitemap', route: '/api/network', content: '', color: 'rgba(191, 8, 248,1)' },
         { name: 'Roadmap', icon: 'pi pi-map', route: '/api/create_roadmap', content: '', color: 'rgba(248, 191, 8,1)', loadingColor: 'rgba(191, 8, 248,1)', handler: 'roadmap' },
     ]
@@ -63,7 +74,7 @@ const Dashboard = () => {
                 throw new Error('Presentation link not found in response.');
             }
 
-            window.location.href = data.presentationUrl;
+            window.open(data.presentationUrl, '_blank');
         } catch (err) {
             alert(err.message || 'Something went wrong while generating slides.');
         }
@@ -153,17 +164,123 @@ const Dashboard = () => {
         }
     };
 
+    const handleCreateVideo = async () => {
+        if (!text.trim()) {
+            alert('Please enter a prompt before generating video.');
+            return;
+        }
+
+        setVideoLoading(true);
+        setVideoReady(false);
+
+        try {
+            const response = await fetch(`/api/create_video`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ text: text.trim(), download: false }),
+            });
+
+            if (!response.ok) {
+                const data = await response.json();
+                throw new Error(data.error || 'Failed to generate video.');
+            }
+
+            setVideoReady(true);
+            setShowVideoDialog(true);
+        } catch (err) {
+            alert(err.message || 'Something went wrong while generating video.');
+        } finally {
+            setVideoLoading(false);
+        }
+    };
+
+    const handleChatSubmit = () => {
+        if (!chatInput.trim()) return;
+
+        // Add user message
+        const userMessage = { role: 'user', text: chatInput };
+        setChatMessages(prev => [...prev, userMessage]);
+        
+        // Clear input
+        setChatInput('');
+
+        // TODO: Add API call here to get AI response
+        // For now, just acknowledge the message
+        setTimeout(() => {
+            const botResponse = { 
+                role: 'assistant', 
+                text: 'I received your message! Full functionality coming soon.' 
+            };
+            setChatMessages(prev => [...prev, botResponse]);
+        }, 500);
+    };
+
+    const handleViewVideo = async () => {
+        try {
+            const response = await fetch(`/api/create_video`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ text: text.trim(), download: false }),
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to retrieve video.');
+            }
+
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            window.open(url, '_blank');
+            setShowVideoDialog(false);
+        } catch (err) {
+            alert(err.message || 'Something went wrong while viewing video.');
+        }
+    };
+
+    const handleDownloadVideo = async () => {
+        try {
+            const response = await fetch(`/api/create_video`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ text: text.trim(), download: true }),
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to download video.');
+            }
+
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'startup_ad_video.mp4';
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+            setShowVideoDialog(false);
+        } catch (err) {
+            alert(err.message || 'Something went wrong while downloading video.');
+        }
+    };
+
     return (
         <>
             <div className="flex flex-column gap-2 justify-content-center align-items-center text-center" style={{ width: '50%' }}>
                 <div className="flex flex-column gap-2 w-full justify-content-center">
                     {/* two per row grid of buttons */}
-                    <div className="flex gap-2 w-full">
+                    <div className="flex gap-2 w-full align-items-center">
                         <div className="flex flex-column gap-2 justify-content-center" style={{ width: '30vw' }}>
                             {features.map((feature) => {
                                 const isRoadmap = feature.handler === 'roadmap';
-                                const isLoading = isRoadmap && roadmapLoading;
-                                const isReady = isRoadmap && roadmapReady;
+                                const isVideo = feature.handler === 'video';
+                                const isLoading = (isRoadmap && roadmapLoading) || (isVideo && videoLoading);
+                                const isReady = (isRoadmap && roadmapReady) || (isVideo && videoReady);
                                 const buttonColor = isLoading ? (feature.loadingColor || feature.color) : (isReady ? feature.color : 'rgba(255, 255, 255,1)');
                                 const cardBgColor = (feature.content !== '' || isReady) ? feature.color : 'transparent';
 
@@ -182,8 +299,10 @@ const Dashboard = () => {
                                             onClick={() => {
                                                 if (feature.handler === 'roadmap') {
                                                     handleCreateRoadmap();
+                                                } else if (feature.handler === 'video') {
+                                                    handleCreateVideo();
                                                 } else {
-                                                    window.location.href = feature.content;
+                                                    window.open(feature.content, '_blank');
                                                 }
                                             }}
                                         >
@@ -207,6 +326,8 @@ const Dashboard = () => {
                                                 onClick={() => {
                                                     if (isRoadmap) {
                                                         handleCreateRoadmap();
+                                                    } else if (isVideo) {
+                                                        handleCreateVideo();
                                                     } else {
                                                         handleCreateSlides();
                                                     }
@@ -222,13 +343,15 @@ const Dashboard = () => {
                                                 key={feature.name}
                                                 className="blur justify-content-start"
                                                 style={{ border: '1px solid black', backgroundColor: 'rgba(255, 255, 255,1)', color: 'black', minHeight: '50px' }}
-                                                icon={isRoadmap ? 'pi pi-file-pdf' : 'pi pi-external-link'}
+                                                icon={(isRoadmap || isVideo) ? 'pi pi-file' : 'pi pi-external-link'}
                                                 severity="primary"
                                                 onClick={() => {
                                                     if (isRoadmap) {
                                                         setShowRoadmapDialog(true);
+                                                    } else if (isVideo) {
+                                                        setShowVideoDialog(true);
                                                     } else {
-                                                        window.location.href = feature.content;
+                                                        window.open(feature.content, '_blank');
                                                     }
                                                 }}
                                             >
@@ -245,8 +368,95 @@ const Dashboard = () => {
                                 );
                             })}
                         </div>
-                        <div style={{ width: '50vw' }} className="blur border flex flex-column justify-content-center align-items-center">
-                            <h3>Chat with Everest</h3>
+                        <div style={{ width: '50vw', height: '70vh', borderRadius: '12px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }} className="blur border">
+                            {/* Chat Header */}
+                            <div style={{ 
+                                padding: '1rem 1.5rem', 
+                                borderBottom: '1px solid rgba(255,255,255,0.2)',
+                                background: 'rgba(191, 8, 248, 0.1)',
+                                flexShrink: 0
+                            }}>
+                                <h3 className="m-0 flex align-items-center gap-2">
+                                    <i className="pi pi-comments" style={{ fontSize: '1.5rem' }}></i>
+                                    Chat with Everest
+                                </h3>
+                                <p className="m-0 mt-1" style={{ fontSize: '0.875rem', opacity: 0.8 }}>
+                                    Your AI startup assistant
+                                </p>
+                            </div>
+
+                            {/* Chat Messages */}
+                            <div style={{ flex: 1, overflowY: 'auto', padding: '1rem', minHeight: 0 }}>
+                                <div className="flex flex-column gap-3">
+                                    {chatMessages.map((msg, index) => (
+                                        <div 
+                                            key={index} 
+                                            className={`flex ${msg.role === 'user' ? 'justify-content-end' : 'justify-content-start'}`}
+                                        >
+                                            <div 
+                                                style={{
+                                                    maxWidth: '75%',
+                                                    padding: '0.75rem 1rem',
+                                                    borderRadius: '12px',
+                                                    background: msg.role === 'user' 
+                                                        ? 'rgba(8, 191, 248, 0.2)' 
+                                                        : 'rgba(191, 8, 248, 0.2)',
+                                                    border: `1px solid ${msg.role === 'user' 
+                                                        ? 'rgba(8, 191, 248, 0.4)' 
+                                                        : 'rgba(191, 8, 248, 0.4)'}`,
+                                                }}
+                                            >
+                                                {msg.role === 'assistant' && (
+                                                    <div className="flex align-items-center gap-2 mb-2">
+                                                        <i className="pi pi-sparkles" style={{ fontSize: '0.875rem' }}></i>
+                                                        <strong style={{ fontSize: '0.875rem' }}>Everest</strong>
+                                                    </div>
+                                                )}
+                                                <p className="m-0" style={{ fontSize: '0.95rem', lineHeight: '1.5' }}>
+                                                    {msg.text}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Chat Input */}
+                            <div style={{ 
+                                padding: '1rem', 
+                                borderTop: '1px solid rgba(255,255,255,0.2)',
+                                background: 'rgba(0, 0, 0, 0.1)',
+                                flexShrink: 0
+                            }}>
+                                <div className="flex gap-2">
+                                    <InputTextarea
+                                        value={chatInput}
+                                        onChange={(e) => setChatInput(e.target.value)}
+                                        placeholder="Type your message here..."
+                                        rows={2}
+                                        autoResize
+                                        style={{ flex: 1 }}
+                                        onKeyDown={(e) => {
+                                            if (e.key === 'Enter' && !e.shiftKey) {
+                                                e.preventDefault();
+                                                handleChatSubmit();
+                                            }
+                                        }}
+                                    />
+                                    <Button
+                                        icon="pi pi-send"
+                                        onClick={handleChatSubmit}
+                                        style={{
+                                            background: 'rgba(191, 8, 248, 0.8)',
+                                            border: '1px solid rgba(191, 8, 248, 1)',
+                                            height: 'fit-content',
+                                            alignSelf: 'flex-end'
+                                        }}
+                                        tooltip="Send message"
+                                        tooltipOptions={{ position: 'top' }}
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div >
@@ -274,6 +484,33 @@ const Dashboard = () => {
                             className="flex-1"
                             severity="success"
                             onClick={handleDownloadRoadmap}
+                        />
+                    </div>
+                </div>
+            </Dialog>
+
+            <Dialog 
+                header="Video Ready" 
+                visible={showVideoDialog} 
+                onHide={() => setShowVideoDialog(false)}
+                style={{ width: '450px' }}
+                modal
+            >
+                <div className="flex flex-column gap-3 align-items-center">
+                    <p className="m-0">Your startup advertisement video is ready! How would you like to access it?</p>
+                    <div className="flex gap-2 w-full">
+                        <Button 
+                            label="View in Browser" 
+                            icon="pi pi-eye" 
+                            className="flex-1"
+                            onClick={handleViewVideo}
+                        />
+                        <Button 
+                            label="Download MP4" 
+                            icon="pi pi-download" 
+                            className="flex-1"
+                            severity="success"
+                            onClick={handleDownloadVideo}
                         />
                     </div>
                 </div>

@@ -97,13 +97,11 @@ def normalize_text(text: str) -> str:
     return cleaned
 
 
-def truncate_words(text: str, max_words: int = 4) -> str:
+def truncate_words(text: str, max_words: int = None) -> str:
+    # No truncation - returns text as-is
     if not isinstance(text, str):
         return text
-    words = text.split()
-    if len(words) <= max_words:
-        return text
-    return " ".join(words[:max_words])
+    return text
 
 
 def load_slides_data(json_path):
@@ -971,7 +969,7 @@ def add_slide(service, presentation_id, slide_data, fallback_index, deck_theme=N
 
     slide_id = create_response["replies"][0]["createSlide"]["objectId"]
 
-    slide_title = truncate_words(slide_data.get("title", f"Slide {fallback_index}"))
+    slide_title = slide_data.get("title", f"Slide {fallback_index}")
 
     slide_body = slide_data.get("body", "")
     slide_style = apply_theme_defaults(dict(slide_data.get("style") or {}))
@@ -1059,7 +1057,7 @@ def main(
 
     # --- Handle the title slide ---
     title_slide_data = slides_data.get("title_slide", {})
-    title_text = truncate_words(title_slide_data.get("title", "Title Slide"))
+    title_text = title_slide_data.get("title", "Title Slide")
     author_text = title_slide_data.get("author", "")
     title_style = apply_theme_defaults(dict(title_slide_data.get("style") or {}))
     # Google Slides first slide is already created by default

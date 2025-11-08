@@ -16,3 +16,5 @@ moviepy
 reportlab
 
 duckduckgo-search
+google-cloud-aiplatform
+

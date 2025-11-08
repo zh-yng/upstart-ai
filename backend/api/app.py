@@ -3,13 +3,13 @@
 from flask import Flask, request, jsonify, send_file
 from dotenv import load_dotenv
 from run_deck import run_deck
+from ad_gen import generate_video
 import os
 from google import genai
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
-#from ad_gen import ad_gen_bp, init_ad_gen_services
 from flask_cors import CORS
 
 load_dotenv()
@@ -163,6 +163,37 @@ Make it comprehensive but practical for a startup founder to follow."""
     except Exception as exc:
         app.logger.exception("Roadmap generation failed", exc_info=exc)
         return jsonify({'error': 'Roadmap generation failed'}), 500
+
+@app.route('/create_video', methods=['POST'])
+def create_video_route():
+    data = request.get_json(silent=True) or {}
+    prompt_text = (data.get('text') or '').strip()
+    download = data.get('download', False)
+
+    if not prompt_text:
+        return jsonify({'error': 'Text is required'}), 400
+
+    try:
+        # Generate video
+        file_name = "startup_ad_video.mp4"
+        file_path = os.path.join(os.getcwd(), file_name)
+        
+        generate_video(prompt_text, file_path)
+
+        # Return file based on download parameter
+        if download:
+            return send_file(file_path, as_attachment=True, download_name='startup_ad_video.mp4', mimetype='video/mp4')
+        else:
+            return send_file(file_path, as_attachment=False, mimetype='video/mp4')
+
+    except RuntimeError as exc:
+        error_msg = str(exc)
+        if "RESOURCE_EXHAUSTED" in error_msg or "quota" in error_msg.lower():
+            return jsonify({'error': 'Video generation quota exceeded. Veo requires special access.'}), 429
+        return jsonify({'error': str(exc)}), 400
+    except Exception as exc:
+        app.logger.exception("Video generation failed", exc_info=exc)
+        return jsonify({'error': 'Video generation failed'}), 500
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

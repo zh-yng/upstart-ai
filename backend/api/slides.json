@@ -1,209 +1,236 @@
 {
-    "presentation_title": "McTycoon: The Golden Arches Game Pitch Deck",
+    "presentation_title": "AURA Air: Redefining Private Aviation for the Modern Traveler",
     "title_slide": {
-        "title": "McTycoon: Build and Manage Your Golden Arches Empire",
+        "title": "AURA Air: Redefining Private Aviation for the Modern Traveler",
         "style": {
             "background_style": {
                 "type": "GRADIENT",
-                "angle": 45,
+                "angle": 160,
                 "colors": [
-                    "#FFC72C",
-                    "#DA291C"
+                    "#0A2463",
+                    "#1E3A8A"
                 ]
             },
-            "title_font": "Poppins Bold",
+            "title_font": "Montserrat SemiBold",
             "title_color": "#FFFFFF",
-            "subtitle_font": "Poppins",
-            "subtitle_color": "#FFFFFF"
+            "subtitle_font": "Source Sans Pro",
+            "subtitle_color": "#FFC971"
         },
         "layout": "TITLE"
     },
     "design_language": {
-        "name": "Golden Arches Pop",
+        "name": "Ascend Aero",
         "palette": {
-            "primary": "#DA291C",
-            "secondary": "#FFC72C",
-            "accent": "#27251F",
-            "background": "#FFFFFF",
-            "text_on_light": "#27251F",
+            "primary": "#0A2463",
+            "secondary": "#3E92CC",
+            "accent": "#FFC971",
+            "background": "#F8F9FA",
+            "text_on_light": "#212529",
             "text_on_dark": "#FFFFFF"
         },
         "typography": {
-            "title_font": "Poppins Bold",
-            "body_font": "Lato"
+            "title_font": "Montserrat SemiBold",
+            "body_font": "Source Sans Pro"
         },
         "background_style": {
-            "type": "SOLID",
+            "type": "GRADIENT",
+            "angle": 25,
             "colors": [
-                "#FFFFFF"
+                "#F8F9FA",
+                "#EDF2F7"
             ]
         },
+        "accent_shapes": [
+            {
+                "shape_type": "STRIPE",
+                "position": {
+                    "x": 0,
+                    "y": 520
+                },
+                "size": {
+                    "width": 960,
+                    "height": 4
+                },
+                "fill_color": "#3E92CC",
+                "opacity": 0.4
+            }
+        ],
         "text_alignment": "LEFT",
-        "body_line_spacing": 140
+        "body_line_spacing": 135
     },
     "slides": [
         {
-            "title": "The Global Opportunity",
-            "body": "• The simulation genre is a $10B+ global market\n• 93% of the world recognizes the Golden Arches brand\n• Nostalgia for classic tycoon games is at an all-time high",
+            "title": "Air Travel Is Broken",
+            "body": "• Commercial flights suffer from chronic delays and cancellations.\n• Impersonal service and crowded spaces define the experience.\n• Inefficient routes waste valuable executive time and money.",
             "style": {
-                "background_color": "#F9F9F9",
-                "title_font": "Poppins Bold",
-                "title_color": "#27251F",
-                "body_font": "Lato",
-                "body_color": "#27251F"
+                "background_color": "#F8F9FA",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212529"
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A stylized 3D globe with glowing golden arches popping up in major cities like New York, Tokyo, and London. Professional, clean design.",
+            "image_prompt": "Black and white photo of a long, chaotic queue of frustrated travelers in a crowded airport terminal.",
             "image_position": "RIGHT"
         },
         {
-            "title": "Introducing McTycoon",
-            "body": "The ultimate restaurant tycoon game, officially licensed by McDonald's. Design your restaurant, manage staff, craft the perfect menu, and delight customers to build a fast-food empire.",
+            "title": "The AURA Experience",
+            "body": "• Seamless on-demand booking via a members-only app.\n• Depart from private terminals, avoiding airport chaos.\n• Personalized, pilot-led service focused on safety and comfort.",
             "style": {
-                "background_color": "#FFFFFF",
-                "title_font": "Poppins Bold",
-                "title_color": "#DA291C",
-                "body_font": "Lato",
-                "body_color": "#27251F"
+                "background_color": "#F8F9FA",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212529"
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Vibrant, isometric 3D concept art of a bustling, customized McDonald's restaurant filled with happy customers. Shows a PlayPlace and a modern interior.",
+            "image_prompt": "Sunlight streaming into the pristine, luxurious interior of a modern private jet with plush leather seats.",
             "image_position": "LEFT"
         },
         {
-            "title": "Core Gameplay Loop",
-            "body": "• Design & Build - Customize every detail from floor tiles to kitchen layout\n• Manage & Train - Hire staff, set schedules, and unlock new skills\n• Serve & Grow - Fulfill orders, master the menu, and expand your franchise",
+            "title": "A $32B+ Market",
+            "body": "• Target Addressable Market (TAM) - $32.1B in global private aviation.\n• Serviceable Addressable Market (SAM) - $9.5B for U.S. corporate and leisure charter.\n• Serviceable Obtainable Market (SOM) - $50M targeting underserved Midwest/West Coast routes in Year 3.",
             "style": {
-                "background_color": "#FFC72C",
-                "title_font": "Poppins Bold",
-                "title_color": "#27251F",
-                "body_font": "Lato",
-                "body_color": "#27251F"
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Unleash Your Creativity",
-            "body": "Build the restaurant of your dreams. From retro 80s themes to futuristic automated kitchens, the only limit is your imagination.",
-            "style": {
-                "background_color": "#F9F9F9",
-                "title_font": "Poppins Bold",
-                "title_color": "#27251F",
-                "body_font": "Lato",
-                "body_color": "#27251F"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A split-screen in-game screenshot. One side shows a vintage McDonald's with red and white tiles. The other shows a hyper-modern McCafe with sleek, minimalist design.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Our Unique Value",
-            "body": "• The only official McDonald's management simulation game\n• Deep customization engine for endless replayability\n• Fun, chaotic 'McMischief' events featuring iconic characters",
-            "style": {
-                "background_color": "#FFFFFF",
-                "title_font": "Poppins Bold",
-                "title_color": "#DA291C",
-                "body_font": "Lato",
-                "body_color": "#27251F"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A humorous in-game scene where the character Grimace has accidentally spilled a giant purple shake, creating a fun challenge for the player's staff to clean up.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Market Landscape",
-            "body": "• RollerCoaster Tycoon (Atari) - Classic IP but struggles on mobile | Our advantage: Mobile-first design and a far larger, global brand.\n• Cooking Fever (Nordcurrent) - 400M+ downloads but simple mechanics | Our advantage: Deep simulation and strategic management gameplay.\n• Planet Coaster (Frontier) - Critically acclaimed but PC-only | Our advantage: Accessible to a massive casual mobile audience.",
-            "style": {
-                "background_color": "#F9F9F9",
-                "title_font": "Poppins Bold",
-                "title_color": "#27251F",
-                "body_font": "Lato",
-                "body_color": "#27251F",
-                "body_line_spacing": 150
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Business Model",
-            "body": "A free-to-play model with a focus on ethical monetization.\n• Starter Packs - Bundles for new players\n• Cosmetic IAPs - Special restaurant themes and staff outfits\n• Expansion Packs - McCafé, PlayPlace, and international menu add-ons",
-            "style": {
-                "background_color": "#FFFFFF",
-                "title_font": "Poppins Bold",
-                "title_color": "#DA291C",
-                "body_font": "Lato",
-                "body_color": "#27251F"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A clean, friendly UI of the in-game store, showcasing cosmetic items like a 'Retro 90s Theme Pack' and a 'Future Forward Uniform Set'.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Meet The Team",
-            "body": "• Anya Sharma, CEO - Former Senior Producer on The Sims Mobile at EA\n• Ben Carter, CPO - Lead Game Designer at King, managed Candy Crush Saga\n• Chloe Davis, CTO - Ex-Zynga lead engineer, built scalable backend for FarmVille 3\n• Marcus Adebayo, Art Director - Concept artist for Disney and DreamWorks animation",
-            "style": {
-                "background_color": "#F9F9F9",
-                "title_font": "Poppins Bold",
-                "title_color": "#27251F",
-                "body_font": "Lato",
-                "body_color": "#27251F"
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Our Player Personas",
-            "body": "• The Strategist - Loves optimizing layouts for maximum efficiency\n• The Decorator - Spends hours creating the perfect restaurant aesthetic\n• The Nostalgist - Wants to recreate the McDonald's of their childhood",
-            "style": {
-                "background_color": "#FFFFFF",
-                "title_font": "Poppins Bold",
-                "title_color": "#DA291C",
-                "body_font": "Lato",
-                "body_color": "#27251F"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A collage of three distinct, stylish portraits representing different player types: a focused young man, a creative woman, and a smiling older person.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Launch Projections (Year 1)",
-            "body": "5M\nDownloads\n\n$8M\nRevenue\n\n$3.50\nAverage LTV",
-            "style": {
-                "background_color": "#DA291C",
-                "title_font": "Poppins Bold",
-                "title_color": "#FFFFFF",
-                "body_font": "Poppins Bold",
-                "body_color": "#FFFFFF",
+                "background_color": "#EDF2F7",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A2463",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212529",
                 "title_alignment": "CENTER",
                 "body_alignment": "CENTER"
             },
-            "layout": "BIG_NUMBER"
+            "layout": "ONE_COLUMN_TEXT"
         },
         {
-            "title": "The Ask",
-            "body": "We are raising a $2.5M seed round to achieve launch.\n• 40% - Team & Development\n• 35% - IP Licensing & Marketing\n• 25% - Operations & Platform Fees",
+            "title": "Why We Win",
+            "body": "• Asset-Light Model - We lease new, fuel-efficient aircraft, reducing capital costs.\n• Tech-First Platform - Superior booking and logistics management cuts overhead by 20%.\n• Pilot-Founder Culture - Unmatched commitment to operational excellence and safety.",
             "style": {
-                "background_color": "#F9F9F9",
-                "title_font": "Poppins Bold",
-                "title_color": "#27251F",
-                "body_font": "Lato",
-                "body_color": "#27251F"
+                "background_color": "#F8F9FA",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212529"
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A clean, modern pie chart visualizing the 'Use of Funds' breakdown with corresponding icons for development, marketing, and operations. Use the brand palette.",
+            "image_prompt": "A sharp, confident female pilot in a modern uniform giving a pre-flight briefing to business travelers beside a jet.",
             "image_position": "RIGHT"
         },
         {
-            "title": "Our Future Vision",
-            "body": "To become the global leader in branded simulation games, expanding with new iconic partners and creating a platform for beloved brands to engage with fans in a fun, interactive way.",
+            "title": "Flexible Revenue Streams",
+            "body": "• AURA Access - Annual membership for preferred rates and priority booking.\n• On-Demand Charter - Pay-as-you-fly for non-members at market rates.\n• Corporate Accounts - Packaged flight hours for enterprise clients.",
             "style": {
-                "background_color": "#27251F",
-                "title_font": "Poppins Bold",
-                "title_color": "#FFC72C",
-                "body_font": "Lato",
+                "background_color": "#F8F9FA",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212529"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A clean, minimalist infographic showing three revenue streams with icons for a membership card, a plane, and a briefcase.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Modern Efficient Aircraft",
+            "body": "• Our fleet features the Pilatus PC-24 and Embraer Phenom 300E.\n• These jets offer best-in-class range, efficiency, and comfort.",
+            "style": {
+                "background_color": "#EDF2F7",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A2463",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212529"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Cinematic wide shot of a sleek Pilatus PC-24 jet on the tarmac during a golden hour sunset, reflecting the vibrant sky.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Early Traction",
+            "body": "• 25+ Letters of Intent from corporate and high-net-worth clients.\n• Waitlist of over 150 individuals for AURA Access membership.",
+            "style": {
+                "background_color": "#F8F9FA",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212529"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A clean logo wall featuring stylized, fictional logos for venture capital firms, tech companies, and wealth management groups.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Competitive Edge",
+            "body": "• NetJets (20% market share) - High cost from fractional ownership model | Our advantage: 30% lower hourly rates via our lease model.\n• Wheels Up ($700M revenue) - Inconsistent service from a crowded marketplace | Our advantage: A curated, owned-experience fleet ensures quality.\n• First Class - Limited routes and inflexible schedules | We fly point-to-point on your schedule.",
+            "style": {
+                "background_color": "#F8F9FA",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212529",
+                "body_line_spacing": 140
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "The Founding Team",
+            "body": "• Alex Jensen, Founder & Chief Pilot - 15+ years as an Airline Transport Pilot, former USAF.\n• Maria Flores, COO - Led operations at XOJET, scaled fleet by 40%.\n• Ben Carter, CTO - Ex-Uber Elevate engineer, expert in logistics platforms.\n• Chloe Davis, Head of Experience - Former Director of Hospitality at Four Seasons.",
+            "style": {
+                "background_color": "#EDF2F7",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A2463",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212529",
+                "body_line_spacing": 140
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Five-Year Outlook",
+            "body": "• Year 1 - Launch with 2 aircraft, achieve $4M revenue.\n• Year 3 - Expand to 8 aircraft, reach $25M revenue, achieve profitability.\n• Year 5 - Operate 15+ aircraft, achieve $70M ARR with 22% EBITDA margin.",
+            "style": {
+                "background_color": "#F8F9FA",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212529"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A sleek, modern bar chart showing exponential revenue growth over five years, using the company's color palette of navy blue and gold.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Our Investment Ask",
+            "body": "$5 Million Seed Round\nTo secure aircraft leases, build out our technology platform, and fund operations for the first 18 months.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 160,
+                    "colors": [
+                        "#0A2463",
+                        "#1E3A8A"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#FFFFFF",
+                "body_font": "Source Sans Pro",
                 "body_color": "#FFFFFF",
                 "title_alignment": "CENTER",
                 "body_alignment": "CENTER"
             },
             "layout": "MAIN_POINT"
+        },
+        {
+            "title": "Join Our Journey",
+            "body": "Alex Jensen\nFounder & CEO\nalex@aura-air.com\nwww.aura-air.com",
+            "style": {
+                "background_color": "#F8F9FA",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A2463",
+                "body_font": "Source Sans Pro",
+                "body_color": "#212529",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER"
+            },
+            "layout": "TITLE_AND_BODY"
         }
     ]
 }
