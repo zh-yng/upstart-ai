@@ -6,7 +6,12 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'http://localhost:5000',
+      '/api': {
+        target: 'http://localhost:5000',
+        changeOrigin: true,
+        // remove the `/api` prefix so the Flask app receives `/create_slides`
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
     },
   },
 })
