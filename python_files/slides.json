@@ -1,0 +1,528 @@
+{
+    "presentation_title": "Stellaris: The Ultimate Cosmic Theme Park",
+    "title_slide": {
+        "title": "Stellaris: The Ultimate Cosmic Theme Park",
+        "author": "Buzz Lightyear",
+        "style": {
+            "background_color": "#0D1117",
+            "title_font": "Orbitron",
+            "title_color": "#00BCD4",
+            "subtitle_font": "Montserrat",
+            "subtitle_color": "#E0E0E0"
+        },
+        "layout": "TITLE"
+    },
+    "design_language": {
+        "name": "Cosmic Horizon",
+        "palette": {
+            "primary": "#1A237E",
+            "secondary": "#673AB7",
+            "accent": "#00BCD4",
+            "background": "#0D1117",
+            "text_on_light": "#0D1117",
+            "text_on_dark": "#E0E0E0"
+        },
+        "typography": {
+            "title_font": "Orbitron",
+            "body_font": "Montserrat"
+        },
+        "background_style": {
+            "type": "GRADIENT",
+            "angle": 45,
+            "colors": [
+                "#0D1117",
+                "#1A237E"
+            ]
+        },
+        "accent_shapes": [
+            {
+                "shape_type": "PARALLELOGRAM",
+                "position": {
+                    "x": 60,
+                    "y": 480
+                },
+                "size": {
+                    "width": 780,
+                    "height": 18
+                },
+                "fill_color": "#673AB7",
+                "opacity": 0.15
+            },
+            {
+                "shape_type": "STRIPE",
+                "position": {
+                    "x": 50,
+                    "y": 50
+                },
+                "size": {
+                    "width": 10,
+                    "height": 60
+                },
+                "fill_color": "#00BCD4",
+                "opacity": 0.6
+            }
+        ],
+        "text_alignment": "LEFT",
+        "body_line_spacing": 130
+    },
+    "slides": [
+        {
+            "title": "Journey to the Stars: Our Vision",
+            "body": "• Ignite wonder with an unparalleled immersive space adventure\n• Blend cutting-edge tech, thrilling rides, and educational experiences\n• Become the premier destination for intergalactic family fun",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 25,
+                    "colors": [
+                        "#0D1117",
+                        "#1A237E"
+                    ]
+                },
+                "title_font": "Orbitron",
+                "title_color": "#E0E0E0",
+                "body_font": "Montserrat",
+                "body_color": "#B0B0B0",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 140,
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 40,
+                            "y": 140
+                        },
+                        "size": {
+                            "width": 10,
+                            "height": 80
+                        },
+                        "fill_color": "#00BCD4",
+                        "opacity": 0.7
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Uncharted Market Territory",
+            "body": "• Global Theme Park Market: $62B with 8% annual growth\n• Demand for immersive, tech-driven experiences unmet by rivals\n• Target 1.5M annual visitors within first three years",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 120,
+                    "colors": [
+                        "#1A237E",
+                        "#0D1117"
+                    ]
+                },
+                "title_font": "Orbitron",
+                "title_color": "#00BCD4",
+                "body_font": "Montserrat",
+                "body_color": "#E0E0E0",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 135,
+                "accent_shapes": [
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
+                            "x": 50,
+                            "y": 420
+                        },
+                        "size": {
+                            "width": 300,
+                            "height": 18
+                        },
+                        "fill_color": "#673AB7",
+                        "opacity": 0.2
+                    }
+                ]
+            },
+            "layout": "SECTION_TITLE_AND_DESCRIPTION",
+            "image_prompt": "Stylized galactic map with glowing data points highlighting market growth potential and target demographics, futuristic and sophisticated.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Mission Control: Our Expert Crew",
+            "body": "• Lead Designer: 20+ years in Disney Imagineering, IP creation\n• Engineering Director: SpaceX alum, advanced simulation systems\n• Operations Chief: Managed Universal Studios attractions for 15 years",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 210,
+                    "colors": [
+                        "#0D1117",
+                        "#1A237E"
+                    ]
+                },
+                "title_font": "Orbitron",
+                "title_color": "#E0E0E0",
+                "body_font": "Montserrat",
+                "body_color": "#B0B0B0",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 140,
+                "accent_shapes": [
+                    {
+                        "shape_type": "STRIPE",
+                        "position": {
+                            "x": 450,
+                            "y": 120
+                        },
+                        "size": {
+                            "width": 10,
+                            "height": 280
+                        },
+                        "fill_color": "#00BCD4",
+                        "opacity": 0.5
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Professional and diverse team of four individuals, depicted as modern astronauts in a sleek, futuristic control room with holographic displays.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Immersive Planetary Adventures",
+            "body": "• Zero-G Flight Simulators: Realistic space travel, G-force effects\n• Alien Safari Rides: Explore bioluminescent alien worlds\n• Starport City: Interactive hub with dining, shopping, live shows",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 300,
+                    "colors": [
+                        "#1A237E",
+                        "#0D1117"
+                    ]
+                },
+                "title_font": "Orbitron",
+                "title_color": "#00BCD4",
+                "body_font": "Montserrat",
+                "body_color": "#E0E0E0",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 135,
+                "accent_shapes": [
+                    {
+                        "shape_type": "PARALLELOGRAM",
+                        "position": {
+                            "x": 50,
+                            "y": 420
+                        },
+                        "size": {
+                            "width": 320,
+                            "height": 18
+                        },
+                        "fill_color": "#673AB7",
+                        "opacity": 0.25
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Concept art of a thrilling indoor roller coaster through a vibrant, glowing nebular landscape with futuristic trains and excited riders.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Beyond Earth: Our Unique Orbit",
+            "body": "• Full 360° space immersion, not just themed areas\n• Proprietary AR/VR integration for personalized storylines\n• Eco-friendly design with sustainable energy solutions",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 15,
+                    "colors": [
+                        "#0D1117",
+                        "#673AB7"
+                    ]
+                },
+                "title_font": "Orbitron",
+                "title_color": "#E0E0E0",
+                "body_font": "Montserrat",
+                "body_color": "#E0E0E0",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER",
+                "body_line_spacing": 145,
+                "accent_shapes": [
+                    {
+                        "shape_type": "STRIPE",
+                        "position": {
+                            "x": 200,
+                            "y": 300
+                        },
+                        "size": {
+                            "width": 600,
+                            "height": 10
+                        },
+                        "fill_color": "#00BCD4",
+                        "opacity": 0.4
+                    }
+                ]
+            },
+            "layout": "MAIN_POINT"
+        },
+        {
+            "title": "Experience Zero-G: Next-Gen Simulators",
+            "body": "• Simulate genuine spaceflight\n• Unforgettable, immersive adventure\n• Patented motion platform technology",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 90,
+                    "colors": [
+                        "#1A237E",
+                        "#0D1117"
+                    ]
+                },
+                "title_font": "Orbitron",
+                "title_color": "#00BCD4",
+                "body_font": "Montserrat",
+                "body_color": "#E0E0E0",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 130,
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 40,
+                            "y": 140
+                        },
+                        "size": {
+                            "width": 10,
+                            "height": 80
+                        },
+                        "fill_color": "#673AB7",
+                        "opacity": 0.7
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Hyper-realistic rendering of diverse guests in advanced flight suits, suspended in a zero-gravity simulator, expressions of pure awe and excitement, detailed futuristic controls.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Fueling Our Galactic Growth",
+            "body": "• Tiered ticket pricing (standard, premium, annual passes)\n• High-margin F&B and exclusive merchandise sales\n• Corporate events, educational programs, and sponsorship deals",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 270,
+                    "colors": [
+                        "#0D1117",
+                        "#1A237E"
+                    ]
+                },
+                "title_font": "Orbitron",
+                "title_color": "#E0E0E0",
+                "body_font": "Montserrat",
+                "body_color": "#B0B0B0",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 140,
+                "accent_shapes": [
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
+                            "x": 40,
+                            "y": 140
+                        },
+                        "size": {
+                            "width": 10,
+                            "height": 80
+                        },
+                        "fill_color": "#00BCD4",
+                        "opacity": 0.7
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Launch Sequence: Key Milestones",
+            "body": "• Q4 2024: Secure land acquisition and zoning permits\n• Q2 2025: Complete architectural designs and secure construction bids\n• Q1 2026: Announce anchor partnerships and begin pre-sales",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 330,
+                    "colors": [
+                        "#1A237E",
+                        "#0D1117"
+                    ]
+                },
+                "title_font": "Orbitron",
+                "title_color": "#00BCD4",
+                "body_font": "Montserrat",
+                "body_color": "#E0E0E0",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 135,
+                "accent_shapes": [
+                    {
+                        "shape_type": "PARALLELOGRAM",
+                        "position": {
+                            "x": 450,
+                            "y": 420
+                        },
+                        "size": {
+                            "width": 380,
+                            "height": 18
+                        },
+                        "fill_color": "#673AB7",
+                        "opacity": 0.2
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A visually striking timeline graphic with interconnected glowing points representing project milestones against a deep space background with subtle nebulae.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Navigating the Theme Park Galaxy",
+            "body": "• Disney World (Magic Kingdom): $7.5B revenue, high IP recognition, but limited space immersion.\n• Our Park: Focus on total immersion, cutting-edge tech, targeting underserved space enthusiasts.\n• Projected 25% higher visitor satisfaction due to unique theme.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 45,
+                    "colors": [
+                        "#0D1117",
+                        "#673AB7"
+                    ]
+                },
+                "title_font": "Orbitron",
+                "title_color": "#E0E0E0",
+                "body_font": "Montserrat",
+                "body_color": "#B0B0B0",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 140,
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 40,
+                            "y": 140
+                        },
+                        "size": {
+                            "width": 10,
+                            "height": 80
+                        },
+                        "fill_color": "#00BCD4",
+                        "opacity": 0.7
+                    }
+                ]
+            },
+            "layout": "SECTION_TITLE_AND_DESCRIPTION",
+            "image_prompt": "Futuristic infographic comparing a traditional theme park (represented by a castle silhouette) with a sleek, advanced space station park design, highlighting key differentiation points with glowing lines.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Voices from the Void: Anticipated Thrills",
+            "body": "• \"Imagine living my astronaut dreams!\" - Future Guest Survey (92% enthusiasm)\n• \"A truly out-of-this-world family destination.\" - Parent focus group\n• Projected 4.8/5 satisfaction rating based on concept testing",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 180,
+                    "colors": [
+                        "#1A237E",
+                        "#0D1117"
+                    ]
+                },
+                "title_font": "Orbitron",
+                "title_color": "#00BCD4",
+                "body_font": "Montserrat",
+                "body_color": "#E0E0E0",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 135,
+                "accent_shapes": [
+                    {
+                        "shape_type": "PARALLELOGRAM",
+                        "position": {
+                            "x": 450,
+                            "y": 100
+                        },
+                        "size": {
+                            "width": 10,
+                            "height": 300
+                        },
+                        "fill_color": "#673AB7",
+                        "opacity": 0.4
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Diverse group of excited individuals with awe-struck expressions looking up at a simulated holographic projection of a bustling space theme park, reflecting joy and wonder.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Securing Our Cosmic Ascent",
+            "body": "• Seeking $250M seed funding to finalize land and initial build\n• 40% Construction, 30% Ride Systems & Tech, 15% IP & Marketing, 15% Operations\n• Projected EBITDA positive by Year 3",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 225,
+                    "colors": [
+                        "#0D1117",
+                        "#673AB7"
+                    ]
+                },
+                "title_font": "Orbitron",
+                "title_color": "#E0E0E0",
+                "body_font": "Montserrat",
+                "body_color": "#B0B0B0",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 140,
+                "accent_shapes": [
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
+                            "x": 40,
+                            "y": 140
+                        },
+                        "size": {
+                            "width": 10,
+                            "height": 80
+                        },
+                        "fill_color": "#00BCD4",
+                        "opacity": 0.7
+                    }
+                ]
+            },
+            "layout": "ONE_COLUMN_TEXT"
+        },
+        {
+            "title": "Join Us on This Expedition",
+            "body": "• Establish a leading global brand in experiential entertainment\n• Future expansion into virtual reality parks and IP franchises\n• Partner with us to build the ultimate cosmic adventure",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 315,
+                    "colors": [
+                        "#1A237E",
+                        "#0D1117"
+                    ]
+                },
+                "title_font": "Orbitron",
+                "title_color": "#00BCD4",
+                "body_font": "Montserrat",
+                "body_color": "#E0E0E0",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER",
+                "body_line_spacing": 145,
+                "accent_shapes": [
+                    {
+                        "shape_type": "STAR",
+                        "position": {
+                            "x": 450,
+                            "y": 450
+                        },
+                        "size": {
+                            "width": 60,
+                            "height": 60
+                        },
+                        "fill_color": "#673AB7",
+                        "opacity": 0.3
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_BODY"
+        }
+    ]
+}
