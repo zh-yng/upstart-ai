@@ -1,414 +1,221 @@
 {
-    "presentation_title": "Doughlicious: Crafting Joy, One Gourmet Cookie at a Time",
+    "presentation_title": "MenuFlow AI: Smart Menus for Modern Restaurants",
     "title_slide": {
-        "title": "Doughlicious: Crafting Joy, One Gourmet Cookie at a Time",
+        "title": "MenuFlow AI: The Future of Dynamic Restaurant Menus",
         "style": {
-            "background_style": {
-                "type": "GRADIENT",
-                "angle": 30,
-                "colors": [
-                    "#FFF8E7",
-                    "#F5DEB3"
-                ]
-            },
-            "title_font": "Playfair Display Bold",
-            "title_color": "#4E342E",
-            "subtitle_font": "Lato",
-            "subtitle_color": "#6D4C41"
+            "background_color": "#F8F6F2",
+            "title_font": "Montserrat SemiBold",
+            "title_color": "#2E4034",
+            "subtitle_font": "Source Sans Pro",
+            "subtitle_color": "#5A6D60"
         },
         "layout": "TITLE"
     },
     "design_language": {
-        "name": "Modern Bakery Chic",
+        "name": "Farm-to-Table Tech",
         "palette": {
-            "primary": "#D2691E",
-            "secondary": "#F5DEB3",
-            "accent": "#FFA07A",
-            "background": "#FFF8E7",
-            "text_on_light": "#4E342E",
+            "primary": "#2E4034",
+            "secondary": "#D97746",
+            "accent": "#84A98C",
+            "background": "#F8F6F2",
+            "text_on_light": "#333333",
             "text_on_dark": "#FFFFFF"
         },
         "typography": {
-            "title_font": "Playfair Display SemiBold",
-            "body_font": "Lato"
+            "title_font": "Montserrat SemiBold",
+            "body_font": "Source Sans Pro"
         },
         "background_style": {
             "type": "GRADIENT",
-            "angle": 45,
+            "angle": 20,
             "colors": [
-                "#FFF8E7",
+                "#F8F6F2",
                 "#FFFFFF"
             ]
         },
         "text_alignment": "LEFT",
-        "body_line_spacing": 140
+        "body_line_spacing": 130
     },
     "slides": [
         {
-<<<<<<< HEAD
-            "title": "Cookie Fatigue",
-            "body": "• The market is filled with mass-produced, artificial cookies.\n• Local bakeries offer quality but lack convenience and scale.\n• Consumers crave unique, high-quality treats that feel special.",
+            "title": "The Broken Menu",
+            "body": "• Restaurants lose $162B annually to food waste.\n• Static menus fail to adapt to diner tastes and inventory.",
             "style": {
-                "background_color": "#FFF8E7",
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#4E342E",
-                "body_font": "Lato",
-                "body_color": "#6D4C41",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A supermarket aisle with generic, plastic-wrapped cookie packages under harsh fluorescent lighting, looking unappetizing.",
-=======
-            "title": "The Problem",
-            "body": "• Climate change creates unpredictable growing seasons for farmers.\n• Water scarcity and rising costs threaten farm profitability.\n• Traditional methods miss early signs of crop stress and disease.",
-            "style": {
-                "background_color": "#F0F4F2",
+                "background_color": "#F8F6F2",
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#0A3822",
+                "title_color": "#2E4034",
                 "body_font": "Source Sans Pro",
-                "body_color": "#1C1C1C"
+                "body_color": "#333333"
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Dramatic split-screen photo showing a drought-stricken cornfield on one side and a perfectly healthy, green field on the other, cinematic color grading.",
->>>>>>> 81622ab (Fix landing page issue + dashboard reshow buttons)
+            "image_prompt": "A concerned restaurant owner looking at a pile of unsold fresh produce in a kitchen, soft moody lighting.",
             "image_position": "RIGHT"
         },
         {
-            "title": "Our Solution",
-<<<<<<< HEAD
-            "body": "• Artisanal, small-batch cookies with rotating, seasonal flavors.\n• A seamless tech-first experience for online ordering and delivery.\n• A warm, inviting brand that builds community and delight.",
+            "title": "A Massive Market",
+            "body": "• $900B+ US Restaurant industry provides a huge TAM.\n• Our SAM is the $72B tech-forward independent restaurant sector.\n• We are targeting a $3.6B beachhead market in 5 major US cities.",
             "style": {
-                "background_color": "#FFFFFF",
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#4E342E",
-                "body_font": "Lato",
-                "body_color": "#6D4C41",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT"
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 180,
+                    "colors": [
+                        "#FFFFFF",
+                        "#F5F5F0"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#2E4034",
+                "body_font": "Source Sans Pro",
+                "body_color": "#333333"
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Introducing MenuFlow AI",
+            "body": "• An AI platform that builds dynamic, profitable menus in real-time.\n• Reduce food waste by up to 25% while boosting check size by 15%.",
+            "style": {
+                "background_color": "#F8F6F2",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#2E4034",
+                "body_font": "Source Sans Pro",
+                "body_color": "#333333"
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A modern, bright bakery counter with a friendly barista handing a beautiful branded box of cookies to a smiling customer.",
+            "image_prompt": "A sleek tablet showing a beautiful, interactive digital menu in a high-end restaurant setting. The menu items have dynamic pricing and availability indicators.",
             "image_position": "LEFT"
         },
         {
-            "title": "Market Opportunity",
-            "body": "• TAM: $62B Global Confectionery Market.\n• SAM: $11B US Gourmet Cookie & Snack Market.\n• SOM: $5M Target in 3 major cities in Year 1.",
+            "title": "Intelligent Menu Engine",
+            "body": "• Our AI analyzes inventory levels, sales data, and diner profiles.\n• It then suggests optimal dishes, pricing, and wine pairings.",
+            "style": {
+                "background_color": "#F8F6F2",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#2E4034",
+                "body_font": "Source Sans Pro",
+                "body_color": "#333333"
+            },
+            "layout": "SECTION_TITLE_AND_DESCRIPTION",
+            "image_prompt": "A sophisticated data visualization dashboard showing connections between ingredient inventory, customer preferences, and dynamic menu item suggestions. Glowing nodes and lines on a dark background.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Unique Value",
+            "body": "• Hyper-Personalization - Menus adapt to individual diner preferences.\n• Waste Reduction AI - Predictive analytics minimize ingredient spoilage.\n• Seamless Integration - Connects to existing POS and inventory systems.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 330,
+                    "colors": [
+                        "#FFFFFF",
+                        "#F2F8F4"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#2E4034",
+                "body_font": "Source Sans Pro",
+                "body_color": "#333333"
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Simple SaaS Pricing",
+            "body": "• Tiered monthly subscription based on restaurant size.\n• Pro Tier - $199/mo for core features and analytics.\n• Enterprise Tier - Custom pricing for multi-location chains.",
+            "style": {
+                "background_color": "#F8F6F2",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#2E4034",
+                "body_font": "Source Sans Pro",
+                "body_color": "#333333"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Clean infographic showing three pricing tiers with simple icons representing small, medium, and large restaurants. Minimalist and professional design.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Early Market Success",
+            "body": "• 25 pilot restaurants signed in NYC and SF.\n• 22% average increase in profit margin for our partners.",
+            "style": {
+                "background_color": "#F8F6F2",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#2E4034",
+                "body_font": "Source Sans Pro",
+                "body_color": "#333333"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "An elegant logo wall featuring fictional but realistic logos of high-end, trendy restaurants. The logos are displayed on a clean, light-colored background.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Competitive Edge",
+            "body": "• Toast POS ($2B revenue) - Inventory is manual, not predictive. | Our AI saves owners 8-10 hours weekly.\n• UpMenu (5K customers) - Offers static digital menus only. | Our dynamic personalization increases LTV by 18%.\n• SevenRooms ($100M funding) - Focuses on CRM, not menu COGS. | We directly impact the highest cost center.",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
                     "angle": 120,
                     "colors": [
-                        "#FFF8E7",
-                        "#FFFFFF"
+                        "#FFFFFF",
+                        "#F7F3EE"
                     ]
                 },
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#4E342E",
-                "body_font": "Lato",
-                "body_color": "#6D4C41",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT"
-            },
-            "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "An infographic-style illustration showing three concentric circles representing TAM, SAM, and SOM with clean, modern icons.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Gourmet Flavors",
-            "body": "• We use premium ingredients like Valrhona chocolate and local dairy.\n• Our menu features unique monthly drops to drive repeat visits.",
-            "style": {
-                "background_color": "#4E342E",
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#F5DEB3",
-                "body_font": "Lato",
-                "body_color": "#FFFFFF",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Stunning macro shot of a freshly baked sea salt chocolate chip cookie, warm light, a wisp of steam rising, on a rustic wooden board.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Revenue Streams",
-            "body": "• Direct-to-Consumer: In-store sales and local online delivery.\n• Corporate Gifting: Branded boxes for client and employee appreciation.\n• Catering & Events: Custom orders for parties and gatherings.",
-            "style": {
-                "background_color": "#FFF8E7",
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#4E342E",
-                "body_font": "Lato",
-                "body_color": "#6D4C41",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT"
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#2E4034",
+                "body_font": "Source Sans Pro",
+                "body_color": "#333333",
+                "body_line_spacing": 140
             },
             "layout": "TITLE_AND_BODY"
         },
         {
-            "title": "Why We Win",
-            "body": "• Superior Product: Unforgettable taste from premium ingredients.\n• Strong Brand: A lifestyle brand focused on joy and connection.\n• Tech-Enabled: Efficient operations and a frictionless customer app.",
+            "title": "Our Team",
+            "body": "• Aisha Khan, CEO - Former Product Lead at DoorDash, 10+ years in food tech.\n• Ben Carter, CTO - PhD in ML from Stanford, ex-Google AI research scientist.\n• Maria Flores, Head of Sales - Grew restaurant SaaS startup from 0 to $5M ARR.\n• David Chen, Culinary Advisor - James Beard award-winning chef and restaurateur.",
             "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 210,
-                    "colors": [
-                        "#FFF8E7",
-                        "#FFFFFF"
-=======
-            "body": "AgriSense is an AI platform that delivers real-time, actionable insights to farmers.\n\n• Optimize water usage by up to 30% with precise irrigation schedules.\n• Predict crop yields with 95% accuracy to improve planning.\n• Detect diseases and pests weeks earlier than the human eye.",
-                        "style": {
-                            "background_color": "#FFFFFF",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro",
-                            "body_color": "#1C1C1C",
-                            "title_alignment": "CENTER",
-                            "body_alignment": "CENTER"
-                        },
-                        "layout": "TITLE_AND_BODY"
-                    },
-                    {
-                        "title": "How It Works",
-                        "body": "• We integrate satellite, drone, and on-field sensor data.\n• Our proprietary AI models analyze this data for key insights.",
-                        "style": {
-                            "background_color": "#E6EBE9",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro",
-                            "body_color": "#1C1C1C"
-                        },
-                        "layout": "TITLE_AND_TWO_COLUMNS",
-                        "image_prompt": "Clean, futuristic infographic diagram showing icons for a satellite, a drone, and a soil sensor feeding data into a central cloud AI brain, which then outputs insights to a farmer's tablet. Use a clean, minimalist style.",
-                        "image_position": "RIGHT"
-                    },
-                    {
-                        "title": "Market Opportunity",
-                        "body": "• $24B Global Precision Agriculture market by 2028 (TAM).\n• $8B market for AI-driven farm management in North America (SAM).\n• $500M initial target for vineyards and high-value crops (SOM).",
-                        "style": {
-                            "background_color": "#F0F4F2",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro",
-                            "body_color": "#1C1C1C"
-                        },
-                        "layout": "TITLE_AND_TWO_COLUMNS",
-                        "image_prompt": "Stylized 3D map of North America with glowing data points concentrated over major agricultural zones like California's Central Valley and the Midwest Corn Belt.",
-                        "image_position": "LEFT"
-                    },
-                    {
-                        "title": "Business Model",
-                        "body": "A simple tiered SaaS subscription based on acreage managed.\n\n• Starter: $10/acre per year for basic monitoring.\n• Pro: $25/acre per year with predictive analytics and alerts.\n• Enterprise: Custom pricing for large-scale operations.",
-                        "style": {
-                            "background_color": "#FFFFFF",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro",
-                            "body_color": "#1C1C1C",
-                            "title_alignment": "LEFT",
-                            "body_alignment": "LEFT"
-                        },
-                        "layout": "TITLE_AND_BODY"
-                    },
-                    {
-                        "title": "Competitive Edge",
-                        "body": "• Our sensor-fusion AI is 40% more accurate than satellite-only rivals.\n• We provide actionable recommendations, not just raw data.\n• Our platform integrates seamlessly with existing farm equipment.",
-                        "style": {
-                            "background_color": "#F0F4F2",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro",
-                            "body_color": "#1C1C1C"
-                        },
-                        "layout": "TITLE_AND_TWO_COLUMNS",
-                        "image_prompt": "A modern, sleek dashboard on a tablet screen showing farm health metrics, with a sharp focus on an alert for 'Nitrogen Deficiency Detected'.",
-                        "image_position": "RIGHT"
-                    },
-                    {
-                        "title": "Competitive Landscape",
-                        "body": "• Planet Labs ($2.2B market cap, 200+ satellites) - Provides raw imagery, lacks farm-level insights | Our advantage: We translate data into actionable irrigation and fertilizer plans.\n• FBN ($3.9B valuation) - Focus on network and inputs, weaker predictive AI | Our advantage: Superior disease prediction models reducing crop loss by 15%.\n• CropX ($30M funding) - Hardware-focused on soil sensors | Our advantage: We fuse soil data with aerial imagery for a complete field view.",
-                        "style": {
-                            "background_color": "#FFFFFF",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro",
-                            "body_color": "#1C1C1C",
-                            "body_line_spacing": 120
-                        },
-                        "layout": "ONE_COLUMN_TEXT"
-                    },
-                    {
-                        "title": "Our Traction",
-                        "body": "• 50+ pilot farms across 10,000 acres in California.\n• $120k in ARR achieved in our first 6 months.\n• Validated 22% average reduction in water usage.",
-                        "style": {
-                            "background_color": "#E6EBE9",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro",
-                            "body_color": "#1C1C1C"
-                        },
-                        "layout": "TITLE_AND_TWO_COLUMNS",
-                        "image_prompt": "Clean, simple bar chart with a steep upward trend labeled 'Acres Under Management', showing growth from 0 to 10,000 over three quarters.",
-                        "image_position": "LEFT"
-                    },
-                    {
-                        "title": "Customer Proof",
-                        "body": "\"AgriSense saved our vineyard. We caught a fungal outbreak a month early and saved the entire harvest.\"\n\n- Maria Garcia, Owner, Napa Valley Vineyards",
-                        "style": {
-                            "background_color": "#F0F4F2",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro Italic",
-                            "body_color": "#1C1C1C",
-                            "body_alignment": "CENTER"
-                        },
-                        "layout": "TITLE_AND_TWO_COLUMNS",
-                        "image_prompt": "Golden hour photograph of a sun-drenched vineyard, with lush green grapevines stretching into the distance. The photo feels warm and successful.",
-                        "image_position": "RIGHT"
-                    },
-                    {
-                        "title": "Our Team",
-                        "body": "• Dr. Elena Petrova, CEO - PhD in Remote Sensing, ex-NASA JPL.\n• Ben Carter, CTO - Led AgTech division at John Deere for 10 years.\n• Samuel Jones, Head of Growth - Scaled two SaaS startups past $10M ARR.\n• Chloe Nguyen, Lead Agronomist - 15 years of field experience with UC Davis.",
-                        "style": {
-                            "background_color": "#FFFFFF",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro",
-                            "body_color": "#1C1C1C",
-                            "body_line_spacing": 130
-                        },
-                        "layout": "TITLE_AND_BODY"
-                    },
-                    {
-                        "title": "The Ask",
-                        "body": "We are raising a $2.5M seed round to scale our sales team, expand sensor integrations, and achieve nationwide coverage.",
-                        "style": {
-                            "background_style": {
-                                "type": "GRADIENT",
-                                "angle": 180,
-                                "colors": [
-                                    "#3B82F6",
-                                    "#2563EB"
->>>>>>> 81622ab (Fix landing page issue + dashboard reshow buttons)
-                                ]
-                            },
-                            "title_font": "Playfair Display SemiBold",
-                            "title_color": "#D2691E",
-                            "body_font": "Lato",
-                            "body_color": "#4E342E",
-                            "title_alignment": "CENTER",
-                            "body_alignment": "CENTER"
-                        },
-                        "layout": "MAIN_POINT"
-                    },
-                    {
-<<<<<<< HEAD
-            "title": "Customer Love",
-                        "body": "• 10k+ waitlist signups pre-launch.\n• 4.9 star rating from our initial pop-up events.",
-                        "style": {
-                            "background_color": "#FFFFFF",
-                            "title_font": "Playfair Display SemiBold",
-                            "title_color": "#4E342E",
-                            "body_font": "Lato",
-                            "body_color": "#6D4C41",
-                            "title_alignment": "LEFT",
-                            "body_alignment": "LEFT"
-                        },
-                        "layout": "TITLE_AND_TWO_COLUMNS",
-                        "image_prompt": "A beautiful collage of Instagram posts and glowing customer reviews about cookies, arranged in a clean, modern grid.",
-                        "image_position": "LEFT"
-                    },
-                    {
-                        "title": "Competitive Edge",
-                        "body": "• Crumbl Cookies ($1B+ sales) - Limited weekly rotation, quality concerns | Our advantage: Artisanal quality with greater flavor diversity.\n• Insomnia Cookies (Acquired by Krispy Kreme) - Focus on late-night delivery | Our advantage: Premium daytime and corporate gifting focus.",
-                        "style": {
-                            "background_color": "#FFF8E7",
-                            "title_font": "Playfair Display SemiBold",
-                            "title_color": "#4E342E",
-                            "body_font": "Lato",
-                            "body_color": "#6D4C41",
-                            "title_alignment": "LEFT",
-                            "body_alignment": "LEFT"
-                        },
-                        "layout": "TITLE_AND_BODY"
-                    },
-                    {
-                        "title": "Growth Strategy",
-                        "body": "• Launch flagship store and build a strong local following.\n• Expand delivery zones and partner with corporate clients.\n• Introduce a national shipping program in Year 2.",
-                        "style": {
-                            "background_style": {
-                                "type": "GRADIENT",
-                                "angle": 300,
-                                "colors": [
-                                    "#FFFFFF",
-                                    "#FFF8E7"
-                                ]
-                            },
-                            "title_font": "Playfair Display SemiBold",
-                            "title_color": "#4E342E",
-                            "body_font": "Lato",
-                            "body_color": "#6D4C41",
-                            "title_alignment": "LEFT",
-                            "body_alignment": "LEFT"
-                        },
-                        "layout": "TITLE_AND_TWO_COLUMNS",
-                        "image_prompt": "A minimalist map of a city with pins dropping in key neighborhoods, illustrating a delivery expansion strategy.",
-                        "image_position": "RIGHT"
-                    },
-                    {
-                        "title": "Founding Team",
-                        "body": "• Elena Garcia, CEO & Head Baker - classically trained pastry chef, formerly at Tartine Bakery.\n• David Chen, COO - 10 years in logistics and operations at DoorDash.\n• Aisha Mohammed, CMO - Scaled brand marketing for direct-to-consumer food startup Sweetgreen.",
-                        "style": {
-                            "background_color": "#FFFFFF",
-                            "title_font": "Playfair Display SemiBold",
-                            "title_color": "#4E342E",
-                            "body_font": "Lato",
-                            "body_color": "#6D4C41",
-                            "title_alignment": "LEFT",
-                            "body_alignment": "LEFT"
-                        },
-                        "layout": "TITLE_AND_BODY"
-                    },
-                    {
-                        "title": "Financial Outlook",
-                        "body": "• Projecting $1.2M in revenue in Year 1 with one location.\n• Scaling to $8M ARR by Year 3 with multi-city expansion.\n• Targeting 25% EBITDA margin at scale through operational efficiency.",
-                        "style": {
-                            "background_color": "#FFF8E7",
-                            "title_font": "Playfair Display SemiBold",
-                            "title_color": "#4E342E",
-                            "body_font": "Lato",
-                            "body_color": "#6D4C41",
-                            "title_alignment": "LEFT",
-                            "body_alignment": "LEFT"
-                        },
-                        "layout": "TITLE_AND_TWO_COLUMNS",
-                        "image_prompt": "A simple, elegant bar chart showing projected revenue growth over three years, using the presentation's color palette.",
-                        "image_position": "LEFT"
-                    },
-                    {
-                        "title": "Our Ask",
-                        "body": "• We are raising $750,000 in seed funding.\n• Funds will be used for: 40% Flagship Store Build-Out, 35% Marketing & Branding, and 25% Operational Headcount.",
-                        "style": {
-                            "background_color": "#D2691E",
-                            "title_font": "Playfair Display Bold",
-                            "title_color": "#FFFFFF",
-                            "body_font": "Lato",
-                            "body_color": "#F5DEB3",
-                            "title_alignment": "CENTER",
-                            "body_alignment": "CENTER",
-                            "body_line_spacing": 150
-=======
-            "title": "Future Vision",
-                            "body": "• To become the essential OS for every sustainable farm globally.\n• Expanding into carbon credit verification and insurance analytics.\n• Building a global dataset to model and mitigate climate change impact.",
-                            "style": {
-                                "background_color": "#F0F4F2",
-                                "title_font": "Montserrat SemiBold",
-                                "title_color": "#0A3822",
-                                "body_font": "Source Sans Pro",
-                                "body_color": "#1C1C1C",
-                                "title_alignment": "CENTER"
->>>>>>> 81622ab (Fix landing page issue + dashboard reshow buttons)
-                            },
-                            "layout": "SECTION_HEADER"
-                        }
-                    ]
-                }
+                "background_color": "#F8F6F2",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#2E4034",
+                "body_font": "Source Sans Pro",
+                "body_color": "#333333"
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "The Road Ahead",
+            "body": "• Projecting $2.5M ARR by Year 2.\n• Targeting 500 restaurant partners in 18 months.",
+            "style": {
+                "background_color": "#F8F6F2",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#2E4034",
+                "body_font": "Source Sans Pro",
+                "body_color": "#333333"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A clean, minimalist line graph showing steep upward trajectory for revenue growth over three years. The graph is highlighted in a warm terracotta accent color.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Our Ask",
+            "body": "• We are raising a $2M seed round.\n• For Product (40%), Sales & Marketing (35%), and Operations (25%).\n• This provides an 18-month runway to achieve our key milestones.",
+            "style": {
+                "background_color": "#2E4034",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#FFFFFF",
+                "body_font": "Source Sans Pro",
+                "body_color": "#E0E0E0"
+            },
+            "layout": "ONE_COLUMN_TEXT"
+        },
+        {
+            "title": "Let's Talk",
+            "body": "Aisha Khan, CEO\naisha@menuflow.ai | menuflow.ai",
+            "style": {
+                "background_color": "#F8F6F2",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#2E4034",
+                "body_font": "Source Sans Pro",
+                "body_color": "#333333",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER"
+            },
+            "layout": "MAIN_POINT"
+        }
+    ]
+}

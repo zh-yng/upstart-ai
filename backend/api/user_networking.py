@@ -37,7 +37,7 @@ def init_networking_services(app):
 
 
 @networking_bp.route('/find-investors', methods=['POST'])
-def find_investors():
+def find_investors(idea):
 
     if not genai_llm_search:
          current_app.logger.error("Networking LLM client not initialized")
@@ -47,7 +47,7 @@ def find_investors():
     if 'idea' not in data:
         return jsonify({"error": "Missing 'idea' in request body"}), 400
     
-    user_idea = data['idea']
+    user_idea = idea
     
     system_instruction = """
     You are a startup advisor and venture capital networking expert. Your task is to:

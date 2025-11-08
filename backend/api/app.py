@@ -245,5 +245,13 @@ def chat_route():
         app.logger.exception("Chat processing failed", exc_info=exc)
         return jsonify({'error': 'Chat processing failed', 'response': 'Sorry, something went wrong. Please try again.'}), 500
 
+@app.route('/find-investors', methods=['POST'])
+def find_investors_route():
+    data = request.get_json(force=True)
+    idea = (data.get('idea') or '').strip()
+    if not idea:
+        return jsonify({'error': 'Idea is required'}), 400
+    return find_investors(idea)
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
