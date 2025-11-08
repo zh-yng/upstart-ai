@@ -3,7 +3,7 @@
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 from run_deck import run_deck
-from ad_gen import ad_gen_bp, init_ad_gen_services
+#from ad_gen import ad_gen_bp, init_ad_gen_services
 from flask_cors import CORS
 
 load_dotenv()
@@ -14,8 +14,8 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
 
 # Initialize ad generation services and register blueprint
-init_ad_gen_services(app)
-app.register_blueprint(ad_gen_bp)
+#init_ad_gen_services(app)
+#app.register_blueprint(ad_gen_bp)
 
 # Testing route
 @app.route('/')
