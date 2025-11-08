@@ -53,7 +53,7 @@ Requirements:
 Make it comprehensive but practical for a startup founder to follow."""
 
 response = client.models.generate_content(
-    model="gemini-2.5-flash",
+    model="projects/aiatl-477600/locations/us-central1/endpoints/169534797398409216",
     contents=prompt,
 )
 
