@@ -31,10 +31,10 @@ const Dashboard = () => {
     }, [chatMessages]);
 
     const features = [
-        { name: 'Slides', icon: 'pi pi-id-card', route: '/api/create_slides', content: (presentationUrl != null) ? presentationUrl : '', color: 'rgba(248, 191, 8,1)', handler: 'slides' },
-        { name: 'Video', icon: 'pi pi-video', route: '/api/create_video', content: '', color: 'rgba(8, 191, 248, 1)', loadingColor: 'rgba(191, 8, 248,1)', handler: 'video' },
-        { name: 'Network', icon: 'pi pi-sitemap', route: '/api/network', content: '', color: 'rgba(191, 8, 248,1)', handler: 'network' },
-        { name: 'Roadmap', icon: 'pi pi-map', route: '/api/create_roadmap', content: '', color: 'rgba(248, 191, 8,1)', loadingColor: 'rgba(191, 8, 248,1)', handler: 'roadmap' },
+        { name: 'Slides', icon: 'pi pi-id-card', route: '/api/create_slides', content: (presentationUrl != null) ? presentationUrl : '', color: 'rgba(230, 187, 255, 1)', handler: 'slides' },
+        { name: 'Video', icon: 'pi pi-video', route: '/api/create_video', content: '', color: 'rgba(230, 187, 255, 1)', loadingColor: 'rgba(230, 187, 255, 1)', handler: 'video' },
+        { name: 'Network', icon: 'pi pi-sitemap', route: '/api/network', content: '', color: 'rgba(230, 187, 255, 1)', handler: 'network' },
+        { name: 'Roadmap', icon: 'pi pi-map', route: '/api/create_roadmap', content: '', color: 'rgba(230, 187, 255, 1)', loadingColor: 'rgba(230, 187, 255, 1)', handler: 'roadmap' },
     ]
 
     const handleGetHello = async () => {
@@ -436,7 +436,8 @@ const Dashboard = () => {
                                 padding: '1rem 1.5rem',
                                 borderBottom: '1px solid rgba(255,255,255,0.2)',
                                 background: 'rgba(191, 8, 248, 0.1)',
-                                flexShrink: 0
+                                flexShrink: 0,
+                                textAlign: 'left'
                             }}>
                                 <h3 className="m-0 flex align-items-center gap-2">
                                     <i className="pi pi-comments" style={{ fontSize: '1.5rem' }}></i>
@@ -450,38 +451,38 @@ const Dashboard = () => {
                             {/* Chat Messages */}
                             <div style={{ flex: 1, overflowY: 'scroll', padding: '1rem', minHeight: 0, maxHeight: 'calc(100vh - 120px)' }}>
                                 <div className="flex flex-column gap-3">
-                                    {chatMessages.map((msg, index) => (
-                                        <div
-                                            key={index}
-                                            className={`flex ${msg.role === 'user' ? 'justify-content-end' : 'justify-content-start'}`}
-                                        >
+                                    {
+                                        chatMessages.map((msg, index) => (
                                             <div
-                                                style={{
-                                                    maxWidth: '75%',
-                                                    padding: '0.75rem 1rem',
-                                                    borderRadius: '12px',
-                                                    background: msg.role === 'user'
-                                                        ? 'rgba(8, 191, 248, 0.2)'
-                                                        : 'rgba(191, 8, 248, 0.2)',
-                                                    border: `1px solid ${msg.role === 'user'
-                                                        ? 'rgba(8, 191, 248, 0.4)'
-                                                        : 'rgba(191, 8, 248, 0.4)'}`,
-                                                }}
+                                                key={index}
+                                                className={`flex ${msg.role === 'user' ? 'justify-content-end' : 'justify-content-start'}`}
                                             >
-                                                {msg.role === 'assistant' && (
-                                                    <div className="flex align-items-center gap-2 mb-2">
-                                                        <i className="pi pi-sparkles" style={{ fontSize: '0.875rem' }}></i>
-                                                        <strong style={{ fontSize: '0.875rem' }}>Everest</strong>
-                                                    </div>
-                                                )}
-                                                <p className="m-0" style={{ fontSize: '0.95rem', lineHeight: '1.5', whiteSpace: 'pre-wrap' }}>
-                                                    {msg.text}
-                                                </p>
+                                                <div
+                                                    style={{
+                                                        maxWidth: '75%',
+                                                        padding: '0.75rem 1rem',
+                                                        borderRadius: '12px',
+                                                        background: msg.role === 'user'
+                                                            ? 'rgba(8, 191, 248, 0.2)'
+                                                            : 'rgba(191, 8, 248, 0.2)',
+                                                        border: `1px solid ${msg.role === 'user'
+                                                            ? 'rgba(8, 191, 248, 0.4)'
+                                                            : 'rgba(191, 8, 248, 0.4)'}`,
+                                                    }}
+                                                >
+                                                    {msg.role === 'assistant' && (
+                                                        <div className="flex align-items-center gap-2 mb-2">
+                                                            <i className="pi pi-sparkles" style={{ fontSize: '0.875rem' }}></i>
+                                                            <strong style={{ fontSize: '0.875rem' }}>Everest</strong>
+                                                        </div>
+                                                    )}
+                                                    <p className="m-0" style={{ fontSize: '0.95rem', lineHeight: '1.5' }}>
+                                                        {msg.text}
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    ))}
-                                    {/* Scroll anchor */}
-                                    <div ref={chatMessagesEndRef} />
+                                        ))
+                                    }
                                 </div>
                             </div>
 
@@ -522,7 +523,7 @@ const Dashboard = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div >
                 </div >
             </div >
 

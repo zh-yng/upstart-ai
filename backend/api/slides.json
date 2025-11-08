@@ -1,414 +1,220 @@
 {
-    "presentation_title": "Doughlicious: Crafting Joy, One Gourmet Cookie at a Time",
+    "presentation_title": "Aether & Bridle: Capturing the Essence of the Equestrian Spirit",
     "title_slide": {
-        "title": "Doughlicious: Crafting Joy, One Gourmet Cookie at a Time",
+        "title": "Aether & Bridle: Capturing the Essence of the Equestrian Spirit",
         "style": {
-            "background_style": {
-                "type": "GRADIENT",
-                "angle": 30,
-                "colors": [
-                    "#FFF8E7",
-                    "#F5DEB3"
-                ]
-            },
-            "title_font": "Playfair Display Bold",
+            "background_color": "#FDFBF7",
+            "title_font": "Lora Bold",
             "title_color": "#4E342E",
             "subtitle_font": "Lato",
-            "subtitle_color": "#6D4C41"
+            "subtitle_color": "#A1887F"
         },
         "layout": "TITLE"
     },
     "design_language": {
-        "name": "Modern Bakery Chic",
+        "name": "Equestrian Elegance",
         "palette": {
-            "primary": "#D2691E",
-            "secondary": "#F5DEB3",
-            "accent": "#FFA07A",
-            "background": "#FFF8E7",
+            "primary": "#4E342E",
+            "secondary": "#A1887F",
+            "accent": "#2E4636",
+            "background": "#FDFBF7",
             "text_on_light": "#4E342E",
-            "text_on_dark": "#FFFFFF"
+            "text_on_dark": "#FDFBF7"
         },
         "typography": {
-            "title_font": "Playfair Display SemiBold",
+            "title_font": "Lora SemiBold",
             "body_font": "Lato"
         },
         "background_style": {
             "type": "GRADIENT",
-            "angle": 45,
+            "angle": 180,
             "colors": [
-                "#FFF8E7",
-                "#FFFFFF"
+                "#FDFBF7",
+                "#FAF6F0"
             ]
         },
+        "accent_shapes": [
+            {
+                "shape_type": "STRIPE",
+                "position": {
+                    "x": 0,
+                    "y": 520
+                },
+                "size": {
+                    "width": 960,
+                    "height": 4
+                },
+                "fill_color": "#A1887F",
+                "opacity": 0.4
+            }
+        ],
         "text_alignment": "LEFT",
         "body_line_spacing": 140
     },
     "slides": [
         {
-<<<<<<< HEAD
-            "title": "Cookie Fatigue",
-            "body": "• The market is filled with mass-produced, artificial cookies.\n• Local bakeries offer quality but lack convenience and scale.\n• Consumers crave unique, high-quality treats that feel special.",
+            "title": "Our Vision",
+            "body": "• We bottle the untamed elegance of the equestrian lifestyle.\n• A luxury fragrance for those who value freedom and heritage.",
             "style": {
-                "background_color": "#FFF8E7",
-                "title_font": "Playfair Display SemiBold",
+                "background_color": "#FDFBF7",
+                "title_font": "Lora SemiBold",
                 "title_color": "#4E342E",
                 "body_font": "Lato",
-                "body_color": "#6D4C41",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT"
+                "body_color": "#4E342E"
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A supermarket aisle with generic, plastic-wrapped cookie packages under harsh fluorescent lighting, looking unappetizing.",
-=======
-            "title": "The Problem",
-            "body": "• Climate change creates unpredictable growing seasons for farmers.\n• Water scarcity and rising costs threaten farm profitability.\n• Traditional methods miss early signs of crop stress and disease.",
-            "style": {
-                "background_color": "#F0F4F2",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#0A3822",
-                "body_font": "Source Sans Pro",
-                "body_color": "#1C1C1C"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Dramatic split-screen photo showing a drought-stricken cornfield on one side and a perfectly healthy, green field on the other, cinematic color grading.",
->>>>>>> 81622ab (Fix landing page issue + dashboard reshow buttons)
+            "image_prompt": "A minimalist, luxury perfume bottle with a leather-wrapped cap, sitting on a rustic wooden table next to a sprig of lavender. Soft, golden hour light.",
             "image_position": "RIGHT"
-        },
-        {
-            "title": "Our Solution",
-<<<<<<< HEAD
-            "body": "• Artisanal, small-batch cookies with rotating, seasonal flavors.\n• A seamless tech-first experience for online ordering and delivery.\n• A warm, inviting brand that builds community and delight.",
-            "style": {
-                "background_color": "#FFFFFF",
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#4E342E",
-                "body_font": "Lato",
-                "body_color": "#6D4C41",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A modern, bright bakery counter with a friendly barista handing a beautiful branded box of cookies to a smiling customer.",
-            "image_position": "LEFT"
         },
         {
             "title": "Market Opportunity",
-            "body": "• TAM: $62B Global Confectionery Market.\n• SAM: $11B US Gourmet Cookie & Snack Market.\n• SOM: $5M Target in 3 major cities in Year 1.",
+            "body": "• Niche fragrance segment is growing at 15% CAGR.\n• Clear gap for authentic, experience-driven scents.",
             "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 120,
-                    "colors": [
-                        "#FFF8E7",
-                        "#FFFFFF"
-                    ]
-                },
-                "title_font": "Playfair Display SemiBold",
+                "background_color": "#FDFBF7",
+                "title_font": "Lora SemiBold",
                 "title_color": "#4E342E",
                 "body_font": "Lato",
-                "body_color": "#6D4C41",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT"
-            },
-            "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "An infographic-style illustration showing three concentric circles representing TAM, SAM, and SOM with clean, modern icons.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Gourmet Flavors",
-            "body": "• We use premium ingredients like Valrhona chocolate and local dairy.\n• Our menu features unique monthly drops to drive repeat visits.",
-            "style": {
-                "background_color": "#4E342E",
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#F5DEB3",
-                "body_font": "Lato",
-                "body_color": "#FFFFFF",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT"
+                "body_color": "#4E342E"
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Stunning macro shot of a freshly baked sea salt chocolate chip cookie, warm light, a wisp of steam rising, on a rustic wooden board.",
-            "image_position": "RIGHT"
+            "image_prompt": "Infographic chart showing the growth of the niche fragrance market, with elegant equestrian-themed icons and a warm, earthy color palette.",
+            "image_position": "LEFT"
         },
         {
-            "title": "Revenue Streams",
-            "body": "• Direct-to-Consumer: In-store sales and local online delivery.\n• Corporate Gifting: Branded boxes for client and employee appreciation.\n• Catering & Events: Custom orders for parties and gatherings.",
+            "title": "Our Debut Collection",
+            "body": "• 'Saddle Leather': Rich notes of aged leather and cedarwood.\n• 'Hayloft': Sweet, sun-dried hay with a hint of wild clover.\n• 'First Gallop': Crisp morning air, green grass, and damp earth.",
             "style": {
-                "background_color": "#FFF8E7",
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#4E342E",
+                "background_color": "#FDFBF7",
+                "title_font": "Lora SemiBold",
+                "title_color": "#2E4636",
                 "body_font": "Lato",
-                "body_color": "#6D4C41",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT"
+                "body_color": "#4E342E",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER"
             },
             "layout": "TITLE_AND_BODY"
         },
         {
-            "title": "Why We Win",
-            "body": "• Superior Product: Unforgettable taste from premium ingredients.\n• Strong Brand: A lifestyle brand focused on joy and connection.\n• Tech-Enabled: Efficient operations and a frictionless customer app.",
+            "title": "Product Spotlight",
+            "body": "• Sustainable packaging with a premium, tactile feel.\n• Each bottle is hand-finished with a unique leather accent.",
             "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 210,
-                    "colors": [
-                        "#FFF8E7",
-                        "#FFFFFF"
-=======
-            "body": "AgriSense is an AI platform that delivers real-time, actionable insights to farmers.\n\n• Optimize water usage by up to 30% with precise irrigation schedules.\n• Predict crop yields with 95% accuracy to improve planning.\n• Detect diseases and pests weeks earlier than the human eye.",
-                        "style": {
-                            "background_color": "#FFFFFF",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro",
-                            "body_color": "#1C1C1C",
-                            "title_alignment": "CENTER",
-                            "body_alignment": "CENTER"
-                        },
-                        "layout": "TITLE_AND_BODY"
-                    },
-                    {
-                        "title": "How It Works",
-                        "body": "• We integrate satellite, drone, and on-field sensor data.\n• Our proprietary AI models analyze this data for key insights.",
-                        "style": {
-                            "background_color": "#E6EBE9",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro",
-                            "body_color": "#1C1C1C"
-                        },
-                        "layout": "TITLE_AND_TWO_COLUMNS",
-                        "image_prompt": "Clean, futuristic infographic diagram showing icons for a satellite, a drone, and a soil sensor feeding data into a central cloud AI brain, which then outputs insights to a farmer's tablet. Use a clean, minimalist style.",
-                        "image_position": "RIGHT"
-                    },
-                    {
-                        "title": "Market Opportunity",
-                        "body": "• $24B Global Precision Agriculture market by 2028 (TAM).\n• $8B market for AI-driven farm management in North America (SAM).\n• $500M initial target for vineyards and high-value crops (SOM).",
-                        "style": {
-                            "background_color": "#F0F4F2",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro",
-                            "body_color": "#1C1C1C"
-                        },
-                        "layout": "TITLE_AND_TWO_COLUMNS",
-                        "image_prompt": "Stylized 3D map of North America with glowing data points concentrated over major agricultural zones like California's Central Valley and the Midwest Corn Belt.",
-                        "image_position": "LEFT"
-                    },
-                    {
-                        "title": "Business Model",
-                        "body": "A simple tiered SaaS subscription based on acreage managed.\n\n• Starter: $10/acre per year for basic monitoring.\n• Pro: $25/acre per year with predictive analytics and alerts.\n• Enterprise: Custom pricing for large-scale operations.",
-                        "style": {
-                            "background_color": "#FFFFFF",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro",
-                            "body_color": "#1C1C1C",
-                            "title_alignment": "LEFT",
-                            "body_alignment": "LEFT"
-                        },
-                        "layout": "TITLE_AND_BODY"
-                    },
-                    {
-                        "title": "Competitive Edge",
-                        "body": "• Our sensor-fusion AI is 40% more accurate than satellite-only rivals.\n• We provide actionable recommendations, not just raw data.\n• Our platform integrates seamlessly with existing farm equipment.",
-                        "style": {
-                            "background_color": "#F0F4F2",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro",
-                            "body_color": "#1C1C1C"
-                        },
-                        "layout": "TITLE_AND_TWO_COLUMNS",
-                        "image_prompt": "A modern, sleek dashboard on a tablet screen showing farm health metrics, with a sharp focus on an alert for 'Nitrogen Deficiency Detected'.",
-                        "image_position": "RIGHT"
-                    },
-                    {
-                        "title": "Competitive Landscape",
-                        "body": "• Planet Labs ($2.2B market cap, 200+ satellites) - Provides raw imagery, lacks farm-level insights | Our advantage: We translate data into actionable irrigation and fertilizer plans.\n• FBN ($3.9B valuation) - Focus on network and inputs, weaker predictive AI | Our advantage: Superior disease prediction models reducing crop loss by 15%.\n• CropX ($30M funding) - Hardware-focused on soil sensors | Our advantage: We fuse soil data with aerial imagery for a complete field view.",
-                        "style": {
-                            "background_color": "#FFFFFF",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro",
-                            "body_color": "#1C1C1C",
-                            "body_line_spacing": 120
-                        },
-                        "layout": "ONE_COLUMN_TEXT"
-                    },
-                    {
-                        "title": "Our Traction",
-                        "body": "• 50+ pilot farms across 10,000 acres in California.\n• $120k in ARR achieved in our first 6 months.\n• Validated 22% average reduction in water usage.",
-                        "style": {
-                            "background_color": "#E6EBE9",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro",
-                            "body_color": "#1C1C1C"
-                        },
-                        "layout": "TITLE_AND_TWO_COLUMNS",
-                        "image_prompt": "Clean, simple bar chart with a steep upward trend labeled 'Acres Under Management', showing growth from 0 to 10,000 over three quarters.",
-                        "image_position": "LEFT"
-                    },
-                    {
-                        "title": "Customer Proof",
-                        "body": "\"AgriSense saved our vineyard. We caught a fungal outbreak a month early and saved the entire harvest.\"\n\n- Maria Garcia, Owner, Napa Valley Vineyards",
-                        "style": {
-                            "background_color": "#F0F4F2",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro Italic",
-                            "body_color": "#1C1C1C",
-                            "body_alignment": "CENTER"
-                        },
-                        "layout": "TITLE_AND_TWO_COLUMNS",
-                        "image_prompt": "Golden hour photograph of a sun-drenched vineyard, with lush green grapevines stretching into the distance. The photo feels warm and successful.",
-                        "image_position": "RIGHT"
-                    },
-                    {
-                        "title": "Our Team",
-                        "body": "• Dr. Elena Petrova, CEO - PhD in Remote Sensing, ex-NASA JPL.\n• Ben Carter, CTO - Led AgTech division at John Deere for 10 years.\n• Samuel Jones, Head of Growth - Scaled two SaaS startups past $10M ARR.\n• Chloe Nguyen, Lead Agronomist - 15 years of field experience with UC Davis.",
-                        "style": {
-                            "background_color": "#FFFFFF",
-                            "title_font": "Montserrat SemiBold",
-                            "title_color": "#0A3822",
-                            "body_font": "Source Sans Pro",
-                            "body_color": "#1C1C1C",
-                            "body_line_spacing": 130
-                        },
-                        "layout": "TITLE_AND_BODY"
-                    },
-                    {
-                        "title": "The Ask",
-                        "body": "We are raising a $2.5M seed round to scale our sales team, expand sensor integrations, and achieve nationwide coverage.",
-                        "style": {
-                            "background_style": {
-                                "type": "GRADIENT",
-                                "angle": 180,
-                                "colors": [
-                                    "#3B82F6",
-                                    "#2563EB"
->>>>>>> 81622ab (Fix landing page issue + dashboard reshow buttons)
-                                ]
-                            },
-                            "title_font": "Playfair Display SemiBold",
-                            "title_color": "#D2691E",
-                            "body_font": "Lato",
-                            "body_color": "#4E342E",
-                            "title_alignment": "CENTER",
-                            "body_alignment": "CENTER"
-                        },
-                        "layout": "MAIN_POINT"
-                    },
-                    {
-<<<<<<< HEAD
-            "title": "Customer Love",
-                        "body": "• 10k+ waitlist signups pre-launch.\n• 4.9 star rating from our initial pop-up events.",
-                        "style": {
-                            "background_color": "#FFFFFF",
-                            "title_font": "Playfair Display SemiBold",
-                            "title_color": "#4E342E",
-                            "body_font": "Lato",
-                            "body_color": "#6D4C41",
-                            "title_alignment": "LEFT",
-                            "body_alignment": "LEFT"
-                        },
-                        "layout": "TITLE_AND_TWO_COLUMNS",
-                        "image_prompt": "A beautiful collage of Instagram posts and glowing customer reviews about cookies, arranged in a clean, modern grid.",
-                        "image_position": "LEFT"
-                    },
-                    {
-                        "title": "Competitive Edge",
-                        "body": "• Crumbl Cookies ($1B+ sales) - Limited weekly rotation, quality concerns | Our advantage: Artisanal quality with greater flavor diversity.\n• Insomnia Cookies (Acquired by Krispy Kreme) - Focus on late-night delivery | Our advantage: Premium daytime and corporate gifting focus.",
-                        "style": {
-                            "background_color": "#FFF8E7",
-                            "title_font": "Playfair Display SemiBold",
-                            "title_color": "#4E342E",
-                            "body_font": "Lato",
-                            "body_color": "#6D4C41",
-                            "title_alignment": "LEFT",
-                            "body_alignment": "LEFT"
-                        },
-                        "layout": "TITLE_AND_BODY"
-                    },
-                    {
-                        "title": "Growth Strategy",
-                        "body": "• Launch flagship store and build a strong local following.\n• Expand delivery zones and partner with corporate clients.\n• Introduce a national shipping program in Year 2.",
-                        "style": {
-                            "background_style": {
-                                "type": "GRADIENT",
-                                "angle": 300,
-                                "colors": [
-                                    "#FFFFFF",
-                                    "#FFF8E7"
-                                ]
-                            },
-                            "title_font": "Playfair Display SemiBold",
-                            "title_color": "#4E342E",
-                            "body_font": "Lato",
-                            "body_color": "#6D4C41",
-                            "title_alignment": "LEFT",
-                            "body_alignment": "LEFT"
-                        },
-                        "layout": "TITLE_AND_TWO_COLUMNS",
-                        "image_prompt": "A minimalist map of a city with pins dropping in key neighborhoods, illustrating a delivery expansion strategy.",
-                        "image_position": "RIGHT"
-                    },
-                    {
-                        "title": "Founding Team",
-                        "body": "• Elena Garcia, CEO & Head Baker - classically trained pastry chef, formerly at Tartine Bakery.\n• David Chen, COO - 10 years in logistics and operations at DoorDash.\n• Aisha Mohammed, CMO - Scaled brand marketing for direct-to-consumer food startup Sweetgreen.",
-                        "style": {
-                            "background_color": "#FFFFFF",
-                            "title_font": "Playfair Display SemiBold",
-                            "title_color": "#4E342E",
-                            "body_font": "Lato",
-                            "body_color": "#6D4C41",
-                            "title_alignment": "LEFT",
-                            "body_alignment": "LEFT"
-                        },
-                        "layout": "TITLE_AND_BODY"
-                    },
-                    {
-                        "title": "Financial Outlook",
-                        "body": "• Projecting $1.2M in revenue in Year 1 with one location.\n• Scaling to $8M ARR by Year 3 with multi-city expansion.\n• Targeting 25% EBITDA margin at scale through operational efficiency.",
-                        "style": {
-                            "background_color": "#FFF8E7",
-                            "title_font": "Playfair Display SemiBold",
-                            "title_color": "#4E342E",
-                            "body_font": "Lato",
-                            "body_color": "#6D4C41",
-                            "title_alignment": "LEFT",
-                            "body_alignment": "LEFT"
-                        },
-                        "layout": "TITLE_AND_TWO_COLUMNS",
-                        "image_prompt": "A simple, elegant bar chart showing projected revenue growth over three years, using the presentation's color palette.",
-                        "image_position": "LEFT"
-                    },
-                    {
-                        "title": "Our Ask",
-                        "body": "• We are raising $750,000 in seed funding.\n• Funds will be used for: 40% Flagship Store Build-Out, 35% Marketing & Branding, and 25% Operational Headcount.",
-                        "style": {
-                            "background_color": "#D2691E",
-                            "title_font": "Playfair Display Bold",
-                            "title_color": "#FFFFFF",
-                            "body_font": "Lato",
-                            "body_color": "#F5DEB3",
-                            "title_alignment": "CENTER",
-                            "body_alignment": "CENTER",
-                            "body_line_spacing": 150
-=======
-            "title": "Future Vision",
-                            "body": "• To become the essential OS for every sustainable farm globally.\n• Expanding into carbon credit verification and insurance analytics.\n• Building a global dataset to model and mitigate climate change impact.",
-                            "style": {
-                                "background_color": "#F0F4F2",
-                                "title_font": "Montserrat SemiBold",
-                                "title_color": "#0A3822",
-                                "body_font": "Source Sans Pro",
-                                "body_color": "#1C1C1C",
-                                "title_alignment": "CENTER"
->>>>>>> 81622ab (Fix landing page issue + dashboard reshow buttons)
-                            },
-                            "layout": "SECTION_HEADER"
-                        }
-                    ]
-                }
+                "background_color": "#FDFBF7",
+                "title_font": "Lora SemiBold",
+                "title_color": "#4E342E",
+                "body_font": "Lato",
+                "body_color": "#4E342E"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "An elegant flat lay of the perfume's packaging: a textured box, a branded card, the bottle itself, and a silk ribbon, all in earthy tones. Macro photography, high detail.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Why We Win",
+            "body": "• Authentic Scent Profiles: Developed with master perfumers and equestrians.\n• Storytelling Brand: We sell an experience, not just a product.\n• DTC Model: High margins and direct customer relationships.",
+            "style": {
+                "background_color": "#FDFBF7",
+                "title_font": "Lora SemiBold",
+                "title_color": "#4E342E",
+                "body_font": "Lato",
+                "body_color": "#4E342E"
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Competitive Landscape",
+            "body": "• Byredo ($180M+ revenue) - Broad, minimalist luxury focus | Our advantage: Deep, authentic niche storytelling.\n• Le Labo (Estée Lauder) - City-based, industrial-chic aesthetic | Our advantage: Focus on nature and pastoral heritage.\n• Jo Malone (Estée Lauder) - Simple, layerable scents | Our advantage: Complex, evocative single fragrances.",
+            "style": {
+                "background_color": "#FDFBF7",
+                "title_font": "Lora SemiBold",
+                "title_color": "#4E342E",
+                "body_font": "Lato",
+                "body_color": "#4E342E",
+                "body_line_spacing": 150
+            },
+            "layout": "ONE_COLUMN_TEXT"
+        },
+        {
+            "title": "Our Customer",
+            "body": "• Affluent consumers (30-55) who value craftsmanship.\n• Seek unique, non-mainstream luxury goods.",
+            "style": {
+                "background_color": "#FDFBF7",
+                "title_font": "Lora SemiBold",
+                "title_color": "#4E342E",
+                "body_font": "Lato",
+                "body_color": "#4E342E"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Stylish woman in her late 30s, dressed in sophisticated country attire (tweed, cashmere), walking through a field at sunset. Candid, lifestyle shot.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Business Model",
+            "body": "• Primary Channel: E-commerce DTC at 75% gross margin.\n• Secondary Channel: Partnerships with luxury equestrian boutiques.",
+            "style": {
+                "background_color": "#FDFBF7",
+                "title_font": "Lora SemiBold",
+                "title_color": "#4E342E",
+                "body_font": "Lato",
+                "body_color": "#4E342E"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A sleek diagram showing the flow from e-commerce website to customer, with icons for online store and boutique partnerships. Clean and modern design.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Our Team",
+            "body": "• Eleanor Vance, Founder & CEO - Former Brand Director at Ralph Lauren Home.\n• Marcus Thorne, Head Perfumer - 20+ years experience at Givaudan.\n• Chloe Dubois, Head of Marketing - Scaled DTC brand Brooklinen's social media.\n• Ben Carter, Operations Lead - Ex-Supply Chain Manager at The Frye Company.",
+            "style": {
+                "background_color": "#FDFBF7",
+                "title_font": "Lora SemiBold",
+                "title_color": "#4E342E",
+                "body_font": "Lato",
+                "body_color": "#4E342E",
+                "body_line_spacing": 150
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Financial Projections",
+            "body": "• Year 1 Revenue Target: $750K\n• Projecting $5M in revenue by Year 5.",
+            "style": {
+                "background_color": "#FDFBF7",
+                "title_font": "Lora SemiBold",
+                "title_color": "#4E342E",
+                "body_font": "Lato",
+                "body_color": "#4E342E"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A clean, elegant bar chart showing revenue growth over 5 years. The bars are colored with the brand's palette of dark brown, beige, and green.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Our Ask",
+            "body": "Seeking: $500,000 Seed Funding\nUse of Funds: Inventory (40%), Marketing (35%), R&D (15%), Operations (10%)",
+            "style": {
+                "background_color": "#FDFBF7",
+                "title_font": "Lora SemiBold",
+                "title_color": "#2E4636",
+                "body_font": "Lato",
+                "body_color": "#4E342E",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER"
+            },
+            "layout": "MAIN_POINT"
+        },
+        {
+            "title": "Join Our Journey",
+            "body": "Aether & Bridle\nwww.aetherandbridle.com\neleanor.vance@aetherandbridle.com",
+            "style": {
+                "background_color": "#4E342E",
+                "title_font": "Lora SemiBold",
+                "title_color": "#FDFBF7",
+                "body_font": "Lato",
+                "body_color": "#A1887F",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER"
+            },
+            "layout": "SECTION_HEADER"
+        }
+    ]
+}
