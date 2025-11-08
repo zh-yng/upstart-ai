@@ -45,7 +45,7 @@ const Landing = () => {
                 throw new Error('Presentation link not found in response.');
             }
 
-            navigate('/dashboard', { state: { presentationUrl: data.presentationUrl } });
+            navigate('/dashboard', { state: { presentationUrl: data.presentationUrl, text: text } });
         } catch (err) {
             setError(err.message || 'Something went wrong while generating slides.');
         } finally {

@@ -1,73 +1,124 @@
 {
-    "presentation_title": "cupcaKke bakkery: Sweet Innovation Redefined",
+    "presentation_title": "Zenith Aerospace: From Screens to Skies",
     "title_slide": {
-        "title": "cupcaKke bakkery: Sweet Innovation Redefined",
+        "title": "Zenith Aerospace",
         "style": {
-            "background_color": "#FFDAB9",
-            "title_font": "Playfair Display",
-            "title_color": "#362A2A",
-            "subtitle_font": "Open Sans",
-            "subtitle_color": "#5D4C4C"
+            "background_color": "#0A2E5B",
+            "title_font": "Montserrat SemiBold",
+            "title_color": "#FFFFFF",
+            "subtitle_font": "Open Sans Light",
+            "subtitle_color": "#E0E0E0"
         },
         "layout": "TITLE"
     },
     "design_language": {
-        "name": "Artisan Digital Delights",
+        "name": "Stellar Precision",
         "palette": {
-            "primary": "#FFDAB9",
-            "secondary": "#B0E0E6",
-            "accent": "#FF69B4",
-            "background": "#FDF5E6",
-            "text_on_light": "#362A2A",
+            "primary": "#0A2E5B",
+            "secondary": "#6E88A1",
+            "accent": "#00C8FF",
+            "background": "#F0F4F8",
+            "text_on_light": "#1A1A2E",
             "text_on_dark": "#FFFFFF"
         },
         "typography": {
-            "title_font": "Playfair Display SemiBold",
+            "title_font": "Montserrat SemiBold",
             "body_font": "Open Sans"
         },
         "background_style": {
             "type": "GRADIENT",
-            "angle": 15,
+            "angle": 10,
             "colors": [
-                "#FDF5E6",
-                "#FFF8F0"
+                "#F0F4F8",
+                "#E3EBF4"
             ]
         },
         "accent_shapes": [
             {
-                "shape_type": "ROUNDED_RECTANGLE",
+                "shape_type": "RECTANGLE",
                 "position": {
-                    "x": 50,
-                    "y": 100
+                    "x": 0,
+                    "y": 0
                 },
                 "size": {
-                    "width": 120,
-                    "height": 15
+                    "width": 960,
+                    "height": 10
                 },
-                "fill_color": "#B0E0E6",
-                "opacity": 0.2
+                "fill_color": "#0A2E5B",
+                "opacity": 0.05
+            },
+            {
+                "shape_type": "ISOSCELES_TRIANGLE",
+                "position": {
+                    "x": 880,
+                    "y": 500
+                },
+                "size": {
+                    "width": 80,
+                    "height": 80
+                },
+                "fill_color": "#00C8FF",
+                "opacity": 0.1
             }
         ],
         "text_alignment": "LEFT",
-        "body_line_spacing": 135
+        "body_line_spacing": 125
     },
     "slides": [
         {
-            "title": "Overview - The Evolution of Indulgence",
-            "body": "•  Traditional charm meets modern culinary innovation\n•  Personalized, high-quality sweet experiences\n•  Reimagining the beloved cupcake for today's market",
+            "title": "Our Ascent: From Consumer Tech to Cosmic Frontier",
+            "body": "• Transforming market agility into aerospace innovation.\n• Leveraging supply chain mastery for orbital systems.\n• Reimagining space exploration with terrestrial efficiency.",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 10,
+                    "angle": 15,
                     "colors": [
-                        "#FDF5E6",
-                        "#FFF8F0"
+                        "#F0F4F8",
+                        "#E8EEF5"
                     ]
                 },
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#362A2A",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A2E5B",
                 "body_font": "Open Sans",
-                "body_color": "#362A2A",
+                "body_color": "#1A1A2E",
+                "title_alignment": "CENTER",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 50,
+                            "y": 120
+                        },
+                        "size": {
+                            "width": 10,
+                            "height": 300
+                        },
+                        "fill_color": "#00C8FF",
+                        "opacity": 0.15
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Abstract blend of circuit boards evolving into sleek satellite components, with a starry background and subtle light trails, high-tech, cinematic.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "The High Barrier to Entry in Space",
+            "body": "• Traditional aerospace costs are prohibitive for many.\n• Long development cycles delay critical missions.\n• Limited accessibility stifles innovation and growth.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 350,
+                    "colors": [
+                        "#F0F4F8",
+                        "#F5F8FC"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#1A1A2E",
+                "body_font": "Open Sans",
+                "body_color": "#1A1A2E",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
                 "accent_shapes": [
@@ -78,339 +129,378 @@
                             "y": 140
                         },
                         "size": {
-                            "width": 150,
-                            "height": 18
+                            "width": 160,
+                            "height": 20
                         },
-                        "fill_color": "#FFDAB9",
-                        "opacity": 0.5
+                        "fill_color": "#6E88A1",
+                        "opacity": 0.2
                     }
                 ]
             },
             "layout": "TITLE_AND_BODY"
         },
         {
-            "title": "Market Opportunity - A Growing Appetite",
-            "body": "•  Specialty food market growing 8% annually\n•  Custom dessert demand up 15% year-over-year\n•  Consumers seek unique, convenient indulgence options",
+            "title": "Reshaping Aerospace with Agility & Efficiency",
+            "body": "• Rapid prototyping slashes development timelines by 40%.\n• Agile supply chain reduces component costs by 25%.\n• Modular design philosophy enables swift adaptation.",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 180,
+                    "angle": 20,
                     "colors": [
-                        "#FDF5E6",
-                        "#FFF0E6"
+                        "#E3EBF4",
+                        "#F0F4F8"
                     ]
                 },
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#362A2A",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A2E5B",
                 "body_font": "Open Sans",
-                "body_color": "#362A2A",
+                "body_color": "#1A1A2E",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
-                "body_line_spacing": 130
+                "accent_shapes": [
+                    {
+                        "shape_type": "PARALLELOGRAM",
+                        "position": {
+                            "x": 40,
+                            "y": 500
+                        },
+                        "size": {
+                            "width": 300,
+                            "height": 60
+                        },
+                        "fill_color": "#00C8FF",
+                        "opacity": 0.1
+                    }
+                ]
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Vibrant infographic displaying growth in specialty food and custom dessert markets, with upward trending graphs, happy consumers enjoying gourmet cupcakes, clean modern style.",
+            "image_prompt": "Dynamic visual of gears precisely meshing and transforming into abstract, high-tech rocket components, emphasizing speed, efficiency, and transformation.",
             "image_position": "RIGHT"
         },
         {
-            "title": "The 'Kke' Difference - Our Unique Recipe",
-            "body": "•  Bespoke flavor profiles and custom artistic designs\n•  Seamless online ordering with subscription options\n•  Eco-conscious sourcing and sustainable practices",
+            "title": "The Zenith Mod-Sat: Modular Satellite Platform",
+            "body": "• Configurable architecture for diverse mission profiles.\n• Standardized interfaces accelerate payload integration.\n• Reduces launch preparation time by up to 60%.",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
                     "angle": 45,
                     "colors": [
-                        "#FDF5E6",
-                        "#E6F5F7"
+                        "#F0F4F8",
+                        "#E8EEF5"
                     ]
                 },
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#362A2A",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A2E5B",
                 "body_font": "Open Sans",
-                "body_color": "#362A2A",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A close-up of beautifully decorated, custom cupcakes on a minimalist counter, a tablet displaying an elegant online ordering interface in the background, warm natural light, high-end photography.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Product Showcase - Artisan Delights",
-            "body": "•  Exquisite flavors, premium natural ingredients\n•  Artistic presentation, truly Instagram-ready treats\n•  Experience the elevated difference in every bite",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 270,
-                    "colors": [
-                        "#FDF5E6",
-                        "#F2F7FF"
-                    ]
-                },
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#362A2A",
-                "body_font": "Open Sans",
-                "body_color": "#362A2A",
-                "title_alignment": "CENTER",
-                "body_alignment": "CENTER",
-                "accent_shapes": [
-                    {
-                        "shape_type": "PARALLELOGRAM",
-                        "position": {
-                            "x": 50,
-                            "y": 380
-                        },
-                        "size": {
-                            "width": 820,
-                            "height": 100
-                        },
-                        "fill_color": "#FFDAB9",
-                        "opacity": 0.3
-                    }
-                ]
-            },
-            "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "A high-resolution, artistic photo of a diverse array of gourmet cupcakes, each uniquely decorated with edible flowers, intricate frosting, and modern minimalist props, soft studio lighting.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Business Model - Sweet Streams of Revenue",
-            "body": "•  Direct-to-consumer sales via our elegant online platform\n•  Curated monthly subscription boxes for loyal customers\n•  Catering services for bespoke events and corporate orders",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 90,
-                    "colors": [
-                        "#FDF5E6",
-                        "#FFF0F8"
-                    ]
-                },
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#362A2A",
-                "body_font": "Open Sans",
-                "body_color": "#362A2A",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A clean graphic collage of revenue streams: a laptop showing an e-commerce site, a neatly packaged subscription box with brand logo, and an elegant table set with cupcakes for an event.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Customer Love - Our Community Speaks",
-            "body": "•  \"Best cupcakes I've ever tasted!\" - Sarah M.\n•  \"Always fresh, always stunningly beautiful.\" - David P.\n•  Achieved a 95% customer satisfaction rate consistently",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 315,
-                    "colors": [
-                        "#FDF5E6",
-                        "#F0FFF8"
-                    ]
-                },
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#362A2A",
-                "body_font": "Open Sans",
-                "body_color": "#362A2A",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A stylized collage of diverse happy customers enjoying cupcakes, with short, elegant testimonial quotes integrated into the visual design, bright and authentic imagery.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Competitive Landscape - Standing Out",
-            "body": "•  'Sprinkles Cupcakes': $50M revenue, 20% online, limited customization.\n•  'Local Artisan Bakery': $500K revenue, 5% online, manual ordering.\n•  cupcaKke bakkery: Projected $2M Y1 revenue, 80% online, superior customization.",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 60,
-                    "colors": [
-                        "#FDF5E6",
-                        "#FFEFE0"
-                    ]
-                },
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#362A2A",
-                "body_font": "Open Sans",
-                "body_color": "#362A2A",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A sleek infographic comparing three columns: 'Traditional Bakeries', 'Large Chains', and 'cupcaKke bakkery', highlighting features like 'Customization', 'Online Ordering', and 'Quality' with clear metrics and checkmarks, modern design.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Traction & Growth - The Sweet Success So Far",
-            "body": "•  Served 2,500+ unique customers in first 6 months\n•  Achieved 25% month-over-month revenue growth\n•  Maintained 5-star average rating across all platforms",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 210,
-                    "colors": [
-                        "#FDF5E6",
-                        "#E6F7FF"
-                    ]
-                },
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#362A2A",
-                "body_font": "Open Sans",
-                "body_color": "#362A2A",
+                "body_color": "#1A1A2E",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
                 "accent_shapes": [
                     {
                         "shape_type": "RECTANGLE",
                         "position": {
-                            "x": 40,
-                            "y": 180
+                            "x": 0,
+                            "y": 0
                         },
                         "size": {
-                            "width": 380,
+                            "width": 960,
                             "height": 10
                         },
-                        "fill_color": "#FFDAB9",
-                        "opacity": 0.6
+                        "fill_color": "#6E88A1",
+                        "opacity": 0.1
                     },
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
+                            "x": 50,
+                            "y": 140
+                        },
+                        "size": {
+                            "width": 20,
+                            "height": 20
+                        },
+                        "fill_color": "#00C8FF",
+                        "opacity": 0.3
+                    }
+                ]
+            },
+            "layout": "SECTION_TITLE_AND_DESCRIPTION",
+            "image_prompt": "Detailed, high-resolution 3D render of a sleek, modular satellite in low Earth orbit, with customizable sections highlighted by subtle glowing lines.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Tapping into a Trillion-Dollar Frontier",
+            "body": "• Global space economy projected to reach $1.4T by 2030.\n• Small satellite market growing at 17% CAGR.\n• Demand for flexible, cost-effective solutions accelerating.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 30,
+                    "colors": [
+                        "#E3EBF4",
+                        "#F0F4F8"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A2E5B",
+                "body_font": "Open Sans",
+                "body_color": "#1A1A2E",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "TRAPEZOID",
+                        "position": {
+                            "x": 750,
+                            "y": 0
+                        },
+                        "size": {
+                            "width": 210,
+                            "height": 120
+                        },
+                        "fill_color": "#6E88A1",
+                        "opacity": 0.15
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Vibrant infographic showing exponential growth curves for the global space economy and small satellite launches, with abstract cosmic elements.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Patented Innovation for Orbital Advantage",
+            "body": "• Proprietary \"Fast-Fit\" modular connector system.\n• Advanced lightweight materials for structural integrity.\n• AI-driven mission planning and optimization algorithms.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 270,
+                    "colors": [
+                        "#F0F4F8",
+                        "#E8EEF5"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#1A1A2E",
+                "body_font": "Open Sans",
+                "body_color": "#1A1A2E",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
                     {
                         "shape_type": "RECTANGLE",
                         "position": {
-                            "x": 40,
-                            "y": 240
+                            "x": 0,
+                            "y": 480
                         },
                         "size": {
-                            "width": 380,
+                            "width": 960,
                             "height": 10
                         },
-                        "fill_color": "#B0E0E6",
-                        "opacity": 0.4
+                        "fill_color": "#0A2E5B",
+                        "opacity": 0.08
                     }
                 ]
             },
             "layout": "TITLE_AND_BODY"
         },
         {
-            "title": "Our Vision - Scaling Sweetness",
-            "body": "•  Expand delivery network to new urban regions\n•  Introduce seasonal baking kits and new product lines\n•  Develop AI-driven flavor recommendations and smart ordering",
+            "title": "Differentiating in a Rapidly Evolving Market",
+            "body": "• SpaceX (Starlink): Raised $2.5B (2021), 2000+ satellites.\n• Our modularity reduces payload costs by 30% vs. competitors.\n• We offer greater mission flexibility for diverse clients.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 200,
+                    "colors": [
+                        "#F0F4F8",
+                        "#F5F8FC"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A2E5B",
+                "body_font": "Open Sans",
+                "body_color": "#1A1A2E",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "CHEVRON_ARROW_RIGHT",
+                        "position": {
+                            "x": 40,
+                            "y": 280
+                        },
+                        "size": {
+                            "width": 80,
+                            "height": 40
+                        },
+                        "fill_color": "#00C8FF",
+                        "opacity": 0.15
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Elegant comparison chart contrasting Zenith Aerospace's flexible modularity against a monolithic competitor, using icons and subtle growth metrics. Professional and clear.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Our Stellar Team: Expertise Beyond Expectation",
+            "body": "• Experienced aerospace engineers and systems architects.\n• Former consumer electronics logistics and supply chain experts.\n• Cross-functional synergy for groundbreaking solutions.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 90,
+                    "colors": [
+                        "#E3EBF4",
+                        "#F0F4F8"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A2E5B",
+                "body_font": "Open Sans",
+                "body_color": "#1A1A2E",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER",
+                "accent_shapes": [
+                    {
+                        "shape_type": "BEVEL",
+                        "position": {
+                            "x": 50,
+                            "y": 480
+                        },
+                        "size": {
+                            "width": 100,
+                            "height": 60
+                        },
+                        "fill_color": "#6E88A1",
+                        "opacity": 0.2
+                    }
+                ]
+            },
+            "layout": "SECTION_HEADER"
+        },
+        {
+            "title": "Sustainable Growth in the New Space Era",
+            "body": "• Mod-Sat platform sales and customization services.\n• Launch integration and mission operations support.\n• Data analytics subscriptions from orbital assets.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 180,
+                    "colors": [
+                        "#F0F4F8",
+                        "#E8EEF5"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A2E5B",
+                "body_font": "Open Sans",
+                "body_color": "#1A1A2E",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 0,
+                            "y": 550
+                        },
+                        "size": {
+                            "width": 960,
+                            "height": 10
+                        },
+                        "fill_color": "#0A2E5B",
+                        "opacity": 0.05
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Flowchart or infographic illustrating diverse revenue streams, with central satellite icon branching into distinct monetary symbols or data graphs. Modern, clean design.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Proven Progress: Our Journey So Far",
+            "body": "• Secured $5M seed funding, 2 successful suborbital tests.\n• Signed 3 LOIs for initial satellite constellation deployment.\n• Achieved 85% component reuse across prototypes.",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
                     "angle": 135,
                     "colors": [
-                        "#FDF5E6",
-                        "#FFF2F5"
+                        "#F0F4F8",
+                        "#E3EBF4"
                     ]
                 },
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#362A2A",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A2E5B",
                 "body_font": "Open Sans",
-                "body_color": "#362A2A",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT"
+                "body_color": "#1A1A2E",
+                "title_alignment": "CENTER",
+                "body_alignment": "LEFT",
+                "accent_shapes": []
             },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Futuristic baking lab with sleek robotic arms precisely decorating cupcakes, glowing screens displaying advanced flavor algorithms, modern minimalist design, soft-focus background.",
-            "image_position": "RIGHT"
+            "layout": "CAPTION_ONLY",
+            "image_prompt": "Stunning, high-fidelity photograph of a sleek, small rocket successfully launching against a vibrant twilight sky, leaving a clear exhaust trail. Dramatic and inspiring."
         },
         {
-            "title": "Financial Ask - Fueling Our Growth",
-            "body": "•  Seeking $500,000 seed investment capital\n•  Allocate 60% for aggressive marketing and market expansion\n•  40% for advanced tech development and key team scaling",
+            "title": "Fueling the Next Phase of Growth",
+            "body": "• Seeking $15M in Series A funding.\n• Allocate 50% for advanced R&D and manufacturing scale.\n• 30% for team expansion, 20% for market penetration.",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 300,
+                    "angle": 60,
                     "colors": [
-                        "#FDF5E6",
-                        "#E6FFFE"
+                        "#E8EEF5",
+                        "#F0F4F8"
                     ]
                 },
-                "title_font": "Playfair Display SemiBold",
-                "title_color": "#362A2A",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#1A1A2E",
                 "body_font": "Open Sans",
-                "body_color": "#362A2A",
+                "body_color": "#1A1A2E",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
                 "accent_shapes": [
                     {
-                        "shape_type": "ROUNDED_RECTANGLE",
+                        "shape_type": "STRIPE",
                         "position": {
-                            "x": 50,
-                            "y": 200
+                            "x": 40,
+                            "y": 260
                         },
                         "size": {
-                            "width": 400,
-                            "height": 60
+                            "width": 300,
+                            "height": 10
                         },
-                        "fill_color": "#FF69B4",
-                        "opacity": 0.15
-                    },
-                    {
-                        "shape_type": "ROUNDED_RECTANGLE",
-                        "position": {
-                            "x": 50,
-                            "y": 280
-                        },
-                        "size": {
-                            "width": 400,
-                            "height": 60
-                        },
-                        "fill_color": "#B0E0E6",
-                        "opacity": 0.1
+                        "fill_color": "#00C8FF",
+                        "opacity": 0.2
                     }
                 ]
             },
-            "layout": "ONE_COLUMN_TEXT"
+            "layout": "TITLE_AND_BODY"
         },
         {
-            "title": "Summary & Next Steps - Taste the Future",
-            "body": "•  Disrupting the traditional dessert market with innovation\n•  Strong market fit, proven customer traction, clear growth path\n•  Join us in baking the future of delightful, personalized treats!",
+            "title": "Partner with Zenith Aerospace",
+            "body": "• Invest in the future of accessible, agile space tech.\n• Be part of democratizing orbital capabilities.\n• Connect with us to explore collaboration.",
             "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 0,
-                    "colors": [
-                        "#FFDAB9",
-                        "#B0E0E6"
-                    ]
-                },
-                "title_font": "Playfair Display Bold",
-                "title_color": "#362A2A",
-                "body_font": "Open Sans SemiBold",
-                "body_color": "#362A2A",
+                "background_color": "#0A2E5B",
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#FFFFFF",
+                "body_font": "Open Sans",
+                "body_color": "#E0E0E0",
                 "title_alignment": "CENTER",
                 "body_alignment": "CENTER",
                 "accent_shapes": [
                     {
-                        "shape_type": "ROUNDED_RECTANGLE",
+                        "shape_type": "ISOSCELES_TRIANGLE",
                         "position": {
-                            "x": 70,
-                            "y": 180
+                            "x": 800,
+                            "y": 450
                         },
                         "size": {
-                            "width": 780,
-                            "height": 220
+                            "width": 120,
+                            "height": 120
                         },
-                        "fill_color": "#FFFFFF",
-                        "opacity": 0.8
-                    },
-                    {
-                        "shape_type": "STAR_5_POINT",
-                        "position": {
-                            "x": 400,
-                            "y": 420
-                        },
-                        "size": {
-                            "width": 80,
-                            "height": 80
-                        },
-                        "fill_color": "#FF69B4",
-                        "opacity": 0.6
+                        "fill_color": "#00C8FF",
+                        "opacity": 0.25
                     }
                 ]
             },
-            "layout": "SECTION_HEADER"
+            "layout": "TITLE_ONLY"
         }
     ]
 }
