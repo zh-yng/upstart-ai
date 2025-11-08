@@ -109,8 +109,19 @@ def load_slides_data(json_path):
     json_path = Path(json_path)
     if not json_path.exists():
         raise FileNotFoundError(f"JSON file not found: {json_path}")
-    with json_path.open("r", encoding="utf-8") as f:
-        data = json.load(f)
+    
+    try:
+        with json_path.open("r", encoding="utf-8") as f:
+            content = f.read()
+            print(f"JSON file content length: {len(content)}")
+            if not content.strip():
+                raise ValueError(f"JSON file is empty: {json_path}")
+            data = json.loads(content)
+    except json.JSONDecodeError as e:
+        print(f"Failed to parse JSON from {json_path}")
+        print(f"File content: {content[:500]}...")
+        raise ValueError(f"Invalid JSON in {json_path}: {e}")
+    
     if "slides" not in data or not isinstance(data["slides"], list):
         raise ValueError("JSON must contain a 'slides' list")
     return data
@@ -292,9 +303,17 @@ def get_credentials():
     #Authenticate and return Google API credentials.
     creds = None
     if os.path.exists("token.json"):
-        creds = Credentials.from_authorized_user_file("token.json", SCOPES)
-        stored_scopes = set(creds.scopes or [])
-        if not stored_scopes.issuperset(set(SCOPES)):
+        try:
+            creds = Credentials.from_authorized_user_file("token.json", SCOPES)
+            stored_scopes = set(creds.scopes or [])
+            if not stored_scopes.issuperset(set(SCOPES)):
+                creds = None
+                try:
+                    os.remove("token.json")
+                except OSError:
+                    pass
+        except (json.JSONDecodeError, ValueError) as e:
+            print(f"Error loading token.json: {e}. Deleting and re-authenticating...")
             creds = None
             try:
                 os.remove("token.json")

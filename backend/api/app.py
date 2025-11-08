@@ -3,18 +3,14 @@
 from flask import Flask, request, jsonify, send_file
 from dotenv import load_dotenv
 from run_deck import run_deck
-<<<<<<< HEAD
 from ad_gen import generate_video
+from user_networking import init_networking_services, find_investors
 import os
 from google import genai
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
-=======
-from user_networking import init_networking_services, find_investors
-#from ad_gen import ad_gen_bp, init_ad_gen_services
->>>>>>> 83c883bb231a09bae25abcc375684fb951f2c48d
 from flask_cors import CORS
 
 load_dotenv()
@@ -35,7 +31,17 @@ def hello_world():
 
 @app.route('/create_slides', methods=['POST'])
 def create_slides_route():
-    data = request.get_json(silent=True) or {}
+    try:
+        data = request.get_json(force=True)
+    except Exception as e:
+        app.logger.error(f"Failed to parse JSON: {e}")
+        app.logger.error(f"Request data: {request.data}")
+        app.logger.error(f"Content-Type: {request.content_type}")
+        return jsonify({'error': 'Invalid JSON in request body'}), 400
+    
+    if not data:
+        return jsonify({'error': 'Request body is empty'}), 400
+    
     prompt_text = (data.get('text') or '').strip()
     author_name = data.get('author')
     include_images_value = data.get('includeImages', True)
@@ -54,15 +60,20 @@ def create_slides_route():
             author=author_name,
             include_images=include_images_flag,
         )
+        app.logger.info(f"Presentation URL: {presentation_url}")
     except ValueError as exc:
+        app.logger.error(f"ValueError in run_deck: {exc}")
         return jsonify({'error': str(exc)}), 400
     except Exception as exc:
         app.logger.exception("Slide generation failed", exc_info=exc)
         return jsonify({'error': 'Slide generation failed'}), 500
 
+    if not presentation_url:
+        app.logger.error("presentation_url is empty or None")
+        return jsonify({'error': 'Failed to create presentation'}), 500
+
     return jsonify({'presentationUrl': presentation_url})
 
-<<<<<<< HEAD
 @app.route('/create_roadmap', methods=['POST'])
 def create_roadmap_route():
     data = request.get_json(silent=True) or {}
@@ -200,7 +211,7 @@ def create_video_route():
     except Exception as exc:
         app.logger.exception("Video generation failed", exc_info=exc)
         return jsonify({'error': 'Video generation failed'}), 500
-=======
+
 @app.route('/create_network', methods=['POST'])
 def create_network_route():
     data = request.get_json(silent=True) or {}
@@ -213,7 +224,26 @@ def create_network_route():
     except Exception as exc:
         app.logger.exception("Network generation failed", exc_info=exc)
         return jsonify({'error': 'Network generation failed'}), 500
->>>>>>> 83c883bb231a09bae25abcc375684fb951f2c48d
+
+@app.route('/chat', methods=['POST'])
+def chat_route():
+    """Handle chatbot interactions"""
+    from agenticChatBot import handle_chat
+    
+    data = request.get_json(silent=True) or {}
+    user_message = (data.get('message') or '').strip()
+    business_idea = (data.get('businessIdea') or '').strip()
+    chat_history = data.get('chatHistory', [])
+    
+    if not user_message:
+        return jsonify({'error': 'Message is required'}), 400
+    
+    try:
+        result = handle_chat(user_message, business_idea, chat_history)
+        return jsonify(result)
+    except Exception as exc:
+        app.logger.exception("Chat processing failed", exc_info=exc)
+        return jsonify({'error': 'Chat processing failed', 'response': 'Sorry, something went wrong. Please try again.'}), 500
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

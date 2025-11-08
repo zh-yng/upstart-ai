@@ -17,4 +17,3 @@ def sendEmail(receiver_email, message):
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, message)
 
-sendEmail("prabhakarkavin8@gmail.com", "This is an email test")

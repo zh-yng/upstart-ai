@@ -3,17 +3,12 @@ import { Ripple } from 'primereact/ripple';
 import { useLocation } from "react-router";
 import { Card } from "primereact/card";
 import { useState } from "react";
-<<<<<<< HEAD
 import { Dialog } from "primereact/dialog";
 import { InputTextarea } from "primereact/inputtextarea";
-import { ScrollPanel } from "primereact/scrollpanel";
-=======
->>>>>>> 83c883bb231a09bae25abcc375684fb951f2c48d
 
 const Dashboard = () => {
     const location = useLocation();
     const presentationUrl = location.state && location.state.presentationUrl;
-<<<<<<< HEAD
     const text = location.state?.text || '';
     
     const [roadmapLoading, setRoadmapLoading] = useState(false);
@@ -35,11 +30,6 @@ const Dashboard = () => {
         { name: 'Network', icon: 'pi pi-sitemap', route: '/api/network', content: '', color: 'rgba(191, 8, 248,1)' },
         { name: 'Roadmap', icon: 'pi pi-map', route: '/api/create_roadmap', content: '', color: 'rgba(248, 191, 8,1)', loadingColor: 'rgba(191, 8, 248,1)', handler: 'roadmap' },
     ]
-=======
-    const text = location.state && location.state.text;
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(null);
->>>>>>> 83c883bb231a09bae25abcc375684fb951f2c48d
 
     const handleGetHello = async () => {
         try {
@@ -52,13 +42,8 @@ const Dashboard = () => {
     }
 
     const handleCreateSlides = async () => {
-<<<<<<< HEAD
         if (!text.trim()) {
             alert('Please enter a prompt before generating slides.');
-=======
-        if (!text) {
-            setError('Please enter a prompt before generating slides.');
->>>>>>> 83c883bb231a09bae25abcc375684fb951f2c48d
             return;
         }
 
@@ -210,25 +195,53 @@ const Dashboard = () => {
         }
     };
 
-    const handleChatSubmit = () => {
+    const handleChatSubmit = async () => {
         if (!chatInput.trim()) return;
 
         // Add user message
         const userMessage = { role: 'user', text: chatInput };
         setChatMessages(prev => [...prev, userMessage]);
         
+        // Store input before clearing
+        const currentInput = chatInput;
+        
         // Clear input
         setChatInput('');
 
-        // TODO: Add API call here to get AI response
-        // For now, just acknowledge the message
-        setTimeout(() => {
+        try {
+            const response = await fetch('/api/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ 
+                    message: currentInput,
+                    businessIdea: text.trim(),
+                    chatHistory: chatMessages
+                }),
+            });
+
+            const data = await response.json();
+            
+            if (!response.ok) {
+                throw new Error(data.error || 'Failed to process chat message');
+            }
+
+            // Add bot response
             const botResponse = { 
                 role: 'assistant', 
-                text: 'I received your message! Full functionality coming soon.' 
+                text: data.response || 'Sorry, I couldn\'t process that request.' 
             };
             setChatMessages(prev => [...prev, botResponse]);
-        }, 500);
+            
+        } catch (err) {
+            console.error('Chat error:', err);
+            const errorResponse = { 
+                role: 'assistant', 
+                text: 'Sorry, something went wrong. Please try again.' 
+            };
+            setChatMessages(prev => [...prev, errorResponse]);
+        }
     };
 
     const handleViewVideo = async () => {
@@ -300,13 +313,6 @@ const Dashboard = () => {
         }
     };
 
-    const features = [
-        { name: 'Slides', icon: 'pi pi-id-card', route: '/api/create_slides', content: (presentationUrl != null) ? presentationUrl : '', color: 'rgba(248, 191, 8,1)', onClick: handleCreateSlides },
-        { name: 'Video', icon: 'pi pi-video', route: '/api/video', content: '', color: 'rgba(8, 191, 248, 1)' },
-        { name: 'Network', icon: 'pi pi-sitemap', route: '/api/create_network', content: '', color: 'rgba(191, 8, 248,1)', onClick: handleCreateNetwork },
-        { name: 'Website', icon: 'pi pi-code', route: '/api/code', content: '', color: 'rgba(0, 190, 140,1)' },
-    ]
-
     return (
         <>
             <div className="flex flex-column gap-2 justify-content-center align-items-center text-center" style={{ width: '50%' }}>
@@ -326,10 +332,9 @@ const Dashboard = () => {
                                 <Card title={feature.name} key={feature.name} className="blur flex flex-column justify-content-center align-items-center" style={{ backgroundColor: cardBgColor }}>
                                     {(feature.content === "" && !isReady) ?
 
-                                        (feature.onClick && <Button
+                                        <Button
                                             key={feature.name}
                                             className="blur justify-content-start"
-<<<<<<< HEAD
                                             style={{ border: '1px dashed black', color: 'black', backgroundColor: buttonColor, minHeight: '50px' }}
                                             icon={isLoading ? 'pi pi-spin pi-spinner' : feature.icon}
                                             label={isLoading ? "Generating..." : "Generate"}
@@ -344,32 +349,24 @@ const Dashboard = () => {
                                                     window.open(feature.content, '_blank');
                                                 }
                                             }}
-=======
-                                            style={{ border: '1px dashed black', color: 'black', backgroundColor: 'rgba(255, 255, 255,1)', minHeight: '50px' }}
-                                            icon={loading ? feature.icon : 'pi-refresh'}
-                                            label={loading ? "Loading..." : "Generate"}
-                                            severity="secondary"
-                                            onClick={() => feature.onClick()}
->>>>>>> 83c883bb231a09bae25abcc375684fb951f2c48d
                                         >
                                             <Ripple
                                                 pt={{
                                                     root: { style: { background: feature.color } }
                                                 }}
                                             />
-                                        </Button>)
+                                            </Button>
 
                                         :
 
                                         <span className="flex gap-2 w-full justify-content-center align-items-center">
-                                            {feature.onClick && <Button
+                                            <Button
                                                 key={feature.name}
                                                 className="blur justify-content-start"
                                                 style={{ border: '1px dashed black', color: 'black', backgroundColor: feature.color, minHeight: '50px' }}
                                                 icon={'pi pi-refresh'}
                                                 label={"Redo?"}
                                                 severity="secondary"
-<<<<<<< HEAD
                                                 onClick={() => {
                                                     if (isRoadmap) {
                                                         handleCreateRoadmap();
@@ -379,17 +376,13 @@ const Dashboard = () => {
                                                         handleCreateSlides();
                                                     }
                                                 }}
-=======
-                                                // change the onclick to call the feature's onClick function
-                                                onClick={feature.onClick}
->>>>>>> 83c883bb231a09bae25abcc375684fb951f2c48d
                                             >
                                                 <Ripple
                                                     pt={{
                                                         root: { style: { background: feature.color } }
                                                     }}
                                                 />
-                                            </Button>}
+                                            </Button>
                                             <Button
                                                 key={feature.name}
                                                 className="blur justify-content-start"
