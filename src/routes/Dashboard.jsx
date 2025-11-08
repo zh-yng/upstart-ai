@@ -2,7 +2,7 @@ import { Button } from "primereact/button";
 import { Ripple } from 'primereact/ripple';
 import { useLocation } from "react-router";
 import { Card } from "primereact/card";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Dialog } from "primereact/dialog";
 import { InputTextarea } from "primereact/inputtextarea";
 
@@ -23,6 +23,12 @@ const Dashboard = () => {
         { role: 'assistant', text: 'Hello! I\'m Everest, your AI startup assistant. How can I help you today?' }
     ]);
     const [chatInput, setChatInput] = useState('');
+    const chatMessagesEndRef = useRef(null);
+
+    // Auto-scroll to bottom when new messages arrive
+    useEffect(() => {
+        chatMessagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }, [chatMessages]);
 
     const features = [
         { name: 'Slides', icon: 'pi pi-id-card', route: '/api/create_slides', content: (presentationUrl != null) ? presentationUrl : '', color: 'rgba(248, 191, 8,1)' },
@@ -318,8 +324,8 @@ const Dashboard = () => {
             <div className="flex flex-column gap-2 justify-content-center align-items-center text-center" style={{ width: '50%' }}>
                 <div className="flex flex-column gap-2 w-full justify-content-center">
                     {/* two per row grid of buttons */}
-                    <div className="flex gap-2 w-full align-items-center">
-                        <div className="flex flex-column gap-2 justify-content-center" style={{ width: '30vw' }}>
+                    <div className="flex gap-2 w-full align-items-start">
+                        <div className="flex flex-column gap-2 justify-content-center" style={{ width: '20vw' }}>
                             {features.map((feature) => {
                                 const isRoadmap = feature.handler === 'roadmap';
                                 const isVideo = feature.handler === 'video';
@@ -412,7 +418,7 @@ const Dashboard = () => {
                                 );
                             })}
                         </div>
-                        <div style={{ width: '50vw', height: '70vh', borderRadius: '12px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }} className="blur border">
+                        <div style={{ width: '65vw', flex: 1, alignSelf: 'stretch', borderRadius: '12px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }} className="blur border">
                             {/* Chat Header */}
                             <div style={{ 
                                 padding: '1rem 1.5rem', 
@@ -430,7 +436,7 @@ const Dashboard = () => {
                             </div>
 
                             {/* Chat Messages */}
-                            <div style={{ flex: 1, overflowY: 'auto', padding: '1rem', minHeight: 0 }}>
+                            <div style={{ flex: 1, overflowY: 'scroll', padding: '1rem', minHeight: 0, maxHeight: 'calc(100vh - 120px)' }}>
                                 <div className="flex flex-column gap-3">
                                     {chatMessages.map((msg, index) => (
                                         <div 
@@ -456,12 +462,14 @@ const Dashboard = () => {
                                                         <strong style={{ fontSize: '0.875rem' }}>Everest</strong>
                                                     </div>
                                                 )}
-                                                <p className="m-0" style={{ fontSize: '0.95rem', lineHeight: '1.5' }}>
+                                                <p className="m-0" style={{ fontSize: '0.95rem', lineHeight: '1.5', whiteSpace: 'pre-wrap' }}>
                                                     {msg.text}
                                                 </p>
                                             </div>
                                         </div>
                                     ))}
+                                    {/* Scroll anchor */}
+                                    <div ref={chatMessagesEndRef} />
                                 </div>
                             </div>
 
