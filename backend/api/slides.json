@@ -1,64 +1,64 @@
 {
-    "presentation_title": "AquaDream: Your Personal Underwater World",
+    "presentation_title": "Apex Predator Cuisine",
     "title_slide": {
-        "title": "AquaDream: Your Personal Underwater World",
+        "title": "Apex Predator Cuisine - An Unrivaled Culinary Journey",
         "style": {
-            "background_color": "#E0F7FA",
+            "background_color": "#0A244A",
             "title_font": "Montserrat Bold",
-            "title_color": "#004D40",
-            "subtitle_font": "Open Sans SemiBold",
-            "subtitle_color": "#26A69A"
+            "title_color": "#FFFFFF",
+            "subtitle_font": "Source Sans Pro Italic",
+            "subtitle_color": "#C0C0C0"
         },
         "layout": "TITLE"
     },
     "design_language": {
-        "name": "AquaSerenity",
+        "name": "Deep Ocean Elegance",
         "palette": {
-            "primary": "#00838F",
-            "secondary": "#26A69A",
-            "accent": "#80DEEA",
-            "background": "#E0F7FA",
-            "text_on_light": "#004D40",
+            "primary": "#0A244A",
+            "secondary": "#2D5A7D",
+            "accent": "#E63946",
+            "background": "#F0F8FF",
+            "text_on_light": "#1A202C",
             "text_on_dark": "#FFFFFF"
         },
         "typography": {
             "title_font": "Montserrat SemiBold",
-            "body_font": "Open Sans"
+            "body_font": "Source Sans Pro"
         },
         "background_style": {
             "type": "GRADIENT",
-            "angle": 135,
+            "angle": 180,
             "colors": [
-                "#E0F7FA",
-                "#B2EBF2"
+                "#F0F8FF",
+                "#E1EBF5"
             ]
         },
         "accent_shapes": [
             {
                 "shape_type": "ROUNDED_RECTANGLE",
                 "position": {
-                    "x": 50,
-                    "y": 450
+                    "x": 0,
+                    "y": 480
                 },
                 "size": {
-                    "width": 120,
-                    "height": 8
+                    "width": 960,
+                    "height": 80
                 },
-                "fill_color": "#26A69A",
-                "opacity": 0.25
+                "fill_color": "#2D5A7D",
+                "opacity": 0.1
             },
             {
-                "shape_type": "STRIPE",
+                "shape_type": "TRIANGLE",
                 "position": {
-                    "x": 700,
-                    "y": 100
+                    "x": 880,
+                    "y": 0
                 },
                 "size": {
-                    "width": 10,
-                    "height": 300
+                    "width": 80,
+                    "height": 80
                 },
-                "fill_color": "#00838F",
-                "opacity": 0.15
+                "fill_color": "#E63946",
+                "opacity": 0.08
             }
         ],
         "text_alignment": "LEFT",
@@ -66,446 +66,396 @@
     },
     "slides": [
         {
-            "title": "Your Underwater Oasis Awaits",
-            "body": "• Experience tranquility and vibrant life at home\n• Enhance well-being with a living art piece\n• Discover the joy of aquatic companionship",
+            "title": "Vision: Redefining Exotic Gastronomy",
+            "body": "• Create an unparalleled, high-end dining destination\n• Offer a curated menu of rare and responsibly sourced marine delicacies\n• Deliver an immersive culinary experience that captivates every sense",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 90,
+                    "angle": 210,
                     "colors": [
-                        "#E0F7FA",
-                        "#E0F2F7"
+                        "#F0F8FF",
+                        "#E1EBF5"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
+                "title_color": "#0A244A",
+                "body_font": "Source Sans Pro",
+                "body_color": "#1A202C",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
+                "body_line_spacing": 135
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "The Culinary Artistry",
+            "body": "• Our menu showcases exotic marine ingredients with masterful preparation\n• Shark is a signature offering, ethically sourced for unparalleled taste\n• Each dish is a fusion of innovation, tradition, and global flavors",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 30,
+                    "colors": [
+                        "#E1EBF5",
+                        "#FFFFFF"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A244A",
+                "body_font": "Source Sans Pro",
+                "body_color": "#1A202C",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 135,
                 "accent_shapes": [
                     {
-                        "shape_type": "ELLIPSE",
+                        "shape_type": "ROUNDED_RECTANGLE",
                         "position": {
                             "x": 40,
                             "y": 140
                         },
                         "size": {
-                            "width": 20,
-                            "height": 20
+                            "width": 160,
+                            "height": 18
                         },
-                        "fill_color": "#80DEEA",
-                        "opacity": 0.5
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Simplifying Your Aquatic Journey",
-            "body": "• Curated starter kits for effortless setup\n• Expert guidance for thriving aquatic ecosystems\n• Smart tech for easy maintenance and monitoring",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 270,
-                    "colors": [
-                        "#E0F7FA",
-                        "#B2EBF2"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "RECTANGLE",
-                        "position": {
-                            "x": 40,
-                            "y": 130
-                        },
-                        "size": {
-                            "width": 150,
-                            "height": 8
-                        },
-                        "fill_color": "#26A69A",
-                        "opacity": 0.3
+                        "fill_color": "#E63946",
+                        "opacity": 0.2
                     }
                 ]
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A sleek, modern aquarium with lush aquatic plants and colorful fish, a tablet displaying smart home integration, clean minimalist aesthetic, soft natural lighting.",
+            "image_prompt": "A perfectly plated, gourmet shark dish with microgreens and delicate sauces in a high-end restaurant setting, dramatic lighting.",
             "image_position": "RIGHT"
         },
         {
-            "title": "A Growing Passion: The Aquarium Market",
-            "body": "• Global aquarium market projected to reach $10B by 2028\n• Smart aquarium segment shows 25% CAGR\n• Untapped demand for simplified, premium solutions",
+            "title": "Market Opportunity: High-Net-Worth Diners",
+            "body": "• Global luxury dining market: $180B+, growing 7% annually\n• Target demographic: discerning individuals seeking unique culinary adventures\n• Our niche appeals to food enthusiasts and affluent travelers",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 45,
+                    "angle": 90,
                     "colors": [
-                        "#E0F7FA",
-                        "#80DEEA"
+                        "#F0F8FF",
+                        "#D7E5F0"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
+                "title_color": "#0A244A",
+                "body_font": "Source Sans Pro",
+                "body_color": "#1A202C",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
+                "body_line_spacing": 135,
                 "accent_shapes": [
                     {
-                        "shape_type": "CHEVRON",
+                        "shape_type": "PARALLELOGRAM",
                         "position": {
-                            "x": 600,
-                            "y": 180
+                            "x": 700,
+                            "y": 40
                         },
                         "size": {
-                            "width": 100,
-                            "height": 80
+                            "width": 180,
+                            "height": 220
                         },
-                        "fill_color": "#00838F",
-                        "opacity": 0.1
+                        "fill_color": "#2D5A7D",
+                        "opacity": 0.15
                     }
                 ]
             },
-            "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "An infographic showing upward trending graphs related to the global aquarium market size, with stylized fish and water elements, vibrant colors, clean design.",
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "An elegant, diverse group of high-net-worth individuals dining in a sophisticated, dimly lit restaurant, enjoying gourmet food and wine.",
             "image_position": "LEFT"
         },
         {
-            "title": "AquaDream: Beyond Just a Tank",
-            "body": "• All-inclusive packages: tank, equipment, decor, livestock\n• Proprietary app for feeding, lighting, water quality control\n• Dedicated 'AquaCoach' support for new hobbyists",
+            "title": "Our Unique Value Proposition",
+            "body": "• Exclusive access to rare marine delicacies, including premium shark varieties\n• Immersive ambiance with bespoke decor and exceptional service\n• Renowned culinary team delivering innovative, memorable dishes",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
                     "angle": 180,
                     "colors": [
-                        "#E0F7FA",
-                        "#CFD8DC"
+                        "#FFFFFF",
+                        "#E1EBF5"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
+                "title_color": "#0A244A",
+                "body_font": "Source Sans Pro",
+                "body_color": "#1A202C",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "ROUNDED_RECTANGLE",
-                        "position": {
-                            "x": 40,
-                            "y": 130
-                        },
-                        "size": {
-                            "width": 180,
-                            "height": 10
-                        },
-                        "fill_color": "#00838F",
-                        "opacity": 0.2
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A split image showing a complex traditional aquarium setup on one side with multiple wires and bottles, and on the other, a simplified, elegant AquaDream smart aquarium with an app interface on a tablet, highlighting ease of use.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Introducing the AquaKit Ecosystem",
-            "body": "• Seamless integration of hardware and software\n• Designed for beauty, optimized for health\n• Future-proof modular components",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 0,
-                    "colors": [
-                        "#E0F7FA",
-                        "#B2EBF2"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "STRIPE",
-                        "position": {
-                            "x": 40,
-                            "y": 280
-                        },
-                        "size": {
-                            "width": 300,
-                            "height": 5
-                        },
-                        "fill_color": "#80DEEA",
-                        "opacity": 0.4
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Detailed, high-resolution rendering of an AquaDream starter kit, showcasing a modern, minimalist aquarium, an integrated filter system, energy-efficient LED lighting, and a smartphone displaying the intuitive AquaDream app dashboard with water parameters.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Our Clear Business Model",
-            "body": "• Starter Kits: Premium hardware and initial setup bundles\n• Subscription Services: AquaCare plans, automated supply refills\n• Marketplace: High-quality livestock, plants, and accessories",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 225,
-                    "colors": [
-                        "#E0F7FA",
-                        "#CFD8DC"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "TRIANGLE",
-                        "position": {
-                            "x": 750,
-                            "y": 80
-                        },
-                        "size": {
-                            "width": 100,
-                            "height": 100
-                        },
-                        "fill_color": "#26A69A",
-                        "opacity": 0.1
-                    }
-                ]
+                "body_line_spacing": 135
             },
             "layout": "ONE_COLUMN_TEXT"
         },
         {
-            "title": "Strategic Go-to-Market Plan",
-            "body": "• Digital: Targeted social media, influencer partnerships\n• Retail: Specialty pet stores, home decor showrooms\n• Community: Online forums, local aquarium clubs",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 315,
-                    "colors": [
-                        "#E0F7FA",
-                        "#B2EBF2"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "STRIPE",
-                        "position": {
-                            "x": 40,
-                            "y": 420
-                        },
-                        "size": {
-                            "width": 800,
-                            "height": 12
-                        },
-                        "fill_color": "#00838F",
-                        "opacity": 0.18
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A modern collage of diverse marketing channels: a smartphone with a vibrant social media feed, an elegant storefront display featuring an aquarium, and people interacting at a lively community event, all subtly incorporating aquatic motifs.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Building Momentum: Our Early Traction",
-            "body": "• Achieved 1,500 beta sign-ups in 3 months\n• Secured partnerships with 10 premium aquatic suppliers\n• 92% positive feedback from initial user trials",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 60,
-                    "colors": [
-                        "#E0F7FA",
-                        "#FFFFFF"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "RECTANGLE",
-                        "position": {
-                            "x": 40,
-                            "y": 150
-                        },
-                        "size": {
-                            "width": 350,
-                            "height": 60
-                        },
-                        "fill_color": "#80DEEA",
-                        "opacity": 0.2
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Navigating the Competitive Waters",
-            "body": "• **Generic Aquarium Brands:** Focus on basic tanks; lack smart tech\n• **High-End Custom Builds:** Very costly, complex setup for hobbyists\n• **AquaDream:** Integrated smart tech, simplified experience, accessible premium design",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 120,
-                    "colors": [
-                        "#E0F7FA",
-                        "#CFD8DC"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "ROUNDED_RECTANGLE",
-                        "position": {
-                            "x": 400,
-                            "y": 100
-                        },
-                        "size": {
-                            "width": 10,
-                            "height": 350
-                        },
-                        "fill_color": "#00838F",
-                        "opacity": 0.1
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A stylized comparison chart or a Venn diagram, subtly showing AquaDream's unique blend of smart technology, ease of use, and premium design, distinguishing it from traditional brands and custom setups, using aquatic-themed icons.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Our Passionate & Expert Team",
-            "body": "• **Dr. Aquatics (CEO):** Marine Biologist, 15+ years aquaculture expertise\n• **Tech Visionary (CTO):** Smart Home innovator, led 2 successful exits\n• **Design Lead:** Award-winning industrial designer, focused on user experience",
+            "title": "Signature Dish Spotlight: 'Azure Fin Roulade'",
+            "body": "• Delicate shark fin (sustainably sourced) prepared as a savory roulade\n• Paired with saffron-infused risotto and seafoam emulsion\n• An exquisite balance of texture, flavor, and visual artistry",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
                     "angle": 270,
                     "colors": [
-                        "#E0F7FA",
-                        "#B2EBF2"
+                        "#D7E5F0",
+                        "#F0F8FF"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
+                "title_color": "#0A244A",
+                "body_font": "Source Sans Pro",
+                "body_color": "#1A202C",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
+                "body_line_spacing": 135,
                 "accent_shapes": [
                     {
                         "shape_type": "RECTANGLE",
                         "position": {
-                            "x": 700,
-                            "y": 200
+                            "x": 0,
+                            "y": 0
                         },
                         "size": {
-                            "width": 150,
-                            "height": 100
+                            "width": 20,
+                            "height": 540
                         },
-                        "fill_color": "#26A69A",
-                        "opacity": 0.15
+                        "fill_color": "#E63946",
+                        "opacity": 0.1
                     }
                 ]
             },
-            "layout": "SECTION_HEADER"
+            "layout": "SECTION_TITLE_AND_DESCRIPTION",
+            "image_prompt": "A close-up, highly detailed photograph of a gourmet dish featuring a delicate, beautifully crafted roulade of ethically sourced shark, surrounded by vibrant, artfully arranged ingredients on a minimalist plate.",
+            "image_position": "RIGHT"
         },
         {
-            "title": "Our Investment Ask: Fueling Growth",
-            "body": "• Seeking $1.5M seed funding for 18-month runway\n• Allocation: 40% R&D, 30% Marketing, 20% Operations, 10% Team\n• Projected ROI: 5x within 3 years, 10x exit potential",
+            "title": "Responsible Sourcing & Conservation",
+            "body": "• Partnering only with certified, sustainable fisheries for all marine ingredients\n• Our shark is sourced via strict by-catch or aquaculture regulations\n• Dedicated commitment to ocean conservation initiatives and awareness",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 135,
+                    "angle": 0,
                     "colors": [
-                        "#E0F7FA",
-                        "#CFD8DC"
+                        "#FFFFFF",
+                        "#F0F8FF"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
+                "title_color": "#0A244A",
+                "body_font": "Source Sans Pro",
+                "body_color": "#1A202C",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
+                "body_line_spacing": 135,
                 "accent_shapes": [
                     {
-                        "shape_type": "ROUNDED_RECTANGLE",
+                        "shape_type": "STRIPE",
                         "position": {
                             "x": 40,
-                            "y": 380
+                            "y": 480
                         },
                         "size": {
-                            "width": 500,
-                            "height": 90
+                            "width": 400,
+                            "height": 10
                         },
-                        "fill_color": "#00838F",
-                        "opacity": 0.12
+                        "fill_color": "#2D5A7D",
+                        "opacity": 0.2
                     }
                 ]
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A modern financial infographic displaying a growth trajectory, with a prominent bar chart showing investment allocation percentages for R&D, Marketing, Operations, and Team. Stylized upward arrows indicate projected ROI.",
-            "image_position": "RIGHT"
+            "image_prompt": "A serene underwater scene with diverse marine life and a subtle, high-tech monitoring system symbolizing sustainable fishing and ocean conservation efforts.",
+            "image_position": "LEFT"
         },
         {
-            "title": "Join the AquaDream Journey",
-            "body": "• Schedule a demo of the AquaKit and app\n• Explore detailed financial projections and market research\n• Let's bring tranquil aquatic beauty to every home",
+            "title": "Business Model & Revenue Streams",
+            "body": "• Primary Revenue: Fine dining experiences with average check of $300-$500 per person\n• Secondary: Exclusive private events and culinary tasting menus\n• Future: Branded gourmet product line and chef masterclasses",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 180,
+                    "colors": [
+                        "#E1EBF5",
+                        "#D7E5F0"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A244A",
+                "body_font": "Source Sans Pro",
+                "body_color": "#1A202C",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 135
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Our Esteemed Culinary & Management Team",
+            "body": "• Chef Antoine Dubois - Michelin-starred executive chef, 20+ years experience\n• Maria Chen - Operations Director, led 3 successful luxury hospitality launches\n• David Lee - Head of Sourcing, expert in sustainable marine procurement",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
                     "angle": 45,
                     "colors": [
-                        "#E0F7FA",
-                        "#80DEEA"
+                        "#F0F8FF",
+                        "#FFFFFF"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#004D40",
-                "body_font": "Open Sans",
-                "body_color": "#00695C",
-                "title_alignment": "CENTER",
-                "body_alignment": "CENTER",
+                "title_color": "#0A244A",
+                "body_font": "Source Sans Pro",
+                "body_color": "#1A202C",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 135
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Professional headshots of a diverse, elegant culinary and management team, presented in a cohesive, modern collage.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Traction & Growth Projections",
+            "body": "• Soft launch achieved 95% reservation rate and 4.9/5 satisfaction score\n• Projected Year 1 Revenue: $3.5M; Year 3 Revenue: $8.2M with 2nd location\n• Media features in 'Gourmet World' and 'Luxury Lifestyle Magazine'",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 135,
+                    "colors": [
+                        "#E1EBF5",
+                        "#F0F8FF"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A244A",
+                "body_font": "Source Sans Pro",
+                "body_color": "#1A202C",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 135,
                 "accent_shapes": [
                     {
-                        "shape_type": "WAVE",
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 50,
+                            "y": 380
+                        },
+                        "size": {
+                            "width": 300,
+                            "height": 60
+                        },
+                        "fill_color": "#E63946",
+                        "opacity": 0.1
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A modern infographic showing upward trend lines for revenue and customer satisfaction, with growth icons and subtle oceanic elements.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Competitive Landscape",
+            "body": "• 'Ocean's Bounty' (NYC) - $5M annual revenue, traditional high-end seafood.\n• Our advantage: Unique exotic menu, immersive theme, strong ethical sourcing.\n• Differentiated by our commitment to rare delicacies and unparalleled ambiance.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 225,
+                    "colors": [
+                        "#F0F8FF",
+                        "#E1EBF5"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A244A",
+                "body_font": "Source Sans Pro",
+                "body_color": "#1A202C",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 135
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Financial Ask: $2.5 Million Seed Round",
+            "body": "• 40% - Initial restaurant build-out and sophisticated kitchen equipment\n• 30% - Premium ingredient sourcing and inventory for six months\n• 20% - Aggressive marketing, PR, and grand opening events\n• 10% - Working capital and operational overhead",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 315,
+                    "colors": [
+                        "#D7E5F0",
+                        "#F0F8FF"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#0A244A",
+                "body_font": "Source Sans Pro",
+                "body_color": "#1A202C",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 135,
+                "accent_shapes": [
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
+                            "x": 50,
+                            "y": 120
+                        },
+                        "size": {
+                            "width": 120,
+                            "height": 16
+                        },
+                        "fill_color": "#2D5A7D",
+                        "opacity": 0.15
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A polished pie chart or bar graph visually breaking down the allocation of a $2.5 million investment, with currency symbols and subtle oceanic background.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Join Us On This Extraordinary Journey",
+            "body": "• Invest in a unique, high-growth luxury dining concept\n• Partner with a visionary team passionate about culinary innovation\n• Be part of creating the next icon in exotic gastronomy",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 0,
+                    "colors": [
+                        "#0A244A",
+                        "#2D5A7D"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#FFFFFF",
+                "body_font": "Source Sans Pro",
+                "body_color": "#C0C0C0",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER",
+                "body_line_spacing": 135,
+                "accent_shapes": [
+                    {
+                        "shape_type": "STRIPE",
                         "position": {
                             "x": 0,
-                            "y": 480
+                            "y": 0
                         },
                         "size": {
                             "width": 960,
-                            "height": 60
+                            "height": 10
                         },
-                        "fill_color": "#26A69A",
-                        "opacity": 0.3
+                        "fill_color": "#E63946",
+                        "opacity": 0.6
+                    },
+                    {
+                        "shape_type": "STRIPE",
+                        "position": {
+                            "x": 0,
+                            "y": 530
+                        },
+                        "size": {
+                            "width": 960,
+                            "height": 10
+                        },
+                        "fill_color": "#E63946",
+                        "opacity": 0.6
                     }
                 ]
             },

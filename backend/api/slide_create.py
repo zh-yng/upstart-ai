@@ -39,8 +39,8 @@ FALLBACK_THEME = {
 SCOPES = [
     "https://www.googleapis.com/auth/presentations",
     "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive"
 ]
-
 
 LAYOUT_MAP = {
     "TITLE": "TITLE",
@@ -319,6 +319,22 @@ def create_presentation(service, title):
     presentation = service.presentations().create(body={"title": title}).execute()
     presentation_id = presentation.get("presentationId")
     return presentation_id
+
+def make_presentation_public(presentation_id, creds):
+    """Set sharing permissions so anyone with the link can view the presentation."""
+    try:
+        drive_service = build("drive", "v3", credentials=creds)
+        permission = {
+            "type": "anyone",
+            "role": "reader"  # use "writer" for edit access
+        }
+        drive_service.permissions().create(
+            fileId=presentation_id,
+            body=permission
+        ).execute()
+        print(f"Made presentation public: https://docs.google.com/presentation/d/{presentation_id}/edit")
+    except Exception as e:
+        print(f"Failed to make presentation public: {e}")
 
 
 def prepare_body_text_segment(text_value):
@@ -1038,6 +1054,9 @@ def main(
 
     presentation_title = slides_data.get("presentation_title", "Untitled Presentation")
     presentation_id = create_presentation(service, presentation_title)
+
+    # Make presentation public
+    make_presentation_public(presentation_id, creds)
 
     # --- Handle the title slide ---
     title_slide_data = slides_data.get("title_slide", {})
