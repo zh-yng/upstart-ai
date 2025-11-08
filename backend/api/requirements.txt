@@ -8,4 +8,11 @@ google-auth
 google-auth-oauthlib
 google-auth-httplib2
 Pillow
+flask-cors
+firebase-admin
+requests
+gunicorn
+moviepy
+reportlab
+
 duckduckgo-search
