@@ -510,6 +510,7 @@ def _refresh_job_status(operation_name: str) -> dict:
 
                         if audio_bytes:
                             temp_music.write(audio_bytes)
+                            temp_music.flush()
                         elif audio_uri:
                             _logger().info(f"Downloading audio from {audio_uri}")
                             GOOGLE_API_KEY = os.getenv('VITE_GOOGLE_API_KEY') or os.getenv('GOOGLE_API_KEY')
@@ -520,6 +521,7 @@ def _refresh_job_status(operation_name: str) -> dict:
                             resp.raise_for_status()
                             for chunk in resp.iter_content(chunk_size=8192):
                                 temp_music.write(chunk)
+                            temp_music.flush()
                         elif hasattr(music_asset, "save"):
                             music_asset.save(temp_music.name)
                         else:
@@ -527,9 +529,11 @@ def _refresh_job_status(operation_name: str) -> dict:
                             job_data['music_status'] = 'failed'
                             return job_data
 
-                        job_data['music_status'] = 'downloaded'
-                        job_data['music_temp_path'] = temp_music.name
-                        _logger().info(f"Lyria music saved to {temp_music.name}")
+                        temp_music_path = temp_music.name
+
+                    job_data['music_status'] = 'downloaded'
+                    job_data['music_temp_path'] = temp_music_path
+                    _logger().info(f"Lyria music saved to {temp_music_path}")
 
     video_status = job_data.get('video_status')
     music_status = job_data.get('music_status')

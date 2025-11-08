@@ -14,5 +14,4 @@ requests
 gunicorn
 moviepy
 reportlab
-
-duckduckgo-search
+ddgs

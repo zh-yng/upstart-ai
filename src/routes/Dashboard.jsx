@@ -9,8 +9,19 @@ const Dashboard = () => {
         { name: 'Code', icon: 'pi pi-code', route: '/api/code' },
     ]
 
+    const handleGetHello = async () => {
+        try {
+            const response = await fetch('/api/hello');
+            const data = await response.json();
+            console.log('GET /api/hello response:', data);
+        } catch (error) {
+            console.error('Error fetching /api/hello:', error);
+        }
+    }
+
     return (
         <>
+            <Button onClick={handleGetHello} label="Test API Connection" className="mb-4" />
             <div className="flex flex-column gap-4 justify-content-center align-items-center text-center" style={{ width: '50%' }}>
                 <div className="flex flex-column gap-4 w-full justify-content-center">
                     {/* two per row grid of buttons */}

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "presentation_title": "Apex Predator Cuisine",
     "title_slide": {
         "title": "Apex Predator Cuisine - An Unrivaled Culinary Journey",
@@ -8,10 +9,22 @@
             "title_color": "#FFFFFF",
             "subtitle_font": "Source Sans Pro Italic",
             "subtitle_color": "#C0C0C0"
+=======
+    "presentation_title": "Elevate AI: Your Productivity Co-Pilot",
+    "title_slide": {
+        "title": "Elevate AI: Transform Your Workflow",
+        "style": {
+            "background_color": "#F8F9FA",
+            "title_font": "Montserrat Bold",
+            "title_color": "#212529",
+            "subtitle_font": "Source Sans Pro Regular",
+            "subtitle_color": "#495057"
+>>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
         },
         "layout": "TITLE"
     },
     "design_language": {
+<<<<<<< HEAD
         "name": "Deep Ocean Elegance",
         "palette": {
             "primary": "#0A244A",
@@ -31,10 +44,32 @@
             "colors": [
                 "#F0F8FF",
                 "#E1EBF5"
+=======
+        "name": "Digital Canvas",
+        "palette": {
+            "primary": "#2F80ED",
+            "secondary": "#BBDEFB",
+            "accent": "#EB5757",
+            "background": "#F8F9FA",
+            "text_on_light": "#212529",
+            "text_on_dark": "#FFFFFF"
+        },
+        "typography": {
+            "title_font": "Montserrat Bold",
+            "body_font": "Source Sans Pro Regular"
+        },
+        "background_style": {
+            "type": "GRADIENT",
+            "angle": 15,
+            "colors": [
+                "#F8F9FA",
+                "#E9ECEF"
+>>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
             ]
         },
         "accent_shapes": [
             {
+<<<<<<< HEAD
                 "shape_type": "ROUNDED_RECTANGLE",
                 "position": {
                     "x": 0,
@@ -59,13 +94,27 @@
                 },
                 "fill_color": "#E63946",
                 "opacity": 0.08
+=======
+                "shape_type": "STRIPE",
+                "position": {
+                    "x": 0,
+                    "y": 520
+                },
+                "size": {
+                    "width": 960,
+                    "height": 8
+                },
+                "fill_color": "#BBDEFB",
+                "opacity": 0.35
+>>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
             }
         ],
         "text_alignment": "LEFT",
-        "body_line_spacing": 135
+        "body_line_spacing": 125
     },
     "slides": [
         {
+<<<<<<< HEAD
             "title": "Vision: Redefining Exotic Gastronomy",
             "body": "• Create an unparalleled, high-end dining destination\n• Offer a curated menu of rare and responsibly sourced marine delicacies\n• Deliver an immersive culinary experience that captivates every sense",
             "style": {
@@ -119,21 +168,63 @@
                         },
                         "fill_color": "#E63946",
                         "opacity": 0.2
+=======
+            "title": "The Productivity Paradox",
+            "body": "•  Teams juggle too many tools and tasks.\n•  Information overload saps focus and efficiency.\n•  Lost time costs businesses billions annually.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 330,
+                    "colors": [
+                        "#F8F9FA",
+                        "#F1F3F5"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 70,
+                            "y": 120
+                        },
+                        "size": {
+                            "width": 12,
+                            "height": 80
+                        },
+                        "fill_color": "#EB5757",
+                        "opacity": 0.7
+>>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
                     }
                 ]
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
+<<<<<<< HEAD
             "image_prompt": "A perfectly plated, gourmet shark dish with microgreens and delicate sauces in a high-end restaurant setting, dramatic lighting.",
             "image_position": "RIGHT"
         },
         {
             "title": "Market Opportunity: High-Net-Worth Diners",
             "body": "• Global luxury dining market: $180B+, growing 7% annually\n• Target demographic: discerning individuals seeking unique culinary adventures\n• Our niche appeals to food enthusiasts and affluent travelers",
+=======
+            "image_prompt": "Abstract representation of digital clutter, overlapping windows, and a stressed person in a modern office, cool tones, dynamic composition.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Elevate AI: Your Smart Solution",
+            "body": "•  AI unifies communication and tasks.\n•  Intelligent automation streamlines workflows.\n•  Personalized insights boost focus and output.",
+>>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
                     "angle": 90,
                     "colors": [
+<<<<<<< HEAD
                         "#F0F8FF",
                         "#D7E5F0"
                     ]
@@ -184,10 +275,221 @@
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
                 "body_line_spacing": 135
+=======
+                        "#E9ECEF",
+                        "#FFFFFF"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
+                            "x": 520,
+                            "y": 150
+                        },
+                        "size": {
+                            "width": 200,
+                            "height": 20
+                        },
+                        "fill_color": "#BBDEFB",
+                        "opacity": 0.4
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Sleek, minimalistic UI of an AI productivity assistant on a tablet, showing organized tasks and smart notifications, warm ambient light.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Market Opportunity - $70B & Growing",
+            "body": "•  Global productivity software market: $70B in 2023.\n•  Projected 13% CAGR to $150B by 2030.\n•  Elevate AI targets SMBs and enterprises, 60M+ users.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 270,
+                    "colors": [
+                        "#F1F3F5",
+                        "#F8F9FA"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 130
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Dynamic infographic showing market growth curves and revenue projections for productivity software, glowing data points.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Our Product - Key Features",
+            "body": "•  Smart Task Management: AI-prioritized to-dos.\n•  Unified Inbox: Consolidates emails, chats, documents.\n•  Automated Reports: Generates progress summaries weekly.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 120,
+                    "colors": [
+                        "#F8F9FA",
+                        "#F2F4F6"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Clean mobile and desktop app screens of Elevate AI, showcasing task lists, consolidated notifications, and a sleek calendar view.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Core Technology - Unlocking Potential",
+            "body": "•  Proprietary LLM for contextual understanding.\n•  Adaptive algorithms personalize user experience.\n•  Secure, scalable cloud infrastructure ensures reliability.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 60,
+                    "colors": [
+                        "#E9ECEF",
+                        "#BBDEFB"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER",
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 30,
+                            "y": 30
+                        },
+                        "size": {
+                            "width": 900,
+                            "height": 500
+                        },
+                        "fill_color": "#2F80ED",
+                        "opacity": 0.08
+                    }
+                ]
+            },
+            "layout": "SECTION_TITLE_AND_DESCRIPTION",
+            "image_prompt": "Abstract visual of interconnected neural pathways and glowing data points, symbolizing advanced AI and machine learning algorithms in action, deep blues and purples.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Unique Value Proposition - Our Edge",
+            "body": "•  Seamless AI integration across all tools.\n•  Predictive insights drive proactive task management.\n•  Customizable workflows for diverse team needs.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 180,
+                    "colors": [
+                        "#F8F9FA",
+                        "#F1F3F5"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "PARALLELOGRAM",
+                        "position": {
+                            "x": 580,
+                            "y": 100
+                        },
+                        "size": {
+                            "width": 300,
+                            "height": 180
+                        },
+                        "fill_color": "#BBDEFB",
+                        "opacity": 0.2
+                    }
+                ]
             },
             "layout": "ONE_COLUMN_TEXT"
         },
         {
+            "title": "Competitive Landscape - Outperforming Asana",
+            "body": "•  Asana: $600M+ revenue, strong in project management.\n•  Elevate AI: 25% higher user engagement, 3X faster setup.\n•  Holistic AI integration vs. feature-based tools.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 210,
+                    "colors": [
+                        "#E9ECEF",
+                        "#FFFFFF"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "STRIPE",
+                        "position": {
+                            "x": 40,
+                            "y": 280
+                        },
+                        "size": {
+                            "width": 300,
+                            "height": 10
+                        },
+                        "fill_color": "#2F80ED",
+                        "opacity": 0.25
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Infographic comparing Elevate AI's features and performance metrics against a competitor like Asana, highlighting key advantages.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Business Model - Scalable Revenue",
+            "body": "•  Freemium model: Basic features for individual users.\n•  Subscription Tiers: Pro ($15/month), Business ($29/month).\n•  Enterprise Solutions: Custom pricing for large organizations.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 90,
+                    "colors": [
+                        "#F8F9FA",
+                        "#F1F3F5"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 140
+>>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
+            },
+            "layout": "ONE_COLUMN_TEXT"
+        },
+        {
+<<<<<<< HEAD
             "title": "Signature Dish Spotlight: 'Azure Fin Roulade'",
             "body": "• Delicate shark fin (sustainably sourced) prepared as a savory roulade\n• Paired with saffron-infused risotto and seafoam emulsion\n• An exquisite balance of texture, flavor, and visual artistry",
             "style": {
@@ -218,10 +520,42 @@
                             "height": 540
                         },
                         "fill_color": "#E63946",
+=======
+            "title": "Traction & Milestones - Early Success",
+            "body": "•  50,000+ users acquired in 6 months.\n•  15% month-over-month active user growth.\n•  $1.2M ARR projected by end of Q4.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 30,
+                    "colors": [
+                        "#E9ECEF",
+                        "#F2F4F6"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
+                            "x": 480,
+                            "y": 80
+                        },
+                        "size": {
+                            "width": 400,
+                            "height": 300
+                        },
+                        "fill_color": "#2F80ED",
+>>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
                         "opacity": 0.1
                     }
                 ]
             },
+<<<<<<< HEAD
             "layout": "SECTION_TITLE_AND_DESCRIPTION",
             "image_prompt": "A close-up, highly detailed photograph of a gourmet dish featuring a delicate, beautifully crafted roulade of ethically sourced shark, surrounded by vibrant, artfully arranged ingredients on a minimalist plate.",
             "image_position": "RIGHT"
@@ -229,11 +563,21 @@
         {
             "title": "Responsible Sourcing & Conservation",
             "body": "• Partnering only with certified, sustainable fisheries for all marine ingredients\n• Our shark is sourced via strict by-catch or aquaculture regulations\n• Dedicated commitment to ocean conservation initiatives and awareness",
+=======
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Clean data visualizations: growth charts showing user acquisition, revenue trajectory, and key performance indicators on a digital dashboard.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Customer Success - Voices of Impact",
+            "body": "•  'Elevate AI saved our team 10 hours weekly.' - Sarah M., Marketing Director.\n•  'Our project delivery speed increased by 20%.' - David C., Product Lead.\n•  Over 90% customer satisfaction score (CSAT).",
+>>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
                     "angle": 0,
                     "colors": [
+<<<<<<< HEAD
                         "#FFFFFF",
                         "#F0F8FF"
                     ]
@@ -251,11 +595,30 @@
                         "position": {
                             "x": 40,
                             "y": 480
+=======
+                        "#F8F9FA",
+                        "#E9ECEF"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 50,
+                            "y": 400
+>>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
                         },
                         "size": {
                             "width": 400,
                             "height": 10
                         },
+<<<<<<< HEAD
                         "fill_color": "#2D5A7D",
                         "opacity": 0.2
                     }
@@ -290,11 +653,86 @@
         {
             "title": "Our Esteemed Culinary & Management Team",
             "body": "• Chef Antoine Dubois - Michelin-starred executive chef, 20+ years experience\n• Maria Chen - Operations Director, led 3 successful luxury hospitality launches\n• David Lee - Head of Sourcing, expert in sustainable marine procurement",
+=======
+                        "fill_color": "#EB5757",
+                        "opacity": 0.4
+                    }
+                ]
+            },
+            "layout": "SECTION_TITLE_AND_DESCRIPTION",
+            "image_prompt": "Collage of diverse professional headshots with speech bubbles containing short positive testimonials about using Elevate AI, modern and approachable style.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Our Visionary Team",
+            "body": "•  Jane Doe, CEO: 15+ years in AI product leadership.\n•  John Smith, CTO: Expert in scalable cloud architectures.\n•  Team combines AI, SaaS, and UX expertise.",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 45,
+                    "angle": 135,
                     "colors": [
+                        "#F1F3F5",
+                        "#F8F9FA"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
+                            "x": 40,
+                            "y": 150
+                        },
+                        "size": {
+                            "width": 10,
+                            "height": 80
+                        },
+                        "fill_color": "#2F80ED",
+                        "opacity": 0.6
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Financial Ask - $5M Seed Round",
+            "body": "•  Funding: $5M for 15% equity.\n•  Use of Funds: 50% R&D, 30% Marketing, 20% Operations.\n•  Goal: Achieve $5M ARR and expand market share.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 240,
+                    "colors": [
+                        "#E9ECEF",
+                        "#BBDEFB"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "body_line_spacing": 130
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Financial bar charts and growth projections overlaid with a stylized dollar sign, representing investment opportunity and future growth.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Join Us: Elevate Tomorrow's Productivity",
+            "body": "•  Investment in Elevate AI drives future efficiency.\n•  Shape the next generation of smart workspaces.\n•  Contact us to schedule a deeper dive and demo.",
+>>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 300,
+                    "colors": [
+<<<<<<< HEAD
                         "#F0F8FF",
                         "#FFFFFF"
                     ]
@@ -456,6 +894,31 @@
                         },
                         "fill_color": "#E63946",
                         "opacity": 0.6
+=======
+                        "#F8F9FA",
+                        "#F1F3F5"
+                    ]
+                },
+                "title_font": "Montserrat Bold",
+                "title_color": "#212529",
+                "body_font": "Source Sans Pro Regular",
+                "body_color": "#212529",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER",
+                "accent_shapes": [
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
+                            "x": 200,
+                            "y": 400
+                        },
+                        "size": {
+                            "width": 560,
+                            "height": 90
+                        },
+                        "fill_color": "#2F80ED",
+                        "opacity": 0.15
+>>>>>>> 943e7e97d2ac7466e756bb2b5df24d80ab7b9d2e
                     }
                 ]
             },
