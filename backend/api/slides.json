@@ -1,51 +1,64 @@
 {
-    "presentation_title": "Sultan's Brew: The Modern Turkish Coffee Experience",
+    "presentation_title": "AquaDream: Your Personal Underwater World",
     "title_slide": {
-        "title": "Sultan's Brew: The Modern Turkish Coffee Experience",
+        "title": "AquaDream: Your Personal Underwater World",
         "style": {
-            "background_color": "#FDF7EC",
+            "background_color": "#E0F7FA",
             "title_font": "Montserrat Bold",
-            "title_color": "#2C1A0D",
-            "subtitle_font": "Source Sans Pro",
-            "subtitle_color": "#7A492B"
+            "title_color": "#004D40",
+            "subtitle_font": "Open Sans SemiBold",
+            "subtitle_color": "#26A69A"
         },
         "layout": "TITLE"
     },
     "design_language": {
-        "name": "Anatolian Brew Aesthetics",
+        "name": "AquaSerenity",
         "palette": {
-            "primary": "#7A492B",
-            "secondary": "#B58A5F",
-            "accent": "#D4AF37",
-            "background": "#FDF7EC",
-            "text_on_light": "#2C1A0D",
+            "primary": "#00838F",
+            "secondary": "#26A69A",
+            "accent": "#80DEEA",
+            "background": "#E0F7FA",
+            "text_on_light": "#004D40",
             "text_on_dark": "#FFFFFF"
         },
         "typography": {
             "title_font": "Montserrat SemiBold",
-            "body_font": "Source Sans Pro"
+            "body_font": "Open Sans"
         },
         "background_style": {
             "type": "GRADIENT",
-            "angle": 15,
+            "angle": 135,
             "colors": [
-                "#FDF7EC",
-                "#F8EFE4"
+                "#E0F7FA",
+                "#B2EBF2"
             ]
         },
         "accent_shapes": [
             {
                 "shape_type": "ROUNDED_RECTANGLE",
                 "position": {
-                    "x": 40,
-                    "y": 420
+                    "x": 50,
+                    "y": 450
                 },
                 "size": {
-                    "width": 820,
-                    "height": 14
+                    "width": 120,
+                    "height": 8
                 },
-                "fill_color": "#B58A5F",
-                "opacity": 0.3
+                "fill_color": "#26A69A",
+                "opacity": 0.25
+            },
+            {
+                "shape_type": "STRIPE",
+                "position": {
+                    "x": 700,
+                    "y": 100
+                },
+                "size": {
+                    "width": 10,
+                    "height": 300
+                },
+                "fill_color": "#00838F",
+                "opacity": 0.15
             }
         ],
         "text_alignment": "LEFT",
@@ -53,21 +66,57 @@
     },
     "slides": [
         {
-            "title": "The Essence of Sultan's Brew",
-            "body": "• Offering authentic Turkish coffee culture\n• Modern ambiance meets rich tradition\n• A premium, immersive coffee experience",
+            "title": "Your Underwater Oasis Awaits",
+            "body": "• Experience tranquility and vibrant life at home\n• Enhance well-being with a living art piece\n• Discover the joy of aquatic companionship",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 25,
+                    "angle": 90,
                     "colors": [
-                        "#FDF7EC",
-                        "#F8EFE4"
+                        "#E0F7FA",
+                        "#E0F2F7"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#2C1A0D",
-                "body_font": "Source Sans Pro",
-                "body_color": "#2C1A0D",
+                "title_color": "#004D40",
+                "body_font": "Open Sans",
+                "body_color": "#00695C",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "ELLIPSE",
+                        "position": {
+                            "x": 40,
+                            "y": 140
+                        },
+                        "size": {
+                            "width": 20,
+                            "height": 20
+                        },
+                        "fill_color": "#80DEEA",
+                        "opacity": 0.5
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Simplifying Your Aquatic Journey",
+            "body": "• Curated starter kits for effortless setup\n• Expert guidance for thriving aquatic ecosystems\n• Smart tech for easy maintenance and monitoring",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 270,
+                    "colors": [
+                        "#E0F7FA",
+                        "#B2EBF2"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#004D40",
+                "body_font": "Open Sans",
+                "body_color": "#00695C",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
                 "accent_shapes": [
@@ -75,151 +124,75 @@
                         "shape_type": "RECTANGLE",
                         "position": {
                             "x": 40,
-                            "y": 140
+                            "y": 130
                         },
                         "size": {
-                            "width": 120,
+                            "width": 150,
                             "height": 8
                         },
-                        "fill_color": "#D4AF37",
-                        "opacity": 0.6
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Market Opportunity: Brewing Growth",
-            "body": "• Specialty coffee market grows 8% annually\n• Demand for unique global flavors is surging\n• Gen Z and Millennials seek authentic experiences",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 190,
-                    "colors": [
-                        "#FDF7EC",
-                        "#F2E8DB"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#2C1A0D",
-                "body_font": "Source Sans Pro",
-                "body_color": "#2C1A0D",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 135,
-                "accent_shapes": [
-                    {
-                        "shape_type": "TRIANGLE",
-                        "position": {
-                            "x": 380,
-                            "y": 100
-                        },
-                        "size": {
-                            "width": 100,
-                            "height": 100
-                        },
-                        "fill_color": "#B58A5F",
-                        "opacity": 0.2
+                        "fill_color": "#26A69A",
+                        "opacity": 0.3
                     }
                 ]
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Vibrant coffee beans and exotic spices arranged artfully on a traditional Turkish tray, golden light, high resolution, soft focus background",
+            "image_prompt": "A sleek, modern aquarium with lush aquatic plants and colorful fish, a tablet displaying smart home integration, clean minimalist aesthetic, soft natural lighting.",
             "image_position": "RIGHT"
         },
         {
-            "title": "Our Unique Value: The Sultan's Secret",
-            "body": "• Authentic preparation with traditional Cezve\n• Curated selection of Turkish delicacies\n• Inviting, culturally rich atmosphere for all",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 300,
-                    "colors": [
-                        "#FDF7EC",
-                        "#EADECB"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#2C1A0D",
-                "body_font": "Source Sans Pro",
-                "body_color": "#2C1A0D",
-                "title_alignment": "RIGHT",
-                "body_alignment": "RIGHT",
-                "accent_shapes": [
-                    {
-                        "shape_type": "PARALLELOGRAM",
-                        "position": {
-                            "x": 500,
-                            "y": 140
-                        },
-                        "size": {
-                            "width": 300,
-                            "height": 10
-                        },
-                        "fill_color": "#D4AF37",
-                        "opacity": 0.5
-                    }
-                ]
-            },
-            "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "A skilled barista pouring rich Turkish coffee from a gleaming copper cezve into a delicate cup, steam rising, warm ambient lighting, close-up shot",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Menu & Experience: A Taste of Anatolia",
-            "body": "• Wide array of Turkish coffee varieties\n• Artisanal baklava, lokum, and savory pastries\n• Authentic herbal teas and refreshing sherbets",
+            "title": "A Growing Passion: The Aquarium Market",
+            "body": "• Global aquarium market projected to reach $10B by 2028\n• Smart aquarium segment shows 25% CAGR\n• Untapped demand for simplified, premium solutions",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
                     "angle": 45,
                     "colors": [
-                        "#FDF7EC",
-                        "#F4EDE1"
+                        "#E0F7FA",
+                        "#80DEEA"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#2C1A0D",
-                "body_font": "Source Sans Pro",
-                "body_color": "#2C1A0D",
+                "title_color": "#004D40",
+                "body_font": "Open Sans",
+                "body_color": "#00695C",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
-                "body_line_spacing": 135,
                 "accent_shapes": [
                     {
-                        "shape_type": "STRIPE",
+                        "shape_type": "CHEVRON",
                         "position": {
-                            "x": 40,
-                            "y": 250
+                            "x": 600,
+                            "y": 180
                         },
                         "size": {
-                            "width": 300,
-                            "height": 12
+                            "width": 100,
+                            "height": 80
                         },
-                        "fill_color": "#7A492B",
+                        "fill_color": "#00838F",
                         "opacity": 0.1
                     }
                 ]
             },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Assortment of colorful Turkish delights, golden baklava, and a small, elegantly decorated cup of Turkish coffee on an ornate bronze tray, soft natural light",
-            "image_position": "RIGHT"
+            "layout": "SECTION_TITLE_AND_DESCRIPTION",
+            "image_prompt": "An infographic showing upward trending graphs related to the global aquarium market size, with stylized fish and water elements, vibrant colors, clean design.",
+            "image_position": "LEFT"
         },
         {
-            "title": "Business Model: Crafted for Profit",
-            "body": "• Diversified revenue from in-store sales\n• High-margin catering for events and businesses\n• Online store for beans and brewing kits",
+            "title": "AquaDream: Beyond Just a Tank",
+            "body": "• All-inclusive packages: tank, equipment, decor, livestock\n• Proprietary app for feeding, lighting, water quality control\n• Dedicated 'AquaCoach' support for new hobbyists",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 120,
+                    "angle": 180,
                     "colors": [
-                        "#FDF7EC",
-                        "#F8EFE4"
+                        "#E0F7FA",
+                        "#CFD8DC"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#2C1A0D",
-                "body_font": "Source Sans Pro",
-                "body_color": "#2C1A0D",
+                "title_color": "#004D40",
+                "body_font": "Open Sans",
+                "body_color": "#00695C",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
                 "accent_shapes": [
@@ -227,113 +200,149 @@
                         "shape_type": "ROUNDED_RECTANGLE",
                         "position": {
                             "x": 40,
-                            "y": 150
+                            "y": 130
                         },
                         "size": {
-                            "width": 10,
+                            "width": 180,
+                            "height": 10
+                        },
+                        "fill_color": "#00838F",
+                        "opacity": 0.2
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A split image showing a complex traditional aquarium setup on one side with multiple wires and bottles, and on the other, a simplified, elegant AquaDream smart aquarium with an app interface on a tablet, highlighting ease of use.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Introducing the AquaKit Ecosystem",
+            "body": "• Seamless integration of hardware and software\n• Designed for beauty, optimized for health\n• Future-proof modular components",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 0,
+                    "colors": [
+                        "#E0F7FA",
+                        "#B2EBF2"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#004D40",
+                "body_font": "Open Sans",
+                "body_color": "#00695C",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "STRIPE",
+                        "position": {
+                            "x": 40,
+                            "y": 280
+                        },
+                        "size": {
+                            "width": 300,
+                            "height": 5
+                        },
+                        "fill_color": "#80DEEA",
+                        "opacity": 0.4
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Detailed, high-resolution rendering of an AquaDream starter kit, showcasing a modern, minimalist aquarium, an integrated filter system, energy-efficient LED lighting, and a smartphone displaying the intuitive AquaDream app dashboard with water parameters.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Our Clear Business Model",
+            "body": "• Starter Kits: Premium hardware and initial setup bundles\n• Subscription Services: AquaCare plans, automated supply refills\n• Marketplace: High-quality livestock, plants, and accessories",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 225,
+                    "colors": [
+                        "#E0F7FA",
+                        "#CFD8DC"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#004D40",
+                "body_font": "Open Sans",
+                "body_color": "#00695C",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "TRIANGLE",
+                        "position": {
+                            "x": 750,
+                            "y": 80
+                        },
+                        "size": {
+                            "width": 100,
                             "height": 100
                         },
-                        "fill_color": "#B58A5F",
-                        "opacity": 0.7
+                        "fill_color": "#26A69A",
+                        "opacity": 0.1
                     }
                 ]
             },
             "layout": "ONE_COLUMN_TEXT"
         },
         {
-            "title": "Traction & Projections: Sustained Growth",
-            "body": "• Projected Year 1 revenue: $750,000+\n• Target 20% annual customer base growth\n• Plan for 3 expansion locations within 5 years",
+            "title": "Strategic Go-to-Market Plan",
+            "body": "• Digital: Targeted social media, influencer partnerships\n• Retail: Specialty pet stores, home decor showrooms\n• Community: Online forums, local aquarium clubs",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 270,
+                    "angle": 315,
                     "colors": [
-                        "#FDF7EC",
-                        "#F2E8DB"
+                        "#E0F7FA",
+                        "#B2EBF2"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#2C1A0D",
-                "body_font": "Source Sans Pro",
-                "body_color": "#2C1A0D",
-                "title_alignment": "RIGHT",
-                "body_alignment": "RIGHT",
-                "body_line_spacing": 135,
+                "title_color": "#004D40",
+                "body_font": "Open Sans",
+                "body_color": "#00695C",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
                 "accent_shapes": [
                     {
-                        "shape_type": "RECTANGLE",
+                        "shape_type": "STRIPE",
                         "position": {
-                            "x": 450,
-                            "y": 120
+                            "x": 40,
+                            "y": 420
                         },
                         "size": {
-                            "width": 10,
-                            "height": 200
+                            "width": 800,
+                            "height": 12
                         },
-                        "fill_color": "#7A492B",
-                        "opacity": 0.15
+                        "fill_color": "#00838F",
+                        "opacity": 0.18
                     }
                 ]
             },
-            "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "Elegant growth chart visualizing increasing revenue and customer count, subtle coffee bean motifs, professional data visualization style",
-            "image_position": "LEFT"
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A modern collage of diverse marketing channels: a smartphone with a vibrant social media feed, an elegant storefront display featuring an aquarium, and people interacting at a lively community event, all subtly incorporating aquatic motifs.",
+            "image_position": "RIGHT"
         },
         {
-            "title": "Competitive Landscape: Our Distinct Advantage",
-            "body": "• Starbucks: Mass appeal, lacks cultural depth\n• Local cafes: Limited specialty focus\n• Sultan's Brew: Niche expertise, 40% higher customer loyalty with unique experience",
+            "title": "Building Momentum: Our Early Traction",
+            "body": "• Achieved 1,500 beta sign-ups in 3 months\n• Secured partnerships with 10 premium aquatic suppliers\n• 92% positive feedback from initial user trials",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
                     "angle": 60,
                     "colors": [
-                        "#FDF7EC",
-                        "#EADECB"
+                        "#E0F7FA",
+                        "#FFFFFF"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#2C1A0D",
-                "body_font": "Source Sans Pro",
-                "body_color": "#2C1A0D",
-                "title_alignment": "LEFT",
-                "body_alignment": "LEFT",
-                "body_line_spacing": 135,
-                "accent_shapes": [
-                    {
-                        "shape_type": "CHEVRON",
-                        "position": {
-                            "x": 40,
-                            "y": 300
-                        },
-                        "size": {
-                            "width": 200,
-                            "height": 20
-                        },
-                        "fill_color": "#D4AF37",
-                        "opacity": 0.4
-                    }
-                ]
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Three distinct coffee cups representing competitors (generic chain, local cafe) and our unique Turkish coffee, highlighting differentiation through artistic contrast and superior branding",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "The Team Behind the Brew",
-            "body": "• Founder: 10+ years F&B and hospitality leadership\n• Master Barista: Authentic Turkish coffee expertise\n• Marketing Specialist: Proven brand building record",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 150,
-                    "colors": [
-                        "#FDF7EC",
-                        "#F8EFE4"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#2C1A0D",
-                "body_font": "Source Sans Pro",
-                "body_color": "#2C1A0D",
+                "title_color": "#004D40",
+                "body_font": "Open Sans",
+                "body_color": "#00695C",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
                 "accent_shapes": [
@@ -341,77 +350,114 @@
                         "shape_type": "RECTANGLE",
                         "position": {
                             "x": 40,
-                            "y": 140
+                            "y": 150
                         },
                         "size": {
-                            "width": 8,
-                            "height": 100
+                            "width": 350,
+                            "height": 60
                         },
-                        "fill_color": "#7A492B",
-                        "opacity": 0.7
+                        "fill_color": "#80DEEA",
+                        "opacity": 0.2
                     }
                 ]
             },
             "layout": "TITLE_AND_BODY"
         },
         {
-            "title": "Financial Ask: Fueling Our Expansion",
-            "body": "• Seeking $500,000 seed investment\n• Funds cover flagship build-out and initial marketing\n• Detailed financial projections are available upon request",
+            "title": "Navigating the Competitive Waters",
+            "body": "• **Generic Aquarium Brands:** Focus on basic tanks; lack smart tech\n• **High-End Custom Builds:** Very costly, complex setup for hobbyists\n• **AquaDream:** Integrated smart tech, simplified experience, accessible premium design",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 210,
+                    "angle": 120,
                     "colors": [
-                        "#FDF7EC",
-                        "#F2E8DB"
+                        "#E0F7FA",
+                        "#CFD8DC"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#2C1A0D",
-                "body_font": "Source Sans Pro",
-                "body_color": "#2C1A0D",
-                "title_alignment": "CENTER",
-                "body_alignment": "CENTER",
-                "body_line_spacing": 135,
+                "title_color": "#004D40",
+                "body_font": "Open Sans",
+                "body_color": "#00695C",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
                 "accent_shapes": [
                     {
                         "shape_type": "ROUNDED_RECTANGLE",
                         "position": {
-                            "x": 200,
-                            "y": 300
+                            "x": 400,
+                            "y": 100
                         },
                         "size": {
-                            "width": 500,
-                            "height": 100
+                            "width": 10,
+                            "height": 350
                         },
-                        "fill_color": "#D4AF37",
-                        "opacity": 0.2
+                        "fill_color": "#00838F",
+                        "opacity": 0.1
                     }
                 ]
             },
-            "layout": "MAIN_POINT"
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A stylized comparison chart or a Venn diagram, subtly showing AquaDream's unique blend of smart technology, ease of use, and premium design, distinguishing it from traditional brands and custom setups, using aquatic-themed icons.",
+            "image_position": "LEFT"
         },
         {
-            "title": "Future Vision & Next Steps",
-            "body": "• Launch flagship store in Q4 2024\n• Expand catering and online retail presence\n• Become the leading authentic Turkish coffee brand",
+            "title": "Our Passionate & Expert Team",
+            "body": "• **Dr. Aquatics (CEO):** Marine Biologist, 15+ years aquaculture expertise\n• **Tech Visionary (CTO):** Smart Home innovator, led 2 successful exits\n• **Design Lead:** Award-winning industrial designer, focused on user experience",
             "style": {
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 330,
+                    "angle": 270,
                     "colors": [
-                        "#FDF7EC",
-                        "#EADECB"
+                        "#E0F7FA",
+                        "#B2EBF2"
                     ]
                 },
                 "title_font": "Montserrat SemiBold",
-                "title_color": "#2C1A0D",
-                "body_font": "Source Sans Pro",
-                "body_color": "#2C1A0D",
+                "title_color": "#004D40",
+                "body_font": "Open Sans",
+                "body_color": "#00695C",
                 "title_alignment": "LEFT",
                 "body_alignment": "LEFT",
                 "accent_shapes": [
                     {
                         "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 700,
+                            "y": 200
+                        },
+                        "size": {
+                            "width": 150,
+                            "height": 100
+                        },
+                        "fill_color": "#26A69A",
+                        "opacity": 0.15
+                    }
+                ]
+            },
+            "layout": "SECTION_HEADER"
+        },
+        {
+            "title": "Our Investment Ask: Fueling Growth",
+            "body": "• Seeking $1.5M seed funding for 18-month runway\n• Allocation: 40% R&D, 30% Marketing, 20% Operations, 10% Team\n• Projected ROI: 5x within 3 years, 10x exit potential",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 135,
+                    "colors": [
+                        "#E0F7FA",
+                        "#CFD8DC"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#004D40",
+                "body_font": "Open Sans",
+                "body_color": "#00695C",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
                         "position": {
                             "x": 40,
                             "y": 380
@@ -420,27 +466,50 @@
                             "width": 500,
                             "height": 90
                         },
-                        "fill_color": "#B58A5F",
+                        "fill_color": "#00838F",
                         "opacity": 0.12
                     }
                 ]
             },
-            "layout": "SECTION_HEADER"
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A modern financial infographic displaying a growth trajectory, with a prominent bar chart showing investment allocation percentages for R&D, Marketing, Operations, and Team. Stylized upward arrows indicate projected ROI.",
+            "image_position": "RIGHT"
         },
         {
-            "title": "Thank You",
-            "body": "Join us in bringing the rich tradition of Turkish coffee to new audiences.\nContact us for a detailed investor deck.",
+            "title": "Join the AquaDream Journey",
+            "body": "• Schedule a demo of the AquaKit and app\n• Explore detailed financial projections and market research\n• Let's bring tranquil aquatic beauty to every home",
             "style": {
-                "background_color": "#7A492B",
-                "title_font": "Montserrat Bold",
-                "title_color": "#FFFFFF",
-                "body_font": "Source Sans Pro",
-                "body_color": "#FDF7EC",
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 45,
+                    "colors": [
+                        "#E0F7FA",
+                        "#80DEEA"
+                    ]
+                },
+                "title_font": "Montserrat SemiBold",
+                "title_color": "#004D40",
+                "body_font": "Open Sans",
+                "body_color": "#00695C",
                 "title_alignment": "CENTER",
                 "body_alignment": "CENTER",
-                "body_line_spacing": 135
+                "accent_shapes": [
+                    {
+                        "shape_type": "WAVE",
+                        "position": {
+                            "x": 0,
+                            "y": 480
+                        },
+                        "size": {
+                            "width": 960,
+                            "height": 60
+                        },
+                        "fill_color": "#26A69A",
+                        "opacity": 0.3
+                    }
+                ]
             },
-            "layout": "CAPTION_ONLY"
+            "layout": "MAIN_POINT"
         }
     ]
 }

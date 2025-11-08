@@ -33,14 +33,18 @@ def create_slides_route():
         include_images_flag = bool(include_images_value)
 
     try:
-        run_deck(prompt_text, author=author_name, include_images=include_images_flag)
+        presentation_url = run_deck(
+            prompt_text,
+            author=author_name,
+            include_images=include_images_flag,
+        )
     except ValueError as exc:
         return jsonify({'error': str(exc)}), 400
     except Exception as exc:
         app.logger.exception("Slide generation failed", exc_info=exc)
         return jsonify({'error': 'Slide generation failed'}), 500
 
-    return jsonify({'slides': []})
+    return jsonify({'presentationUrl': presentation_url})
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

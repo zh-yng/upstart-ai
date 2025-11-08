@@ -992,7 +992,13 @@ def add_slide(service, presentation_id, slide_data, fallback_index, deck_theme=N
             print(f"Warning: layout for slide '{slide_title}' does not expose an image placeholder; skipping image to keep text clear.")
 
 
-def main(user_prompt, author=None, include_images=DEFAULT_INCLUDE_IMAGES, reuse_existing=False):
+def main(
+    user_prompt,
+    author=None,
+    include_images=DEFAULT_INCLUDE_IMAGES,
+    reuse_existing=False,
+    open_browser=True,
+):
     """Build a Google Slides deck using the supplied prompt."""
 
     json_path = Path(__file__).with_name("slides.json")
@@ -1068,9 +1074,12 @@ def main(user_prompt, author=None, include_images=DEFAULT_INCLUDE_IMAGES, reuse_
             include_images=include_images,
         )
 
-    # Open presentation in browser
+    # Open presentation in browser if requested
     presentation_url = f"https://docs.google.com/presentation/d/{presentation_id}/edit"
-    webbrowser.open(presentation_url)
+    if open_browser:
+        webbrowser.open(presentation_url)
+
+    return presentation_url
 
 
 def run_cli():
@@ -1081,11 +1090,13 @@ def run_cli():
         author_text = input("Enter the author/presenter name (optional): ").strip()
         include_images_choice = input("Include images? (Y/n): ").strip().lower()
         include_images_flag = include_images_choice not in {"n", "no", "0", "false", "off"}
-        main(
+        presentation_url = main(
             prompt_text or None,
             author=author_text or None,
             include_images=include_images_flag,
+            open_browser=True,
         )
+        print(f"Presentation created: {presentation_url}")
     except HttpError as err:
         print(f"API error: {err}")
     except (ValueError, FileNotFoundError) as err:

@@ -7,12 +7,17 @@ import argparse
 import slide_create
 
 
-def run_deck(prompt: str, author: str | None = None, include_images: bool = True) -> None:
-    """Generate a Google Slides deck for the given prompt."""
+def run_deck(prompt: str, author: str | None = None, include_images: bool = True) -> str:
+    """Generate a Google Slides deck for the given prompt and return its URL."""
     if not prompt or not prompt.strip():
         raise ValueError("prompt must be a non-empty string")
 
-    slide_create.main(prompt.strip(), author=author, include_images=include_images)
+    return slide_create.main(
+        prompt.strip(),
+        author=author,
+        include_images=include_images,
+        open_browser=False,
+    )
 
 
 def _parse_args() -> argparse.Namespace:
@@ -30,4 +35,5 @@ def _parse_args() -> argparse.Namespace:
 
 if __name__ == "__main__":
     args = _parse_args()
-    run_deck(args.prompt, author=args.author, include_images=args.include_images)
+    url = run_deck(args.prompt, author=args.author, include_images=args.include_images)
+    print(f"Presentation created: {url}")
