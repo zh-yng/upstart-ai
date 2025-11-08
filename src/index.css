@@ -25,6 +25,10 @@ body {
   box-sizing: border-box;
 }
 
+.border {
+  border: 1px solid #9b9da2;
+}
+
 /* 
 .glass {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

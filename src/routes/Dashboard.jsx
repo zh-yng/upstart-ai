@@ -1,13 +1,45 @@
+import { Button } from "primereact/button";
+import { Ripple } from 'primereact/ripple';
+
 const Dashboard = () => {
+    const features = [
+        { name: 'Slides', icon: 'pi pi-id-card', route: '/api/slides' },
+        { name: 'Video', icon: 'pi pi-video', route: '/api/video' },
+        { name: 'Network', icon: 'pi pi-sitemap', route: '/api/network' },
+        { name: 'Code', icon: 'pi pi-code', route: '/api/code' },
+    ]
+
     return (
         <>
             <div className="flex flex-column gap-4 justify-content-center align-items-center text-center" style={{ width: '50%' }}>
-                <div className="flex gap-4 w-full justify-content-center">
-                    <span>Welcome to your dashboard! More features coming soon.</span>
-                    {/* <InputTextarea className="blur" style={{ resize: 'none', width: '100%' }} placeholder="Tell us about your startup idea..." />
-                    <Button icon="pi pi-send" className="p-button-primary" /> */}
-                </div>
-            </div>
+                <div className="flex flex-column gap-4 w-full justify-content-center">
+                    {/* two per row grid of buttons */}
+                    <div className="flex gap-4 w-full">
+                        <div className="flex flex-column gap-4 w-full justify-content-center">
+                            {features.map((feature) => (
+                                <Button
+                                    key={feature.name}
+                                    className="blur justify-content-start border"
+                                    style={{ color: 'black', maxWidth: '300px', width: '100%', minHeight: '100px' }}
+                                    icon={feature.icon}
+                                    label={feature.name}
+                                    severity="secondary"
+                                    onClick={() => window.location.href = feature.route}
+                                >
+                                    <Ripple
+                                        pt={{
+                                            root: { style: { background: 'rgba(0, 0, 0, 0.3)' } }
+                                        }}
+                                    />
+                                </Button>
+                            ))}
+                        </div>
+                        <div style={{ minWidth: '30vw' }} className="blur border flex flex-column justify-content-center align-items-center">
+                            <h3>Chat with Everest</h3>
+                        </div>
+                    </div>
+                </div >
+            </div >
         </>
     );
 }
