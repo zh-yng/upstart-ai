@@ -11,14 +11,15 @@ const Landing = () => {
     const [slides, setSlides] = useState([]);
 
     async function createSlides(text) {
-        const response = await fetch('/create_slides', {
+        const response = await fetch(`/api/create_slides`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ text }),
+            body: JSON.stringify({ text: text }),
         });
-        const data = await response.json();
+        const data = await response;
+        console.log(data);
         return data.slides;
     }
 
