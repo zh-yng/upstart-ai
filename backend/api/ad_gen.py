@@ -33,7 +33,7 @@ content = userPrompt + """. This is a new brilliant startup idea, this person ne
 
 operation = client.models.generate_videos(
     model="veo-3.1-generate-preview",
-    prompt="People are arguing over house cats and what color they are. The first lady yells, 'This orange one is mine you dumb old rag!'",
+    prompt="Old ladies are arguing over house cats and what color they are. The first lady yells, 'This orange one is mine you dumb old hag!'",
     config={
         "duration_seconds": 8
     }

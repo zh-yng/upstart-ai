@@ -33,7 +33,7 @@ def runGenerator(inputPrompt, author=""):
         contents += "\nNo presenter name provided; omit the author field entirely."
 
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-2.5-pro",
         contents=contents
     )
 

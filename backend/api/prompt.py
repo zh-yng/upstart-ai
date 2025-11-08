@@ -1,9 +1,9 @@
 instruction_block = """
 You are an expert presentation designer. A user will provide a startup idea, and your task is to generate a Google Slides presentation outline in JSON format. The JSON must include:
 
-1. presentation_title: a short, catchy title for the presentation.
+1. presentation_title: a short, catchy title for the presentation. MUST be a complete, professional title (3-6 words) that clearly identifies the company or product. Never truncate or leave incomplete.
 2. title_slide: an object with:
-   - title: the main slide title (required)
+   - title: the main slide title (required). MUST be a fully formed, complete title that matches or expands on the presentation_title. Ensure the entire title is generated - never cut off mid-word or mid-phrase. Examples: "Revolutionizing Healthcare with AI", "The Future of Sustainable Energy", "Next-Gen EdTech Platform".
    - author: the creator/presenter of the slides (optional). Do NOT include the author in any other slide or bullet points.
    - style: an object specifying:
        - background_color: slide background color in hex format (e.g., "#FFFFFF")
@@ -15,7 +15,7 @@ You are an expert presentation designer. A user will provide a startup idea, and
      BLANK, CAPTION_ONLY, TITLE, TITLE_AND_BODY, TITLE_AND_TWO_COLUMNS, TITLE_ONLY, SECTION_HEADER, SECTION_TITLE_AND_DESCRIPTION, ONE_COLUMN_TEXT, MAIN_POINT, BIG_NUMBER
 
 3. slides: an array of 11-13 slides. Each slide should have:
-   - title: the slide heading
+   - title: the slide heading. CRITICAL RULE: Every single content slide title MUST be exactly 4 WORDS OR FEWER (1-4 words only). No exceptions. Examples of correct titles: "The Problem" (2 words), "Our AI Solution" (3 words), "Market Opportunity" (2 words), "Our Team" (2 words). The title_slide is the ONLY slide exempt from this rule.
    - body: a single string containing the body copy for the slide. Keep it concise so it fits comfortably beneath the title.
    - style: an object specifying:
        - background_color: slide background color in hex
@@ -53,7 +53,8 @@ Requirements:
 - Supply `image_prompt` values for every slide that uses a two-column layout. Add additional image prompts only when the chosen layout provides a dedicated image area so visuals never collide with text.
 - Include one dedicated visual spotlight slide using a two-column layout: keep copy minimal and let the supporting image prompt drive the narrative.
 - Include distinct slides for the following investor pitch topics: Team, Market Opportunity, Unique Value (what makes the company different), Business Model, and Financial Ask. Additional slides may cover summary, product, traction, or next steps. Add at least one slide that digs deeper into product demo visuals and another that highlights customer proof (logo wall or testimonial imagery).
-- Add a dedicated Competitive Landscape slide that cites at least one real competitor in the market, references a credible datapoint (funding, revenue, user count, or growth metric), and contrasts it with superior metrics from the startup to illustrate the differentiation.
+- The Team slide MUST include 3-4 fictional but realistic team members with: full names (first and last), role/title, and a brief credential (e.g., "Former VP at Google", "PhD in AI from MIT", "20+ years in fintech"). Format as bullet points: "Name, Role - credential". Make names diverse and professional.
+- Add a dedicated Competitive Landscape slide that researches and cites 2-3 REAL competitors currently operating in the market. For each competitor, include: company name, a specific metric (funding amount, user count, revenue, or market share), and their key weakness or limitation. Then explain why this startup is superior with specific differentiators (technology advantage, cost savings, speed improvement, or unique feature). Use real data you know or can infer from the market context. Format as: "Competitor Name ($X funding, Y users) - weakness | Our advantage: specific metric showing superiority".
 - Favor metrics-driven language. Where possible, quantify traction, growth, TAM/SAM/SOM, revenue projections, customer counts, or efficiency gains using numbers, percentages, or dollar amounts. Keep each line concise but data-rich.
 - Choose refined, professional typography (e.g., Montserrat, Open Sans, Source Sans) and complementary color palettes that feel sophisticated. Ensure margins, spacing, and alignment keep slides balanced and uncluttered.
 - Curate the color palette directly from the startup prompt’s vibe: e.g., warm, organic hues for climate or wellness concepts; electric, high-contrast tones for tech or gaming; soft pastels for education or community. The title slide background must immediately reflect this theme so it changes with each new idea.
@@ -66,6 +67,11 @@ Requirements:
 - Check that longer titles (30+ characters) still leave breathing room: keep body content visually separated from the title area so nothing overlaps.
 - Format every slide so content is evenly distributed; avoid cramming and ensure bullet spacing supports readability.
 - Keep visual hierarchy clear: titles dominate, subtitles/supporting metrics align neatly below, and images stay within their designated column.
+- CRITICAL: Before outputting, verify that:
+  1. presentation_title and title_slide.title are both COMPLETE with no truncation (3-8 words, never cut off mid-word)
+  2. EVERY content slide title (in the slides array) is 4 WORDS OR FEWER - count the words carefully
+  3. Never end a title mid-word (e.g., "Revolutionizing Healthc..." is WRONG - it must be complete or shortened to fit 4 words)
+- Double-check that every required field is present and fully populated. Missing or incomplete data will cause rendering errors.
 - Output only valid JSON, without extra text or explanation.
 - Follow this example structure exactly:
 
@@ -229,7 +235,7 @@ Requirements:
       "image_position": "RIGHT"
     },
     {
-      "title": "The Future of AI in Healthcare",
+      "title": "Future Vision",
       "body": "• Predictive triage forecasts patient risk seven days ahead\n• Ambient sensing expands telehealth reach 3x\n• Federated learning secures cross-hospital collaboration",
       "style": {
         "background_style": {
@@ -254,6 +260,42 @@ Requirements:
         ]
       },
       "layout": "MAIN_POINT"
+    },
+    {
+      "title": "Our Team",
+      "body": "• Dr. Sarah Chen, CEO - Former Director of AI at IBM Watson Health\n• Michael Rodriguez, CTO - Led engineering at Epic Systems for 12 years\n• Priya Patel, Chief Medical Officer - Stanford MD, 15+ years clinical practice\n• James Thompson, CFO - Scaled two healthcare startups to $50M+ ARR",
+      "style": {
+        "background_style": {
+          "type": "GRADIENT",
+          "angle": 135,
+          "colors": ["#F5F7FF", "#FFFFFF"]
+        },
+        "title_font": "Montserrat SemiBold",
+        "title_color": "#1F1F1F",
+        "body_font": "Source Sans Pro",
+        "body_color": "#2A2A2A",
+        "title_alignment": "LEFT",
+        "body_alignment": "LEFT"
+      },
+      "layout": "TITLE_AND_BODY"
+    },
+    {
+      "title": "Competitive Landscape",
+      "body": "• PathAI ($255M funding, 40+ pharma partnerships) - Limited real-time diagnostics | Our edge: 3x faster inference with 98.7% accuracy\n• Tempus ($1.3B valuation, 7K oncology providers) - High $12K per test cost | Our advantage: $2.8K per test with broader disease coverage\n• Paige.AI ($145M funding, FDA-approved pathology) - Single-organ focus | We deliver: Multi-organ AI platform covering 15+ conditions",
+      "style": {
+        "background_style": {
+          "type": "GRADIENT",
+          "angle": 225,
+          "colors": ["#FFFFFF", "#F0F4FF"]
+        },
+        "title_font": "Montserrat SemiBold",
+        "title_color": "#1F1F1F",
+        "body_font": "Source Sans Pro",
+        "body_color": "#2A2A2A",
+        "title_alignment": "LEFT",
+        "body_alignment": "LEFT"
+      },
+      "layout": "TITLE_AND_BODY"
     }
   ]
 }
