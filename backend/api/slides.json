@@ -1,227 +1,471 @@
 {
-    "presentation_title": "Aura Harvest: Precision Carrot Farming",
+    "presentation_title": "cupcaKke bakkery: Sweet Innovation Redefined",
     "title_slide": {
-        "title": "Aura Harvest: Reinventing Agriculture with Precision-Grown Carrots",
+        "title": "cupcaKke bakkery: Sweet Innovation Redefined",
         "style": {
-            "background_style": {
-                "type": "GRADIENT",
-                "angle": 135,
-                "colors": [
-                    "#FFF0E0",
-                    "#FFE4C4"
-                ]
-            },
-            "title_font": "Montserrat Bold",
-            "title_color": "#D95D0F",
-            "subtitle_font": "Source Sans Pro",
-            "subtitle_color": "#4A3F35"
+            "background_color": "#FFDAB9",
+            "title_font": "Playfair Display",
+            "title_color": "#362A2A",
+            "subtitle_font": "Open Sans",
+            "subtitle_color": "#5D4C4C"
         },
         "layout": "TITLE"
     },
     "design_language": {
-        "name": "Organic Tech",
+        "name": "Artisan Digital Delights",
         "palette": {
-            "primary": "#F58428",
-            "secondary": "#4A3F35",
-            "accent": "#78B446",
-            "background": "#FCFBF8",
-            "text_on_light": "#212121",
+            "primary": "#FFDAB9",
+            "secondary": "#B0E0E6",
+            "accent": "#FF69B4",
+            "background": "#FDF5E6",
+            "text_on_light": "#362A2A",
             "text_on_dark": "#FFFFFF"
         },
         "typography": {
             "title_font": "Montserrat SemiBold",
-            "body_font": "Source Sans Pro"
+            "body_font": "Open Sans"
         },
         "background_style": {
             "type": "GRADIENT",
-            "angle": 180,
+            "angle": 15,
             "colors": [
-                "#FFFFFF",
-                "#FAF8F5"
+                "#FDF5E6",
+                "#FFF8F0"
             ]
         },
+        "accent_shapes": [
+            {
+                "shape_type": "RECTANGLE",
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "size": {
+                    "width": 960,
+                    "height": 10
+                },
+                "fill_color": "#0A2E5B",
+                "opacity": 0.05
+            },
+            {
+                "shape_type": "ISOSCELES_TRIANGLE",
+                "position": {
+                    "x": 50,
+                    "y": 100
+                },
+                "size": {
+                    "width": 120,
+                    "height": 15
+                },
+                "fill_color": "#B0E0E6",
+                "opacity": 0.2
+            }
+        ],
         "text_alignment": "LEFT",
         "body_line_spacing": 135
     },
     "slides": [
         {
-            "title": "Farming's Big Challenges",
-            "body": "• Traditional farming consumes 70% of global freshwater.\n• Climate change threatens crop yield and consistency.\n• Long supply chains lead to 30% food waste.",
+            "title": "Overview - The Evolution of Indulgence",
+            "body": "•  Traditional charm meets modern culinary innovation\n•  Personalized, high-quality sweet experiences\n•  Reimagining the beloved cupcake for today's market",
             "style": {
-                "background_color": "#FCFBF8",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A cracked, dry farm field under a harsh sun, symbolizing drought and agricultural challenges, cinematic and dramatic.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "A Smarter Solution",
-            "body": "• We grow perfect carrots indoors, using precision agriculture.\n• Our method provides year-round supply, immune to weather.\n• We deliver superior taste, nutrition, and freshness.",
-            "style": {
-                "background_color": "#F9F9F7",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A pristine, futuristic indoor vertical farm with rows of vibrant green carrot tops under glowing full-spectrum LED lights, minimalist aesthetic.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Our Growing Process",
-            "body": "• AI-Optimized Nutrients\n• 95% Less Water Used\n• Zero Pesticides, Ever",
-            "style": {
-                "background_color": "#FCFBF8",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
-            },
-            "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "A detailed, beautiful infographic showing a cross-section of a high-tech vertical farming pod, highlighting water recycling systems, sensor nodes, and nutrient delivery tubes with glowing liquid.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "A Growing Market",
-            "body": "• Total Addressable Market: $500B Global Fresh Produce\n• Serviceable Market: $20B North American Organic Vegetables\n• Obtainable Market: $150M Year 3 Target Revenue",
-            "style": {
-                "background_color": "#F9F9F7",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A bright, modern, upscale grocery store's produce section, with a focus on perfectly stacked organic carrots, filled with happy, discerning customers.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Our Unique Value",
-            "body": "• Yield - 300% more produce per square foot than traditional farms.\n• Efficiency - 95% less water and a 50% shorter supply chain.\n• Quality - Consistent size, sweetness, and nutritional value in every batch.",
-            "style": {
-                "background_color": "#F58428",
-                "title_font": "Montserrat Bold",
-                "title_color": "#FFFFFF",
-                "body_font": "Source Sans Pro",
-                "body_color": "#FFFFFF",
-                "title_alignment": "CENTER",
-                "body_alignment": "CENTER"
-            },
-            "layout": "MAIN_POINT"
-        },
-        {
-            "title": "Our Business Model",
-            "body": "• B2B Contracts: Supplying major grocery chains with private label products.\n• Food Service: Partnering with restaurant distributors and meal-kit companies.\n• Direct to Consumer: Future plans for a premium subscription box.",
-            "style": {
-                "background_color": "#FCFBF8",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A professional chef in a high-end restaurant meticulously plating a dish, using a bright, perfect orange carrot as the centerpiece.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Early Market Success",
-            "body": "• Successful pilot programs with Whole Foods and Erewhon Market.\n• Secured $500,000 in pre-orders from culinary partners.\n• Waitlist of 20+ regional restaurant groups.",
-            "style": {
-                "background_color": "#F9F9F7",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A clean, minimalist slide featuring the logos of Whole Foods Market, Erewhon Market, and Blue Apron, arranged elegantly.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Competitive Edge",
-            "body": "• Grimmway Farms (Market Leader) - Water intensive, seasonal limits | Our advantage: 95% less water, 365 days of production.\n• Plenty ($941M funding) - Focus on leafy greens, high energy costs | Our advantage: Specialized root vegetable tech, 20% lower energy use.",
-            "style": {
-                "background_color": "#FCFBF8",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121",
-                "body_line_spacing": 140
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 10,
+                    "colors": [
+                        "#FDF5E6",
+                        "#FFF8F0"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "STRIPE",
+                        "position": {
+                            "x": 40,
+                            "y": 140
+                        },
+                        "size": {
+                            "width": 150,
+                            "height": 18
+                        },
+                        "fill_color": "#FFDAB9",
+                        "opacity": 0.5
+                    }
+                ]
             },
             "layout": "TITLE_AND_BODY"
         },
         {
-            "title": "Meet Our Team",
-            "body": "• Dr. Alisha Khan, CEO - PhD in Agricultural Science from Cornell.\n• Ben Carter, COO - Former Head of Operations at Driscoll's.\n• Mei Lin, CTO - Ex-Amazon Robotics Engineer, IoT specialist.\n• Javier Morales, Head of Sales - Led B2B partnerships at Impossible Foods.",
+            "title": "Market Opportunity - A Growing Appetite",
+            "body": "•  Specialty food market growing 8% annually\n•  Custom dessert demand up 15% year-over-year\n•  Consumers seek unique, convenient indulgence options",
             "style": {
-                "background_color": "#F9F9F7",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Financial Roadmap",
-            "body": "• We project $15M in annual recurring revenue by Year 3.\n• Targeting a 35% EBITDA margin through automation.\n• Path to profitability within 30 months post-funding.",
-            "style": {
-                "background_color": "#FCFBF8",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 180,
+                    "colors": [
+                        "#FDF5E6",
+                        "#FFF0E6"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "PARALLELOGRAM",
+                        "position": {
+                            "x": 40,
+                            "y": 500
+                        },
+                        "size": {
+                            "width": 300,
+                            "height": 60
+                        },
+                        "fill_color": "#00C8FF",
+                        "opacity": 0.1
+                    }
+                ]
             },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "An elegant, clean line graph showing steep upward revenue growth projections against time, with key milestones highlighted in orange.",
+            "image_prompt": "Vibrant infographic displaying growth in specialty food and custom dessert markets, with upward trending graphs, happy consumers enjoying gourmet cupcakes, clean modern style.",
             "image_position": "RIGHT"
         },
         {
-            "title": "Our Funding Ask",
-            "body": "We are seeking a $5M seed investment for:\n• Facility Build-Out: Construct our first 50,000 sq ft facility.\n• Team Expansion: Hire key engineering and sales talent.\n• Securing Contracts: Fulfill initial large-scale purchase orders.",
+            "title": "The 'Kke' Difference - Our Unique Recipe",
+            "body": "•  Bespoke flavor profiles and custom artistic designs\n•  Seamless online ordering with subscription options\n•  Eco-conscious sourcing and sustainable practices",
             "style": {
-                "background_color": "#78B446",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#FFFFFF",
-                "body_font": "Source Sans Pro",
-                "body_color": "#FFFFFF",
-                "title_alignment": "CENTER",
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 45,
+                    "colors": [
+                        "#FDF5E6",
+                        "#E6F5F7"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
                 "body_alignment": "LEFT"
             },
-            "layout": "ONE_COLUMN_TEXT"
-        },
-        {
-            "title": "The Future of Food",
-            "body": "• Expand product line to include beets, radishes, and potatoes.\n• License our proprietary growing technology to partners globally.\n• Enter the European market by 2028.",
-            "style": {
-                "background_color": "#F9F9F7",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#4A3F35",
-                "body_font": "Source Sans Pro",
-                "body_color": "#212121"
-            },
             "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A world map with glowing nodes over major cities in North America and Europe, representing a global food-tech supply chain network.",
+            "image_prompt": "A close-up of beautifully decorated, custom cupcakes on a minimalist counter, a tablet displaying an elegant online ordering interface in the background, warm natural light, high-end photography.",
             "image_position": "LEFT"
         },
         {
-            "title": "Join Our Mission",
-            "body": "Aura Harvest\ninfo@auraharvest.com\nauraharvest.com",
+            "title": "Product Showcase - Artisan Delights",
+            "body": "•  Exquisite flavors, premium natural ingredients\n•  Artistic presentation, truly Instagram-ready treats\n•  Experience the elevated difference in every bite",
             "style": {
-                "background_color": "#4A3F35",
-                "title_font": "Montserrat Bold",
-                "title_color": "#FFFFFF",
-                "body_font": "Source Sans Pro",
-                "body_color": "#FCFBF8",
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 270,
+                    "colors": [
+                        "#FDF5E6",
+                        "#F2F7FF"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
                 "title_alignment": "CENTER",
-                "body_alignment": "CENTER"
+                "body_alignment": "CENTER",
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "size": {
+                            "width": 960,
+                            "height": 10
+                        },
+                        "fill_color": "#6E88A1",
+                        "opacity": 0.1
+                    },
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
+                            "x": 50,
+                            "y": 380
+                        },
+                        "size": {
+                            "width": 820,
+                            "height": 100
+                        },
+                        "fill_color": "#FFDAB9",
+                        "opacity": 0.3
+                    }
+                ]
             },
-            "layout": "SECTION_HEADER"
+            "layout": "SECTION_TITLE_AND_DESCRIPTION",
+            "image_prompt": "A high-resolution, artistic photo of a diverse array of gourmet cupcakes, each uniquely decorated with edible flowers, intricate frosting, and modern minimalist props, soft studio lighting.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Business Model - Sweet Streams of Revenue",
+            "body": "•  Direct-to-consumer sales via our elegant online platform\n•  Curated monthly subscription boxes for loyal customers\n•  Catering services for bespoke events and corporate orders",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 90,
+                    "colors": [
+                        "#FDF5E6",
+                        "#FFF0F8"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A clean graphic collage of revenue streams: a laptop showing an e-commerce site, a neatly packaged subscription box with brand logo, and an elegant table set with cupcakes for an event.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Customer Love - Our Community Speaks",
+            "body": "•  \"Best cupcakes I've ever tasted!\" - Sarah M.\n•  \"Always fresh, always stunningly beautiful.\" - David P.\n•  Achieved a 95% customer satisfaction rate consistently",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 315,
+                    "colors": [
+                        "#FDF5E6",
+                        "#F0FFF8"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A stylized collage of diverse happy customers enjoying cupcakes, with short, elegant testimonial quotes integrated into the visual design, bright and authentic imagery.",
+            "image_position": "LEFT"
+        },
+        {
+            "title": "Competitive Landscape - Standing Out",
+            "body": "•  'Sprinkles Cupcakes': $50M revenue, 20% online, limited customization.\n•  'Local Artisan Bakery': $500K revenue, 5% online, manual ordering.\n•  cupcaKke bakkery: Projected $2M Y1 revenue, 80% online, superior customization.",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 60,
+                    "colors": [
+                        "#FDF5E6",
+                        "#FFEFE0"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "CHEVRON_ARROW_RIGHT",
+                        "position": {
+                            "x": 40,
+                            "y": 280
+                        },
+                        "size": {
+                            "width": 80,
+                            "height": 40
+                        },
+                        "fill_color": "#00C8FF",
+                        "opacity": 0.15
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "A sleek infographic comparing three columns: 'Traditional Bakeries', 'Large Chains', and 'cupcaKke bakkery', highlighting features like 'Customization', 'Online Ordering', and 'Quality' with clear metrics and checkmarks, modern design.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Traction & Growth - The Sweet Success So Far",
+            "body": "•  Served 2,500+ unique customers in first 6 months\n•  Achieved 25% month-over-month revenue growth\n•  Maintained 5-star average rating across all platforms",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 210,
+                    "colors": [
+                        "#FDF5E6",
+                        "#E6F7FF"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 40,
+                            "y": 180
+                        },
+                        "size": {
+                            "width": 380,
+                            "height": 10
+                        },
+                        "fill_color": "#FFDAB9",
+                        "opacity": 0.6
+                    },
+                    {
+                        "shape_type": "RECTANGLE",
+                        "position": {
+                            "x": 40,
+                            "y": 240
+                        },
+                        "size": {
+                            "width": 380,
+                            "height": 10
+                        },
+                        "fill_color": "#B0E0E6",
+                        "opacity": 0.4
+                    }
+                ]
+            },
+            "layout": "TITLE_AND_BODY"
+        },
+        {
+            "title": "Our Vision - Scaling Sweetness",
+            "body": "•  Expand delivery network to new urban regions\n•  Introduce seasonal baking kits and new product lines\n•  Develop AI-driven flavor recommendations and smart ordering",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 0,
+                    "colors": [
+                        "#FDF5E6",
+                        "#FFF2F5"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT"
+            },
+            "layout": "TITLE_AND_TWO_COLUMNS",
+            "image_prompt": "Futuristic baking lab with sleek robotic arms precisely decorating cupcakes, glowing screens displaying advanced flavor algorithms, modern minimalist design, soft-focus background.",
+            "image_position": "RIGHT"
+        },
+        {
+            "title": "Financial Ask - Fueling Our Growth",
+            "body": "•  Seeking $500,000 seed investment capital\n•  Allocate 60% for aggressive marketing and market expansion\n•  40% for advanced tech development and key team scaling",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 300,
+                    "colors": [
+                        "#FDF5E6",
+                        "#E6FFFE"
+                    ]
+                },
+                "title_font": "Playfair Display SemiBold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans",
+                "body_color": "#362A2A",
+                "title_alignment": "LEFT",
+                "body_alignment": "LEFT",
+                "accent_shapes": [
+                    {
+                        "shape_type": "STRIPE",
+                        "position": {
+                            "x": 50,
+                            "y": 200
+                        },
+                        "size": {
+                            "width": 400,
+                            "height": 60
+                        },
+                        "fill_color": "#FF69B4",
+                        "opacity": 0.15
+                    },
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
+                            "x": 50,
+                            "y": 280
+                        },
+                        "size": {
+                            "width": 400,
+                            "height": 60
+                        },
+                        "fill_color": "#B0E0E6",
+                        "opacity": 0.1
+                    }
+                ]
+            },
+            "layout": "BIG_NUMBER"
+        },
+        {
+            "title": "Summary & Next Steps - Taste the Future",
+            "body": "•  Disrupting the traditional dessert market with innovation\n•  Strong market fit, proven customer traction, clear growth path\n•  Join us in baking the future of delightful, personalized treats!",
+            "style": {
+                "background_style": {
+                    "type": "GRADIENT",
+                    "angle": 0,
+                    "colors": [
+                        "#FFDAB9",
+                        "#B0E0E6"
+                    ]
+                },
+                "title_font": "Playfair Display Bold",
+                "title_color": "#362A2A",
+                "body_font": "Open Sans SemiBold",
+                "body_color": "#362A2A",
+                "title_alignment": "CENTER",
+                "body_alignment": "CENTER",
+                "accent_shapes": [
+                    {
+                        "shape_type": "ROUNDED_RECTANGLE",
+                        "position": {
+                            "x": 70,
+                            "y": 180
+                        },
+                        "size": {
+                            "width": 780,
+                            "height": 220
+                        },
+                        "fill_color": "#FFFFFF",
+                        "opacity": 0.8
+                    },
+                    {
+                        "shape_type": "STAR_5_POINT",
+                        "position": {
+                            "x": 400,
+                            "y": 420
+                        },
+                        "size": {
+                            "width": 80,
+                            "height": 80
+                        },
+                        "fill_color": "#FF69B4",
+                        "opacity": 0.6
+                    }
+                ]
+            },
+            "layout": "TITLE_ONLY"
         }
     ]
 }

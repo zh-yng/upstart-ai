@@ -3,6 +3,7 @@
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 from run_deck import run_deck
+from user_networking import init_networking_services, find_investors
 #from ad_gen import ad_gen_bp, init_ad_gen_services
 from flask_cors import CORS
 
@@ -50,6 +51,19 @@ def create_slides_route():
         return jsonify({'error': 'Slide generation failed'}), 500
 
     return jsonify({'presentationUrl': presentation_url})
+
+@app.route('/create_network', methods=['POST'])
+def create_network_route():
+    data = request.get_json(silent=True) or {}
+    try:
+        idea = (data.get('idea') or '').strip()
+        if not idea:
+            return jsonify({'error': 'Idea is required'}), 400
+        output = find_investors(idea)
+        return jsonify({'idea': output})
+    except Exception as exc:
+        app.logger.exception("Network generation failed", exc_info=exc)
+        return jsonify({'error': 'Network generation failed'}), 500
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
