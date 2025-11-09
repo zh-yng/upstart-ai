@@ -42,9 +42,8 @@ Start the frontend and development server
 ```bash
 cd <repo-root>
 npm install
-# Starts the Vite dev server and the Node endpoints configured in server.js
-node server.js
-# or run the Vite dev server directly: npm run dev
+# Starts the Vite dev server
+npm run dev
 ```
 
 Production
