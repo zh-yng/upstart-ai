@@ -57,15 +57,13 @@ gunicorn app:app -b 0.0.0.0:5000
 ```
 
 Environment and credentials
-- The backend uses environment variables (via `python-dotenv`). For integrations that require credentials, add the files to `backend/api/` or set the appropriate environment variables. If credentials are not provided, core slide generation can still operate in a reduced/demo mode.
+- The backend uses environment variables (via `python-dotenv`). For integrations that require credentials, add the files to `backend/api/` or set the appropriate environment variables.
 
 Troubleshooting
 - Ports: development uses 5173 (frontend) and 5000 (backend). If those ports are in use, stop conflicting services or change the port configuration.
 - Python errors: ensure the virtual environment is active and dependencies from `backend/api/requirements.txt` are installed.
 - Missing credentials: features that rely on external APIs may fail or return restricted results without valid credentials.
 
-Contact and contribution
-For questions or to request a demo during judging, open an issue or contact the repository maintainer. Contributions and improvements are welcome.
 
 License
 This project is licensed under the MIT License.
