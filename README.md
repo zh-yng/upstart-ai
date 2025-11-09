@@ -47,11 +47,6 @@ node server.js
 # or run the Vite dev server directly: npm run dev
 ```
 
-Behavior after startup
-- Frontend: http://localhost:5173
-- Backend health endpoint: http://localhost:5000/
-- Slide generation: the frontend issues POST requests to the backend (see `backend/api/app.py`).
-
 Production
 - Build static assets: `npm run build`.
 - Serve the built assets using a static server or CDN.
