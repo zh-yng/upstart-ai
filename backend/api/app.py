@@ -17,6 +17,8 @@ load_dotenv()
 
 app = Flask(__name__)
 
+init_networking_services(app)
+
 # Allow CORS from the Vite dev server (adjust origin as needed for production)
 CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
 
@@ -220,7 +222,7 @@ def create_network_route():
         if not idea:
             return jsonify({'error': 'Idea is required'}), 400
         output = find_investors(idea)
-        return jsonify({'idea': output})
+        return output
     except Exception as exc:
         app.logger.exception("Network generation failed", exc_info=exc)
         return jsonify({'error': 'Network generation failed'}), 500

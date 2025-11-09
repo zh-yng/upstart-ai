@@ -3,6 +3,9 @@ import json
 from flask import Blueprint, request, jsonify, current_app
 import google.generativeai as genai
 from google.generativeai import types
+from dotenv import load_dotenv
+
+load_dotenv()
 
 networking_bp = Blueprint('networking_bp', __name__, url_prefix='/networking')
 
@@ -16,6 +19,7 @@ def init_networking_services(app):
     try:
         
         GOOGLE_API_KEY = os.getenv('VITE_GOOGLE_API_KEY')
+        app.logger.info("GOOGLE_API_KEY:" + {bool(GOOGLE_API_KEY)})
         if not GOOGLE_API_KEY:
             raise ValueError("GOOGLE_API_KEY not set in .env file")
         

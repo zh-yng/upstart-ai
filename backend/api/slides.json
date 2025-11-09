@@ -10,422 +10,248 @@
             "subtitle_font": "Source Sans Pro",
             "subtitle_color": "#5A6D60"
 =======
-    "presentation_title": "Aether & Bridle: Capturing the Essence of the Equestrian Spirit",
-    "title_slide": {
-        "title": "Aether & Bridle: Capturing the Essence of the Equestrian Spirit",
-        "style": {
-            "background_color": "#FDFBF7",
-            "title_font": "Lora Bold",
-            "title_color": "#4E342E",
-            "subtitle_font": "Lato",
-            "subtitle_color": "#A1887F"
->>>>>>> e0c83aa47cb3b029130b69cf230f58c7de3c5ed3
-        },
-        "layout": "TITLE"
-    },
-    "design_language": {
-<<<<<<< HEAD
-        "name": "Farm-to-Table Tech",
-        "palette": {
-            "primary": "#2E4034",
-            "secondary": "#D97746",
-            "accent": "#84A98C",
-            "background": "#F8F6F2",
-            "text_on_light": "#333333",
-            "text_on_dark": "#FFFFFF"
-        },
-        "typography": {
-            "title_font": "Montserrat SemiBold",
-            "body_font": "Source Sans Pro"
-        },
-        "background_style": {
-            "type": "GRADIENT",
-            "angle": 20,
-            "colors": [
-                "#F8F6F2",
-                "#FFFFFF"
-=======
-        "name": "Equestrian Elegance",
-        "palette": {
-            "primary": "#4E342E",
-            "secondary": "#A1887F",
-            "accent": "#2E4636",
-            "background": "#FDFBF7",
-            "text_on_light": "#4E342E",
-            "text_on_dark": "#FDFBF7"
-        },
-        "typography": {
-            "title_font": "Lora SemiBold",
-            "body_font": "Lato"
-        },
-        "background_style": {
-            "type": "GRADIENT",
-            "angle": 180,
-            "colors": [
-                "#FDFBF7",
-                "#FAF6F0"
->>>>>>> e0c83aa47cb3b029130b69cf230f58c7de3c5ed3
-            ]
-        },
-        "accent_shapes": [
-            {
-                "shape_type": "STRIPE",
-                "position": {
-                    "x": 0,
-                    "y": 520
+    "presentation_title": "Architex AI: Building a Sustainable Future with Generative Design",
+            "title_slide": {
+                "title": "Architex AI: Building a Sustainable Future with Generative Design",
+                "style": {
+                    "background_color": "#FDFBF7",
+                    "title_font": "Lora Bold",
+                    "title_color": "#4E342E",
+                    "subtitle_font": "Lato",
+                    "subtitle_color": "#A1887F"
                 },
-                "size": {
-                    "width": 960,
-                    "height": 4
-                },
-                "fill_color": "#A1887F",
-                "opacity": 0.4
-            }
-        ],
-        "text_alignment": "LEFT",
-        "body_line_spacing": 130
-    },
-    "slides": [
-        {
-<<<<<<< HEAD
-            "title": "The Broken Menu",
-            "body": "• Restaurants lose $162B annually to food waste.\n• Static menus fail to adapt to diner tastes and inventory.",
-            "style": {
-                "background_color": "#F8F6F2",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#2E4034",
-                "body_font": "Source Sans Pro",
-                "body_color": "#333333"
+                "layout": "TITLE"
             },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A concerned restaurant owner looking at a pile of unsold fresh produce in a kitchen, soft moody lighting.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "A Massive Market",
-            "body": "• $900B+ US Restaurant industry provides a huge TAM.\n• Our SAM is the $72B tech-forward independent restaurant sector.\n• We are targeting a $3.6B beachhead market in 5 major US cities.",
-            "style": {
+            "design_language": {
+                "name": "Equestrian Elegance",
+                "palette": {
+                    "primary": "#00796B",
+                    "secondary": "#26A69A",
+                    "accent": "#80CBC4",
+                    "background": "#F8F9FA",
+                    "text_on_light": "#212529",
+                    "text_on_dark": "#FFFFFF"
+                },
+                "typography": {
+                    "title_font": "Montserrat SemiBold",
+                    "body_font": "Open Sans"
+                },
                 "background_style": {
                     "type": "GRADIENT",
-                    "angle": 180,
+                    "angle": 135,
                     "colors": [
-                        "#FFFFFF",
-                        "#F5F5F0"
+                        "#FDFBF7",
+                        "#FAF6F0"
                     ]
                 },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#2E4034",
-                "body_font": "Source Sans Pro",
-                "body_color": "#333333"
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Introducing MenuFlow AI",
-            "body": "• An AI platform that builds dynamic, profitable menus in real-time.\n• Reduce food waste by up to 25% while boosting check size by 15%.",
-            "style": {
-                "background_color": "#F8F6F2",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#2E4034",
-                "body_font": "Source Sans Pro",
-                "body_color": "#333333"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A sleek tablet showing a beautiful, interactive digital menu in a high-end restaurant setting. The menu items have dynamic pricing and availability indicators.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Intelligent Menu Engine",
-            "body": "• Our AI analyzes inventory levels, sales data, and diner profiles.\n• It then suggests optimal dishes, pricing, and wine pairings.",
-            "style": {
-                "background_color": "#F8F6F2",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#2E4034",
-                "body_font": "Source Sans Pro",
-                "body_color": "#333333"
-            },
-            "layout": "SECTION_TITLE_AND_DESCRIPTION",
-            "image_prompt": "A sophisticated data visualization dashboard showing connections between ingredient inventory, customer preferences, and dynamic menu item suggestions. Glowing nodes and lines on a dark background.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Unique Value",
-            "body": "• Hyper-Personalization - Menus adapt to individual diner preferences.\n• Waste Reduction AI - Predictive analytics minimize ingredient spoilage.\n• Seamless Integration - Connects to existing POS and inventory systems.",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 330,
-                    "colors": [
-                        "#FFFFFF",
-                        "#F2F8F4"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#2E4034",
-                "body_font": "Source Sans Pro",
-                "body_color": "#333333"
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Simple SaaS Pricing",
-            "body": "• Tiered monthly subscription based on restaurant size.\n• Pro Tier - $199/mo for core features and analytics.\n• Enterprise Tier - Custom pricing for multi-location chains.",
-            "style": {
-                "background_color": "#F8F6F2",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#2E4034",
-                "body_font": "Source Sans Pro",
-                "body_color": "#333333"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Clean infographic showing three pricing tiers with simple icons representing small, medium, and large restaurants. Minimalist and professional design.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Early Market Success",
-            "body": "• 25 pilot restaurants signed in NYC and SF.\n• 22% average increase in profit margin for our partners.",
-            "style": {
-                "background_color": "#F8F6F2",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#2E4034",
-                "body_font": "Source Sans Pro",
-                "body_color": "#333333"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "An elegant logo wall featuring fictional but realistic logos of high-end, trendy restaurants. The logos are displayed on a clean, light-colored background.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Competitive Edge",
-            "body": "• Toast POS ($2B revenue) - Inventory is manual, not predictive. | Our AI saves owners 8-10 hours weekly.\n• UpMenu (5K customers) - Offers static digital menus only. | Our dynamic personalization increases LTV by 18%.\n• SevenRooms ($100M funding) - Focuses on CRM, not menu COGS. | We directly impact the highest cost center.",
-            "style": {
-                "background_style": {
-                    "type": "GRADIENT",
-                    "angle": 120,
-                    "colors": [
-                        "#FFFFFF",
-                        "#F7F3EE"
-                    ]
-                },
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#2E4034",
-                "body_font": "Source Sans Pro",
-                "body_color": "#333333",
+                "accent_shapes": [
+                    {
+                        "shape_type": "STRIPE",
+                        "position": {
+                            "x": 0,
+                            "y": 500
+                        },
+                        "size": {
+                            "width": 960,
+                            "height": 8
+                        },
+                        "fill_color": "#00796B",
+                        "opacity": 0.1
+                    }
+                ],
+                "text_alignment": "LEFT",
                 "body_line_spacing": 140
-=======
-            "title": "Our Vision",
-            "body": "• We bottle the untamed elegance of the equestrian lifestyle.\n• A luxury fragrance for those who value freedom and heritage.",
-            "style": {
-                "background_color": "#FDFBF7",
-                "title_font": "Lora SemiBold",
-                "title_color": "#4E342E",
-                "body_font": "Lato",
-                "body_color": "#4E342E"
             },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A minimalist, luxury perfume bottle with a leather-wrapped cap, sitting on a rustic wooden table next to a sprig of lavender. Soft, golden hour light.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Market Opportunity",
-            "body": "• Niche fragrance segment is growing at 15% CAGR.\n• Clear gap for authentic, experience-driven scents.",
-            "style": {
-                "background_color": "#FDFBF7",
-                "title_font": "Lora SemiBold",
-                "title_color": "#4E342E",
-                "body_font": "Lato",
-                "body_color": "#4E342E"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Infographic chart showing the growth of the niche fragrance market, with elegant equestrian-themed icons and a warm, earthy color palette.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Our Debut Collection",
-            "body": "• 'Saddle Leather': Rich notes of aged leather and cedarwood.\n• 'Hayloft': Sweet, sun-dried hay with a hint of wild clover.\n• 'First Gallop': Crisp morning air, green grass, and damp earth.",
-            "style": {
-                "background_color": "#FDFBF7",
-                "title_font": "Lora SemiBold",
-                "title_color": "#2E4636",
-                "body_font": "Lato",
-                "body_color": "#4E342E",
-                "title_alignment": "CENTER",
-                "body_alignment": "CENTER"
->>>>>>> e0c83aa47cb3b029130b69cf230f58c7de3c5ed3
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-<<<<<<< HEAD
-            "title": "Our Team",
-            "body": "• Aisha Khan, CEO - Former Product Lead at DoorDash, 10+ years in food tech.\n• Ben Carter, CTO - PhD in ML from Stanford, ex-Google AI research scientist.\n• Maria Flores, Head of Sales - Grew restaurant SaaS startup from 0 to $5M ARR.\n• David Chen, Culinary Advisor - James Beard award-winning chef and restaurateur.",
-            "style": {
-                "background_color": "#F8F6F2",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#2E4034",
-                "body_font": "Source Sans Pro",
-                "body_color": "#333333"
-=======
-            "title": "Product Spotlight",
-            "body": "• Sustainable packaging with a premium, tactile feel.\n• Each bottle is hand-finished with a unique leather accent.",
-            "style": {
-                "background_color": "#FDFBF7",
-                "title_font": "Lora SemiBold",
-                "title_color": "#4E342E",
-                "body_font": "Lato",
-                "body_color": "#4E342E"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "An elegant flat lay of the perfume's packaging: a textured box, a branded card, the bottle itself, and a silk ribbon, all in earthy tones. Macro photography, high detail.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Why We Win",
-            "body": "• Authentic Scent Profiles: Developed with master perfumers and equestrians.\n• Storytelling Brand: We sell an experience, not just a product.\n• DTC Model: High margins and direct customer relationships.",
-            "style": {
-                "background_color": "#FDFBF7",
-                "title_font": "Lora SemiBold",
-                "title_color": "#4E342E",
-                "body_font": "Lato",
-                "body_color": "#4E342E"
->>>>>>> e0c83aa47cb3b029130b69cf230f58c7de3c5ed3
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-<<<<<<< HEAD
-            "title": "The Road Ahead",
-            "body": "• Projecting $2.5M ARR by Year 2.\n• Targeting 500 restaurant partners in 18 months.",
-            "style": {
-                "background_color": "#F8F6F2",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#2E4034",
-                "body_font": "Source Sans Pro",
-                "body_color": "#333333"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A clean, minimalist line graph showing steep upward trajectory for revenue growth over three years. The graph is highlighted in a warm terracotta accent color.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Our Ask",
-            "body": "• We are raising a $2M seed round.\n• For Product (40%), Sales & Marketing (35%), and Operations (25%).\n• This provides an 18-month runway to achieve our key milestones.",
-            "style": {
-                "background_color": "#2E4034",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#FFFFFF",
-                "body_font": "Source Sans Pro",
-                "body_color": "#E0E0E0"
-=======
-            "title": "Competitive Landscape",
-            "body": "• Byredo ($180M+ revenue) - Broad, minimalist luxury focus | Our advantage: Deep, authentic niche storytelling.\n• Le Labo (Estée Lauder) - City-based, industrial-chic aesthetic | Our advantage: Focus on nature and pastoral heritage.\n• Jo Malone (Estée Lauder) - Simple, layerable scents | Our advantage: Complex, evocative single fragrances.",
-            "style": {
-                "background_color": "#FDFBF7",
-                "title_font": "Lora SemiBold",
-                "title_color": "#4E342E",
-                "body_font": "Lato",
-                "body_color": "#4E342E",
-                "body_line_spacing": 150
->>>>>>> e0c83aa47cb3b029130b69cf230f58c7de3c5ed3
-            },
-            "layout": "ONE_COLUMN_TEXT"
-        },
-        {
-<<<<<<< HEAD
-            "title": "Let's Talk",
-            "body": "Aisha Khan, CEO\naisha@menuflow.ai | menuflow.ai",
-            "style": {
-                "background_color": "#F8F6F2",
-                "title_font": "Montserrat SemiBold",
-                "title_color": "#2E4034",
-                "body_font": "Source Sans Pro",
-                "body_color": "#333333",
-=======
-            "title": "Our Customer",
-            "body": "• Affluent consumers (30-55) who value craftsmanship.\n• Seek unique, non-mainstream luxury goods.",
-            "style": {
-                "background_color": "#FDFBF7",
-                "title_font": "Lora SemiBold",
-                "title_color": "#4E342E",
-                "body_font": "Lato",
-                "body_color": "#4E342E"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "Stylish woman in her late 30s, dressed in sophisticated country attire (tweed, cashmere), walking through a field at sunset. Candid, lifestyle shot.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Business Model",
-            "body": "• Primary Channel: E-commerce DTC at 75% gross margin.\n• Secondary Channel: Partnerships with luxury equestrian boutiques.",
-            "style": {
-                "background_color": "#FDFBF7",
-                "title_font": "Lora SemiBold",
-                "title_color": "#4E342E",
-                "body_font": "Lato",
-                "body_color": "#4E342E"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A sleek diagram showing the flow from e-commerce website to customer, with icons for online store and boutique partnerships. Clean and modern design.",
-            "image_position": "RIGHT"
-        },
-        {
-            "title": "Our Team",
-            "body": "• Eleanor Vance, Founder & CEO - Former Brand Director at Ralph Lauren Home.\n• Marcus Thorne, Head Perfumer - 20+ years experience at Givaudan.\n• Chloe Dubois, Head of Marketing - Scaled DTC brand Brooklinen's social media.\n• Ben Carter, Operations Lead - Ex-Supply Chain Manager at The Frye Company.",
-            "style": {
-                "background_color": "#FDFBF7",
-                "title_font": "Lora SemiBold",
-                "title_color": "#4E342E",
-                "body_font": "Lato",
-                "body_color": "#4E342E",
-                "body_line_spacing": 150
-            },
-            "layout": "TITLE_AND_BODY"
-        },
-        {
-            "title": "Financial Projections",
-            "body": "• Year 1 Revenue Target: $750K\n• Projecting $5M in revenue by Year 5.",
-            "style": {
-                "background_color": "#FDFBF7",
-                "title_font": "Lora SemiBold",
-                "title_color": "#4E342E",
-                "body_font": "Lato",
-                "body_color": "#4E342E"
-            },
-            "layout": "TITLE_AND_TWO_COLUMNS",
-            "image_prompt": "A clean, elegant bar chart showing revenue growth over 5 years. The bars are colored with the brand's palette of dark brown, beige, and green.",
-            "image_position": "LEFT"
-        },
-        {
-            "title": "Our Ask",
-            "body": "Seeking: $500,000 Seed Funding\nUse of Funds: Inventory (40%), Marketing (35%), R&D (15%), Operations (10%)",
-            "style": {
-                "background_color": "#FDFBF7",
-                "title_font": "Lora SemiBold",
-                "title_color": "#2E4636",
-                "body_font": "Lato",
-                "body_color": "#4E342E",
->>>>>>> e0c83aa47cb3b029130b69cf230f58c7de3c5ed3
-                "title_alignment": "CENTER",
-                "body_alignment": "CENTER"
-            },
-            "layout": "MAIN_POINT"
-<<<<<<< HEAD
-=======
-        },
-        {
-            "title": "Join Our Journey",
-            "body": "Aether & Bridle\nwww.aetherandbridle.com\neleanor.vance@aetherandbridle.com",
-            "style": {
-                "background_color": "#4E342E",
-                "title_font": "Lora SemiBold",
-                "title_color": "#FDFBF7",
-                "body_font": "Lato",
-                "body_color": "#A1887F",
-                "title_alignment": "CENTER",
-                "body_alignment": "CENTER"
-            },
-            "layout": "SECTION_HEADER"
->>>>>>> e0c83aa47cb3b029130b69cf230f58c7de3c5ed3
+            "slides": [
+                {
+                    "title": "Our Vision",
+                    "body": "• We bottle the untamed elegance of the equestrian lifestyle.\n• A luxury fragrance for those who value freedom and heritage.",
+                    "style": {
+                        "background_color": "#F8F9FA",
+                        "title_font": "Montserrat SemiBold",
+                        "title_color": "#212529",
+                        "body_font": "Open Sans",
+                        "body_color": "#343A40"
+                    },
+                    "layout": "TITLE_AND_TWO_COLUMNS",
+                    "image_prompt": "A sprawling city skyline at dusk, half gleaming and modern, the other half shrouded in industrial smog, representing a choice.",
+                    "image_position": "RIGHT"
+                },
+                {
+                    "title": "Introducing Architex AI",
+                    "body": "• An AI platform that generates thousands of optimized building designs.\n• We cut design time by 80% and improve energy efficiency by 40%.",
+                    "style": {
+                        "background_color": "#FFFFFF",
+                        "title_font": "Montserrat SemiBold",
+                        "title_color": "#212529",
+                        "body_font": "Open Sans",
+                        "body_color": "#343A40"
+                    },
+                    "layout": "TITLE_AND_TWO_COLUMNS",
+                    "image_prompt": "Clean, elegant mockup of a software dashboard showing a 3D building model with data overlays for energy use and material costs.",
+                    "image_position": "LEFT"
+                },
+                {
+                    "title": "How It Works",
+                    "body": "• Input project constraints: budget, site, materials, and energy goals.\n• Our AI engine explores millions of design permutations in minutes.\n• Architects select the top-performing, code-compliant options.",
+                    "style": {
+                        "background_color": "#F8F9FA",
+                        "title_font": "Montserrat SemiBold",
+                        "title_color": "#212529",
+                        "body_font": "Open Sans",
+                        "body_color": "#343A40"
+                    },
+                    "layout": "SECTION_TITLE_AND_DESCRIPTION",
+                    "image_prompt": "Abstract visualization of a neural network branching out to create multiple holographic architectural blueprints, glowing with green and blue light.",
+                    "image_position": "RIGHT"
+                },
+                {
+                    "title": "Design In Action",
+                    "body": "• Instantly visualize buildings optimized for daylight, energy, and cost.",
+                    "style": {
+                        "background_color": "#FDFBF7",
+                        "title_font": "Lora SemiBold",
+                        "title_color": "#2E4636",
+                        "body_font": "Lato",
+                        "body_color": "#4E342E",
+                        "title_alignment": "CENTER",
+                        "body_alignment": "CENTER"
+                    },
+                    "layout": "TITLE_AND_BODY"
+                },
+                {
+                    "title": "Product Spotlight",
+                    "body": "• Sustainable packaging with a premium, tactile feel.\n• Each bottle is hand-finished with a unique leather accent.",
+                    "style": {
+                        "background_color": "#F8F9FA",
+                        "title_font": "Montserrat SemiBold",
+                        "title_color": "#212529",
+                        "body_font": "Open Sans",
+                        "body_color": "#343A40"
+                    },
+                    "layout": "TITLE_AND_TWO_COLUMNS",
+                    "image_prompt": "A clean, modern infographic chart showing three concentric circles for TAM, SAM, and SOM with corresponding market values.",
+                    "image_position": "RIGHT"
+                },
+                {
+                    "title": "Why We Win",
+                    "body": "• Speed: Generate options in minutes, not weeks.\n• Performance: Achieve sustainability targets previously unattainable.\n• Integration: Seamlessly plugs into existing architect workflows.",
+                    "style": {
+                        "background_color": "#FFFFFF",
+                        "title_font": "Montserrat SemiBold",
+                        "title_color": "#212529",
+                        "body_font": "Open Sans",
+                        "body_color": "#343A40"
+                    },
+                    "layout": "TITLE_AND_TWO_COLUMNS",
+                    "image_prompt": "A set of three minimalist icons: a stopwatch for speed, a leaf for performance, and interlocking gears for integration.",
+                    "image_position": "LEFT"
+                },
+                {
+                    "title": "Revenue Model",
+                    "body": "• Tiered SaaS subscription based on project volume and team size.\n• Professional: $299/seat/month for small firms.\n• Enterprise: Custom pricing for large architectural corporations.",
+                    "style": {
+                        "background_color": "#FDFBF7",
+                        "title_font": "Lora SemiBold",
+                        "title_color": "#4E342E",
+                        "body_font": "Lato",
+                        "body_color": "#4E342E"
+                    },
+                    "layout": "TITLE_AND_BODY"
+                },
+                {
+                    "title": "Competitive Landscape",
+                    "body": "• Byredo ($180M+ revenue) - Broad, minimalist luxury focus | Our advantage: Deep, authentic niche storytelling.\n• Le Labo (Estée Lauder) - City-based, industrial-chic aesthetic | Our advantage: Focus on nature and pastoral heritage.\n• Jo Malone (Estée Lauder) - Simple, layerable scents | Our advantage: Complex, evocative single fragrances.",
+                    "style": {
+                        "background_color": "#FDFBF7",
+                        "title_font": "Lora SemiBold",
+                        "title_color": "#4E342E",
+                        "body_font": "Lato",
+                        "body_color": "#4E342E",
+                        "body_line_spacing": 150
+                    },
+                    "layout": "BIG_NUMBER"
+                },
+                {
+                    "title": "Our Customer",
+                    "body": "• Affluent consumers (30-55) who value craftsmanship.\n• Seek unique, non-mainstream luxury goods.",
+                    "style": {
+                        "background_color": "#FFFFFF",
+                        "title_font": "Montserrat SemiBold",
+                        "title_color": "#212529",
+                        "body_font": "Open Sans",
+                        "body_color": "#343A40"
+                    },
+                    "layout": "TITLE_AND_TWO_COLUMNS",
+                    "image_prompt": "A clean logo wall featuring fictional but professional-sounding logos for architecture firms like 'Aperture Design', 'Struktiv', and 'Urban Canopy Group'.",
+                    "image_position": "RIGHT"
+                },
+                {
+                    "title": "Competitive Landscape",
+                    "body": "• Autodesk Revit (Generative Design tools) - High cost, steep learning curve | Our advantage: 5x faster onboarding and intuitive UI.\n• TestFit.io ($22M funding) - Focuses only on multifamily housing | Our advantage: Platform supports all commercial building types.",
+                    "style": {
+                        "background_color": "#F8F9FA",
+                        "title_font": "Montserrat SemiBold",
+                        "title_color": "#212529",
+                        "body_font": "Open Sans",
+                        "body_color": "#343A40",
+                        "body_line_spacing": 140
+                    },
+                    "layout": "TITLE_AND_BODY"
+                },
+                {
+                    "title": "Our Team",
+                    "body": "• Dr. Elena Vance, CEO - PhD in Computational Design, ex-Autodesk Research.\n• Ben Carter, CTO - Former Lead AI Engineer at NVIDIA.\n• Sofia Reyes, Chief Architect - Award-winning architect, 20+ years in sustainable design.\n• David Chen, COO - Scaled 2 B2B SaaS startups past $100M ARR.",
+                    "style": {
+                        "background_color": "#FFFFFF",
+                        "title_font": "Montserrat SemiBold",
+                        "title_color": "#212529",
+                        "body_font": "Open Sans",
+                        "body_color": "#343A40"
+                    },
+                    "layout": "TITLE_AND_BODY"
+                },
+                {
+                    "title": "The Ask",
+                    "body": "• Seeking $2.5M seed funding.\n• Use of Funds: 40% Product, 35% Sales & Marketing, 25% G&A.",
+                    "style": {
+                        "background_color": "#F8F9FA",
+                        "title_font": "Montserrat SemiBold",
+                        "title_color": "#212529",
+                        "body_font": "Open Sans",
+                        "body_color": "#343A40"
+                    },
+                    "layout": "TITLE_AND_TWO_COLUMNS",
+                    "image_prompt": "An upward-trending financial graph made of glowing lines, symbolizing growth and investment return.",
+                    "image_position": "LEFT"
+                },
+                {
+                    "title": "Future Vision",
+                    "body": "To become the essential OS for sustainable architecture and urban planning.",
+                    "style": {
+                        "background_color": "#FDFBF7",
+                        "title_font": "Lora SemiBold",
+                        "title_color": "#2E4636",
+                        "body_font": "Lato",
+                        "body_color": "#4E342E",
+                        "title_alignment": "CENTER",
+                        "body_alignment": "CENTER"
+                    },
+                    "layout": "MAIN_POINT"
+                },
+                {
+                    "title": "Join Our Journey",
+                    "body": "Aether & Bridle\nwww.aetherandbridle.com\neleanor.vance@aetherandbridle.com",
+                    "style": {
+                        "background_color": "#4E342E",
+                        "title_font": "Lora SemiBold",
+                        "title_color": "#FDFBF7",
+                        "body_font": "Lato",
+                        "body_color": "#A1887F",
+                        "title_alignment": "CENTER",
+                        "body_alignment": "CENTER"
+                    },
+                    "layout": "SECTION_HEADER"
+                }
+            ]
         }
-    ]
-}

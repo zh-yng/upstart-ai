@@ -33,8 +33,8 @@ const Dashboard = () => {
     const features = [
         { name: 'Slides', icon: 'pi pi-id-card', route: '/api/create_slides', content: (presentationUrl != null) ? presentationUrl : '', color: 'rgba(230, 187, 255, 1)', handler: 'slides' },
         { name: 'Video', icon: 'pi pi-video', route: '/api/create_video', content: '', color: 'rgba(230, 187, 255, 1)', loadingColor: 'rgba(230, 187, 255, 1)', handler: 'video' },
-        { name: 'Network', icon: 'pi pi-sitemap', route: '/api/network', content: '', color: 'rgba(230, 187, 255, 1)', handler: 'network' },
         { name: 'Roadmap', icon: 'pi pi-map', route: '/api/create_roadmap', content: '', color: 'rgba(230, 187, 255, 1)', loadingColor: 'rgba(230, 187, 255, 1)', handler: 'roadmap' },
+        { name: 'Network', icon: 'pi pi-sitemap', route: '/api/create_network', content: '', color: 'rgba(230, 187, 255, 1)', handler: 'network' },
     ]
 
     const handleGetHello = async () => {
@@ -303,15 +303,20 @@ const Dashboard = () => {
     };
 
     const handleCreateNetwork = async () => {
-        console.log(text);
         try {
-            const response = await fetch('/api/find-investors', {
+            const response = await fetch('/api/create_network', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ idea: text }),
+                body: JSON.stringify({ idea: text.trim() }),
             });
+
+            if (!response.ok) {
+                const data = await response.json();
+                throw new Error(data.error || 'Failed to generate network.');
+            }
+
             const data = await response.json();
             console.log('Network generation response:', data);
         } catch (error) {
@@ -321,7 +326,7 @@ const Dashboard = () => {
 
     return (
         <>
-            <div className="flex flex-column gap-2 justify-content-center align-items-center text-center" style={{ width: '50%' }}>
+            <div className="flex flex-column gap-2 justify-content-center align-items-center text-center">
                 <div className="flex flex-column gap-2 w-full justify-content-center">
                     {/* two per row grid of buttons */}
                     <div className="flex gap-2 w-full align-items-start">
@@ -430,7 +435,7 @@ const Dashboard = () => {
                                 );
                             })}
                         </div>
-                        <div style={{ width: '65vw', flex: 1, alignSelf: 'stretch', borderRadius: '12px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }} className="blur border">
+                        <div style={{ width: '65vw', alignSelf: 'stretch', borderRadius: '12px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }} className="blur border">
                             {/* Chat Header */}
                             <div style={{
                                 padding: '1rem 1.5rem',
