@@ -74,8 +74,8 @@ const Landing = () => {
                     </Panel>
                 )}
 
-                <Panel header="Upload your plan docs" style={{ width: '100%' }}>
-                    <FileUpload name="demo[]" url={'/api/upload'} multiple accept="application/pdf" maxFileSize={1000000} emptyTemplate={<p className="m-0">Drag and drop PDFs to upload.</p>} />
+                <Panel header="Upload some concept images/PDFs for context!" style={{ width: '100%' }}>
+                    <FileUpload name="demo[]" url={'/api/upload'} multiple accept="image/*, application/pdf" maxFileSize={1000000} emptyTemplate={<p className="m-0">Drag and drop to upload.</p>} />
                 </Panel>
             </div>
         </>
