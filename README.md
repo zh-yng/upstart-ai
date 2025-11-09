@@ -1,18 +1,78 @@
 <img width="713" height="247" alt="image" src="https://github.com/user-attachments/assets/e7fe5d77-3715-4dfa-80ec-420b867e922c" />
 
-# UpStart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Upstart AI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Upstart AI converts short prompts into lightweight slide decks. The frontend is implemented using React and Vite. The slide generation and related utilities are implemented in a Flask-based Python backend. The application is intended for rapid demonstration and evaluation: submit a prompt and receive a shareable presentation URL.
 
-## React Compiler
+Key capabilities
+- End-to-end prompt-to-slide generation (with optional image generation).
+- Modular backend utilities for slide composition, image generation, and short-form copy.
+- Developer-friendly: simple local setup and clear separation between frontend and backend.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Technology
+- Frontend: React + Vite
+- Dev server/shim: Node (Express + vite-express)
+- Backend: Flask (Python)
 
-## Expanding the ESLint configuration
+Repository structure (high level)
+- `src/` — React application source
+- `server.js` — Node server that runs the Vite dev server and a small set of development endpoints
+- `backend/api/` — Flask application and generation utilities (e.g., `slide_create.py`, `run_deck.py`)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Prerequisites
+- Node.js 18 or later
+- Python 3.9 or later and `pip`
+- (Optional) Google service account credentials or other API keys required for optional features. Place credentials in `backend/api/credentials.json` or `backend/api/token.json` as appropriate.
+
+Local development
+Start the backend (Flask)
+
+```bash
+cd backend/api
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python app.py
+```
+
+Start the frontend and development server
+
+```bash
+cd <repo-root>
+npm install
+# Starts the Vite dev server and the Node endpoints configured in server.js
+node server.js
+# or run the Vite dev server directly: npm run dev
+```
+
+Behavior after startup
+- Frontend: http://localhost:5173
+- Backend health endpoint: http://localhost:5000/
+- Slide generation: the frontend issues POST requests to the backend (see `backend/api/app.py`).
+
+Production
+- Build static assets: `npm run build`.
+- Serve the built assets using a static server or CDN.
+- Run the Flask application behind a WSGI server for production, for example:
+
+```bash
+gunicorn app:app -b 0.0.0.0:5000
+```
+
+Environment and credentials
+- The backend uses environment variables (via `python-dotenv`). For integrations that require credentials, add the files to `backend/api/` or set the appropriate environment variables. If credentials are not provided, core slide generation can still operate in a reduced/demo mode.
+
+Troubleshooting
+- Ports: development uses 5173 (frontend) and 5000 (backend). If those ports are in use, stop conflicting services or change the port configuration.
+- Python errors: ensure the virtual environment is active and dependencies from `backend/api/requirements.txt` are installed.
+- Missing credentials: features that rely on external APIs may fail or return restricted results without valid credentials.
+
+Contact and contribution
+For questions or to request a demo during judging, open an issue or contact the repository maintainer. Contributions and improvements are welcome.
+
+License
+This project is licensed under the MIT License.
+
+
