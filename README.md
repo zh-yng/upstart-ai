@@ -7,14 +7,14 @@
 Upstart AI converts short prompts into lightweight slide decks. The frontend is implemented using React and Vite. The slide generation and related utilities are implemented in a Flask-based Python backend. The application is intended for rapid demonstration and evaluation: submit a prompt and receive a shareable presentation URL.
 
 Key capabilities
-- End-to-end prompt-to-slide generation (with optional image generation).
-- Modular backend utilities for slide composition, image generation, and short-form copy.
+- End-to-end prompt-to-slide generation.
+- Modular backend utilities for slide composition, video generation, and startup/business consultation.
 - Developer-friendly: simple local setup and clear separation between frontend and backend.
 
 Technology
 - Frontend: React + Vite
 - Dev server/shim: Node (Express + vite-express)
-- Backend: Flask (Python)
+- Backend: Flask (Python), Gemini API, Vertex AI
 
 Repository structure (high level)
 - `src/` — React application source
