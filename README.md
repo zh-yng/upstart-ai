@@ -1,4 +1,5 @@
 <img width="713" height="247" alt="image" src="https://github.com/user-attachments/assets/e7fe5d77-3715-4dfa-80ec-420b867e922c" />
+
 # UpStart
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
